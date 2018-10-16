@@ -1,0 +1,5 @@
+@charset "utf-8";
+
+ul.masonry li {width:20%;}
+
+#dimmed {background:url(/img/common/mask.png) repeat;}

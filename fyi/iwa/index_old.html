@@ -1,0 +1,460 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="cache-control" content="no-cache">
+<title></title>
+<link rel="stylesheet" href="css/store.css">
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.pub.js"></script>
+</head>
+<body>
+
+
+<div id="help"></div>
+<div id="top"></div>
+<div id="mask"></div>
+<div id="login" class="pop_type">
+	<span class="close"></span>
+	<h1>LOGIN</h1>		
+	<fieldset>
+		<legend>LOGIN</legend>			
+		<input type="text" title="사용자 ID">
+		<input type="password" title="비밀번호">			
+		<button class="submit">로그인</button>
+	</fieldset>	
+	<p class="error">잘못된 비밀번호입니다</p>
+	<p>아이디,비밀번호를 찾고 계신가요?</p>
+	<button>사용자ID 찾기</button>
+	<button>비밀번호 찾기</button>
+	<p>회원가입하시겠습니까?</p>
+	<button>사용자 등록하기</button>
+	<button>개발자 등록하기</button>
+</div>
+<div id="join" class="pop_type">
+	<span class="close"></span>
+	<h1>JOIN</h1>		
+	<fieldset>
+		<legend>JOIN</legend>			
+		<input class="ok" type="text" title="사용자 ID">
+		<p><span class="ok">사용할 수 있는 아이디입니다</span></p>
+		<input class="no" type="text" title="Email">
+		<p><span class="no">잘못된 메일형식입니다</span></p>
+		<input type="password" title="비밀번호 입력">
+		<p>비밀번호를 입력해주세요</p>
+		<input type="password" title="비밀번호 확인">
+		<p>비밀번호를 확인해주세요</p>		
+		<p class="tr"><input type="checkbox" class="checkbox"> 약관동의</p>
+		<p class="btn"><button type="submit" class="submit">등록하기</button></p>
+	</fieldset>	
+	
+	<p>개발자로 등록하시겠습니까?</p>
+	<button>개발자 등록하기</button>
+</div>
+<!--container-->	
+<div id="container">
+	<!--header-->	
+	<div id="header">
+		<h1><b>IWA</b> Store</h1>
+		<fieldset>
+			<legend>search,login</legend>
+			<input type="text" title="검색어를 입력하세요" value="">
+			<button type="submit">검색</button>	
+		</fieldset>	
+		<ul id="global"></ul>
+	</div>	
+	<!--wrap-->	
+	<div id="wrap">
+		<div class="section">		
+			<h2 class="main">
+				<b>BEST TOP 10</b>
+			</h2>
+			<div class="main_slide">
+				<span class="prev"></span>
+				<span class="next"></span>
+				<div class="box">
+					<ul>
+						<li><img src="img/test/main7.jpg" alt=""><span><strong>위닝일레븐2012</strong><b>JOYMOA CORP</b></span></li>
+						<li><img src="img/test/main8.jpg" alt=""><span><strong>위닝일레븐2012</strong><b>JOYMOA CORP</b></span></li>
+						<li><img src="img/test/main3.jpg" alt=""><span><strong>위닝일레븐2012</strong><b>JOYMOA CORP</b></span></li>
+						<li><img src="img/test/main4.jpg" alt=""><span><strong>위닝일레븐2012</strong><b>JOYMOA CORP</b></span></li>
+						<li><img src="img/test/main5.jpg" alt=""><span><strong>위닝일레븐2012</strong><b>JOYMOA CORP</b></span></li>
+						<li><img src="img/test/main6.jpg" alt=""><span><strong>위닝일레븐2012</strong><b>JOYMOA CORP</b></span></li>
+						<li><img src="img/test/main1.jpg" alt=""><span><strong>위닝일레븐2012</strong><b>JOYMOA CORP</b></span></li>
+						<li><img src="img/test/main3.jpg" alt=""><span><strong>위닝일레븐2012</strong><b>JOYMOA CORP</b></span></li>
+					</ul>
+				</div>
+			</div>
+		</div>	
+		<ul class="tab">
+			<li class="on">인기</li>
+			<li>추천</li>
+			<li>신규</li>
+		</ul>		
+		<div class="section">			
+			<div class="more"><button>더보기</button></div>
+			<ul class="list_type">
+				<li>
+					<img src="img/test/list1.jpg" alt="">
+					<h4>제목이 너무 길면 두줄방지를 위해 레이어로 띄웁니다</h4>					
+					<p class="vot"><b class="rating"><span style="width:50%;"></span></b> (2,243)</p>
+					<p class="com">JOYMOA CORP</p>
+					<p class="btn"><button>설치</button></p>
+					<p class="txt">이미 너무도 유명한 콘솔 게임의 안드로이드 버전. 프로모션 기간 50% 가격 할인! (행사가격: 2,500원, ~2012년 11월 23일까지)</p>				
+				</li>
+				<li>
+					<img src="img/test/list2.jpg" alt="">
+					<h4>위닝일레븐2012</h4>
+					<p class="vot"><b class="rating"><span style="width:80%;"></span></b> (2,243)</p>
+					<p class="com">JOYMOA CORP</p>
+					<p class="btn"><button>₩2,500</button></p>
+					<p class="txt">이미 너무도 유명한 콘솔 게임의 안드로이드 버전. 프로모션 기간 50% 가격 할인! (행사가격: 2,500원, ~2012년 11월 23일까지)</p>				
+				</li>
+				<li>
+					<img src="img/test/list3.jpg" alt="">
+					<h4>위닝일레븐2012</h4>
+					<p class="vot"><b class="rating"><span style="width:20%;"></span></b> (2,243)</p>
+					<p class="com">JOYMOA CORP</p>
+					<p class="btn"><button>₩2,500</button></p>
+					<p class="txt">이미 너무도 유명한 콘솔 게임의 안드로이드 버전. 프로모션 기간 50% 가격 할인! (행사가격: 2,500원, ~2012년 11월 23일까지)</p>				
+				</li>
+				<li>
+					<img src="img/test/list4.jpg" alt="">
+					<h4>위닝일레븐2012</h4>	
+					<p class="vot"><b class="rating"><span style="width:100%;"></span></b> (2,243)</p>
+					<p class="com">JOYMOA CORP</p>
+					<p class="btn"><button>₩2,500</button></p>
+					<p class="txt">이미 너무도 유명한 콘솔 게임의 안드로이드 버전. 프로모션 기간 50% 가격 할인! (행사가격: 2,500원, ~2012년 11월 23일까지)</p>				
+				</li>
+				<li>
+					<img src="img/test/list5.jpg" alt="">
+					<h4>위닝일레븐2012</h4>
+					<p class="vot"><b class="rating"><span style="width:40%;"></span></b> (2,243)</p>
+					<p class="com">JOYMOA CORP</p>
+					<p class="btn"><button>₩2,500</button></p>
+					<p class="txt">이미 너무도 유명한 콘솔 게임의 안드로이드 버전. 프로모션 기간 50% 가격 할인! (행사가격: 2,500원, ~2012년 11월 23일까지)</p>				
+				</li>
+				<li>
+					<img src="img/test/list6.jpg" alt="">
+					<h4>위닝일레븐2012</h4>
+					<p class="vot"><b class="rating"><span style="width:30%;"></span></b> (2,243)</p>
+					<p class="com">JOYMOA CORP</p>
+					<p class="btn"><button>₩2,500</button></p>
+					<p class="txt">이미 너무도 유명한 콘솔 게임의 안드로이드 버전. 프로모션 기간 50% 가격 할인! (행사가격: 2,500원, ~2012년 11월 23일까지)</p>				
+				</li>
+			</ul>
+		</div>
+		
+		<ul class="tab">
+			<li class="on">인기</li>
+			<li>추천</li>
+			<li>신규</li>
+		</ul>	
+		<div class="section">
+			<div class="more"><button>더보기</button></div>
+			<div class="list_type">
+				<dl>
+					<dt><img src="img/test/app1.png" alt=""></dt>
+					<dd>
+						<h4>제목이 너무 길면 두줄방지를 위해 레이어로 띄웁니다</h4>			
+						<p class="vot"><b class="rating"><span style="width:50%;"></span></b> (2,243)</p>
+						<p class="com">JOYMOA CORP</p>
+						<button>설치</button>		
+					</dd>
+				</dl>
+				<dl>
+					<dt><img src="img/test/app2.png" alt=""></dt>
+					<dd>
+						<h4>위닝일레븐2012</h4>					
+						<p class="vot"><b class="rating"><span style="width:50%;"></span></b> (2,243)</p>
+						<p class="com">JOYMOA CORP</p>
+						<button>₩2,500</button>		
+					</dd>
+				</dl>
+				<dl>
+					<dt><img src="img/test/app3.png" alt=""></dt>
+					<dd>
+						<h4>위닝일레븐2012</h4>					
+						<p class="vot"><b class="rating"><span style="width:50%;"></span></b> (2,243)</p>
+						<p class="com">JOYMOA CORP</p>
+						<button>₩2,500</button>		
+					</dd>
+				</dl>
+				<dl>
+					<dt><img src="img/test/app4.png" alt=""></dt>
+					<dd>
+						<h4>위닝일레븐2012</h4>					
+						<p class="vot"><b class="rating"><span style="width:50%;"></span></b> (2,243)</p>
+						<p class="com">JOYMOA CORP</p>
+						<button>₩2,500</button>		
+					</dd>
+				</dl>
+				<dl>
+					<dt><img src="img/test/app5.png" alt=""></dt>
+					<dd>
+						<h4>위닝일레븐2012</h4>					
+						<p class="vot"><b class="rating"><span style="width:50%;"></span></b> (2,243)</p>
+						<p class="com">JOYMOA CORP</p>
+						<button>₩2,500</button>		
+					</dd>
+				</dl>
+				<dl>
+					<dt><img src="img/test/app5.png" alt=""></dt>
+					<dd>
+						<h4>위닝일레븐2012</h4>					
+						<p class="vot"><b class="rating"><span style="width:50%;"></span></b> (2,243)</p>
+						<p class="com">JOYMOA CORP</p>
+						<button>₩2,500</button>		
+					</dd>
+				</dl>
+				<dl>
+					<dt><img src="img/test/app5.png" alt=""></dt>
+					<dd>
+						<h4>위닝일레븐2012</h4>					
+						<p class="vot"><b class="rating"><span style="width:50%;"></span></b> (2,243)</p>
+						<p class="com">JOYMOA CORP</p>
+						<button>₩2,500</button>		
+					</dd>
+				</dl>
+				<dl>
+					<dt><img src="img/test/app5.png" alt=""></dt>
+					<dd>
+						<h4>위닝일레븐2012</h4>					
+						<p class="vot"><b class="rating"><span style="width:50%;"></span></b> (2,243)</p>
+						<p class="com">JOYMOA CORP</p>
+						<button>₩2,500</button>		
+					</dd>
+				</dl>
+			</div>
+		</div>
+	</div>	
+	<!--content-->	
+	<div id="content">
+		<!--nav-->	
+		<div id="nav">				
+			<h3>인기 유료 <span class="more"><button>전체보기</button></h3>
+			<ol class="list">
+				<li><b>1</b><p><strong>아스팔트 7: 히트아스팔트 7: 히트</strong><span>GAMELOFT</span></p></li>
+				<li><b>2</b><p><strong>아스팔트 7: 히트</strong><span>GAMELOFT</span></p></li>
+				<li><b>3</b><p><strong>아스팔트 7: 히트</strong><span>GAMELOFT</span></p></li>
+				<li><b>4</b><p><strong>아스팔트 7: 히트</strong><span>GAMELOFT</span></p></li>
+				<li><b>5</b><p><strong>아스팔트 7: 히트</strong><span>GAMELOFT</span></p></li>
+			</ol>
+			
+			<h3>카테고리</h3>
+			<ul class="list">
+				<li>건강 및 운동</li>
+				<li>교육</li>
+				<li>교통</li>
+				<li>금융</li>
+				<li>날씨</li>
+				<li>뉴스 및 잡지</li>
+				<li>데코레이션</li>
+				<li>도구</li>
+				<li>도서 및 참고자료</li>
+				<li>라이브 배경화면</li>
+				<li>라이브러리 및 데모</li>
+				<li>라이프스타일</li>
+				<li>만화</li>
+				<li>미디어 및 동영상</li>
+				<li>비즈니스</li>
+				<li>사진</li>
+				<li>생산성</li>
+				<li>소셜 콘텐츠</li>
+				<li>쇼핑</li>
+				<li>스포츠</li>
+				<li>엔터테인먼트</li>
+				<li>여행 및 지역정보</li>
+				<li>위젯</li>
+				<li>음악 및 오디오</li>
+				<li>의료</li>
+				<li>커뮤니케이션</li>
+			</ul>
+			<ul class="menu">
+				<li><span>나의 App</span></li>
+				<li><span>App 등록하기</span></li>
+				<li><span>문의 하기</span></li>
+				<li><span>개발자 리소스</span></li>
+			</ul>
+			
+		</div>
+		<!--list-->	
+		<div id="list">			
+			<h3>추천 APP 리스트</h3>
+			<ul class="list_type">
+				<li>
+					<img src="img/test/list1.jpg" alt="">
+					<h4>제목이 너무 길면 두줄방지를 위해 레이어로 띄웁니다</h4>					
+					<p class="vot"><b class="rating"><span style="width:50%;"></span></b> (2,243)</p>
+					<p class="com">JOYMOA CORP</p>
+					<p class="btn"><button>설치</button></p>
+					<p class="txt">이미 너무도 유명한 콘솔 게임의 안드로이드 버전. 프로모션 기간 50% 가격 할인! (행사가격: 2,500원, ~2012년 11월 23일까지)</p>				
+				</li>
+				<li>
+					<img src="img/test/list2.jpg" alt="">
+					<h4>위닝일레븐2012</h4>
+					<p class="vot"><b class="rating"><span style="width:80%;"></span></b> (2,243)</p>
+					<p class="com">JOYMOA CORP</p>
+					<p class="btn"><button>₩2,500</button></p>
+					<p class="txt">이미 너무도 유명한 콘솔 게임의 안드로이드 버전. 프로모션 기간 50% 가격 할인! (행사가격: 2,500원, ~2012년 11월 23일까지)</p>				
+				</li>
+				<li>
+					<img src="img/test/list3.jpg" alt="">
+					<h4>위닝일레븐2012</h4>
+					<p class="vot"><b class="rating"><span style="width:20%;"></span></b> (2,243)</p>
+					<p class="com">JOYMOA CORP</p>
+					<p class="btn"><button>₩2,500</button></p>
+					<p class="txt">이미 너무도 유명한 콘솔 게임의 안드로이드 버전. 프로모션 기간 50% 가격 할인! (행사가격: 2,500원, ~2012년 11월 23일까지)</p>				
+				</li>
+				<li>
+					<img src="img/test/list4.jpg" alt="">
+					<h4>위닝일레븐2012</h4>
+					<p class="vot"><b class="rating"><span style="width:100%;"></span></b> (2,243)</p>
+					<p class="com">JOYMOA CORP</p>
+					<p class="btn"><button>₩2,500</button></p>
+					<p class="txt">이미 너무도 유명한 콘솔 게임의 안드로이드 버전. 프로모션 기간 50% 가격 할인! (행사가격: 2,500원, ~2012년 11월 23일까지)</p>				
+				</li>
+				<li>
+					<img src="img/test/list5.jpg" alt="">
+					<h4>위닝일레븐2012</h4>
+					<p class="vot"><b class="rating"><span style="width:40%;"></span></b> (2,243)</p>
+					<p class="com">JOYMOA CORP</p>
+					<p class="btn"><button>₩2,500</button></p>
+					<p class="txt">이미 너무도 유명한 콘솔 게임의 안드로이드 버전. 프로모션 기간 50% 가격 할인! (행사가격: 2,500원, ~2012년 11월 23일까지)</p>				
+				</li>
+				<li>
+					<img src="img/test/list6.jpg" alt="">
+					<h4>위닝일레븐2012</h4>	
+					<p class="vot"><b class="rating"><span style="width:30%;"></span></b> (2,243)</p>
+					<p class="com">JOYMOA CORP</p>
+					<p class="btn"><button>₩2,500</button></p>
+					<p class="txt">이미 너무도 유명한 콘솔 게임의 안드로이드 버전. 프로모션 기간 50% 가격 할인! (행사가격: 2,500원, ~2012년 11월 23일까지)</p>				
+				</li>
+			</ul>
+			
+			<ol class="page_nav">
+				<li><span><b class="prevv"></b></span></li>
+				<li><span><b class="prev"></b></span></li>
+				<li class="on"><span>1</span></li>
+				<li><span>2</span></li>
+				<li><span>3</span></li>
+				<li><span>4</span></li>
+				<li><span>5</span></li>
+				<li><span>6</span></li>
+				<li><span>7</span></li>
+				<li><span>8</span></li>
+				<li><span>9</span></li>
+				<li><span>10</span></li>
+				<li><span><b class="next"></b></span></li>
+				<li><span><b class="nextt"></b></span></li>
+			</ol>
+			
+			<h3>나의 APP 리스트</h3>
+			<div class="list_type">
+				<dl>
+					<dt><img src="img/test/app1.png" alt=""></dt>
+					<dd>
+						<h4>제목이 너무 길면 두줄방지를 위해 레이어로 띄웁니다</h4>				
+						<p class="vot"><b class="rating"><span style="width:50%;"></span></b> (2,243)</p>
+						<p class="com">JOYMOA CORP</p>
+						<button>설치</button>		
+					</dd>
+				</dl>
+				<dl>
+					<dt><img src="img/test/app2.png" alt=""></dt>
+					<dd>
+						<h4>위닝일레븐2012</h4>					
+						<p class="vot"><b class="rating"><span style="width:50%;"></span></b> (2,243)</p>
+						<p class="com">JOYMOA CORP</p>
+						<button>₩2,500</button>		
+					</dd>
+				</dl>
+				<dl>
+					<dt><img src="img/test/app3.png" alt=""></dt>
+					<dd>
+						<h4>위닝일레븐2012</h4>					
+						<p class="vot"><b class="rating"><span style="width:50%;"></span></b> (2,243)</p>
+						<p class="com">JOYMOA CORP</p>
+						<button>₩2,500</button>		
+					</dd>
+				</dl>
+				<dl>
+					<dt><img src="img/test/app4.png" alt=""></dt>
+					<dd>
+						<h4>위닝일레븐2012</h4>					
+						<p class="vot"><b class="rating"><span style="width:50%;"></span></b> (2,243)</p>
+						<p class="com">JOYMOA CORP</p>
+						<button>₩2,500</button>		
+					</dd>
+				</dl>
+				<dl>
+					<dt><img src="img/test/app5.png" alt=""></dt>
+					<dd>
+						<h4>위닝일레븐2012</h4>					
+						<p class="vot"><b class="rating"><span style="width:50%;"></span></b> (2,243)</p>
+						<p class="com">JOYMOA CORP</p>
+						<button>₩2,500</button>		
+					</dd>
+				</dl>
+				<dl>
+					<dt><img src="img/test/app5.png" alt=""></dt>
+					<dd>
+						<h4>위닝일레븐2012</h4>					
+						<p class="vot"><b class="rating"><span style="width:50%;"></span></b> (2,243)</p>
+						<p class="com">JOYMOA CORP</p>
+						<button>₩2,500</button>		
+					</dd>
+				</dl>
+				<dl>
+					<dt><img src="img/test/app5.png" alt=""></dt>
+					<dd>
+						<h4>위닝일레븐2012</h4>					
+						<p class="vot"><b class="rating"><span style="width:50%;"></span></b> (2,243)</p>
+						<p class="com">JOYMOA CORP</p>
+						<button>₩2,500</button>		
+					</dd>
+				</dl>
+				<dl>
+					<dt><img src="img/test/app5.png" alt=""></dt>
+					<dd>
+						<h4>위닝일레븐2012</h4>					
+						<p class="vot"><b class="rating"><span style="width:50%;"></span></b> (2,243)</p>
+						<p class="com">JOYMOA CORP</p>
+						<button>₩2,500</button>		
+					</dd>
+				</dl>
+			</div>
+			
+			<ol class="page_nav">
+				<li><span><b class="prevv"></b></span></li>
+				<li><span><b class="prev"></b></span></li>
+				<li class="on"><span>1</span></li>
+				<li><span>2</span></li>
+				<li><span>3</span></li>
+				<li><span>4</span></li>
+				<li><span>5</span></li>
+				<li><span>6</span></li>
+				<li><span>7</span></li>
+				<li><span>8</span></li>
+				<li><span>9</span></li>
+				<li><span>10</span></li>
+				<li><span><b class="next"></b></span></li>
+				<li><span><b class="nextt"></b></span></li>
+			</ol>
+			
+		</div>
+	</div>
+	
+	
+	<!--footer-->
+	<div id="footer">
+		<p>IWA Inc. Copyright ⓒ 2011 all rights reserved.</p>
+	</div>
+</div>
+
+</body>
+</html>
+
+
+

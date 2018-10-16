@@ -1,0 +1,796 @@
+﻿<!DOCTYPE HTML><html><head>
+<meta charset="utf-8">
+<meta http-equiv="cache-control" content="no-cache">
+<title></title>
+<link rel="stylesheet" href="css/main.css">
+<script src="js/jquery-1.8.2.min.js"></script>
+<script src="js/jquery.pub.js"></script>
+</head>
+<body>
+<div id="mask" style="display:block;"></div>
+<div id="tv"><img src="img/bg.png" alt=""></div>
+<div id="wrap">
+	<div id="global">
+		<ul>
+			<li class="search"><span class="on"></span></li>
+			<li class="login"><span></span></li>
+			<li class="setting"><span></span></li>
+			<li class="exit"><span></span></li>
+		</ul>
+	</div>
+	<div id="txt">
+		<img src="img/test1.png" class="shadow" alt="">
+		<p>이어하기<br>
+		USB가 연결되어있습니다.<br>
+		App 다운로드가 완료되었습니다.<br>
+		VOD다운로드가 완료되었습니다.</p>
+	</div>	
+	<div id="btnWrap">
+		<div class="nav_bofore"></div>
+		<div class="nav_next"></div>
+	</div>
+	<!-- container_left -->
+	<div id="container_left">
+		<!-- fav -->
+		<div id="fav">
+			<h1 style="margin:17px 0 0 20px; font-size:34px; font-weight:normal; color:#fff;">Favorites</h1>	
+			<div class="vod_list_in">
+				<h2 class="title">VOD</h2>
+				<div class="list_box">
+					<ul>
+						<li class="combine" ><!-- 영화 모음이 있을때 사용 -->
+							<div class="combine_box">
+								<div class="inner_box">
+									<div class="thumb_box">
+										<div class="thumb_in" style="top:3px;">
+											<img src="img/img_list_sample_01.jpg" alt="" class="thumb" />
+											<img src="img/img_thumb_line_01.png" alt="" class="line" />
+										</div>
+										<div class="thumb_in" style="top:7px;">
+											<img src="img/img_list_sample_01.jpg" alt="" class="thumb" />
+											<img src="img/img_thumb_line_01.png" alt="" class="line" />
+										</div>
+										<div class="thumb_in" style="top:11px;">									
+											<img src="img/img_list_sample_01.jpg" alt="" class="thumb" />
+											<img src="img/img_thumb_line_01.png" alt="" class="line" />
+										</div>
+									</div>
+								</div>
+								<p class="text_box">2012년 작품</p>
+							</div>
+						</li>											
+						<li>
+							<div class="thumb_box">
+								<img src="img/img_list_sample_01.jpg" alt="" class="thumb" />
+								<img src="img/img_thumb_line_01.png" alt="" class="line"/>
+							</div>
+							<p class="text_box">놀라운 대회 스타킹놀라운 대회 스타킹놀라운 대회 스타킹</p>
+						</li>
+						<li>
+							<div class="thumb_box">
+								<img src="img/img_list_sample_01.jpg" alt="" class="thumb" />
+								<img src="img/img_thumb_line_01.png" alt="" class="line"/>
+							</div>
+							<p class="text_box">놀라운 대회 스타킹놀라운 대회 스타킹놀라운 대회 스타킹</p>
+						</li>
+						<li>
+							<div class="thumb_box">
+								<img src="img/img_list_sample_01.jpg" alt="" class="thumb" />
+								<img src="img/img_thumb_line_01.png" alt="" class="line"/>
+							</div>
+							<p class="text_box">놀라운 대회 스타킹놀라운 대회 스타킹놀라운 대회 스타킹</p>
+						</li>
+						<li>
+							<div class="thumb_box">
+								<img src="img/img_list_sample_01.jpg" alt="" class="thumb" />
+								<img src="img/img_thumb_line_01.png" alt="" class="line"/>
+							</div>
+							<p class="text_box">놀라운 대회 스타킹놀라운 대회 스타킹놀라운 대회 스타킹</p>
+						</li>
+						<li>
+							<div class="thumb_box">
+								<img src="img/img_list_sample_01.jpg" alt="" class="thumb" />
+								<img src="img/img_thumb_line_01.png" alt="" class="line"/>
+							</div>
+							<p class="text_box">놀라운 대회 스타킹놀라운 대회 스타킹놀라운 대회 스타킹</p>
+						</li>					
+					</ul>		
+				</div>
+			</div>
+			<div class="game_list">
+				<h2 class="title">Game</h2>
+				<div class="list_box">
+					<ul>															
+						<li>
+							<div class="thumb"><img src="img/ico_sample_01.png" alt="" /></div>
+							<p class="text_box">Angry Birds</p>
+						</li>									
+						<li>
+							<div class="thumb"><img src="img/ico_sample_01.png" alt="" /></div>
+							<p class="text_box">Angry Birds</p>
+						</li>
+						<li>
+							<div class="thumb"><img src="img/ico_sample_01.png" alt="" /></div>
+							<p class="text_box">Angry Birds</p>
+						</li>
+					</ul>		
+				</div>
+			</div>
+		</div>
+		<!--// fav -->
+		<!-- menu -->
+		<div id="menu">
+			<ul>
+				<li class="input"><span><img src="img/menu1.png" alt=""></span></li>
+				<li class="live"><span class=""><img src="img/menu2.png" alt=""></span></li>
+				<li class="vod"><span class=""><img src="img/menu3.png" alt=""></span></li>
+				<li class="cp"><span><img src="img/menu4.png" alt=""></span></li>
+				<li class="apps"><span><img src="img/menu5.png" alt=""></span></li>
+				<li class="web"><span><img src="img/menu6.png" alt=""></span></li>
+			</ul>
+		</div>
+		<!--// menu -->
+	</div>
+	
+	<!-- container_right -->
+	<div id="container_right">
+		<!-- livetvWrap -->
+		<div id="livetvWrap">
+			<!-- livetv -->
+			<div id="livetv">	
+				<!-- ch_browser -->
+				<div id="ch_browser">
+					<!-- ch -->
+					<div class="ch_browser" style="display:;">
+						<h1 class="page_title">채널 브라우저</h1>
+						<!-- 실시간 인기 채널-->
+						<div class="ch_box">
+							<h2 class="title">실시간 인기 채널</h2>
+							<div class="list_box">
+								<ul>
+									<li><!-- 선택 또는 커서가 온되었을때 on을 넣어주세요 -->
+										<div class="thumb_box">									
+											<img src="img/img_list_sample_01.jpg" alt="" class="thumb" />
+											<img src="img/img_thumb_line_01.png" alt="" class="line"/>
+										</div>
+										<dl class="text_box">
+											<dt>6 SBS</dt>
+											<dd>놀라운 대회 스타킹놀라운 대회 스타킹놀라운 대회 스타킹</dd>
+										</dl>
+									</li>
+									<li>
+										<div class="thumb_box">									
+											<img src="img/img_list_sample_01.jpg" alt="" class="thumb" />
+											<img src="img/img_thumb_line_01.png" alt="" class="line"/>
+										</div>
+										<dl class="text_box">
+											<dt>6 SBS</dt>
+											<dd>놀라운 대회 스타킹</dd>
+										</dl>
+									</li>
+									<li>
+										<div class="thumb_box">									
+											<img src="img/img_list_sample_01.jpg" alt="" class="thumb" />
+											<img src="img/img_thumb_line_01.png" alt="" class="line"/>
+										</div>
+										<dl class="text_box">
+											<dt>6 SBS</dt>
+											<dd>놀라운 대회 스타킹</dd>
+										</dl>
+									</li>
+									<li>
+										<div class="thumb_box">									
+											<img src="img/img_list_sample_01.jpg" alt="" class="thumb" />
+											<img src="img/img_thumb_line_01.png" alt="" class="line"/>
+										</div>
+										<dl class="text_box">
+											<dt>6 SBS</dt>
+											<dd>놀라운 대회 스타킹</dd>
+										</dl>
+									</li>
+								</ul>					
+							</div>
+						</div>
+						<!-- 3D 채널-->
+						<div class="ch_box">
+							<h2 class="title">3D 채널</h2>
+							<div class="list_box type02">
+								<ul>
+									<li>
+										<div class="thumb_box">									
+											<img src="img/img_list_sample_01.jpg" alt="" class="thumb" />
+											<img src="img/img_thumb_line_01.png" alt="" class="line"/>
+										</div>
+										<dl class="text_box">
+											<dt>6 SBS</dt>
+											<dd>놀라운 대회 스타킹</dd>
+										</dl>
+									</li>
+									<li>
+										<div class="thumb_box">									
+											<img src="img/img_list_sample_01.jpg" alt="" class="thumb" />
+											<img src="img/img_thumb_line_01.png" alt="" class="line"/>
+										</div>
+										<dl class="text_box">
+											<dt>6 SBS</dt>
+											<dd>놀라운 대회 스타킹</dd>
+										</dl>
+									</li>
+									<li>
+										<div class="thumb_box">									
+											<img src="img/img_list_sample_01.jpg" alt="" class="thumb" />
+											<img src="img/img_thumb_line_01.png" alt="" class="line"/>
+										</div>
+										<dl class="text_box">
+											<dt>6 SBS</dt>
+											<dd>놀라운 대회 스타킹</dd>
+										</dl>
+									</li>
+									<li>
+										<div class="thumb_box">									
+											<img src="img/img_list_sample_01.jpg" alt="" class="thumb" />
+											<img src="img/img_thumb_line_01.png" alt="" class="line"/>
+										</div>
+										<dl class="text_box">
+											<dt>6 SBS</dt>
+											<dd>놀라운 대회 스타킹</dd>
+										</dl>
+									</li>
+								</ul>					
+							</div>
+						</div>
+					</div>				
+					<!--// ch -->				
+				</div>
+				<!--// ch_browser -->
+				<!-- epg_box -->
+				<div id="epg_box">
+					<!-- epg -->
+					<div class="epg_box">
+						<h1 class="page_title">전체 편성표</h1>
+						<div class="epg_data">
+							<div class="time_bar" ><!-- 타임바의 처음 시작 left 값은 108px 이고 최고 값은 1001px 입니다.  -->
+								<p class="time">6:37</p>
+								<img src="img/img_epg_now_line.png" alt="현재" />
+							</div>
+							<table>
+								<colgroup>
+									<col width="102px" />
+									<col width="299px" />
+									<col width="299px" />
+									<col width="293px" />
+								</colgroup>
+								<tbody>
+									<tr class="time_line">
+										<th style="height:62px;">&nbsp;</th>
+										<td>
+											<p class="time">6<span style="">pm</span></p>
+											<p class="date">2012.12.29 Sat</p>
+										</td>
+										<td>
+											<p class="time">7<span style="">pm</span></p>			
+										</td>
+										<td>
+											<p class="time">8<span style="">pm</span></p>
+										</td>
+									</tr>
+									<tr>								
+										<td colspan="4">
+										<div class="clearfix ch_list">
+											<dl class="clearfix ch_info">
+												<dt>
+													<span class="ch_num">6</span>
+													<span class="ch_name">SBS</span>
+												</dt>
+												<dd>
+													<ul class="clearfix program_list">
+														<li class="focus">
+															<p class="title">놀라운 대회 스타킹</p>
+															<p class="time">6:20</p>
+														</li>
+														<li class="now">
+															<p class="title">놀라운 대회 스타킹</p>
+															<p class="time">6:20</p>
+														</li>												
+														<li>
+															<p class="title">놀라운 대회 스타킹</p>
+															<p class="time">6:20</p>
+														</li>
+													</ul>
+												</dd>
+											</dl>									
+											<dl class="clearfix ch_info">
+												<dt>
+													<span class="ch_num">6</span>
+													<span class="ch_name">SBS</span>
+												</dt>
+												<dd>
+													<ul class="clearfix program_list">
+														<li>
+															<p class="title">놀라운 대회 스타킹</p>
+															<p class="time">6:20</p>
+														</li>
+														<li class="now">
+															<p class="title">놀라운 대회 스타킹</p>
+															<p class="time">6:20</p>
+														</li>												
+														<li>
+															<p class="title">놀라운 대회 스타킹</p>
+															<p class="time">6:20</p>
+														</li>
+													</ul>
+												</dd>
+											</dl>
+											<dl class="clearfix ch_info">
+												<dt>
+													<span class="ch_num">6</span>
+													<span class="ch_name">SBS</span>
+												</dt>
+												<dd>
+													<ul class="clearfix program_list">
+														<li>
+															<p class="title">놀라운 대회 스타킹</p>
+															<p class="time">6:20</p>
+														</li>
+														<li class="now">
+															<p class="title">놀라운 대회 스타킹</p>
+															<p class="time">6:20</p>
+														</li>												
+														<li>
+															<p class="title">놀라운 대회 스타킹</p>
+															<p class="time">6:20</p>
+														</li>
+													</ul>
+												</dd>
+											</dl>
+											<dl class="clearfix ch_info">
+												<dt>
+													<span class="ch_num">6</span>
+													<span class="ch_name">SBS</span>
+												</dt>
+												<dd>
+													<ul class="clearfix program_list">
+														<li>
+															<p class="title">놀라운 대회 스타킹</p>
+															<p class="time">6:20</p>
+														</li>
+														<li class="now">
+															<p class="title">놀라운 대회 스타킹</p>
+															<p class="time">6:20</p>
+														</li>												
+														<li>
+															<p class="title">놀라운 대회 스타킹</p>
+															<p class="time">6:20</p>
+														</li>
+													</ul>
+												</dd>
+											</dl>
+											<dl class="clearfix ch_info">
+												<dt>
+													<span class="ch_num">6</span>
+													<span class="ch_name">SBS</span>
+												</dt>
+												<dd>
+													<ul class="clearfix program_list">
+														<li>
+															<p class="title">놀라운 대회 스타킹</p>
+															<p class="time">6:20</p>
+														</li>
+	
+														<li class="now">
+															<p class="title">놀라운 대회 스타킹</p>
+															<p class="time">6:20</p>
+														</li>												
+														<li>
+															<p class="title">놀라운 대회 스타킹</p>
+															<p class="time">6:20</p>
+														</li>
+													</ul>
+												</dd>
+											</dl>
+											<dl class="clearfix ch_info">
+												<dt>
+													<span class="ch_num">6</span>
+													<span class="ch_name">SBS</span>
+												</dt>
+												<dd>
+													<ul class="clearfix program_list">
+														<li>
+															<p class="title">놀라운 대회 스타킹</p>
+															<p class="time">6:20</p>
+														</li>
+														<li class="now">
+															<p class="title">놀라운 대회 스타킹</p>
+															<p class="time">6:20</p>
+														</li>												
+														<li>
+															<p class="title">놀라운 대회 스타킹</p>
+															<p class="time">6:20</p>
+														</li>
+													</ul>
+												</dd>
+											</dl>
+											<dl class="clearfix ch_info">
+												<dt>
+													<span class="ch_num">6</span>
+													<span class="ch_name">SBS</span>
+												</dt>
+												<dd>
+													<ul class="clearfix program_list">
+														<li>
+															<p class="title">놀라운 대회 스타킹</p>
+															<p class="time">6:20</p>
+														</li>
+														<li class="now">
+															<p class="title">놀라운 대회 스타킹</p>
+															<p class="time">6:20</p>
+														</li>												
+														<li>
+															<p class="title">놀라운 대회 스타킹</p>
+															<p class="time">6:20</p>
+														</li>
+													</ul>
+												</dd>
+											</dl>
+											<dl class="clearfix ch_info">
+												<dt>
+													<span class="ch_num">6</span>
+													<span class="ch_name">SBS</span>
+												</dt>
+												<dd>
+													<ul class="clearfix program_list">
+														<li>
+															<p class="title">놀라운 대회 스타킹</p>
+															<p class="time">6:20</p>
+														</li>
+														<li class="now">
+															<p class="title">놀라운 대회 스타킹</p>
+															<p class="time">6:20</p>
+														</li>												
+														<li>
+															<p class="title">놀라운 대회 스타킹</p>
+															<p class="time">6:20</p>
+														</li>
+													</ul>
+												</dd>
+											</dl>
+											<dl class="clearfix ch_info">
+												<dt>
+													<span class="ch_num">6</span>
+													<span class="ch_name">SBS</span>
+												</dt>
+												<dd>
+													<ul class="clearfix program_list">
+														<li>
+															<p class="title">놀라운 대회 스타킹</p>
+															<p class="time">6:20</p>
+														</li>
+														<li class="now">
+															<p class="title">놀라운 대회 스타킹</p>
+															<p class="time">6:20</p>
+														</li>												
+														<li>
+															<p class="title">놀라운 대회 스타킹</p>
+															<p class="time">6:20</p>
+														</li>
+													</ul>
+												</dd>
+											</dl>
+											<dl class="clearfix ch_info">
+												<dt>
+													<span class="ch_num">6</span>
+													<span class="ch_name">SBS</span>
+												</dt>
+												<dd>
+													<ul class="clearfix program_list">
+														<li>
+															<p class="title">놀라운 대회 스타킹</p>
+															<p class="time">6:20</p>
+														</li>
+														<li class="now">
+															<p class="title">놀라운 대회 스타킹</p>
+															<p class="time">6:20</p>
+														</li>												
+														<li>
+															<p class="title">놀라운 대회 스타킹</p>
+															<p class="time">6:20</p>
+														</li>
+													</ul>
+												</dd>
+											</dl>
+		
+										</div>									
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<!--// epg -->
+				</div>
+				<!--// epg_box -->			
+			</div>
+			<!--// livetv -->
+		</div>
+		<!--// livetvWrap -->
+		<!--vodWrap -->
+		<div id="vodWrap">
+			<!-- va_list -->
+			<div class="va_list">
+				<ul class="menu">
+					<li class="select"><a href="#">All</a></li>
+					<li><a href="#">3D</a></li>
+					<li><a href="#">TV</a></li>
+					<li><a href="#">Movie</a></li>
+					<li><a href="#">Download</a></li>
+				</ul>
+				<!-- 인기 영상 -->
+				<div class="popular_list">
+					<h2 class="title">인기 영상</h2>
+					<div class="list_box">
+						<ul>
+							<li class="focus"><!-- 선택 또는 커서가 온되었을때 focus을 넣어주세요 -->
+								<div class="thumb_box">									
+									<img src="img/img_list_sample_01.jpg" alt="" class="thumb" />
+									<img src="img/img_thumb_line_01.png" alt="" class="line"/>
+								</div>
+								<p class="text_box">놀라운 대회 스타킹놀라운 대회 스타킹놀라운 대회 스타킹</p>								
+							</li>							
+							<li class="select">
+								<div class="thumb_box">									
+									<img src="img/img_list_sample_01.jpg" alt="" class="thumb" />
+									<img src="img/img_thumb_line_01.png" alt="" class="line"/>
+								</div>
+								<p class="text_box">놀라운 대회 스타킹놀라운 대회 스타킹놀라운 대회 스타킹</p>								
+							</li>
+							<li>
+								<div class="thumb_box">									
+									<img src="img/img_list_sample_01.jpg" alt="" class="thumb" />
+									<img src="img/img_thumb_line_01.png" alt="" class="line"/>
+								</div>
+								<p class="text_box">놀라운 대회 스타킹놀라운 대회 스타킹놀라운 대회 스타킹</p>								
+							</li>
+							<li>
+								<div class="thumb_box">									
+									<img src="img/img_list_sample_01.jpg" alt="" class="thumb" />
+									<img src="img/img_thumb_line_01.png" alt="" class="line"/>
+								</div>
+								<p class="text_box">놀라운 대회 스타킹놀라운 대회 스타킹놀라운 대회 스타킹</p>								
+							</li>
+						</ul>					
+					</div>
+				</div>
+				<ul class="sub_list">
+					<li class="focus"><!-- 선택 또는 커서가 온되었을때 focus을 넣어주세요 -->
+						<div class="thumb_box">									
+							<img src="img/img_list_sample_01.jpg" alt="" class="thumb" />
+							<img src="img/img_thumb_line_02.png" alt="" class="line"/>
+						</div>
+						<p class="text_box">놀라운 </p>								
+					</li>							
+					<li class="select">
+						<div class="thumb_box">									
+							<img src="img/img_list_sample_01.jpg" alt="" class="thumb" />
+							<img src="img/img_thumb_line_02.png" alt="" class="line"/>
+						</div>
+						<p class="text_box">놀라운 대회 스타킹놀라운 대회 스타킹놀라운 대회 스타킹</p>								
+					</li>
+					<li>
+						<div class="thumb_box">									
+							<img src="img/img_list_sample_01.jpg" alt="" class="thumb" />
+							<img src="img/img_thumb_line_02.png" alt="" class="line"/>
+						</div>
+						<p class="text_box">놀라운 대회 스타킹놀라운 대회 스타킹놀라운 대회 스타킹</p>								
+					</li>
+					<li>
+						<div class="thumb_box">									
+							<img src="img/img_list_sample_01.jpg" alt="" class="thumb" />
+							<img src="img/img_thumb_line_02.png" alt="" class="line"/>
+						</div>
+						<p class="text_box">놀라운 대회 스타킹놀라운 대회 스타킹놀라운 대회 스타킹</p>								
+					</li>
+					<li>
+						<div class="thumb_box">									
+							<img src="img/img_list_sample_01.jpg" alt="" class="thumb" />
+							<img src="img/img_thumb_line_02.png" alt="" class="line"/>
+						</div>
+						<p class="text_box">놀라운 대회 스타킹놀라운 대회 스타킹놀라운 대회 스타킹</p>								
+					</li>
+					<li>
+						<div class="thumb_box">									
+							<img src="img/img_list_sample_01.jpg" alt="" class="thumb" />
+							<img src="img/img_thumb_line_02.png" alt="" class="line"/>
+						</div>
+						<p class="text_box">놀라운 대회 스타킹놀라운 대회 스타킹놀라운 대회 스타킹</p>								
+					</li>
+					<li>
+						<div class="thumb_box">									
+							<img src="img/img_list_sample_01.jpg" alt="" class="thumb" />
+							<img src="img/img_thumb_line_02.png" alt="" class="line"/>
+						</div>
+						<p class="text_box">놀라운 대회 스타킹놀라운 대회 스타킹놀라운 대회 스타킹</p>								
+					</li>
+					<li>
+						<div class="thumb_box">									
+							<img src="img/img_list_sample_01.jpg" alt="" class="thumb" />
+							<img src="img/img_thumb_line_02.png" alt="" class="line"/>
+						</div>
+						<p class="text_box">놀라운 대회 스타킹놀라운 대회 스타킹놀라운 대회 스타킹</p>								
+					</li>
+					<li>
+						<div class="thumb_box">									
+							<img src="img/img_list_sample_01.jpg" alt="" class="thumb" />
+							<img src="img/img_thumb_line_02.png" alt="" class="line"/>
+						</div>
+						<p class="text_box">놀라운 대회 스타킹놀라운 대회 스타킹놀라운 대회 스타킹</p>								
+					</li>
+					<li>
+						<div class="thumb_box">									
+							<img src="img/img_list_sample_01.jpg" alt="" class="thumb" />
+							<img src="img/img_thumb_line_02.png" alt="" class="line"/>
+						</div>
+						<p class="text_box">놀라운 대회 스타킹놀라운 대회 스타킹놀라운 대회 스타킹</p>								
+					</li>					
+				</ul>
+				<div class="detail_box">
+					<h3>광해, 왕이 된 남자(2012)</h3>
+					<p>왕위를 둘러싼 권력 다툼과 당쟁으로 혼란이 극에 달한 광해군 8년. 자신의 목숨을 노리는 자들에 대한 분노와 두려움으로 점점 난폭해져 가던 왕 '광해'는... </p>
+					<ul class="photo_list">
+						<li><img src="img/img_sample_01.png" alt=""/></li>
+						<li><img src="img/img_sample_01.png" alt=""/></li>
+						<li><img src="img/img_sample_01.png" alt=""/></li>
+						<li><img src="img/img_sample_01.png" alt=""/></li>
+					</ul>
+					<div class="still_box"><img src="img/img_list_sample_01.jpg" style="" alt="" /></div>
+					<div class="btn_box">
+						<a href="#" class="wish">찜하기</a>
+						<a href="#" class="play">지금보기</a>
+					</div>
+
+				</div>
+			</div>
+			<!-- va_list -->
+		</div>
+		<!--//vodWrap -->
+		<!--appWrap -->
+		<div id="appWrap">
+			<!-- va_list -->
+			<div class="va_list">
+				<ul class="menu">
+					<li class="select">App</li>
+				</ul>
+				<!-- 인기 영상 -->
+				<div class="popular_list">
+					<h2 class="title">인기 App</h2>
+					<div class="list_box">
+						<ul>
+							<li class="focus"><!-- 선택 또는 커서가 온되었을때 focus을 넣어주세요 -->
+								<div class="thumb_box">									
+									<img src="img/test_app.jpg" alt="" class="thumb" />
+									<img src="img/img_thumb_line_01.png" alt="" class="line"/>
+								</div>
+								<p class="text_box">놀라운 대회 스타킹놀라운 대회 스타킹놀라운 대회 스타킹</p>								
+							</li>							
+							<li class="select">
+								<div class="thumb_box">									
+									<img src="img/test_app.jpg" alt="" class="thumb" />
+									<img src="img/img_thumb_line_01.png" alt="" class="line"/>
+								</div>
+								<p class="text_box">놀라운 대회 스타킹놀라운 대회 스타킹놀라운 대회 스타킹</p>								
+							</li>
+							<li>
+								<div class="thumb_box">									
+									<img src="img/test_app.jpg" alt="" class="thumb" />
+									<img src="img/img_thumb_line_01.png" alt="" class="line"/>
+								</div>
+								<p class="text_box">놀라운 대회 스타킹놀라운 대회 스타킹놀라운 대회 스타킹</p>								
+							</li>
+							<li>
+								<div class="thumb_box">									
+									<img src="img/test_app.jpg" alt="" class="thumb" />
+									<img src="img/img_thumb_line_01.png" alt="" class="line"/>
+								</div>
+								<p class="text_box">놀라운 대회 스타킹놀라운 대회 스타킹놀라운 대회 스타킹</p>								
+							</li>
+						</ul>					
+					</div>
+				</div>
+				<ul class="sub_list">
+					<li class="focus"><!-- 선택 또는 커서가 온되었을때 focus을 넣어주세요 -->
+						<div class="thumb_box">									
+							<img src="img/test_app.jpg" alt="" class="thumb" />
+							<img src="img/img_thumb_line_02.png" alt="" class="line"/>
+						</div>
+						<p class="text_box">놀라운 </p>								
+					</li>							
+					<li class="select">
+						<div class="thumb_box">									
+							<img src="img/test_app.jpg" alt="" class="thumb" />
+							<img src="img/img_thumb_line_02.png" alt="" class="line"/>
+						</div>
+						<p class="text_box">놀라운 대회 스타킹놀라운 대회 스타킹놀라운 대회 스타킹</p>								
+					</li>
+					<li>
+						<div class="thumb_box">									
+							<img src="img/test_app.jpg" alt="" class="thumb" />
+							<img src="img/img_thumb_line_02.png" alt="" class="line"/>
+						</div>
+						<p class="text_box">놀라운 대회 스타킹놀라운 대회 스타킹놀라운 대회 스타킹</p>								
+					</li>
+					<li>
+						<div class="thumb_box">									
+							<img src="img/test_app.jpg" alt="" class="thumb" />
+							<img src="img/img_thumb_line_02.png" alt="" class="line"/>
+						</div>
+						<p class="text_box">놀라운 대회 스타킹놀라운 대회 스타킹놀라운 대회 스타킹</p>								
+					</li>
+					<li>
+						<div class="thumb_box">									
+							<img src="img/test_app.jpg" alt="" class="thumb" />
+							<img src="img/img_thumb_line_02.png" alt="" class="line"/>
+						</div>
+						<p class="text_box">놀라운 대회 스타킹놀라운 대회 스타킹놀라운 대회 스타킹</p>								
+					</li>
+					<li>
+						<div class="thumb_box">									
+							<img src="img/test_app.jpg" alt="" class="thumb" />
+							<img src="img/img_thumb_line_02.png" alt="" class="line"/>
+						</div>
+						<p class="text_box">놀라운 대회 스타킹놀라운 대회 스타킹놀라운 대회 스타킹</p>								
+					</li>
+					<li>
+						<div class="thumb_box">									
+							<img src="img/test_app.jpg" alt="" class="thumb" />
+							<img src="img/img_thumb_line_02.png" alt="" class="line"/>
+						</div>
+						<p class="text_box">놀라운 대회 스타킹놀라운 대회 스타킹놀라운 대회 스타킹</p>								
+					</li>
+					<li>
+						<div class="thumb_box">									
+							<img src="img/test_app.jpg" alt="" class="thumb" />
+							<img src="img/img_thumb_line_02.png" alt="" class="line"/>
+						</div>
+						<p class="text_box">놀라운 대회 스타킹놀라운 대회 스타킹놀라운 대회 스타킹</p>								
+					</li>
+					<li>
+						<div class="thumb_box">									
+							<img src="img/test_app.jpg" alt="" class="thumb" />
+							<img src="img/img_thumb_line_02.png" alt="" class="line"/>
+						</div>
+						<p class="text_box">놀라운 대회 스타킹놀라운 대회 스타킹놀라운 대회 스타킹</p>								
+					</li>
+					<li>
+						<div class="thumb_box">									
+							<img src="img/test_app.jpg" alt="" class="thumb" />
+							<img src="img/img_thumb_line_02.png" alt="" class="line"/>
+						</div>
+						<p class="text_box">놀라운 대회 스타킹놀라운 대회 스타킹놀라운 대회 스타킹</p>								
+					</li>					
+				</ul>
+				<div class="detail_box">
+					<h3>광해, 왕이 된 남자(2012)</h3>
+					<p>왕위를 둘러싼 권력 다툼과 당쟁으로 혼란이 극에 달한 광해군 8년. 자신의 목숨을 노리는 자들에 대한 분노와 두려움으로 점점 난폭해져 가던 왕 '광해'는... </p>
+					<ul class="photo_list">
+						<li><img src="img/test_app.png" alt=""/></li>
+						<li><img src="img/test_app.png" alt=""/></li>
+						<li><img src="img/test_app.png" alt=""/></li>
+						<li><img src="img/test_app.png" alt=""/></li>
+					</ul>
+					<div class="still_box"><img src="img/img_list_sample_01.jpg" style="" alt="" /></div>
+					<div class="btn_box">
+						<a href="#" class="wish">찜하기</a>
+						<a href="#" class="play">지금보기</a>
+					</div>
+
+				</div>
+			</div>
+			<!-- va_list -->
+		</div>
+		<!--appWrap -->
+	</div>
+	<!--// container_right -->
+	
+	
+</div>
+
+</body></html>

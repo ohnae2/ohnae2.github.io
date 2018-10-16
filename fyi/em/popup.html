@@ -1,0 +1,346 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="cache-control" content="no-cache">
+<title></title>
+<link rel="stylesheet" href="css/main.css">
+<script src="js/jquery-2.0.0.min.js"></script>
+<script src="js/jquery.pub.js"></script>
+</head>
+<body>
+
+<ul id="pop_type">
+	<li class="on">공지형 (이미지)</li>						
+	<li>공지형 (이미지/텍스트)</li>						
+	<li>공지형 (텍스트)</li>						
+	<li>참여형 (이미지/버튼)</li>
+	<li>참여형 (이미지/텍스트/버튼)</li>						
+	<li>참여형 (텍스트/버튼)</li>						
+	<li>투표형 (주관식)</li>
+	<li>투표형(객관식)</li>
+	<li>투표결과 보기</li>
+	<li>투표완료</li>
+	<li>정보입력</li>
+	<li>알림창</li>
+</ul>
+
+<div id="wrap">
+	<div id="mask" style="display:block;"></div>
+	
+	<!-- 공지형(이미지) -->	
+	<div class="popup ly1 on" style="background-color:#c9dfe9;">
+		<div class="ico_event"><img src="img/ico_event.png" alt=""></div>
+		<div class="img"><img src="img/test_event.png" alt=""></div>
+	</div>	
+	<!-- 공지형(이미지/텍스트) -->	
+	<div class="popup ly2" style="background-color:#c9dfe9;">
+		<div class="ico_event"><img src="img/ico_event.png" alt=""></div>
+		<div class="img_txt"><img src="img/test_event2.png" alt=""></div>		
+		<div class="btn_prev"><strong>b</strong><b>x</b><span>3/52</span></div>
+		<div class="btn_next"><strong>a</strong><b>y</b><span>4/52</span></div>
+		<div class="txt">
+			<p>
+				구매 시 6개월 간 매월 할인가로 결제되며이후 정상가로 매월 정기결제 됩니다.(약정이 적용 되지 않는 상품으로 언제든 중도해지 가능합니다.)
+				구매 시 6개월 간 매월 할인가로 결제되며이후 정상가로 매월 정기결제 됩니다.(약정이 적용 되지 않는 상품으로 언제든 중도해지 가능합니다.)
+				구매 시 6개월 간 매월 할인가로 결제되며이후 정상가로 매월 정기결제 됩니다.(약정이 적용 되지 않는 상품으로 언제든 중도해지 가능합니다.)
+			</p>			
+		</div>
+	</div>	
+	<!-- 공지형(텍스트) -->	
+	<div class="popup ly3" style="background-color:#c9dfe9;">
+		<div class="ico_event"><img src="img/ico_event.png" alt=""></div>
+		<div class="btn_prev"><strong>b</strong><b>x</b><span>3/52</span></div>
+		<div class="btn_next"><strong>a</strong><b>y</b><span>4/52</span></div>
+		<div class="txt_big">			
+			<p>
+				구매 시 6개월 간 매월 할인가로 결제되며,이후 정상가로 매월 
+				정기결제 됩니다. (약정이 적용 되지 않는 상품으로 언제든 
+				중도해지 가능합니다.) 6개월 정기 할인으로, 봄날은 간다! 
+				구매 시 6개월 간 매월 할인가로 결제되며 이후 정상가로 매월
+				정기결제 됩니다. 6개월 정기 할인으로, 봄날은 간다! 구매 시
+				6개월 간 매월 할인가로 결제되며 이후 정상가로 매월 정기결제 
+				됩니다.구매 시 6개월 간 매월 할인가로 결제되며,이후 정상가로
+				매월 정기결제 됩니다. 구매 시 6개월 간 매월 할인가로 결제되며,
+				이후 정상가로 매월 정기결제 됩니다. 	
+				매월 정기결제 됩니다. 구매 시 6개월 간 매월 할인가로 결제되며,
+				이후 정상가로 매월 정기결제 됩니다. 	
+			</p>
+		</div>
+	</div>
+	<!-- 참여형(이미지) -->
+	<div class="popup ly4">
+		<div class="ico_event"><img src="img/ico_event.png" alt=""></div>
+		<div class="img"><img src="img/test_event1.png" alt=""></div>
+		<ul class="btn">
+			<li class="focus">참여 할래요</li>
+			<li>참여 안할래요</li>
+		</ul>
+	</div>
+	<!-- 참여형(이미지/텍스트) -->
+	<div class="popup ly5" style="background-color:#c9dfe9;">
+		<div class="ico_event"><img src="img/ico_event.png" alt=""></div>
+		<div class="img_txt"><img src="img/test_event3.png" alt=""></div>		
+		<div class="btn_prev"><strong>b</strong><b>x</b><span>3/52</span></div>
+		<div class="btn_next"><strong>a</strong><b>y</b><span>4/52</span></div>
+		<div class="txt">
+			<p>
+				구매 시 6개월 간 매월 할인가로 결제되며이후 정상가로 매월 정기결제 됩니다.(약정이 적용 되지 않는 상품으로 언제든 중도해지 가능합니다.)
+				구매 시 6개월 간 매월 할인가로 결제되며이후 정상가로 매월 정기결제 됩니다.(약정이 적용 되지 않는 상품으로 언제든 중도해지 가능합니다.)
+				구매 시 6개월 간 매월 할인가로 결제되며이후 정상가로 매월 정기결제 됩니다.(약정이 적용 되지 않는 상품으로 언제든 중도해지 가능합니다.)
+			</p>			
+		</div>
+		<ul class="btn">
+			<li class="focus">참여 할래요</li>
+			<li>참여 안할래요</li>
+		</ul>
+	</div>
+	<!-- 참여형(텍스트) -->	
+	<div class="popup ly6" style="background-color:#c9dfe9;">
+		<div class="ico_event"><img src="img/ico_event.png" alt=""></div>
+		<div class="btn_prev"><strong>b</strong><b>x</b><span>3/52</span></div>
+		<div class="btn_next"><strong>a</strong><b>y</b><span>4/52</span></div>
+		<div class="txt_big">			
+			<p>
+				구매 시 6개월 간 매월 할인가로 결제되며,이후 정상가로 매월 
+				정기결제 됩니다. (약정이 적용 되지 않는 상품으로 언제든 
+				중도해지 가능합니다.) 6개월 정기 할인으로, 봄날은 간다! 
+				구매 시 6개월 간 매월 할인가로 결제되며 이후 정상가로 매월
+				정기결제 됩니다. 6개월 정기 할인으로, 봄날은 간다! 구매 시
+				6개월 간 매월 할인가로 결제되며 이후 정상가로 매월 정기결제 
+				됩니다.구매 시 6개월 간 매월 할인가로 결제되며,이후 정상가로
+				매월 정기결제 됩니다. 구매 시 6개월 간 매월 할인가로 결제되며,
+				이후 정상가로 매월 정기결제 됩니다. 	
+				매월 정기결제 됩니다. 구매 시 6개월 간 매월 할인가로 결제되며,
+				이후 정상가로 매월 정기결제 됩니다. 	
+			</p>
+		</div>
+		<ul class="btn">
+			<li class="focus">참여하기</li>
+			<li>취소</li>
+		</ul>
+	</div>
+	<!-- 주관식 -->
+	<div class="popup ly7 key" style="background-color:#e9d7c9;">
+		<div class="ico_event"><img src="img/ico_event.png" alt=""></div>
+		<h5 class="tit">6개월 정기 할인으로, 봄날은 간다! 무제한 음악감상 금액은?</h5>
+		<div class="input_wrap">
+			 <input class="input" value="4,200원">
+			 <ul class="btn">
+				<li class="focus">참여하기</li>
+			</ul>
+		</div>
+	</div>
+	<!-- 객관식 -->
+	<div class="popup ly8" style="background-color:#e9d7c9;">
+		<div class="ico_event"><img src="img/ico_event.png" alt=""></div>
+		<div class="poll">
+			<h5>[투표] 6개월 간 매월 할인가로 결제하고 싶은 상품은?</h5>
+			<ol>
+				<li><span class="radio_box"></span>무제한 음악감상</li>
+				<li><span class="radio_box"></span>무제한 음악감상 + 스마트 120곡</li>
+				<li><span class="radio_box"></span>무제한 음악감상 + 스마트폰 무제한</li>
+				<li><span class="radio_box"></span>무제한 음악감상 + 평생소장 30곡 다운로드</li>
+			</ol>
+		</div>
+		<ul class="btn">
+			<li class="focus">참여하기</li>
+			<li>취소</li>
+		</ul>
+	</div>
+	<!-- 결과 보기 -->
+	<div class="popup ly9" style="background-color:#e9d7c9;">
+		<div class="ico_event"><img src="img/ico_event.png" alt=""></div>
+		<div class="poll">
+			<h5>[결과 보기]</h5>
+			<ol class="result">
+				<li>1) 무제한 음악감상<b>2,234 명</b></li>
+				<li>2) 무제한 음악감상 + 스마트 120곡<b>1,524 명</b></li>
+				<li>3) 무제한 음악감상 + 스마트폰 무제한<b>1,134 명</b></li>
+				<li>4) 무제한 음악감상 + 평생소장 30곡 다운로드<b>734 명</b></li>
+			</ol>
+		</div>
+		<ul class="btn">
+			<li class="focus">참여하기</li>
+			<li>취소</li>
+		</ul>
+	</div>
+	<!-- 투표완료 -->	
+	<div class="popup ly10 alert" style="background-color:#c9dfe9;">
+		<h5 class="alert">투표가 완료 되었습니다.</h5>
+		<ul class="btn">
+			<li class="focus">확인</li>
+		</ul>
+	</div>	
+	<!-- 정보 입력 -->
+	<div class="popup ly11 key" style="background-color:#ffd9b7;">
+		<div class="ico_event"><img src="img/ico_event.png" alt=""></div>
+		<div class="poll_sub">
+			<p>
+				<span class="tit_s">이름</span> <input class="input" value="홍길동" style="width:282px;">				
+			</p>
+			<p>
+				<span class="tit_s">전화번호</span>
+				<input class="input" value="010" style="width:70px;"><span class="dot"></span>
+				<input class="input" value="7588" style="width:70px;"><span class="dot"></span>
+				<input class="input" value="3636" style="width:70px;">	
+			</p>	
+		</div>
+		<ul class="btn">
+			<li class="focus">등록하기</li>
+		</ul>
+	</div>
+	<!-- 알림창 -->	
+	<div class="popup ly12 alert" style="background-color:#ddc9e9;">
+		<div class="ico_event"><img src="img/ico_event.png" alt=""></div>
+		<h5 class="alert">이벤트 참여가 완료되었습니다.</h5>
+		<ul class="btn">
+			<li class="focus">확인</li>
+		</ul>
+	</div>
+	
+	
+	<div id="pop_keypad" class="key1">
+		<ul class="key1">
+			<li>ㄱ</li>
+			<li>ㄲ</li>
+			<li>ㄴ</li>
+			<li>ㄷ</li>
+			<li>ㄸ</li>
+			<li>ㅏ</li>
+			<li>ㅑ</li>
+			<li>ㅓ</li>
+			<li>ㅕ</li>
+			
+			<li>ㄹ</li>
+			<li>ㅁ</li>
+			<li>ㅂ</li>
+			<li>ㅃ</li>
+			<li>ㅅ</li>
+			<li>ㅗ</li>
+			<li>ㅛ</li>
+			<li>ㅜ</li>
+			<li>ㅠ</li>
+			
+			<li>ㅆ</li>
+			<li>ㅇ</li>
+			<li>ㅈ</li>
+			<li>ㅉ</li>
+			<li>ㅊ</li>
+			<li>ㅡ</li>
+			<li>ㅣ</li>
+			<li>ㅐ</li>
+			<li>ㅔ</li>
+			
+			<li>ㅋ</li>
+			<li>ㅌ</li>
+			<li>ㅍ</li>
+			<li>ㅎ</li>
+			<li></li>
+			<li>ㅒ</li>
+			<li>ㅖ</li>
+			<li></li>
+			<li></li>
+			
+			<li class="trans"><span class="on">한</span>/<span>영</span>/<span>기호</span></li>
+			<li class="space"></li>
+			<li class="clear"></li>
+		</ul>			
+		<ul class="key2">
+			<li>A</li>
+			<li>B</li>
+			<li>C</li>
+			<li>D</li>
+			<li>E</li>
+			<li>F</li>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			
+			<li>G</li>
+			<li>H</li>
+			<li>I</li>
+			<li>J</li>
+			<li>K</li>
+			<li>L</li>
+			<li>4</li>
+			<li>5</li>
+			<li>6</li>
+			
+			<li>M</li>
+			<li>N</li>
+			<li>O</li>
+			<li>P</li>
+			<li>Q</li>
+			<li>R</li>
+			<li>7</li>
+			<li>8</li>
+			<li>9</li>
+			
+			<li>S</li>
+			<li>T</li>
+			<li>U</li>
+			<li>V</li>
+			<li>W</li>
+			<li>X</li>
+			<li>Y</li>
+			<li>Z</li>
+			<li>0</li>
+			
+			<li class="trans"><span>한</span>/<span class="on">영</span>/<span>기호</span></li>
+			<li class="space"></li>
+			<li class="clear"></li>
+		</ul>
+		<ul class="key3">
+			<li>.</li>
+			<li>,</li>
+			<li>@</li>
+			<li>_</li>
+			<li>/</li>
+			<li>^</li>
+			<li>~</li>
+			<li>?</li>
+			<li>!</li>
+			
+			<li>'</li>
+			<li>"</li>
+			<li>(</li>
+			<li>)</li>
+			<li>-</li>
+			<li>:</li>
+			<li>;</li>
+			<li>+</li>
+			<li>&amp;</li>
+			
+			<li>%</li>
+			<li>*</li>
+			<li>=</li>
+			<li>&lt;</li>
+			<li>&gt;</li>
+			<li>$</li>
+			<li>[</li>
+			<li>]</li>
+			<li>\</li>
+			
+			<li>}</li>
+			<li>{</li>
+			<li>#</li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			
+			<li class="trans"><span>한</span>/<span>영</span>/<span class="on">기호</span></li>
+			<li class="space"></li>
+			<li class="clear"></li>
+		</ul>
+	</div>
+	
+	
+</div>
+<div id="bg"><img src="img/bg.png" alt=""></div>
+
+</body>
+</html>

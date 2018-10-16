@@ -1,0 +1,100 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>:: Html Guide ::</title>
+<link rel="stylesheet" href="../css/guide/design.css" type="text/css" media="all">
+<link rel="stylesheet" href="../css/print.css" type="text/css" media="print">
+<script type="text/javascript" src="../js/common.js"></script>
+<script type="text/javascript" src="../js/flashX.js"></script>
+</head>
+<body>
+<div class="writer">차세대전산 TFT / kaisa</div>
+<div id="Container">
+	<div id="Top">
+		<ul>
+			<li><a href="list.html">목차</a></li>
+			<li><a href="web01.html">문서구조</a></li>
+			<li class="on">디자인 요소</li>
+		</ul>
+	</div>
+	<h1><img src="../images/guide/title.jpg" alt="LIG WEBSTYLE GUIDE"></h1>
+	<div id="titleTle">
+		<ul class="guideTab">		
+			<li><a href="design01.html">아이콘</a></li>
+			<li><a href="design02.html">블릿</a></li>
+			<li><a href="design03.html">버튼</a></li>
+			<li class="on">레어아웃</li>
+			<li><a href="design05.html">플래시</a></li>
+			<li><a href="design06.html">폰트</a></li>
+			<li><a href="design07.html">테이블</a></li>
+			<li><a href="design08.html">Input</a></li>
+			<li><a href="design09.html">Select</a></li>
+			<li><a href="design10.html">Radio</a></li>
+			<li><a href="design11.html">CheckBox</a></li>
+			<li><a href="design12.html">TextArea</a></li>
+			<li><a href="design13.html">그리드</a></li>
+			<li><a href="design14.html">탭메뉴</a></li>
+		</ul>
+	</div>
+	<ol>
+		<li>
+			<h2>레이아웃 및 HTML 사용법</h2>
+			<p>- 레이아웃 및 소스가독성 검사를 해보자(파이어폭스3의 파이어버그툴/IE Developer Toolbar 를 이용)</p>
+			<p>- DIV 레어아웃사용(프로젝트 특성상 엘레먼트에 id 사용금지) </p>
+			<p>- h1,h2,h3 헤드타이틀순서</p>
+			<p>- ul 목록 ol 순서</p>
+			<p>- dl,dt,dd 정의</p>
+			<p>- 핵을 사용하지 않고 파이어폭스,오페라,사파리,익스플로러5,6,7 에 디자인이 깨지지 않음</p>
+			<div class="code">&lt;div <span class="Fred">id</span>=&quot;Container&quot;&gt;<span class="Fred">id = 사용금지코드</span><br>
+				<span class="pl20">&nbsp;</span>&lt;div id=&quot;top&quot;&gt;<br>
+				<span class="pl40">&nbsp;</span>&lt;h1&gt;logo&lt;/h1&gt;<br>
+				<span class="pl20">&nbsp;</span>&lt;/div&gt;<br>
+				<span class="pl20">&nbsp;</span>&lt;div class=&quot;Left&quot;&gt;<br>
+				<span class="pl40">&nbsp;</span>&lt;h2&gt;Menu Title&lt;/h2&gt;<br>
+				<span class="pl40">&nbsp;</span>&lt;ul&gt;<br>
+				<span class="pl60">&nbsp;</span>&lt;li&gt;list&lt;/li&gt;<br>
+				<span class="pl60">&nbsp;</span>&lt;li&gt;list&lt;/li&gt;<br>
+				<span class="pl60">&nbsp;</span>&lt;li&gt;list&lt;/li&gt;<br>
+				<span class="pl40">&nbsp;</span>&lt;/ul&gt;<br>
+				<span class="pl20">&nbsp;</span>&lt;/div&gt;<br>
+				<span class="pl20">&nbsp;</span>&lt;div class=&quot;Content&quot;&gt;<br>
+				<span class="pl40">&nbsp;</span>&lt;h3&gt;Content Title&lt;/h3&gt;<br>
+				<span class="pl40">&nbsp;</span>&lt;ol&gt;<br>
+				<span class="pl60">&nbsp;</span>&lt;li&gt;list&lt;/li&gt;<br>
+				<span class="pl60">&nbsp;</span>&lt;li&gt;list&lt;/li&gt;<br>
+				<span class="pl60">&nbsp;</span>&lt;li&gt;list&lt;/li&gt;<br>
+				<span class="pl40">&nbsp;</span>&lt;/ol&gt;<br>
+				<span class="pl20">&nbsp;</span>&lt;/div&gt;<br>
+				<span class="pl20">&nbsp;</span>&lt;div class=&quot;Bottom&quot;&gt;Copyright&lt;/div&gt;<br>
+				&lt;/div&gt;
+			</div>
+		</li>
+		<li>
+			<h2>CSS</h2>
+			<p>- 한줄표기방법으로 작성</p>
+			<div class="code">
+				<p>@import &quot;../common.css&quot;;</p>
+				<p>h3	{margin:5px 0 0 0; font-weight:bold; color:#09398d; background:url(../../images/common/blet_circle.gif) no-repeat 2px 0; padding:1px 0 6px 18px;}<br>
+					ul		{list-style:none;}<br>
+					ol		{list-style:none; padding:0; margin:0;}<br>
+					body	{background-color:#fff;}</p>
+				<p>table.dataT				{border-left:1px solid #fff; border-right:1px solid #fff;}</p>
+				<p>.ContentWrap					{clear:both; width:979px; overflow: auto; margin:0;} <br>
+					.ContentWrap	.ContentMenu	{padding:70px 0 20px 4px; width:155px; overflow:auto; float:left; background:url(../../images/common/visual_bbs.jpg) no-repeat left top;}<br>
+					.ContentWrap	.ContentMenu	ul	li	{background:url(../../images/common/blet_depth01.gif) no-repeat 4px 7px; padding-left:13px; line-height:180%;}<br>
+					.ContentWrap	.Content		{float:right; width:806px; oveflow:auto; padding-bottom:50px;}</p>
+				<p>.ContentWrap	.ContentMenu	ol		{padding:0 0 10px 0;}<br>
+					.ContentWrap	.ContentMenu	ol	li	{background:url(../../images/common/blet_depth02.gif) no-repeat 6px 6px; padding-left:12px; line-height:140%;}</p>
+				<p>.ContentWrap	.ContentMenu	.greenMenu		{margin-top:30px; width:100%; background:url(../../images/common/left_bottomBg.gif) no-repeat right top; padding:7px 0;}<br>
+					.ContentWrap	.ContentMenu	.greenMenu	li 	{background:url(../../images/common/blet_green.gif) no-repeat 0 6px; margin-left:-10px;}</p>
+				<p>.ContentWrap	.ContentMenu	.greenMenu	a:link,<br>
+					.ContentWrap	.ContentMenu	.greenMenu	a:visited,<br>
+					.ContentWrap	.ContentMenu	.greenMenu	a:active	{color:#4b6e3a; text-decoration:none;}<br>
+					.ContentWrap	.ContentMenu	.greenMenu	a:hover		{color:#98bf85; text-decoration:none;}<br>
+				</p>
+			</div>
+		</li>
+	</ol>	
+</div>
+</body>
+</html>

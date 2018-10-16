@@ -1,0 +1,172 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<link rel="stylesheet" href="css/common.css">
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/jquery.rotate.js"></script>
+<script>
+$(function(){
+	var rotation = function (){
+		$("#loading img").rotate({
+			angle:0,
+			animateTo:-360,
+			callback: rotation,
+			duration:1500,
+			easing:function (x,t,b,c,d){
+				return c*(t/d)+b;
+			}
+		});
+	}
+	rotation();
+});
+</script>
+</head>
+<body>
+<div id="body">
+
+<div id="loading">
+	<img src="img/home/loading.png" alt="">
+	<p>loading...</p>
+</div>
+
+
+<div id="wrap">	
+	<div id="header">
+		<div class="time">
+			<span class="am on"><img src="img/time/am.png" alt=""></span>
+			<span class="pm"><img src="img/time/pm.png" alt=""></span>			
+			<ul>
+				<li><img src="img/time/none.png" alt=""></li>
+				<li><img src="img/time/7.png" alt=""></li>
+				<li><img src="img/time/dot.png" alt=""></li>
+				<li><img src="img/time/3.png" alt=""></li>
+				<li><img src="img/time/6.png" alt=""></li>
+			</ul>
+		</div>
+		<div class="weather">		
+			<h1>
+				<b>New York</b>
+				<strong>Sunny &amp; Cloudy</strong>
+				<span>See more</span>
+			</h1>
+			<p><img src="img/weather/01.png" alt=""> <b>15</b><sup>o</sup></p>
+		</div>
+	</div>
+	<!-- contentWrap -->
+	<div id="contentWrap">
+		<div id="content">	
+					
+			<!-- store -->
+			<div id="store">			
+				<div class="menu">
+					<ul>
+						<li class="on"><span>Entertainment</span></li>
+						<li><span>Life Style</span></li>
+						<li><span>Car</span></li>
+						<li><span>Music</span></li>
+					</ul>
+				</div>
+				<div id="iscroll_store">				
+					<div class="list">
+						<dl>
+							<dt><span class="down btn_pop" title="pop_store"></span><span class="mask"></span><img src="img/test/list_1.png" alt=""></dt>
+							<dd>Vlanoise</dd>
+						</dl>
+						<dl>
+							<dt><span class="link btn_pop" title="pop_store"></span><span class="mask"></span><img src="img/test/list_2.png" alt=""></dt>
+							<dd>N&amp;S</dd>
+						</dl>
+						<dl>
+							<dt><span class="down btn_pop" title="pop_store"></span><span class="mask"></span><img src="img/test/list_3.png" alt=""></dt>
+							<dd>Accuweather</dd>
+						</dl>
+						<dl>
+							<dt><span class="link btn_pop" title="pop_store"></span><span class="mask"></span><img src="img/test/list_4.png" alt=""></dt>
+							<dd>Absolute Radio</dd>
+						</dl>
+						<dl>
+							<dt><span class="link btn_pop" title="pop_store"></span><span class="mask"></span><img src="img/test/list_5.png" alt=""></dt>
+							<dd>Baeble</dd>
+						</dl>
+						<dl>
+							<dt><span class="link btn_pop" title="pop_store"></span><span class="mask"></span><img src="img/test/list_6.png" alt=""></dt>
+							<dd>Euro sport</dd>
+						</dl>
+						<dl>
+							<dt><span class="link btn_pop" title="pop_store"></span><span class="mask"></span><img src="img/test/list_7.png" alt=""></dt>
+							<dd>Jobsite</dd>
+						</dl>
+						<dl>
+							<dt><span class="link btn_pop" title="pop_store"></span><span class="mask"></span><img src="img/test/list_8.png" alt=""></dt>
+							<dd>UNO TV</dd>
+						</dl>
+						<dl>
+							<dt><span class="link"></span><span class="mask"></span><img src="img/test/list_5.png" alt=""></dt>
+							<dd>Baeble</dd>
+						</dl>
+						<dl>
+							<dt><span class="link"></span><span class="mask"></span><img src="img/test/list_6.png" alt=""></dt>
+							<dd>Euro sport</dd>
+						</dl>
+						<dl>
+							<dt><span class="link"></span><span class="mask"></span><img src="img/test/list_7.png" alt=""></dt>
+							<dd>Jobsite</dd>
+						</dl>
+						<dl>
+							<dt><span class="link"></span><span class="mask"></span><img src="img/test/list_5.png" alt=""></dt>
+							<dd>Baeble</dd>
+						</dl>
+						<dl>
+							<dt><span class="link"></span><span class="mask"></span><img src="img/test/list_6.png" alt=""></dt>
+							<dd>Euro sport</dd>
+						</dl>
+						<dl>
+							<dt><span class="link"></span><span class="mask"></span><img src="img/test/list_7.png" alt=""></dt>
+							<dd>Jobsite</dd>
+						</dl>
+						<dl>
+							<dt><span class="link"></span><span class="mask"></span><img src="img/test/list_8.png" alt=""></dt>
+							<dd>UNO TV</dd>
+						</dl>
+						<dl>
+							<dt><span class="link"></span><span class="mask"></span><img src="img/test/list_5.png" alt=""></dt>
+							<dd>Baeble</dd>
+						</dl>
+						<dl>
+							<dt><span class="link"></span><span class="mask"></span><img src="img/test/list_6.png" alt=""></dt>
+							<dd>Euro sport</dd>
+						</dl>
+						<dl>
+							<dt><span class="link"></span><span class="mask"></span><img src="img/test/list_7.png" alt=""></dt>
+							<dd>Jobsite</dd>
+						</dl>
+						<dl>
+							<dt><span class="link"></span><span class="mask"></span><img src="img/test/list_8.png" alt=""></dt>
+							<dd>UNO TV</dd>
+						</dl>
+						<span class="scrollbar"></span>
+					</div>				
+				</div>
+					
+			</div>
+			<!--// store -->
+		</div>
+	</div>
+	<!-- contentWrap -->
+	<div id="footer">
+		<ul>
+			<li class="home"><span class="on"></span></li>
+			<li class="media"><span></span></li>
+			<li class="vehicle"><span></span></li>
+			<li class="apps"><span></span></li>
+			<li class="store"><span></span></li>
+		</ul>
+	</div>
+</div>
+
+
+</div>
+</body>
+</html>

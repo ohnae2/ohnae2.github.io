@@ -1,0 +1,116 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>:: Html Guide ::</title>
+<link rel="stylesheet" href="../css/guide/guide.css" type="text/css" media="all">
+<link rel="stylesheet" href="../css/print.css" type="text/css" media="print">
+<script type="text/javascript" src="../js/common.js"></script>
+<script type="text/javascript" src="../js/flashX.js"></script>
+</head>
+<body>
+<div class="writer">차세대전산 TFT / kaisa</div>
+<div id="Container">
+	<div id="Top">
+		<ul>
+			<li><a href="list.html">목차</a></li>
+			<li class="on">문서구조</li>
+			<li><a href="design01.html">디자인 요소</a></li>
+		</ul>
+	</div>
+	<h1><img src="../images/guide/title.jpg" alt="LIG WEBSTYLE GUIDE"></h1>
+	<div id="titleTle">
+		<ul class="guideTab">
+			<li class="on">웹표준이란?</li>
+			<li><a href="web02.html">HTML구조</a></li>
+			<li><a href="web03.html">파일구조</a></li>
+		</ul>
+	</div>
+	<ol>
+		<li>
+			<h2>소스는 최대한 간결하게...</h2>
+			<div class="code">
+				웹표준 방식의 CSS Layout은 콘텐츠가 논리적으로 선형화됩니다.<br>
+				기존 table방식의 코딩은 가독성이 떨어집니다. 긴 table방식의 소스를 보고 다른 작업자가 내용을 이해하긴 불가능할것입니다.<br>
+				웹표준 방식은 html구조에 정한 규칙이 있으며 소스가 매우 간략하여 이해하기 편리합니다.<br>
+				
+								
+				<p class="Fblack pt20 pb20 b">ex) 테이블을 이용한 비표준 코딩</p>
+				
+				<p class="Forange pl20">
+					&lt;table width=&quot;100&quot; border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;<br>
+					<span class="pl20"></span>&lt;tr&gt;<br>
+					<span class="pl40"></span>&lt;td width=&quot;100&quot; height=&quot;20&quot; style=&quot;padding-left:10px; border-bottom:1px solid #eee;&quot;&gt;&lt;img src=&quot;images/icon.gif&quot; height=&quot;10&quot; width=&quot;10&quot; alt=&quot;icon&quot;&gt; 메뉴1&lt;/td&gt;<br>
+					<span class="pl20"></span>&lt;/tr&gt;<br>
+					<span class="pl20"></span>&lt;tr&gt;<br>
+					<span class="pl40"></span>&lt;td width=&quot;100&quot; height=&quot;20&quot; style=&quot;padding-left:10px; border-bottom:1px solid #eee;&quot;&gt;&lt;img src=&quot;images/icon.gif&quot; height=&quot;10&quot; width=&quot;10&quot; alt=&quot;icon&quot;&gt; 메뉴2&lt;/td&gt;<br>
+					<span class="pl20"></span>&lt;/tr&gt;<br>
+					<span class="pl20"></span>&lt;tr&gt;<br>
+					<span class="pl40"></span>&lt;td width=&quot;100&quot; height=&quot;20&quot; style=&quot;padding-left:10px; border-bottom:1px solid #eee;&quot;&gt;&lt;img src=&quot;images/icon.gif&quot; height=&quot;10&quot; width=&quot;10&quot; alt=&quot;icon&quot;&gt; 메뉴3&lt;/td&gt;<br>
+					<span class="pl20"></span>&lt;/tr&gt;<br>
+					<span class="pl20"></span>&lt;tr&gt;<br>
+					<span class="pl40"></span>&lt;td width=&quot;100&quot; height=&quot;20&quot; style=&quot;padding-left:10px; border-bottom:1px solid #eee;&quot;&gt;&lt;img src=&quot;images/icon.gif&quot; height=&quot;10&quot; width=&quot;10&quot; alt=&quot;icon&quot;&gt; 메뉴4&lt;/td&gt;<br>
+					<span class="pl20"></span>&lt;/tr&gt;<br>
+					<span class="pl20"></span>&lt;tr&gt;<br>
+					<span class="pl40"></span>&lt;td width=&quot;100&quot; height=&quot;20&quot; style=&quot;padding-left:10px; border-bottom:1px solid #eee;&quot;&gt;&lt;img src=&quot;images/icon.gif&quot; height=&quot;10&quot; width=&quot;10&quot; alt=&quot;icon&quot;&gt; 메뉴5&lt;/td&gt;<br>
+					<span class="pl20"></span>&lt;/tr&gt;<br>
+					<span class="pl20"></span>&lt;tr&gt;<br>
+					<span class="pl40"></span>&lt;td width=&quot;100&quot; height=&quot;20&quot; style=&quot;padding-left:10px; border-bottom:1px solid #eee;&quot;&gt;&lt;img src=&quot;images/icon.gif&quot; height=&quot;10&quot; width=&quot;10&quot; alt=&quot;icon&quot;&gt; 메뉴6&lt;/td&gt;<br>
+					<span class="pl20"></span>&lt;/tr&gt;<br>
+					<span class="pl20"></span>&lt;tr&gt;<br>
+					<span class="pl40"></span>&lt;td width=&quot;100&quot; height=&quot;20&quot; style=&quot;padding-left:10px; border-bottom:1px solid #eee;&quot;&gt;&lt;img src=&quot;images/icon.gif&quot; height=&quot;10&quot; width=&quot;10&quot; alt=&quot;icon&quot;&gt; 메뉴7&lt;/td&gt;<br>
+					<span class="pl20"></span>&lt;/tr&gt;<br>
+					<span class="pl20"></span>&lt;tr&gt;<br>
+					<span class="pl40"></span>&lt;td width=&quot;100&quot; height=&quot;20&quot; style=&quot;padding-left:10px; border-bottom:1px solid #eee;&quot;&gt;&lt;img src=&quot;images/icon.gif&quot; height=&quot;10&quot; width=&quot;10&quot; alt=&quot;icon&quot;&gt; 메뉴8&lt;/td&gt;<br>
+					<span class="pl20"></span>&lt;/tr&gt;<br>
+					<span class="pl20"></span>&lt;tr&gt;<br>
+					<span class="pl40"></span>&lt;td width=&quot;100&quot; height=&quot;20&quot; style=&quot;padding-left:10px; border-bottom:1px solid #eee;&quot;&gt;&lt;img src=&quot;images/icon.gif&quot; height=&quot;10&quot; width=&quot;10&quot; alt=&quot;icon&quot;&gt; 메뉴9&lt;/td&gt;<br>
+					<span class="pl20"></span>&lt;/tr&gt;<br>
+					<span class="pl20"></span>&lt;tr&gt;<br>
+					<span class="pl40"></span>&lt;td width=&quot;100&quot; height=&quot;20&quot; style=&quot;padding-left:10px; border-bottom:1px solid #eee;&quot;&gt;&lt;img src=&quot;images/icon.gif&quot; height=&quot;10&quot; width=&quot;10&quot; alt=&quot;icon&quot;&gt; 메뉴10&lt;/td&gt;<br>
+					<span class="pl20"></span>&lt;/tr&gt;<br>
+					&lt;/table&gt;
+				</p>
+				<p class="Fblack pt20 pb20 b">ex) 웹표준 코딩</p>
+				<p class="Fgreen pl20">
+					.menu li {width:100px; border-bottom:1px solid #eee; background:url(images/icon.gif) no-repeat 1px 3px; padding-left:10px; margin-top:5px;} &lt;== CSS 클래스사용	
+					<br>
+					&lt;ul class=&quot;menu&quot;&gt;<br>
+					<span class="pl20"></span>&lt;li&gt;메뉴1&lt;/li&gt;<br>
+					<span class="pl20"></span>&lt;li&gt;메뉴2&lt;/li&gt;<br>
+					<span class="pl20"></span>&lt;li&gt;메뉴3&lt;/li&gt;<br>
+					<span class="pl20"></span>&lt;li&gt;메뉴4&lt;/li&gt;<br>
+					<span class="pl20"></span>&lt;li&gt;메뉴5&lt;/li&gt;<br>
+					<span class="pl20"></span>&lt;li&gt;메뉴6&lt;/li&gt;<br>
+					<span class="pl20"></span>&lt;li&gt;메뉴7&lt;/li&gt;<br>
+					<span class="pl20"></span>&lt;li&gt;메뉴8&lt;/li&gt;<br>
+					<span class="pl20"></span>&lt;li&gt;메뉴9&lt;/li&gt;<br>
+					<span class="pl20"></span>&lt;li&gt;메뉴10&lt;/li&gt;<br>
+					&lt;/ul&gt;
+				</p>
+				<br>
+			</div>
+		</li>
+		<li>
+			<h2>유지보수</h2>
+			<div class="code">
+				현재 대형포탈 제작자들은 웹표준 방식을 준수하여 개발하고 있으나 대부분의 홈페이지 제작자들은 웹표준을 준수하지 않고
+				찍어내기만 급급하기때문에 유지보수가 쉽지 않습니다.<br>
+				나중엔 또 다시 제작비용을 지불하며 다시개발을 해야하는 상황이 올수도 있는것입니다.<br>
+				하지만 웹표준방식은 구조와 디자인이 분리됨에 따라 수천수만개의 html파일을 매번 수정하는 것이 아니라<br>
+				CSS만 수정하더라도 모든 페이지에 적용할수 있다는 것 입니다.<br>
+				CSS에 능숙해진다면 웬만한 수정에는 겁내지 않아도 된다는것을 알게됩니다. <br>
+			</div>
+		</li>
+		<li>
+			<h2>브라우저 및 시스템환경에 따른 접근성</h2>
+			<div class="code">
+				브라우저의 특성과는 상관없이 모든브라우저에서 인식하는 예약어로 작성하게됩니다<br>
+				익스플로어에만 적용되는 예약어의 사용을 배제하였기에<br>
+				익스플로어6버전과 7버전외에도 파이어폭스/사파리/오페라에서도 동일한 디자인과 동일한 결과를 보이게 됩니다.<br>
+				현재 전세계적으로는 15% 국내의 경우는 10%정도가 익스플로어가 아닌 타 브라우저을 사용한다고 합니다.<br>
+				이를 준비하여 모든 브라우저의 일관성이 수월한 웹표준방식이 불가피합니다.</div>
+		</li>
+	</ol>
+</div>
+</body>
+</html>

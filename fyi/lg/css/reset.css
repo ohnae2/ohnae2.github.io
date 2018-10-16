@@ -1,0 +1,14 @@
+@charset "utf-8";
+body {font-size:20px; color:#888; line-height:24px;}
+li {list-style:none;}
+ul,li,h1,h2,h3,h4,h5,h6,ol,dl,dt,dd,p,body,fieldset,html,sup {margin:0; padding:0;}
+h1,h2,h3,h4,h5,th {font-weight:normal; font-size:20px;}
+b,strong {font-weight:normal;}
+img {border:0; vertical-align:middle;}
+a{outline:0; text-decoration:none;}
+button	{outline:0;}
+a:link{color:#333;}
+a:visited{color:#888;}
+a:hover{color:#666;}
+a:active{color:#333;}
+html,body {height:100%;}

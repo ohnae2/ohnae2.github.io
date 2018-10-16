@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+#encode {width:100%; overflow:hidden; clear:both;}
+
+/* 현재 페이지만 셀렉트 허용 */
+span,div,img,body {
+    -moz-user-select: text;
+    -ms-user-select: text;
+    -webkit-user-select: text;
+    user-select: text;
+}
+
+/*
+encode
+*/
+.encodeT {width:100%; clear:both; margin-top:10px;}
+.encodeT th {border:1px solid #ddd; padding:5px 10px; background:#eee;}
+.encodeT td {border:1px solid #ddd; padding:5px 10px;}
+.encodeT td:nth-child(1) {font-weight:bold; color:#000;}
+.encodeT tr:nth-child(2n) {background:#fefefe;}

@@ -1,0 +1,406 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="cache-control" content="no-cache">
+<title></title>
+<link rel="stylesheet" href="css/store.css">
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.pub.js"></script>
+</head>
+<body>
+
+<div id="help"></div>
+<div id="top"></div>
+<div id="mask"></div>
+<div id="login" class="pop_type">
+	<span class="close"></span>
+	<h1>LOGIN</h1>		
+	<fieldset>
+		<legend>LOGIN</legend>			
+		<input type="text" title="사용자 ID">
+		<input type="password" title="비밀번호">			
+		<button class="submit">로그인</button>
+	</fieldset>	
+	<p class="error">잘못된 비밀번호입니다</p>
+	<p>아이디,비밀번호를 찾고 계신가요?</p>
+	<button>사용자ID 찾기</button>
+	<button>비밀번호 찾기</button>
+	<p>회원가입하시겠습니까?</p>
+	<button>사용자 등록하기</button>
+	<button>개발자 등록하기</button>
+</div>
+<div id="join" class="pop_type">
+	<span class="close"></span>
+	<h1>JOIN</h1>		
+	<fieldset>
+		<legend>JOIN</legend>			
+		<input class="ok" type="text" title="사용자 ID">
+		<p><span class="ok">사용할 수 있는 아이디입니다</span></p>
+		<input class="no" type="text" title="Email">
+		<p><span class="no">잘못된 메일형식입니다</span></p>
+		<input type="password" title="비밀번호 입력">
+		<p>비밀번호를 입력해주세요</p>
+		<input type="password" title="비밀번호 확인">
+		<p>비밀번호를 확인해주세요</p>		
+		<p class="tr"><input type="checkbox" class="checkbox"> 약관동의</p>
+		<p class="btn"><button type="submit" class="submit">등록하기</button></p>
+	</fieldset>	
+	
+	<p>개발자로 등록하시겠습니까?</p>
+	<button>개발자 등록하기</button>
+</div>
+<!--container-->	
+<div id="container">
+	<!--header-->	
+	<div id="header">
+		<h1><b>IWA</b> Store</h1>
+		<fieldset>
+			<legend>search,login</legend>
+			<input type="text" title="검색어를 입력하세요" value="">
+			<button type="submit">검색</button>	
+		</fieldset>	
+		<ul id="global"></ul>
+	</div>
+	<!--content-->	
+	<div id="content">
+		<!--nav-->	
+		<div id="nav">				
+			<ul class="menu">
+				<li class="on"><span>나의 문의내역</span></li>
+				<li><span>App 등록하기</span></li>
+				<li><span>문의 하기</span></li>
+				<li><span>개발자 리소스</span></li>
+			</ul>
+			
+			<ul class="banner">
+				<li><img src="img/test/ab1.png" alt=""></li>
+				<li><img src="img/test/ab2.png" alt=""></li>
+				<li><img src="img/test/ab3.png" alt=""></li>
+			</ul>
+			<h3>인기 유료 <span class="more"><button>전체보기</button></h3>
+			<ol class="list">
+				<li><b>1</b><p><strong>아스팔트 7: 히트아스팔트 7: 히트</strong><span>GAMELOFT</span></p></li>
+				<li><b>2</b><p><strong>아스팔트 7: 히트</strong><span>GAMELOFT</span></p></li>
+				<li><b>3</b><p><strong>아스팔트 7: 히트</strong><span>GAMELOFT</span></p></li>
+				<li><b>4</b><p><strong>아스팔트 7: 히트</strong><span>GAMELOFT</span></p></li>
+				<li><b>5</b><p><strong>아스팔트 7: 히트</strong><span>GAMELOFT</span></p></li>
+			</ol>
+			
+			<h3>카테고리</h3>
+			<ul class="list">
+				<li>건강 및 운동</li>
+				<li>교육</li>
+				<li>교통</li>
+				<li>금융</li>
+				<li>날씨</li>
+				<li>뉴스 및 잡지</li>
+				<li>데코레이션</li>
+				<li>도구</li>
+				<li>도서 및 참고자료</li>
+				<li>라이브 배경화면</li>
+				<li>라이브러리 및 데모</li>
+				<li>라이프스타일</li>
+				<li>만화</li>
+				<li>미디어 및 동영상</li>
+				<li>비즈니스</li>
+				<li>사진</li>
+				<li>생산성</li>
+				<li>소셜 콘텐츠</li>
+				<li>쇼핑</li>
+				<li>스포츠</li>
+				<li>엔터테인먼트</li>
+				<li>여행 및 지역정보</li>
+				<li>위젯</li>
+				<li>음악 및 오디오</li>
+				<li>의료</li>
+				<li>커뮤니케이션</li>
+			</ul>
+			
+			
+		</div>
+		<!--list-->	
+		<div id="list">			
+			<h3>나의 문의 내역</h3>			
+			<ul class="board_list">
+				<li><span class="num">20</span> <span class="tit"><a href="#">안녕하세요 문의드립니다...</a></span> <span class="date">2012/12/10</span></li>
+				<li><span class="num">19</span> <span class="tit re"><a href="#">안녕하세요 문의드립니다...</a></span> <span class="date">2012/12/10</span></li>
+				<li><span class="num">18</span> <span class="tit"><a href="#">안녕하세요 문의드립니다...</a></span> <span class="date">2012/12/10</span></li>
+				<li><span class="num">17</span> <span class="tit"><a href="#">안녕하세요 문의드립니다...</a></span> <span class="date">2012/12/10</span></li>
+				<li><span class="num">16</span> <span class="tit"><a href="#">안녕하세요 문의드립니다...</a></span> <span class="date">2012/12/10</span></li>
+				<li><span class="num">15</span> <span class="tit"><a href="#">안녕하세요 문의드립니다...</a></span> <span class="date">2012/12/10</span></li>
+				<li><span class="num">14</span> <span class="tit"><a href="#">안녕하세요 문의드립니다...</a></span> <span class="date">2012/12/10</span></li>
+				<li><span class="num">13</span> <span class="tit"><a href="#">안녕하세요 문의드립니다...</a></span> <span class="date">2012/12/10</span></li>
+				<li><span class="num">12</span> <span class="tit"><a href="#">안녕하세요 문의드립니다...</a></span> <span class="date">2012/12/10</span></li>
+				<li><span class="num">11</span> <span class="tit"><a href="#">안녕하세요 문의드립니다...</a></span> <span class="date">2012/12/10</span></li>
+			</ul>			
+			<ol class="page_nav">
+				<li><span><b class="prevv"></b></span></li>
+				<li><span><b class="prev"></b></span></li>
+				<li class="on"><span>1</span></li>
+				<li><span>2</span></li>
+				<li><span>3</span></li>
+				<li><span>4</span></li>
+				<li><span>5</span></li>
+				<li><span>6</span></li>
+				<li><span>7</span></li>
+				<li><span>8</span></li>
+				<li><span>9</span></li>
+				<li><span>10</span></li>
+				<li><span><b class="next"></b></span></li>
+				<li><span><b class="nextt"></b></span></li>
+			</ol>
+			<div class="btn_list">
+				<button>글쓰기</button>
+			</div>
+			
+			<h3>나의 문의 내역</h3>	
+			<dl class="board_view">
+				<dt>안녕하세요 문의드립니다...</dt>
+				<dd>안녕하세요 문의드립니다...안녕하세요 문의드립니다...안녕하세요 문의드립니다...안녕하세요 문의드립니다...안녕하세요 문의드립니다..
+				안녕하세요 문의드립니다...안녕하세요 문의드립니다...안녕하세요 문의드립니다...안녕하세요 문의드립니다...
+				안녕하세요 문의드립니다...안녕하세요 문의드립니다...안녕하세요 문의드립니다...안녕하세요 문의드립니다...안녕하세요 문의드립니다...</dd>
+			</dl>			
+			<div class="btn_list">
+				<button>답글</button>
+				<button>목록</button>
+				<button>수정</button>
+			</div>
+			<dl class="board_view">
+				<dt class="re">안녕하세요 문의드립니다...</dt>
+				<dd>안녕하세요 문의드립니다...안녕하세요 문의드립니다...안녕하세요 문의드립니다...안녕하세요 문의드립니다...안녕하세요 문의드립니다..
+				안녕하세요 문의드립니다...안녕하세요 문의드립니다...안녕하세요 문의드립니다...안녕하세요 문의드립니다...
+				안녕하세요 문의드립니다...안녕하세요 문의드립니다...안녕하세요 문의드립니다...안녕하세요 문의드립니다...안녕하세요 문의드립니다...</dd>
+			</dl>
+			<div class="btn_list">
+				<button>목록</button>
+			</div>
+			
+			
+			
+			<h3>문의하기</h3>	
+			<dl class="board_write">
+				<dt><input type="text"></dt>
+				<dd><textarea></textarea></dd>
+			</dl>
+			<div class="btn_list">
+				<button class="submit" type="submit">등록</button>
+				<button>목록</button>
+			</div>
+			
+			<h3>나의 앱리스트</h3>	
+			<div class="list_type">
+				<dl>
+					<dt><img src="img/test/app1.png" alt=""></dt>
+					<dd>
+						<h4>제목이 너무 길면 두줄방지를 위해 레이어로 띄웁니다</h4>			
+						<p class="vot"><b class="rating"><span style="width:50%;"></span></b> (2,243)</p>
+						<p class="com">JOYMOA CORP</p>
+						<button>설치</button>		
+					</dd>
+				</dl>
+				<dl>
+					<dt><img src="img/test/app2.png" alt=""></dt>
+					<dd>
+						<h4>위닝일레븐2012</h4>					
+						<p class="vot"><b class="rating"><span style="width:50%;"></span></b> (2,243)</p>
+						<p class="com">JOYMOA CORP</p>
+						<button>₩2,500</button>		
+					</dd>
+				</dl>
+				<dl>
+					<dt><img src="img/test/app3.png" alt=""></dt>
+					<dd>
+						<h4>위닝일레븐2012</h4>					
+						<p class="vot"><b class="rating"><span style="width:50%;"></span></b> (2,243)</p>
+						<p class="com">JOYMOA CORP</p>
+						<button>₩2,500</button>		
+					</dd>
+				</dl>
+				<dl>
+					<dt><img src="img/test/app4.png" alt=""></dt>
+					<dd>
+						<h4>위닝일레븐2012</h4>					
+						<p class="vot"><b class="rating"><span style="width:50%;"></span></b> (2,243)</p>
+						<p class="com">JOYMOA CORP</p>
+						<button>₩2,500</button>		
+					</dd>
+				</dl>
+				<dl>
+					<dt><img src="img/test/app5.png" alt=""></dt>
+					<dd>
+						<h4>위닝일레븐2012</h4>					
+						<p class="vot"><b class="rating"><span style="width:50%;"></span></b> (2,243)</p>
+						<p class="com">JOYMOA CORP</p>
+						<button>₩2,500</button>		
+					</dd>
+				</dl>
+				<dl>
+					<dt><img src="img/test/app5.png" alt=""></dt>
+					<dd>
+						<h4>위닝일레븐2012</h4>					
+						<p class="vot"><b class="rating"><span style="width:50%;"></span></b> (2,243)</p>
+						<p class="com">JOYMOA CORP</p>
+						<button>₩2,500</button>		
+					</dd>
+				</dl>
+				<dl>
+					<dt><img src="img/test/app5.png" alt=""></dt>
+					<dd>
+						<h4>위닝일레븐2012</h4>					
+						<p class="vot"><b class="rating"><span style="width:50%;"></span></b> (2,243)</p>
+						<p class="com">JOYMOA CORP</p>
+						<button>₩2,500</button>		
+					</dd>
+				</dl>
+				<dl>
+					<dt><img src="img/test/app5.png" alt=""></dt>
+					<dd>
+						<h4>위닝일레븐2012</h4>					
+						<p class="vot"><b class="rating"><span style="width:50%;"></span></b> (2,243)</p>
+						<p class="com">JOYMOA CORP</p>
+						<button>₩2,500</button>		
+					</dd>
+				</dl>
+			</div>
+			
+			<ol class="page_nav">
+				<li><span><b class="prevv"></b></span></li>
+				<li><span><b class="prev"></b></span></li>
+				<li class="on"><span>1</span></li>
+				<li><span>2</span></li>
+				<li><span>3</span></li>
+				<li><span>4</span></li>
+				<li><span>5</span></li>
+				<li><span>6</span></li>
+				<li><span>7</span></li>
+				<li><span>8</span></li>
+				<li><span>9</span></li>
+				<li><span>10</span></li>
+				<li><span><b class="next"></b></span></li>
+				<li><span><b class="nextt"></b></span></li>
+			</ol>
+			
+			
+			<h3>테이블 타입</h3>			
+			<table class="typeT">
+				<colgroup>
+					<col width="33%">
+					<col width="33%">
+					<col width="*">
+				</colgroup>
+				<tr>
+					<th>제목 1</th>
+					<th>제목 2</th>
+					<th>제목 3</th>
+				</tr>
+				<tr>
+					<td>내용 1</td>
+					<td>내용 2</td>
+					<td>내용 3</td>
+				</tr>
+			</table>	
+			
+			<h3>테이블 타입</h3>	
+			<table class="typeT">
+				<colgroup>
+					<col width="140">
+					<col width="*">
+				</colgroup>
+				<tr>
+					<th>제목 1</th>
+					<td>내용 1</td>
+				</tr>
+				<tr>
+					<th>제목 2</th>
+					<td>내용 2</td>
+				</tr>
+				<tr>
+					<th>제목 3</th>
+					<td>내용 3</td>
+				</tr>
+			</table>	
+			
+			
+			
+			
+			<h3>사용자 리뷰 <span class="more"><button>리뷰작성</button></h3>
+			<ul class="review">
+				<li>
+					<p class="txt">
+						<select>
+							<option>10점</option>
+							<option>9점</option>
+							<option>8점</option>
+							<option>7점</option>
+							<option>6점</option>
+							<option>5점</option>
+							<option>4점</option>
+							<option>3점</option>
+							<option>2점</option>
+							<option>1점</option>
+						</select>
+						<input type="text" value="" title="리뷰를 작성하세요">
+						<button class="submit" type="submit">등록</button>
+						<button>취소</button>
+					</p>
+				</li>
+				<li>
+					<p class="tit">
+						<b class="rating"><span style="width:50%;"></span></b> <strong>용진</strong> - 2012년 11월 11일 (일) - 버전 1.0.4
+						&nbsp; &nbsp;
+						<button class="px del">삭제</button>						
+						<button class="px modify">수정</button>
+					</p>
+					<p class="txt">9일자 업데이트로 잘되네요</p>
+				</li>
+				<li>
+					<p class="tit"><b class="rating"><span style="width:50%;"></span></b> <strong>용진이</strong> - 2012년 11월 11일 (일) - 버전 1.0.4</p>
+					<p class="txt">9일자 업데이트로 잘되네요</p>
+				</li>
+				<li>
+					<p class="tit"><b class="rating"><span style="width:50%;"></span></b> <strong>용진아빠</strong> - 2012년 11월 11일 (일) - 버전 1.0.4</p>
+					<p class="txt">9일자 업데이트로 잘되네요</p>
+				</li>
+				<li>
+					<p class="tit"><b class="rating"><span style="width:50%;"></span></b> <strong>용진</strong> - 2012년 11월 11일 (일) - 버전 1.0.4</p>
+					<p class="txt">9일자 업데이트로 잘되네요</p>
+				</li>
+			</ul>			
+			<ol class="page_nav">
+				<li><span><b class="prevv"></b></span></li>
+				<li><span><b class="prev"></b></span></li>
+				<li class="on"><span>1</span></li>
+				<li><span>2</span></li>
+				<li><span>3</span></li>
+				<li><span>4</span></li>
+				<li><span>5</span></li>
+				<li><span>6</span></li>
+				<li><span>7</span></li>
+				<li><span>8</span></li>
+				<li><span>9</span></li>
+				<li><span>10</span></li>
+				<li><span><b class="next"></b></span></li>
+				<li><span><b class="nextt"></b></span></li>
+			</ol>
+			
+			
+			
+			
+			
+		</div>
+	</div>
+	
+	
+	<!--footer-->
+	<div id="footer">
+		<p>IWA Inc. Copyright ⓒ 2011 all rights reserved.</p>
+	</div>
+</div>
+
+</body>
+</html>
+
+
+

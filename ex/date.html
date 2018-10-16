@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="kor" data-ng-app="KaisaApp" data-ng-controller="KaisaController">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta name="robots" content="index,follow">
+<title>Kaisa</title>
+<meta name="keywords" content="Kaisa,가이사,카이사,가평,홈페이지">
+<meta name="description" content="Kaisa,가이사,카이사,가평,홈페이지">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kaisa">
+<meta property="og:description" content="Kaisa,가이사,카이사,가평,홈페이지">
+<meta property="og:image" content="http://kaisa.co.kr/img/common/logo.png">
+<meta property="og:url" content="http://kaisa.co.kr">
+<meta name="fragment" content="!">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<link rel="shortcut icon" href="/img/favicon.ico?ver=0.1" type="image/x-icon">
+<link rel="stylesheet" href="/css/common.css" type="text/css">
+<!--[if lt IE 10]>
+<link rel="stylesheet" href="/css/old_browser.css" type="text/css" />
+<![endif]-->
+<!--[if IE 8]>
+<script src="/js/lib/es/es5-shim.min.js"></script>
+<![endif]-->
+<script src="/js/lib/jquery/jquery-1.11.1.min.js"></script>
+<script src="/js/lib/angular/angular.min.js"></script>
+<script src="/js/min/kaisa.js"></script>
+<script src="/js/module/kaisaOneDatepicker.js"></script>
+<script src="/js/controller/ex/date.js"></script>
+</head>
+<body data-ng-controller="BodyController">
+<div data-kaisa-header="true"></div>
+<div data-kaisa-menu="true"></div>
+<div id="container">	
+	<div id="study">
+		<div class="wrap">
+			<div data-study-menu="true"></div>
+			
+			<h2>One-datepicker</h2>
+			<div class="datePicker" one-datepicker model="reservationDate">
+				<div one-datepicker-calendar model-start="reservationDate.start"></div>
+			</div>
+			<br />
+			<input style="width:150px;" readonly="readonly" tabindex="1" autocomplete="off" type="text" name="DATE" data-ng-model="RESERVATION.DATE" required="required">
+			<select style="width:150px;" name="TIME" data-ng-model="RESERVATION.TIME">
+				<option value="">시간을 선택해주세요.</option>
+				<option data-ng-repeat="option in option.time" value="{{option.id}}">{{option.name}}</option>
+		    </select>
+
+			<h3>Date format filter</h3>
+			<span data-ng-non-bindable>{{1288323623006 | date:'medium'}}</span>:
+		    <span>{{1288323623006 | date:'medium'}}</span><br>
+			<span data-ng-non-bindable>{{1288323623006 | date:'yyyy-MM-dd HH:mm:ss Z'}}</span>:
+			<span>{{1288323623006 | date:'yyyy-MM-dd HH:mm:ss Z'}}</span><br>
+			<span data-ng-non-bindable>{{1288323623006 | date:'MM/dd/yyyy @ h:mma'}}</span>:
+			<span>{{'1288323623006' | date:'MM/dd/yyyy @ h:mma'}}</span><br>
+			<span data-ng-non-bindable>{{1288323623006 | date:"MM/dd/yyyy 'at' h:mma"}}</span>:
+			<span>{{'1288323623006' | date:"MM/dd/yyyy 'at' h:mma"}}</span><br>
+			
+		</div>
+	</div>
+</div>
+<div data-kaisa-footer="true"></div>
+</body>
+</html>

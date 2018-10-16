@@ -1,0 +1,3474 @@
+{
+	"items": [
+		{
+			"ABB": "CI",
+			"EN": "CI",
+			"KO": "CI"
+		},
+		{
+			"ABB": "ECPN",
+			"EN": "ECOUPON",
+			"KO": "E쿠폰"
+		},
+		{
+			"ABB": "FAQ",
+			"EN": "FAQ",
+			"KO": "FAQ"
+		},
+		{
+			"ABB": "HTML",
+			"EN": "HTML",
+			"KO": "HTML"
+		},
+		{
+			"ABB": "ID",
+			"EN": "ID",
+			"KO": "ID"
+		},
+		{
+			"ABB": "IPIN",
+			"EN": "IPIN",
+			"KO": "IPIN"
+		},
+		{
+			"ABB": "MD",
+			"EN": "MD",
+			"KO": "MD"
+		},
+		{
+			"ABB": "SMS",
+			"EN": "SMS",
+			"KO": "SMS"
+		},
+		{
+			"ABB": "URL",
+			"EN": "URL",
+			"KO": "URL"
+		},
+		{
+			"ABB": "VAN",
+			"EN": "VAN",
+			"KO": "VAN"
+		},
+		{
+			"ABB": "VANCO",
+			"EN": "VANCORP",
+			"KO": "VAN사"
+		},
+		{
+			"ABB": "PSB",
+			"EN": "POSSIBILITY",
+			"KO": "가능"
+		},
+		{
+			"ABB": "WDT",
+			"EN": "WIDTH",
+			"KO": "가로"
+		},
+		{
+			"ABB": "MCNS",
+			"EN": "MERCHANTSTORE",
+			"KO": "가맹점"
+		},
+		{
+			"ABB": "VACCT",
+			"EN": "VIRTUALACCOUNT",
+			"KO": "가상계좌"
+		},
+		{
+			"ABB": "AVAL",
+			"EN": "AVAILABLE",
+			"KO": "가용"
+		},
+		{
+			"ABB": "ADMS",
+			"EN": "ADMISSION",
+			"KO": "가입"
+		},
+		{
+			"ABB": "SMPL",
+			"EN": "SIMPLE",
+			"KO": "단순"
+		},
+		{
+			"ABB": "EMPH",
+			"EN": "EMPHASIS",
+			"KO": "강조"
+		},
+		{
+			"ABB": "MNS",
+			"EN": "MONTHS",
+			"KO": "개월"
+		},
+		{
+			"ABB": "PRSN",
+			"EN": "PERSON",
+			"KO": "개인"
+		},
+		{
+			"ABB": "TRS",
+			"EN": "TRANSACTION",
+			"KO": "거래"
+		},
+		{
+			"ABB": "BLDG",
+			"EN": "BUILDING",
+			"KO": "건물"
+		},
+		{
+			"ABB": "SCH",
+			"EN": "SEARCH",
+			"KO": "검색"
+		},
+		{
+			"ABB": "RSLT",
+			"EN": "RESULT",
+			"KO": "결과"
+		},
+		{
+			"ABB": "PAY",
+			"EN": "PAYMENT",
+			"KO": "결제"
+		},
+		{
+			"ABB": "MARR",
+			"EN": "MARRIAGE",
+			"KO": "결혼"
+		},
+		{
+			"ABB": "PATH",
+			"EN": "PATH",
+			"KO": "경로"
+		},
+		{
+			"ABB": "EXPE",
+			"EN": "EXPERIENCE",
+			"KO": "경험"
+		},
+		{
+			"ABB": "BILL",
+			"EN": "BILL",
+			"KO": "계산서"
+		},
+		{
+			"ABB": "CONTR",
+			"EN": "CONTRACT",
+			"KO": "계약"
+		},
+		{
+			"ABB": "ACCT",
+			"EN": "ACCOUNT",
+			"KO": "계좌"
+		},
+		{
+			"ABB": "CMPY",
+			"EN": "COMPANY",
+			"KO": "고객사"
+		},
+		{
+			"ABB": "FIX",
+			"EN": "FIX",
+			"KO": "고정"
+		},
+		{
+			"ABB": "SUPRC",
+			"EN": "SUPPLY PRICE",
+			"KO": "공급가"
+		},
+		{
+			"ABB": "NOTI",
+			"EN": "NOTICE",
+			"KO": "공지"
+		},
+		{
+			"ABB": "COMM",
+			"EN": "COMMON",
+			"KO": "공통"
+		},
+		{
+			"ABB": "TAXT",
+			"EN": "TAXATION",
+			"KO": "과세"
+		},
+		{
+			"ABB": "REL",
+			"EN": "RELATION",
+			"KO": "관련"
+		},
+		{
+			"ABB": "MGMT",
+			"EN": "MANAGEMENT",
+			"KO": "관리"
+		},
+		{
+			"ABB": "EXCG",
+			"EN": "EXCHANGE",
+			"KO": "교환"
+		},
+		{
+			"ABB": "SEC",
+			"EN": "SECTION",
+			"KO": "구간"
+		},
+		{
+			"ABB": "ZON",
+			"EN": "ZONE",
+			"KO": "구역"
+		},
+		{
+			"ABB": "TXNO",
+			"EN": "TELEXCHANGENUM",
+			"KO": "국번"
+		},
+		{
+			"ABB": "AUTH",
+			"EN": "AUTHORITY",
+			"KO": "권한"
+		},
+		{
+			"ABB": "GRP",
+			"EN": "GROUP",
+			"KO": "그룹"
+		},
+		{
+			"ABB": "PRC",
+			"EN": "PRICE",
+			"KO": "금액"
+		},
+		{
+			"ABB": "PRID",
+			"EN": "PERIOD",
+			"KO": "기간"
+		},
+		{
+			"ABB": "ANVR",
+			"EN": "ANNIVERSARY",
+			"KO": "기념"
+		},
+		{
+			"ABB": "FUNC",
+			"EN": "FUNCTION",
+			"KO": "기능"
+		},
+		{
+			"ABB": "BASE",
+			"EN": "BASE",
+			"KO": "기본"
+		},
+		{
+			"ABB": "DDAY",
+			"EN": "DDAY",
+			"KO": "기일"
+		},
+		{
+			"ABB": "GIFTI",
+			"EN": "GIFTICON",
+			"KO": "기프티콘"
+		},
+		{
+			"ABB": "TMLMT",
+			"EN": "TIMELIMIT",
+			"KO": "기한"
+		},
+		{
+			"ABB": "SPDP",
+			"EN": "SPECIALDISPLAY",
+			"KO": "기획전"
+		},
+		{
+			"ABB": "LNTH",
+			"EN": "LENGTH",
+			"KO": "길이"
+		},
+		{
+			"ABB": "DPTH",
+			"EN": "DEPTH",
+			"KO": "깊이"
+		},
+		{
+			"ABB": "AGE",
+			"EN": "AGE",
+			"KO": "나이"
+		},
+		{
+			"ABB": "SSTC",
+			"EN": "SUBSTANCE",
+			"KO": "내용"
+		},
+		{
+			"ABB": "YY",
+			"EN": "YEAR",
+			"KO": "년"
+		},
+		{
+			"ABB": "EXP",
+			"EN": "EXPOSURE",
+			"KO": "노출"
+		},
+		{
+			"ABB": "NSLT",
+			"EN": "NEWSLETTER",
+			"KO": "뉴스레터"
+		},
+		{
+			"ABB": "MLANG",
+			"EN": "MANYLANGUAGE",
+			"KO": "다국어"
+		},
+		{
+			"ABB": "UNIT",
+			"EN": "UNIT",
+			"KO": "단위"
+		},
+		{
+			"ABB": "PRODIT",
+			"EN": "PRODUCTITEM",
+			"KO": "단품"
+		},
+		{
+			"ABB": "CAL",
+			"EN": "CALENDAR",
+			"KO": "달력"
+		},
+		{
+			"ABB": "CHRG",
+			"EN": "CHARGE",
+			"KO": "담당"
+		},
+		{
+			"ABB": "CHRGR",
+			"EN": "CHARGER",
+			"KO": "담당자"
+		},
+		{
+			"ABB": "ANS",
+			"EN": "ANSWER",
+			"KO": "답변"
+		},
+		{
+			"ABB": "EXND",
+			"EN": "EXANADU",
+			"KO": "당사"
+		},
+		{
+			"ABB": "LRG",
+			"EN": "LARGE",
+			"KO": "대"
+		},
+		{
+			"ABB": "STBY",
+			"EN": "STANDBY",
+			"KO": "대기"
+		},
+		{
+			"ABB": "TRGT",
+			"EN": "TARGET",
+			"KO": "대상"
+		},
+		{
+			"ABB": "TRGTR",
+			"EN": "TARGETER",
+			"KO": "대상자"
+		},
+		{
+			"ABB": "MST",
+			"EN": "MASTER",
+			"KO": "대표"
+		},
+		{
+			"ABB": "REPRS",
+			"EN": "REPRESENTATIVE",
+			"KO": "대표자"
+		},
+		{
+			"ABB": "ROAD",
+			"EN": "ROAD",
+			"KO": "도로"
+		},
+		{
+			"ABB": "AGR",
+			"EN": "AGREE",
+			"KO": "동의"
+		},
+		{
+			"ABB": "GRD",
+			"EN": "GRADE",
+			"KO": "등급"
+		},
+		{
+			"ABB": "REG",
+			"EN": "REGIST",
+			"KO": "등록"
+		},
+		{
+			"ABB": "REGR",
+			"EN": "REGISTER",
+			"KO": "등록자"
+		},
+		{
+			"ABB": "LOGIN",
+			"EN": "LOGIN",
+			"KO": "로그인"
+		},
+		{
+			"ABB": "RT",
+			"EN": "RATE",
+			"KO": "률"
+		},
+		{
+			"ABB": "RI",
+			"EN": "RI",
+			"KO": "리"
+		},
+		{
+			"ABB": "MRGN",
+			"EN": "MARGIN",
+			"KO": "마진"
+		},
+		{
+			"ABB": "MKTG",
+			"EN": "MARKETING",
+			"KO": "마케팅"
+		},
+		{
+			"ABB": "STFLVL",
+			"EN": "SATISFACTIONLEVEL",
+			"KO": "만족도"
+		},
+		{
+			"ABB": "PF",
+			"EN": "PROFIT",
+			"KO": "매입"
+		},
+		{
+			"ABB": "BUPRC",
+			"EN": "BUYPRICE",
+			"KO": "매입가"
+		},
+		{
+			"ABB": "MPPG",
+			"EN": "MAPPING",
+			"KO": "매핑"
+		},
+		{
+			"ABB": "OUTR",
+			"EN": "OUTRO",
+			"KO": "맺음말"
+		},
+		{
+			"ABB": "INTR",
+			"EN": "INTRO",
+			"KO": "머리말"
+		},
+		{
+			"ABB": "MENU",
+			"EN": "MENU",
+			"KO": "메뉴"
+		},
+		{
+			"ABB": "EXM",
+			"EN": "EXEMPTION",
+			"KO": "면제"
+		},
+		{
+			"ABB": "NM",
+			"EN": "NAME",
+			"KO": "명"
+		},
+		{
+			"ABB": "MDL",
+			"EN": "MODEL",
+			"KO": "모델"
+		},
+		{
+			"ABB": "INTG",
+			"EN": "INTANGIBLE",
+			"KO": "무형"
+		},
+		{
+			"ABB": "INQU",
+			"EN": "INQUIRY",
+			"KO": "문의"
+		},
+		{
+			"ABB": "CHR",
+			"EN": "CHARACTER",
+			"KO": "문자"
+		},
+		{
+			"ABB": "WRHS",
+			"EN": "WAREHOUSE",
+			"KO": "물류"
+		},
+		{
+			"ABB": "RPET",
+			"EN": "REPEAT",
+			"KO": "반복"
+		},
+		{
+			"ABB": "RTPROD",
+			"EN": "RETURNPRODUCT",
+			"KO": "반품"
+		},
+		{
+			"ABB": "RPDPRC",
+			"EN": "RETURNPRICE",
+			"KO": "반품비"
+		},
+		{
+			"ABB": "ISSU",
+			"EN": "ISSUE",
+			"KO": "발급"
+		},
+		{
+			"ABB": "ISCO",
+			"EN": "ISSUECORP",
+			"KO": "발급사"
+		},
+		{
+			"ABB": "OCUR",
+			"EN": "OCCURRENCE",
+			"KO": "발생"
+		},
+		{
+			"ABB": "SEND",
+			"EN": "SEND",
+			"KO": "발송"
+		},
+		{
+			"ABB": "METH",
+			"EN": "METHOD",
+			"KO": "방식"
+		},
+		{
+			"ABB": "BNR",
+			"EN": "BANNER",
+			"KO": "배너"
+		},
+		{
+			"ABB": "DLV",
+			"EN": "DELIVERY",
+			"KO": "배송"
+		},
+		{
+			"ABB": "DLPRC",
+			"EN": "DELIVERYPRICE",
+			"KO": "배송비"
+		},
+		{
+			"ABB": "VER",
+			"EN": "VERSION",
+			"KO": "버전"
+		},
+		{
+			"ABB": "BTN",
+			"EN": "BUTTON",
+			"KO": "버튼"
+		},
+		{
+			"ABB": "BNJI",
+			"EN": "BUNJI",
+			"KO": "번지"
+		},
+		{
+			"ABB": "NO",
+			"EN": "NUMBER",
+			"KO": "번호"
+		},
+		{
+			"ABB": "RNG",
+			"EN": "RANGE",
+			"KO": "범위"
+		},
+		{
+			"ABB": "COR",
+			"EN": "CORPORATION",
+			"KO": "법인"
+		},
+		{
+			"ABB": "STTT",
+			"EN": "STATUTORY",
+			"KO": "법정"
+		},
+		{
+			"ABB": "CHG",
+			"EN": "CHANGE",
+			"KO": "변경"
+		},
+		{
+			"ABB": "SDML",
+			"EN": "SENDED MAIL",
+			"KO": "보내는메일"
+		},
+		{
+			"ABB": "CPNS",
+			"EN": "COMPENSATION",
+			"KO": "보상"
+		},
+		{
+			"ABB": "WCRD",
+			"EN": "WELFARECARD",
+			"KO": "복지카드"
+		},
+		{
+			"ABB": "WPNT",
+			"EN": "WELFAREPOINT",
+			"KO": "복지포인트"
+		},
+		{
+			"ABB": "BDTX",
+			"EN": "BODYTEXT",
+			"KO": "본문"
+		},
+		{
+			"ABB": "BSNO",
+			"EN": "BASENUMBER",
+			"KO": "본번"
+		},
+		{
+			"ABB": "ADDT",
+			"EN": "ADDTAX",
+			"KO": "부가세"
+		},
+		{
+			"ABB": "BUDN",
+			"EN": "BURDEN",
+			"KO": "부담"
+		},
+		{
+			"ABB": "SUBNO",
+			"EN": "SUBNUMBER",
+			"KO": "부번"
+		},
+		{
+			"ABB": "PART",
+			"EN": "PART",
+			"KO": "부분"
+		},
+		{
+			"ABB": "DEPT",
+			"EN": "DEPARTMENT",
+			"KO": "부서"
+		},
+		{
+			"ABB": "BRND",
+			"EN": "BRAND",
+			"KO": "브랜드"
+		},
+		{
+			"ABB": "NOTE",
+			"EN": "NOTE",
+			"KO": "비고"
+		},
+		{
+			"ABB": "PASWD",
+			"EN": "PASSWORD",
+			"KO": "비밀번호"
+		},
+		{
+			"ABB": "VISA",
+			"EN": "VISA",
+			"KO": "비자"
+		},
+		{
+			"ABB": "ABNM",
+			"EN": "ABNORMALITY",
+			"KO": "비정상"
+		},
+		{
+			"ABB": "BIZP",
+			"EN": "BUSINESSPROVIDER",
+			"KO": "사업자"
+		},
+		{
+			"ABB": "BIZNO",
+			"EN": "BUSINESSNO",
+			"KO": "사업자등록번호"
+		},
+		{
+			"ABB": "USE",
+			"EN": "USE",
+			"KO": "사용"
+		},
+		{
+			"ABB": "USER",
+			"EN": "USER",
+			"KO": "사용자"
+		},
+		{
+			"ABB": "RSN",
+			"EN": "REASON",
+			"KO": "사유"
+		},
+		{
+			"ABB": "FGIFT",
+			"EN": "FREEGIFT",
+			"KO": "사은품"
+		},
+		{
+			"ABB": "DIC",
+			"EN": "DICTIONARY",
+			"KO": "사전"
+		},
+		{
+			"ABB": "DEL",
+			"EN": "DELETION",
+			"KO": "삭제"
+		},
+		{
+			"ABB": "MT",
+			"EN": "MOUNTAIN",
+			"KO": "산"
+		},
+		{
+			"ABB": "UPPR",
+			"EN": "UPPER",
+			"KO": "상단"
+		},
+		{
+			"ABB": "CUST",
+			"EN": "CUSTOMERCENTER",
+			"KO": "상담"
+		},
+		{
+			"ABB": "CNSR",
+			"EN": "COUNSELOR",
+			"KO": "상담자"
+		},
+		{
+			"ABB": "DTLS",
+			"EN": "DETAILS",
+			"KO": "상세"
+		},
+		{
+			"ABB": "HGRK",
+			"EN": "HIGHRANK",
+			"KO": "상위"
+		},
+		{
+			"ABB": "STAT",
+			"EN": "STATUS",
+			"KO": "상태"
+		},
+		{
+			"ABB": "PROD",
+			"EN": "PRODUCT",
+			"KO": "상품"
+		},
+		{
+			"ABB": "PRODGR",
+			"EN": "PRODUCTGROUP",
+			"KO": "상품군"
+		},
+		{
+			"ABB": "PRODCM",
+			"EN": "PRODUCTCOMMENT",
+			"KO": "상품평"
+		},
+		{
+			"ABB": "CLOR",
+			"EN": "COLOR",
+			"KO": "색상"
+		},
+		{
+			"ABB": "DOB",
+			"EN": "DATEOFBIRTH",
+			"KO": "생년월일"
+		},
+		{
+			"ABB": "CRET",
+			"EN": "CREATE",
+			"KO": "생성"
+		},
+		{
+			"ABB": "BDAY",
+			"EN": "BIRTHDAY",
+			"KO": "생일"
+		},
+		{
+			"ABB": "DOC",
+			"EN": "DOCUMENT",
+			"KO": "서류"
+		},
+		{
+			"ABB": "SVR",
+			"EN": "SERVICE",
+			"KO": "서비스"
+		},
+		{
+			"ABB": "GIFT",
+			"EN": "GIFT",
+			"KO": "선물"
+		},
+		{
+			"ABB": "CHOC",
+			"EN": "CHOICE",
+			"KO": "선택"
+		},
+		{
+			"ABB": "SET",
+			"EN": "SET",
+			"KO": "설정"
+		},
+		{
+			"ABB": "GEN",
+			"EN": "GENDER",
+			"KO": "성별"
+		},
+		{
+			"ABB": "ADLT",
+			"EN": "ADULT",
+			"KO": "성인"
+		},
+		{
+			"ABB": "DTL",
+			"EN": "DETAIL",
+			"KO": "세"
+		},
+		{
+			"ABB": "TAX",
+			"EN": "TAX",
+			"KO": "세금"
+		},
+		{
+			"ABB": "HGT",
+			"EN": "HEIGHT",
+			"KO": "세로"
+		},
+		{
+			"ABB": "SESS",
+			"EN": "SESSION",
+			"KO": "세션"
+		},
+		{
+			"ABB": "CENT",
+			"EN": "CENTER",
+			"KO": "센터"
+		},
+		{
+			"ABB": "SML",
+			"EN": "SMALL",
+			"KO": "소"
+		},
+		{
+			"ABB": "AFLT",
+			"EN": "AFFILIATION",
+			"KO": "소속"
+		},
+		{
+			"ABB": "MATR",
+			"EN": "MATERIAL",
+			"KO": "소재"
+		},
+		{
+			"ABB": "ATTR",
+			"EN": "ATTRIBUTE",
+			"KO": "속성"
+		},
+		{
+			"ABB": "INVC",
+			"EN": "INVOICE",
+			"KO": "송장"
+		},
+		{
+			"ABB": "PCUP",
+			"EN": "PICKUP",
+			"KO": "수거"
+		},
+		{
+			"ABB": "QTY",
+			"EN": "QUANTITY",
+			"KO": "수량"
+		},
+		{
+			"ABB": "RCV",
+			"EN": "RECEIVE",
+			"KO": "수령"
+		},
+		{
+			"ABB": "RCVR",
+			"EN": "RECEIVER",
+			"KO": "수령자"
+		},
+		{
+			"ABB": "FEE",
+			"EN": "FEE",
+			"KO": "수수료"
+		},
+		{
+			"ABB": "IMPTR",
+			"EN": "IMPORTER",
+			"KO": "수입자"
+		},
+		{
+			"ABB": "MOD",
+			"EN": "MODIFY",
+			"KO": "수정"
+		},
+		{
+			"ABB": "MODR",
+			"EN": "MODIFIER",
+			"KO": "수정자"
+		},
+		{
+			"ABB": "GTHR",
+			"EN": "GATHER",
+			"KO": "수집"
+		},
+		{
+			"ABB": "SEQ",
+			"EN": "SEQUENCE",
+			"KO": "순번"
+		},
+		{
+			"ABB": "RANK",
+			"EN": "RANK",
+			"KO": "순위"
+		},
+		{
+			"ABB": "APPR",
+			"EN": "APPROVAL",
+			"KO": "승인"
+		},
+		{
+			"ABB": "HH",
+			"EN": "HOUR",
+			"KO": "시간"
+		},
+		{
+			"ABB": "SGG",
+			"EN": "SIGUNGU",
+			"KO": "시군구"
+		},
+		{
+			"ABB": "SIDO",
+			"EN": "SIDO",
+			"KO": "시도"
+		},
+		{
+			"ABB": "SYS",
+			"EN": "SYSTEM",
+			"KO": "시스템"
+		},
+		{
+			"ABB": "STRT",
+			"EN": "START",
+			"KO": "시작"
+		},
+		{
+			"ABB": "RCGN",
+			"EN": "RECOGNITION",
+			"KO": "식별"
+		},
+		{
+			"ABB": "CRTCRD",
+			"EN": "CREDITCARD",
+			"KO": "신용카드"
+		},
+		{
+			"ABB": "APPL",
+			"EN": "APPLICATION",
+			"KO": "신청"
+		},
+		{
+			"ABB": "REAL",
+			"EN": "REAL",
+			"KO": "실"
+		},
+		{
+			"ABB": "RLACT",
+			"EN": "REALTIMEACCOUNT",
+			"KO": "실시간계좌이체"
+		},
+		{
+			"ABB": "ICON",
+			"EN": "ICON",
+			"KO": "아이콘"
+		},
+		{
+			"ABB": "CLUS",
+			"EN": "CLAUSE",
+			"KO": "약관"
+		},
+		{
+			"ABB": "STPL",
+			"EN": "STIPULATION",
+			"KO": "약정"
+		},
+		{
+			"ABB": "SOLA",
+			"EN": "SOLAR",
+			"KO": "양력"
+		},
+		{
+			"ABB": "WORK",
+			"EN": "WORK",
+			"KO": "업무"
+		},
+		{
+			"ABB": "PSPT",
+			"EN": "PASSPORT",
+			"KO": "여권"
+		},
+		{
+			"ABB": "YN",
+			"EN": "YN",
+			"KO": "여부"
+		},
+		{
+			"ABB": "ROL",
+			"EN": "ROLE",
+			"KO": "역할"
+		},
+		{
+			"ABB": "CNCT",
+			"EN": "CONNECTION",
+			"KO": "연결"
+		},
+		{
+			"ABB": "CONTT",
+			"EN": "CONTACTS",
+			"KO": "연락처"
+		},
+		{
+			"ABB": "ENG",
+			"EN": "ENGLISH",
+			"KO": "영문"
+		},
+		{
+			"ABB": "RCPT",
+			"EN": "RECEIPT",
+			"KO": "영수증"
+		},
+		{
+			"ABB": "DPSTR",
+			"EN": "DEPOSITOR",
+			"KO": "예금주"
+		},
+		{
+			"ABB": "RSV",
+			"EN": "RESERVATION",
+			"KO": "예약"
+		},
+		{
+			"ABB": "SBSC",
+			"EN": "SUBSCRIPTION",
+			"KO": "예약자"
+		},
+		{
+			"ABB": "EXCPT",
+			"EN": "EXCEPTION",
+			"KO": "예외"
+		},
+		{
+			"ABB": "ESTM",
+			"EN": "ESTIMATED",
+			"KO": "예정"
+		},
+		{
+			"ABB": "ERR",
+			"EN": "ERROR",
+			"KO": "오류"
+		},
+		{
+			"ABB": "OFFL",
+			"EN": "OFFLINE",
+			"KO": "오프라인"
+		},
+		{
+			"ABB": "ONL",
+			"EN": "ONLINE",
+			"KO": "온라인"
+		},
+		{
+			"ABB": "OPT",
+			"EN": "OPTION",
+			"KO": "옵션"
+		},
+		{
+			"ABB": "FIN",
+			"EN": "FINISH",
+			"KO": "완료"
+		},
+		{
+			"ABB": "REQ",
+			"EN": "REQUEST",
+			"KO": "요청"
+		},
+		{
+			"ABB": "USAG",
+			"EN": "USAGE",
+			"KO": "용도"
+		},
+		{
+			"ABB": "PRIR",
+			"EN": "PRIORITY",
+			"KO": "우선순위"
+		},
+		{
+			"ABB": "POST",
+			"EN": "POST",
+			"KO": "우편"
+		},
+		{
+			"ABB": "ORG",
+			"EN": "ORIGINAL",
+			"KO": "원"
+		},
+		{
+			"ABB": "ORGAR",
+			"EN": "ORIGINALAREA",
+			"KO": "원산지"
+		},
+		{
+			"ABB": "MN",
+			"EN": "MONTH",
+			"KO": "월"
+		},
+		{
+			"ABB": "PSTN",
+			"EN": "POSITION",
+			"KO": "위치"
+		},
+		{
+			"ABB": "CNSG",
+			"EN": "CONSIGNMENT",
+			"KO": "위탁"
+		},
+		{
+			"ABB": "EXIS",
+			"EN": "EXIST",
+			"KO": "유무"
+		},
+		{
+			"ABB": "INFW",
+			"EN": "INFLOW",
+			"KO": "유입"
+		},
+		{
+			"ABB": "TP",
+			"EN": "TYPE",
+			"KO": "유형"
+		},
+		{
+			"ABB": "VLD",
+			"EN": "VALID",
+			"KO": "유효"
+		},
+		{
+			"ABB": "BNK",
+			"EN": "BANK",
+			"KO": "은행"
+		},
+		{
+			"ABB": "LUNA",
+			"EN": "LUNAR",
+			"KO": "음력"
+		},
+		{
+			"ABB": "EM",
+			"EN": "EUBMYEON",
+			"KO": "읍면"
+		},
+		{
+			"ABB": "EMD",
+			"EN": "EUBMYENDONG",
+			"KO": "읍면동"
+		},
+		{
+			"ABB": "TRNS",
+			"EN": "TRANSFER",
+			"KO": "이관"
+		},
+		{
+			"ABB": "HIST",
+			"EN": "HISTORY",
+			"KO": "이력"
+		},
+		{
+			"ABB": "EMAIL",
+			"EN": "EMAIL",
+			"KO": "이메일"
+		},
+		{
+			"ABB": "IMG",
+			"EN": "IMAGE",
+			"KO": "이미지"
+		},
+		{
+			"ABB": "EVT",
+			"EN": "EVENT",
+			"KO": "이벤트"
+		},
+		{
+			"ABB": "CERT",
+			"EN": "CERTIFICATION",
+			"KO": "인증"
+		},
+		{
+			"ABB": "DD",
+			"EN": "DAY",
+			"KO": "일"
+		},
+		{
+			"ABB": "SRL",
+			"EN": "SERIAL",
+			"KO": "일련"
+		},
+		{
+			"ABB": "DLY",
+			"EN": "DAILY",
+			"KO": "일별"
+		},
+		{
+			"ABB": "DTS",
+			"EN": "DATETIME",
+			"KO": "일시"
+		},
+		{
+			"ABB": "TEMP",
+			"EN": "TEMPORARY",
+			"KO": "임시"
+		},
+		{
+			"ABB": "INCO",
+			"EN": "INCOME",
+			"KO": "입고"
+		},
+		{
+			"ABB": "INPT",
+			"EN": "INPUT",
+			"KO": "입력"
+		},
+		{
+			"ABB": "WRTR",
+			"EN": "WRITER",
+			"KO": "작성자"
+		},
+		{
+			"ABB": "RMN",
+			"EN": "REMAINING",
+			"KO": "잔여"
+		},
+		{
+			"ABB": "CART",
+			"EN": "CART",
+			"KO": "장바구니"
+		},
+		{
+			"ABB": "REPAY",
+			"EN": "REPAYMENT",
+			"KO": "재결제"
+		},
+		{
+			"ABB": "INVN",
+			"EN": "INVENTORY",
+			"KO": "재고"
+		},
+		{
+			"ABB": "ACML",
+			"EN": "ACCUMULATE",
+			"KO": "적립"
+		},
+		{
+			"ABB": "APLY",
+			"EN": "APPLY",
+			"KO": "적용"
+		},
+		{
+			"ABB": "ECCHG",
+			"EN": "EXCLUSIVECHARGE",
+			"KO": "전담"
+		},
+		{
+			"ABB": "FLTXT",
+			"EN": "FULLTEXT",
+			"KO": "전문"
+		},
+		{
+			"ABB": "TRMSN",
+			"EN": "TRANSMISSION",
+			"KO": "전송"
+		},
+		{
+			"ABB": "DISP",
+			"EN": "DISPLAY",
+			"KO": "전시"
+		},
+		{
+			"ABB": "SBIZ",
+			"EN": "SPECIALBUSINESS",
+			"KO": "전용업무"
+		},
+		{
+			"ABB": "SLIP",
+			"EN": "SLIP",
+			"KO": "전표"
+		},
+		{
+			"ABB": "TEL",
+			"EN": "TELEPHONE",
+			"KO": "전화"
+		},
+		{
+			"ABB": "CVRT",
+			"EN": "CONVERT",
+			"KO": "전환"
+		},
+		{
+			"ABB": "APRC",
+			"EN": "APPROACH",
+			"KO": "접근"
+		},
+		{
+			"ABB": "ACPT",
+			"EN": "ACCEPT",
+			"KO": "접수"
+		},
+		{
+			"ABB": "ACPTR",
+			"EN": "ACCEPTOR",
+			"KO": "접수자"
+		},
+		{
+			"ABB": "INFO",
+			"EN": "INFORMATION",
+			"KO": "정보"
+		},
+		{
+			"ABB": "STL",
+			"EN": "SETTLEMENT",
+			"KO": "정산"
+		},
+		{
+			"ABB": "NOM",
+			"EN": "NORMAL",
+			"KO": "정상"
+		},
+		{
+			"ABB": "NOMPRC",
+			"EN": "NORMALPRICE",
+			"KO": "정상가"
+		},
+		{
+			"ABB": "FXPRC",
+			"EN": "FIXPRICE",
+			"KO": "정액"
+		},
+		{
+			"ABB": "FXRT",
+			"EN": "FIXRATE",
+			"KO": "정율"
+		},
+		{
+			"ABB": "POLC",
+			"EN": "POLICY",
+			"KO": "정책"
+		},
+		{
+			"ABB": "TIT",
+			"EN": "TITLE",
+			"KO": "제목"
+		},
+		{
+			"ABB": "EXCL",
+			"EN": "EXCLUSION",
+			"KO": "제외"
+		},
+		{
+			"ABB": "MF",
+			"EN": "MANUFACT",
+			"KO": "제조"
+		},
+		{
+			"ABB": "MFCR",
+			"EN": "MANUFACTCOUNTRY",
+			"KO": "제조국"
+		},
+		{
+			"ABB": "MFCO",
+			"EN": "MANUFACTURER",
+			"KO": "제조사"
+		},
+		{
+			"ABB": "HMAP",
+			"EN": "HOMEAPPLIANCE",
+			"KO": "가전제품"
+		},
+		{
+			"ABB": "LMT",
+			"EN": "LIMIT",
+			"KO": "제한"
+		},
+		{
+			"ABB": "AFFL",
+			"EN": "AFFILIATED",
+			"KO": "제휴"
+		},
+		{
+			"ABB": "VNDR",
+			"EN": "VENDOR",
+			"KO": "제휴사"
+		},
+		{
+			"ABB": "ASK",
+			"EN": "ASK",
+			"KO": "조회"
+		},
+		{
+			"ABB": "END",
+			"EN": "END",
+			"KO": "종료"
+		},
+		{
+			"ABB": "STK",
+			"EN": "STOCK",
+			"KO": "종목"
+		},
+		{
+			"ABB": "CYCL",
+			"EN": "CYCLE",
+			"KO": "주기"
+		},
+		{
+			"ABB": "ORD",
+			"EN": "ORDER",
+			"KO": "주문"
+		},
+		{
+			"ABB": "ORDR",
+			"EN": "ORDERER",
+			"KO": "주문자"
+		},
+		{
+			"ABB": "SSN",
+			"EN": "SOCIALNUMBER",
+			"KO": "주민등록번호"
+		},
+		{
+			"ABB": "ADDR",
+			"EN": "ADDRESS",
+			"KO": "주소"
+		},
+		{
+			"ABB": "MNAT",
+			"EN": "MAINAGENT",
+			"KO": "주체"
+		},
+		{
+			"ABB": "RDY",
+			"EN": "READY",
+			"KO": "준비"
+		},
+		{
+			"ABB": "MID",
+			"EN": "MIDDLE",
+			"KO": "중"
+		},
+		{
+			"ABB": "WGHT",
+			"EN": "WEIGHT",
+			"KO": "중량"
+		},
+		{
+			"ABB": "FAV",
+			"EN": "FAVORITE",
+			"KO": "즐겨찾기"
+		},
+		{
+			"ABB": "CMND",
+			"EN": "COMMAND",
+			"KO": "지시"
+		},
+		{
+			"ABB": "AREA",
+			"EN": "AREA",
+			"KO": "지역"
+		},
+		{
+			"ABB": "DELY",
+			"EN": "DELAY",
+			"KO": "지연"
+		},
+		{
+			"ABB": "UDGR",
+			"EN": "UNDERGROUND",
+			"KO": "지하"
+		},
+		{
+			"ABB": "PRGS",
+			"EN": "PROGRESS",
+			"KO": "진행"
+		},
+		{
+			"ABB": "QUEST",
+			"EN": "QUESTION",
+			"KO": "질문"
+		},
+		{
+			"ABB": "SUM",
+			"EN": "SUMMARY",
+			"KO": "집계"
+		},
+		{
+			"ABB": "REF",
+			"EN": "REFERENCE",
+			"KO": "참조"
+		},
+		{
+			"ABB": "HDL",
+			"EN": "HANDLE",
+			"KO": "처리"
+		},
+		{
+			"ABB": "HDLR",
+			"EN": "HANDLER",
+			"KO": "처리자"
+		},
+		{
+			"ABB": "ATTH",
+			"EN": "ATTACH",
+			"KO": "첨부"
+		},
+		{
+			"ABB": "DMND",
+			"EN": "DEMAND",
+			"KO": "청구"
+		},
+		{
+			"ABB": "INIT",
+			"EN": "INITIALIZATION",
+			"KO": "초기화"
+		},
+		{
+			"ABB": "TOT",
+			"EN": "TOTAL",
+			"KO": "총"
+		},
+		{
+			"ABB": "MAX",
+			"EN": "MAXIMUM",
+			"KO": "최대"
+		},
+		{
+			"ABB": "MIN",
+			"EN": "MINIMUM",
+			"KO": "최소"
+		},
+		{
+			"ABB": "ADD",
+			"EN": "ADD",
+			"KO": "추가"
+		},
+		{
+			"ABB": "RECOM",
+			"EN": "RECOMMENDATION",
+			"KO": "추천"
+		},
+		{
+			"ABB": "RLS",
+			"EN": "RELEASE",
+			"KO": "출고"
+		},
+		{
+			"ABB": "PRT",
+			"EN": "PRINT",
+			"KO": "출력"
+		},
+		{
+			"ABB": "BTYY",
+			"EN": "BIRTHYEAR",
+			"KO": "출생년도"
+		},
+		{
+			"ABB": "TRTM",
+			"EN": "TREATMENT",
+			"KO": "취급"
+		},
+		{
+			"ABB": "CNCL",
+			"EN": "CANCEL",
+			"KO": "취소"
+		},
+		{
+			"ABB": "SIZE",
+			"EN": "SIZE",
+			"KO": "사이즈"
+		},
+		{
+			"ABB": "CRDBN",
+			"EN": "CARDBIN",
+			"KO": "카드빈"
+		},
+		{
+			"ABB": "CRDCO",
+			"EN": "CARDCORPORATION",
+			"KO": "카드사"
+		},
+		{
+			"ABB": "CAT",
+			"EN": "CATEGORY",
+			"KO": "카테고리"
+		},
+		{
+			"ABB": "CD",
+			"EN": "CODE",
+			"KO": "코드"
+		},
+		{
+			"ABB": "CPN",
+			"EN": "COUPON",
+			"KO": "쿠폰"
+		},
+		{
+			"ABB": "VOL",
+			"EN": "VOLUME",
+			"KO": "용량"
+		},
+		{
+			"ABB": "CLM",
+			"EN": "CLAIM",
+			"KO": "클레임"
+		},
+		{
+			"ABB": "KWD",
+			"EN": "KEYWORD",
+			"KO": "키워드"
+		},
+		{
+			"ABB": "OTHR",
+			"EN": "OTHER",
+			"KO": "타인"
+		},
+		{
+			"ABB": "WTDW",
+			"EN": "WITHDRAW",
+			"KO": "탈퇴"
+		},
+		{
+			"ABB": "HD",
+			"EN": "HOMEDELIVERY",
+			"KO": "택배"
+		},
+		{
+			"ABB": "HDCOP",
+			"EN": "HOMEDELIVERYCORP",
+			"KO": "택배사"
+		},
+		{
+			"ABB": "TMPL",
+			"EN": "TEMPLATE",
+			"KO": "템플릿"
+		},
+		{
+			"ABB": "CPCO",
+			"EN": "CELLPHONECORP",
+			"KO": "통신사"
+		},
+		{
+			"ABB": "CALL",
+			"EN": "CALL",
+			"KO": "통화"
+		},
+		{
+			"ABB": "TEAM",
+			"EN": "TEAM",
+			"KO": "팀"
+		},
+		{
+			"ABB": "FILE",
+			"EN": "FILE",
+			"KO": "파일"
+		},
+		{
+			"ABB": "SELL",
+			"EN": "SELL",
+			"KO": "판매"
+		},
+		{
+			"ABB": "SEPRC",
+			"EN": "SELLPRICE",
+			"KO": "판매가"
+		},
+		{
+			"ABB": "PPP",
+			"EN": "POPUP",
+			"KO": "팝업"
+		},
+		{
+			"ABB": "PNT",
+			"EN": "POINT",
+			"KO": "포인트"
+		},
+		{
+			"ABB": "MRK",
+			"EN": "MARK",
+			"KO": "표시"
+		},
+		{
+			"ABB": "SPCT",
+			"EN": "STANDPRODCATE",
+			"KO": "표준상품군"
+		},
+		{
+			"ABB": "ITLT",
+			"EN": "ITEMLIST",
+			"KO": "품목"
+		},
+		{
+			"ABB": "SDOUT",
+			"EN": "SOLDOUT",
+			"KO": "품절"
+		},
+		{
+			"ABB": "PGM",
+			"EN": "PROGRAM",
+			"KO": "프로그램"
+		},
+		{
+			"ABB": "MDTY",
+			"EN": "MANDATORY",
+			"KO": "필수"
+		},
+		{
+			"ABB": "BTTM",
+			"EN": "BOTTOM",
+			"KO": "하단"
+		},
+		{
+			"ABB": "LWRK",
+			"EN": "LOWRANK",
+			"KO": "하위"
+		},
+		{
+			"ABB": "INST",
+			"EN": "INSTALLMENT",
+			"KO": "할부"
+		},
+		{
+			"ABB": "DC",
+			"EN": "DISCOUNT",
+			"KO": "할인"
+		},
+		{
+			"ABB": "ISPM",
+			"EN": "INSPECTIONITEM",
+			"KO": "항목"
+		},
+		{
+			"ABB": "AUD",
+			"EN": "ADMINISTRATIVEDONG",
+			"KO": "행정동"
+		},
+		{
+			"ABB": "CUR",
+			"EN": "CURRENT",
+			"KO": "현"
+		},
+		{
+			"ABB": "CASH",
+			"EN": "CASH",
+			"KO": "현금"
+		},
+		{
+			"ABB": "PSC",
+			"EN": "PRESENTCONDITION",
+			"KO": "현황"
+		},
+		{
+			"ABB": "PATR",
+			"EN": "PARTNER",
+			"KO": "협력사"
+		},
+		{
+			"ABB": "BNF",
+			"EN": "BENEFIT",
+			"KO": "혜택"
+		},
+		{
+			"ABB": "PR",
+			"EN": "PROMOTION",
+			"KO": "홍보"
+		},
+		{
+			"ABB": "SCRN",
+			"EN": "SCREEN",
+			"KO": "화면"
+		},
+		{
+			"ABB": "CONF",
+			"EN": "CONFIRM",
+			"KO": "확인"
+		},
+		{
+			"ABB": "DCDE",
+			"EN": "DECIDE",
+			"KO": "확정"
+		},
+		{
+			"ABB": "RFD",
+			"EN": "REFUND",
+			"KO": "환불"
+		},
+		{
+			"ABB": "MBR",
+			"EN": "MEMBER",
+			"KO": "회원"
+		},
+		{
+			"ABB": "CNT",
+			"EN": "COUNT",
+			"KO": "횟수"
+		},
+		{
+			"ABB": "HP",
+			"EN": "HANDPHONE",
+			"KO": "휴대전화"
+		},
+		{
+			"ABB": "HLDD",
+			"EN": "HOLIDAY",
+			"KO": "휴일"
+		},
+		{
+			"ABB": "HNT",
+			"EN": "HINT",
+			"KO": "힌트"
+		},
+		{
+			"ABB": "SNDR",
+			"EN": "SENDER",
+			"KO": "발신자"
+		},
+		{
+			"ABB": "UTLZR",
+			"EN": "UTILIZER",
+			"KO": "이용자"
+		},
+		{
+			"ABB": "PNNO",
+			"EN": "PINNUMBER",
+			"KO": "핀번호"
+		},
+		{
+			"ABB": "INCL",
+			"EN": "INCLUSION",
+			"KO": "포함"
+		},
+		{
+			"ABB": "SORT",
+			"EN": "SORT",
+			"KO": "정렬"
+		},
+		{
+			"ABB": "NTFC",
+			"EN": "NOTIFICATION",
+			"KO": "통보"
+		},
+		{
+			"ABB": "DPRT",
+			"EN": "DEPART",
+			"KO": "출발"
+		},
+		{
+			"ABB": "ARRV",
+			"EN": "ARRIVAL",
+			"KO": "도착"
+		},
+		{
+			"ABB": "SLRY",
+			"EN": "SALARY",
+			"KO": "급여"
+		},
+		{
+			"ABB": "MON",
+			"EN": "MONDAY",
+			"KO": "월요일"
+		},
+		{
+			"ABB": "TUE",
+			"EN": "TUESDAY",
+			"KO": "화요일"
+		},
+		{
+			"ABB": "WED",
+			"EN": "WEDNESDAY",
+			"KO": "수요일"
+		},
+		{
+			"ABB": "THU",
+			"EN": "THURSDAY",
+			"KO": "목요일"
+		},
+		{
+			"ABB": "FRI",
+			"EN": "FRIDAY",
+			"KO": "금요일"
+		},
+		{
+			"ABB": "SAT",
+			"EN": "SATURDAY",
+			"KO": "토요일"
+		},
+		{
+			"ABB": "SUN",
+			"EN": "SUNDAY",
+			"KO": "일요일"
+		},
+		{
+			"ABB": "LHS",
+			"EN": "LOHAS",
+			"KO": "로하스"
+		},
+		{
+			"ABB": "IMPS",
+			"EN": "IMPOSE",
+			"KO": "부과"
+		},
+		{
+			"ABB": "HTDL",
+			"EN": "HOTDEAL",
+			"KO": "핫딜"
+		},
+		{
+			"ABB": "TCKT",
+			"EN": "TICKET",
+			"KO": "티켓"
+		},
+		{
+			"ABB": "WFPRC",
+			"EN": "WELFAREPRICE",
+			"KO": "복지몰가"
+		},
+		{
+			"ABB": "DDTN",
+			"EN": "DEDUCTION",
+			"KO": "차감"
+		},
+		{
+			"ABB": "EXMN",
+			"EN": "EXAMINATION",
+			"KO": "검진"
+		},
+		{
+			"ABB": "ISTN",
+			"EN": "INSTITUTION",
+			"KO": "기관"
+		},
+		{
+			"ABB": "PARTY",
+			"EN": "PARTY",
+			"KO": "단체"
+		},
+		{
+			"ABB": "PKSSON",
+			"EN": "PEAKSEASON",
+			"KO": "성수기"
+		},
+		{
+			"ABB": "OFSSON",
+			"EN": "OFFSEASON",
+			"KO": "비수기"
+		},
+		{
+			"ABB": "UTLZ",
+			"EN": "UTILIZE",
+			"KO": "이용"
+		},
+		{
+			"ABB": "SRVY",
+			"EN": "SURVEY",
+			"KO": "설문"
+		},
+		{
+			"ABB": "1",
+			"EN": "1",
+			"KO": "1"
+		},
+		{
+			"ABB": "2",
+			"EN": "2",
+			"KO": "2"
+		},
+		{
+			"ABB": "3",
+			"EN": "3",
+			"KO": "3"
+		},
+		{
+			"ABB": "4",
+			"EN": "4",
+			"KO": "4"
+		},
+		{
+			"ABB": "5",
+			"EN": "5",
+			"KO": "5"
+		},
+		{
+			"ABB": "ETRY",
+			"EN": "ENTRY",
+			"KO": "응모"
+		},
+		{
+			"ABB": "WIN",
+			"EN": "WIN",
+			"KO": "당첨"
+		},
+		{
+			"ABB": "DRAW",
+			"EN": "DRAW",
+			"KO": "추첨"
+		},
+		{
+			"ABB": "PC",
+			"EN": "PC",
+			"KO": "PC"
+		},
+		{
+			"ABB": "PAGE",
+			"EN": "PAGE",
+			"KO": "페이지"
+		},
+		{
+			"ABB": "AUTO",
+			"EN": "AUTO",
+			"KO": "자동"
+		},
+		{
+			"ABB": "PUR",
+			"EN": "PURCHASE",
+			"KO": "발주"
+		},
+		{
+			"ABB": "WRDS",
+			"EN": "WORDS",
+			"KO": "문구"
+		},
+		{
+			"ABB": "WINR",
+			"EN": "WINNER",
+			"KO": "당첨자"
+		},
+		{
+			"ABB": "WEEK",
+			"EN": "WEEK",
+			"KO": "주중"
+		},
+		{
+			"ABB": "WKED",
+			"EN": "WEEKEND",
+			"KO": "주말"
+		},
+		{
+			"ABB": "DEVC",
+			"EN": "DEVICE",
+			"KO": "디바이스"
+		},
+		{
+			"ABB": "CRANS",
+			"EN": "CORRECTANSWER",
+			"KO": "정답"
+		},
+		{
+			"ABB": "DSGN",
+			"EN": "DESIGN",
+			"KO": "디자인"
+		},
+		{
+			"ABB": "QUIZ",
+			"EN": "QUIZ",
+			"KO": "문제"
+		},
+		{
+			"ABB": "EXPL",
+			"EN": "EXAMPLE",
+			"KO": "보기"
+		},
+		{
+			"ABB": "MOBL",
+			"EN": "MOBILE",
+			"KO": "모바일"
+		},
+		{
+			"ABB": "DT",
+			"EN": "DATE",
+			"KO": "일자"
+		},
+		{
+			"ABB": "CNTS",
+			"EN": "CONTENTS",
+			"KO": "컨텐츠"
+		},
+		{
+			"ABB": "INQUR",
+			"EN": "INQUIROR",
+			"KO": "문의자"
+		},
+		{
+			"ABB": "VCHR",
+			"EN": "VOUCHER",
+			"KO": "이용권"
+		},
+		{
+			"ABB": "ITFR",
+			"EN": "INTERESTFREE",
+			"KO": "무이자"
+		},
+		{
+			"ABB": "VAL",
+			"EN": "VALUE",
+			"KO": "값"
+		},
+		{
+			"ABB": "YL",
+			"EN": "YEARLY",
+			"KO": "연간"
+		},
+		{
+			"ABB": "SVCOP",
+			"EN": "SUPERVISIONCORP",
+			"KO": "주관사"
+		},
+		{
+			"ABB": "SPR",
+			"EN": "SPRING",
+			"KO": "봄"
+		},
+		{
+			"ABB": "SMR",
+			"EN": "SUMMER",
+			"KO": "여름"
+		},
+		{
+			"ABB": "ATU",
+			"EN": "AUTUMN",
+			"KO": "가을"
+		},
+		{
+			"ABB": "WNT",
+			"EN": "WINTER",
+			"KO": "겨울"
+		},
+		{
+			"ABB": "DDTE",
+			"EN": "DESIREDATE",
+			"KO": "희망일"
+		},
+		{
+			"ABB": "RM",
+			"EN": "ROOM",
+			"KO": "객실"
+		},
+		{
+			"ABB": "NW",
+			"EN": "NEWICON",
+			"KO": "NEW"
+		},
+		{
+			"ABB": "HT",
+			"EN": "HITICON",
+			"KO": "HIT"
+		},
+		{
+			"ABB": "BST",
+			"EN": "BESTICON",
+			"KO": "BEST"
+		},
+		{
+			"ABB": "SL",
+			"EN": "SALEICON",
+			"KO": "SALE"
+		},
+		{
+			"ABB": "STY",
+			"EN": "STAY",
+			"KO": "숙박"
+		},
+		{
+			"ABB": "PRFM",
+			"EN": "PERFORM",
+			"KO": "공연"
+		},
+		{
+			"ABB": "FCLT",
+			"EN": "FACILITIES",
+			"KO": "시설"
+		},
+		{
+			"ABB": "ADTN",
+			"EN": "ADDITIONAL",
+			"KO": "부대"
+		},
+		{
+			"ABB": "BUY",
+			"EN": "BUY",
+			"KO": "구매"
+		},
+		{
+			"ABB": "THNL",
+			"EN": "THUMBNAIL",
+			"KO": "썸네일"
+		},
+		{
+			"ABB": "RST",
+			"EN": "REST",
+			"KO": "휴양"
+		},
+		{
+			"ABB": "RHMP",
+			"EN": "ROUGHMAP",
+			"KO": "약도"
+		},
+		{
+			"ABB": "IPSB",
+			"EN": "IMPOSSIBLE",
+			"KO": "불가"
+		},
+		{
+			"ABB": "TRVL",
+			"EN": "TRAVEL",
+			"KO": "여행"
+		},
+		{
+			"ABB": "SCDL",
+			"EN": "SCHEDULE",
+			"KO": "일정"
+		},
+		{
+			"ABB": "ITRD",
+			"EN": "INTRODUCTION",
+			"KO": "소개"
+		},
+		{
+			"ABB": "HMPG",
+			"EN": "HOMEPAGE",
+			"KO": "홈페이지"
+		},
+		{
+			"ABB": "RJCT",
+			"EN": "REJECT",
+			"KO": "반려"
+		},
+		{
+			"ABB": "SV",
+			"EN": "SAVE",
+			"KO": "저장"
+		},
+		{
+			"ABB": "GUID",
+			"EN": "GUIDE",
+			"KO": "안내"
+		},
+		{
+			"ABB": "JBGD",
+			"EN": "JOBGRADE",
+			"KO": "직급"
+		},
+		{
+			"ABB": "EXTS",
+			"EN": "EXTENSION",
+			"KO": "내선"
+		},
+		{
+			"ABB": "DRTS",
+			"EN": "DIRECTIONS",
+			"KO": "오시는길"
+		},
+		{
+			"ABB": "SPESP",
+			"EN": "SLEEPENDOSCOPY",
+			"KO": "수면내시경"
+		},
+		{
+			"ABB": "FAX",
+			"EN": "FAX",
+			"KO": "팩스"
+		},
+		{
+			"ABB": "BNTP",
+			"EN": "BUSINESSTYPE",
+			"KO": "업종"
+		},
+		{
+			"ABB": "BNCT",
+			"EN": "BUSINESSCONDITION",
+			"KO": "업태"
+		},
+		{
+			"ABB": "BGRD",
+			"EN": "BACKGROUND",
+			"KO": "배경"
+		},
+		{
+			"ABB": "LF",
+			"EN": "LEAF",
+			"KO": "LEAF"
+		},
+		{
+			"ABB": "VRFC",
+			"EN": "VERIFICATION",
+			"KO": "검증"
+		},
+		{
+			"ABB": "RTP",
+			"EN": "RESTPLACE",
+			"KO": "휴양소"
+		},
+		{
+			"ABB": "HLTH",
+			"EN": "HEALTH",
+			"KO": "건강"
+		},
+		{
+			"ABB": "ECL",
+			"EN": "EXCEL",
+			"KO": "엑셀"
+		},
+		{
+			"ABB": "FL",
+			"EN": "FAIL",
+			"KO": "실패"
+		},
+		{
+			"ABB": "MNST",
+			"EN": "MINISTRY",
+			"KO": "직책"
+		},
+		{
+			"ABB": "CPRS",
+			"EN": "COMPARISON",
+			"KO": "비교"
+		},
+		{
+			"ABB": "DCPRC",
+			"EN": "DISCOUNTPRICE",
+			"KO": "할인가"
+		},
+		{
+			"ABB": "ATTN",
+			"EN": "ATTENTION",
+			"KO": "유의"
+		},
+		{
+			"ABB": "MNAL",
+			"EN": "MANUAL",
+			"KO": "수동"
+		},
+		{
+			"ABB": "VLTA",
+			"EN": "VOLTA",
+			"KO": "회차"
+		},
+		{
+			"ABB": "UPLD",
+			"EN": "UPLOAD",
+			"KO": "업로드"
+		},
+		{
+			"ABB": "DNLD",
+			"EN": "DOWNLOAD",
+			"KO": "다운로드"
+		},
+		{
+			"ABB": "STRC",
+			"EN": "STRUCTURE",
+			"KO": "구조"
+		},
+		{
+			"ABB": "STD",
+			"EN": "STANDARD",
+			"KO": "기준"
+		},
+		{
+			"ABB": "SCS",
+			"EN": "SUCCESS",
+			"KO": "성공"
+		},
+		{
+			"ABB": "PBCOP",
+			"EN": "PUBLISHCORP",
+			"KO": "출판사"
+		},
+		{
+			"ABB": "ISBN",
+			"EN": "ISBN",
+			"KO": "ISBN"
+		},
+		{
+			"ABB": "DRTR",
+			"EN": "DIRECTOR",
+			"KO": "감독"
+		},
+		{
+			"ABB": "PDCOP",
+			"EN": "PRODUCTIONCORP",
+			"KO": "제작사"
+		},
+		{
+			"ABB": "ATST",
+			"EN": "ARTIST",
+			"KO": "아티스트"
+		},
+		{
+			"ABB": "LBL",
+			"EN": "LABEL",
+			"KO": "음반사"
+		},
+		{
+			"ABB": "RSRV",
+			"EN": "RESERVE",
+			"KO": "예매"
+		},
+		{
+			"ABB": "PRMT",
+			"EN": "PARAMETER",
+			"KO": "파라미터"
+		},
+		{
+			"ABB": "SPDC",
+			"EN": "SPECIALDC",
+			"KO": "특가"
+		},
+		{
+			"ABB": "CMPRC",
+			"EN": "CONSUMERPRICE",
+			"KO": "소비자가"
+		},
+		{
+			"ABB": "FLFL",
+			"EN": "FULFILL",
+			"KO": "구비"
+		},
+		{
+			"ABB": "SPRT",
+			"EN": "SUPPORT",
+			"KO": "지원"
+		},
+		{
+			"ABB": "PRVW",
+			"EN": "PREVIEW",
+			"KO": "미리보기"
+		},
+		{
+			"ABB": "LWST",
+			"EN": "LOWEST",
+			"KO": "최저"
+		},
+		{
+			"ABB": "HGST",
+			"EN": "HIGHEST",
+			"KO": "최고"
+		},
+		{
+			"ABB": "ATRM",
+			"EN": "AUDITORIUM",
+			"KO": "공연장"
+		},
+		{
+			"ABB": "ATHR",
+			"EN": "AUTHOR",
+			"KO": "저자"
+		},
+		{
+			"ABB": "UPLMT",
+			"EN": "UPPERLIMIT",
+			"KO": "상한"
+		},
+		{
+			"ABB": "LWLMT",
+			"EN": "LOWESTLIMIT",
+			"KO": "하한"
+		},
+		{
+			"ABB": "PTPNT",
+			"EN": "PENALTYPOINT",
+			"KO": "벌점"
+		},
+		{
+			"ABB": "OPDT",
+			"EN": "OPERATIONDEPART",
+			"KO": "사업부"
+		},
+		{
+			"ABB": "BSPC",
+			"EN": "BUSINESSPLACE",
+			"KO": "사업장"
+		},
+		{
+			"ABB": "ISTGR",
+			"EN": "INSPECITEMGROUP",
+			"KO": "항목군"
+		},
+		{
+			"ABB": "BTCH",
+			"EN": "BATCH",
+			"KO": "배치"
+		},
+		{
+			"ABB": "DPOFR",
+			"EN": "DISCIPLINEOFFICER",
+			"KO": "훈육관"
+		},
+		{
+			"ABB": "MJR",
+			"EN": "MAJOR",
+			"KO": "전공"
+		},
+		{
+			"ABB": "TCMT",
+			"EN": "TEACHMATERIAL",
+			"KO": "교재"
+		},
+		{
+			"ABB": "RCL",
+			"EN": "RECYCLE",
+			"KO": "재활용"
+		},
+		{
+			"ABB": "APCT",
+			"EN": "APPLICANT",
+			"KO": "신청자"
+		},
+		{
+			"ABB": "CSNO",
+			"EN": "CLASSNUMBER",
+			"KO": "학번"
+		},
+		{
+			"ABB": "RLSP",
+			"EN": "RELATIONSHIP",
+			"KO": "관계"
+		},
+		{
+			"ABB": "BKUP",
+			"EN": "BACKUP",
+			"KO": "백업"
+		},
+		{
+			"ABB": "TRST",
+			"EN": "TRANSITION",
+			"KO": "이행"
+		},
+		{
+			"ABB": "LST",
+			"EN": "LIST",
+			"KO": "내역"
+		},
+		{
+			"ABB": "LTR",
+			"EN": "LECTURE",
+			"KO": "강좌"
+		},
+		{
+			"ABB": "NUMR",
+			"EN": "NUMERAL",
+			"KO": "숫자"
+		},
+		{
+			"ABB": "TBL",
+			"EN": "TABLE",
+			"KO": "테이블"
+		},
+		{
+			"ABB": "CLMN",
+			"EN": "COLUMN",
+			"KO": "컬럼"
+		},
+		{
+			"ABB": "QTTN",
+			"EN": "QUOTATION",
+			"KO": "견적"
+		},
+		{
+			"ABB": "ITWK",
+			"EN": "INTERWORK",
+			"KO": "연동"
+		},
+		{
+			"ABB": "CDNT",
+			"EN": "COORDINATE",
+			"KO": "좌표"
+		},
+		{
+			"ABB": "FRM",
+			"EN": "FRAME",
+			"KO": "프레임"
+		},
+		{
+			"ABB": "MVMT",
+			"EN": "MOVEMENT",
+			"KO": "이동"
+		},
+		{
+			"ABB": "ALT",
+			"EN": "ALT",
+			"KO": "ALT"
+		},
+		{
+			"ABB": "PG",
+			"EN": "PG",
+			"KO": "PG"
+		},
+		{
+			"ABB": "NVS",
+			"EN": "NEVERSEE",
+			"KO": "다시보지않기"
+		},
+		{
+			"ABB": "MAIN",
+			"EN": "MAIN",
+			"KO": "메인"
+		},
+		{
+			"ABB": "SUB",
+			"EN": "SUB",
+			"KO": "서브"
+		},
+		{
+			"ABB": "RELCOP",
+			"EN": "RELATIONCORP",
+			"KO": "관계사"
+		},
+		{
+			"ABB": "IFNT",
+			"EN": "INFORMATIONNOTI",
+			"KO": "상품정보고시"
+		},
+		{
+			"ABB": "SFIM",
+			"EN": "SELFIMPROVEMENT",
+			"KO": "자기계발"
+		},
+		{
+			"ABB": "OVSE",
+			"EN": "OVERSEA",
+			"KO": "해외"
+		},
+		{
+			"ABB": "DMST",
+			"EN": "DOMESTIC",
+			"KO": "국내"
+		},
+		{
+			"ABB": "CLTR",
+			"EN": "CULTURE",
+			"KO": "문화"
+		},
+		{
+			"ABB": "RJCTR",
+			"EN": "REJECTER",
+			"KO": "반려자"
+		},
+		{
+			"ABB": "MED",
+			"EN": "MEDICAL",
+			"KO": "의료"
+		},
+		{
+			"ABB": "SU",
+			"EN": "SUPPLY",
+			"KO": "공급"
+		},
+		{
+			"ABB": "TPT",
+			"EN": "THIRD PARTY",
+			"KO": "제3자"
+		},
+		{
+			"ABB": "BDGT",
+			"EN": "BUDGET",
+			"KO": "예산"
+		},
+		{
+			"ABB": "BRD",
+			"EN": "BOARD",
+			"KO": "게시판"
+		},
+		{
+			"ABB": "BLT",
+			"EN": "BULLETIN",
+			"KO": "게시물"
+		},
+		{
+			"ABB": "CST",
+			"EN": "COST",
+			"KO": "비용"
+		},
+		{
+			"ABB": "CLUB",
+			"EN": "CLUB",
+			"KO": "동호회"
+		},
+		{
+			"ABB": "6",
+			"EN": "6",
+			"KO": "6"
+		},
+		{
+			"ABB": "7",
+			"EN": "7",
+			"KO": "7"
+		},
+		{
+			"ABB": "8",
+			"EN": "8",
+			"KO": "8"
+		},
+		{
+			"ABB": "9",
+			"EN": "9",
+			"KO": "9"
+		},
+		{
+			"ABB": "10",
+			"EN": "10",
+			"KO": "10"
+		},
+		{
+			"ABB": "GRTR",
+			"EN": "GRANTOR",
+			"KO": "승인자"
+		},
+		{
+			"ABB": "CMMT",
+			"EN": "COMMENT",
+			"KO": "댓글"
+		},
+		{
+			"ABB": "SCRT",
+			"EN": "SECRET",
+			"KO": "비밀"
+		},
+		{
+			"ABB": "BO",
+			"EN": "BACKOFFICE",
+			"KO": "BO"
+		},
+		{
+			"ABB": "FO",
+			"EN": "FRONTOFFICE",
+			"KO": "FO"
+		},
+		{
+			"ABB": "SSON",
+			"EN": "SEASON",
+			"KO": "시즌"
+		},
+		{
+			"ABB": "MSG",
+			"EN": "MESSAGE",
+			"KO": "메시지"
+		},
+		{
+			"ABB": "WRT",
+			"EN": "WRITE",
+			"KO": "작성"
+		},
+		{
+			"ABB": "IP",
+			"EN": "IP",
+			"KO": "IP"
+		},
+		{
+			"ABB": "ALERT",
+			"EN": "ALERT",
+			"KO": "알림"
+		},
+		{
+			"ABB": "JSP",
+			"EN": "JSP",
+			"KO": "JSP"
+		},
+		{
+			"ABB": "CDT",
+			"EN": "CONDITION",
+			"KO": "조건"
+		},
+		{
+			"ABB": "ECH",
+			"EN": "EACH",
+			"KO": "개별"
+		},
+		{
+			"ABB": "SLN",
+			"EN": "SINGLE LINE",
+			"KO": "한줄"
+		},
+		{
+			"ABB": "LCK",
+			"EN": "LOCK",
+			"KO": "잠금"
+		},
+		{
+			"ABB": "LTXT",
+			"EN": "LONGTEXT",
+			"KO": "장문"
+		},
+		{
+			"ABB": "PUC",
+			"EN": "PUBLIC",
+			"KO": "공개"
+		},
+		{
+			"ABB": "IMTN",
+			"EN": "IMPORTANCE",
+			"KO": "중요"
+		},
+		{
+			"ABB": "FOSN",
+			"EN": "FAMILY OCCASION",
+			"KO": "경조사"
+		},
+		{
+			"ABB": "REFR",
+			"EN": "REFERRER",
+			"KO": "REFERRER"
+		},
+		{
+			"ABB": "ACMM",
+			"EN": "ACCUMULATED MONEY",
+			"KO": "적립금"
+		},
+		{
+			"ABB": "PRLG",
+			"EN": "PROLONG",
+			"KO": "연장"
+		},
+		{
+			"ABB": "EMPE",
+			"EN": "EMPLOYEE",
+			"KO": "임직원"
+		},
+		{
+			"ABB": "DOMN",
+			"EN": "DOMAIN",
+			"KO": "도메인"
+		},
+		{
+			"ABB": "ITRL",
+			"EN": "INTERRELATED",
+			"KO": "계열"
+		},
+		{
+			"ABB": "OPN",
+			"EN": "OPEN",
+			"KO": "오픈"
+		},
+		{
+			"ABB": "MNGR",
+			"EN": "MANAGER",
+			"KO": "관리자"
+		},
+		{
+			"ABB": "STE",
+			"EN": "SITE",
+			"KO": "사이트"
+		},
+		{
+			"ABB": "FST",
+			"EN": "FIRST",
+			"KO": "최초"
+		},
+		{
+			"ABB": "LGO",
+			"EN": "LOGO",
+			"KO": "로고"
+		},
+		{
+			"ABB": "OWN",
+			"EN": "OWN",
+			"KO": "본인"
+		},
+		{
+			"ABB": "SSO",
+			"EN": "SSO",
+			"KO": "SSO"
+		},
+		{
+			"ABB": "HUAF",
+			"EN": "HUMAN AFFAIRS",
+			"KO": "인사"
+		},
+		{
+			"ABB": "ENC",
+			"EN": "ENCRYPTION",
+			"KO": "암호화"
+		},
+		{
+			"ABB": "BULK",
+			"EN": "BULK",
+			"KO": "대량"
+		},
+		{
+			"ABB": "RTN",
+			"EN": "RETURN",
+			"KO": "리턴"
+		},
+		{
+			"ABB": "PPSE",
+			"EN": "PURPOSE",
+			"KO": "목적"
+		},
+		{
+			"ABB": "POSS",
+			"EN": "POSSESSION",
+			"KO": "보유"
+		},
+		{
+			"ABB": "REMTP",
+			"EN": "REMOTE PLACE",
+			"KO": "도서산간"
+		},
+		{
+			"ABB": "EXPRT",
+			"EN": "EXPIRATION",
+			"KO": "만료"
+		},
+		{
+			"ABB": "OFFC",
+			"EN": "OFFICE",
+			"KO": "직장"
+		},
+		{
+			"ABB": "EMPEN",
+			"EN": "EMPLOYEE NUMBER",
+			"KO": "사번"
+		},
+		{
+			"ABB": "NAT",
+			"EN": "NATIVE",
+			"KO": "내국인"
+		},
+		{
+			"ABB": "SRE",
+			"EN": "SERVE",
+			"KO": "재직"
+		},
+		{
+			"ABB": "DUP",
+			"EN": "DUPLICATION",
+			"KO": "중복"
+		},
+		{
+			"ABB": "JCPY",
+			"EN": "JOIN COMPANY",
+			"KO": "입사"
+		},
+		{
+			"ABB": "MTE",
+			"EN": "MATE",
+			"KO": "배우자"
+		},
+		{
+			"ABB": "DI",
+			"EN": "DI",
+			"KO": "DI"
+		},
+		{
+			"ABB": "KEY",
+			"EN": "KEY",
+			"KO": "키"
+		},
+		{
+			"ABB": "PRVE",
+			"EN": "PROVIDE",
+			"KO": "지급"
+		},
+		{
+			"ABB": "RTCT",
+			"EN": "RETRACTION",
+			"KO": "철회"
+		},
+		{
+			"ABB": "RTCTR",
+			"EN": "RETRACTOR",
+			"KO": "철회자"
+		},
+		{
+			"ABB": "HME",
+			"EN": "HOME",
+			"KO": "자택"
+		},
+		{
+			"ABB": "TMSY",
+			"EN": "THEMESTORY",
+			"KO": "테마스토리"
+		},
+		{
+			"ABB": "FSTL",
+			"EN": "FESTIVAL",
+			"KO": "축제"
+		},
+		{
+			"ABB": "FNL",
+			"EN": "FINAL",
+			"KO": "최종"
+		},
+		{
+			"ABB": "LTTD",
+			"EN": "LATITUDE",
+			"KO": "위도"
+		},
+		{
+			"ABB": "LOTD",
+			"EN": "LONGITUDE",
+			"KO": "경도"
+		},
+		{
+			"ABB": "SEE",
+			"EN": "SEE",
+			"KO": "관람"
+		},
+		{
+			"ABB": "EXRT",
+			"EN": "EXCHANGE RATE",
+			"KO": "환율"
+		},
+		{
+			"ABB": "PDESN",
+			"EN": "PREDESIGN",
+			"KO": "사전설계"
+		},
+		{
+			"ABB": "ADJ",
+			"EN": "ADJUSTMENT",
+			"KO": "조정"
+		},
+		{
+			"ABB": "DCMP",
+			"EN": "DECIMAL POINT",
+			"KO": "소수점"
+		},
+		{
+			"ABB": "ASSN",
+			"EN": "ASSIGN",
+			"KO": "배정"
+		},
+		{
+			"ABB": "WITM",
+			"EN": "WELFARE ITEM",
+			"KO": "복지항목"
+		},
+		{
+			"ABB": "WCAT",
+			"EN": "WELFARE CATEGORY",
+			"KO": "복지분류"
+		},
+		{
+			"ABB": "NEMPE",
+			"EN": "NEW EMPLOYEE",
+			"KO": "입사자"
+		},
+		{
+			"ABB": "MWY",
+			"EN": "MIDWAY",
+			"KO": "중도"
+		},
+		{
+			"ABB": "ALTM",
+			"EN": "ALLOTMENT",
+			"KO": "배분"
+		},
+		{
+			"ABB": "REMPE",
+			"EN": "RETIRED EMPLOYEE",
+			"KO": "퇴사자"
+		},
+		{
+			"ABB": "CACL",
+			"EN": "CALCULATION",
+			"KO": "산정"
+		},
+		{
+			"ABB": "RTM",
+			"EN": "RETIREMENT",
+			"KO": "퇴사"
+		},
+		{
+			"ABB": "MTX",
+			"EN": "MATRIX",
+			"KO": "조견표"
+		},
+		{
+			"ABB": "ML",
+			"EN": "MALE",
+			"KO": "남성"
+		},
+		{
+			"ABB": "FML",
+			"EN": "FEMALE",
+			"KO": "여성"
+		},
+		{
+			"ABB": "EXR",
+			"EN": "EXPIRE",
+			"KO": "소멸"
+		},
+		{
+			"ABB": "FAM",
+			"EN": "FAMILY",
+			"KO": "가족"
+		},
+		{
+			"ABB": "LBYY",
+			"EN": "LABORYEAR",
+			"KO": "근속년수"
+		},
+		{
+			"ABB": "BF",
+			"EN": "BEFORE",
+			"KO": "이전"
+		},
+		{
+			"ABB": "AF",
+			"EN": "AFTER",
+			"KO": "이후"
+		},
+		{
+			"ABB": "UNCVG",
+			"EN": "UNDER COVERAGE",
+			"KO": "미포함"
+		},
+		{
+			"ABB": "APPT",
+			"EN": "APPOINTMENT",
+			"KO": "발령"
+		},
+		{
+			"ABB": "BNS",
+			"EN": "BONUS",
+			"KO": "성과급"
+		},
+		{
+			"ABB": "EVD",
+			"EN": "EVIDENCE",
+			"KO": "증빙"
+		},
+		{
+			"ABB": "SBJT",
+			"EN": "SUBJECT",
+			"KO": "교과목"
+		},
+		{
+			"ABB": "SHLY",
+			"EN": "SCHOOLYEAR",
+			"KO": "학년"
+		},
+		{
+			"ABB": "SHLT",
+			"EN": "SCHOOLTERM",
+			"KO": "학기"
+		},
+		{
+			"ABB": "CLAS",
+			"EN": "CLASS",
+			"KO": "학급"
+		},
+		{
+			"ABB": "GNR",
+			"EN": "GENRE",
+			"KO": "장르"
+		},
+		{
+			"ABB": "PRPS",
+			"EN": "PROPOSAL",
+			"KO": "제안"
+		},
+		{
+			"ABB": "ATDE",
+			"EN": "ATTENDEE",
+			"KO": "참석자"
+		},
+		{
+			"ABB": "CLSER",
+			"EN": "CLOSER",
+			"KO": "폐쇄자"
+		},
+		{
+			"ABB": "CHBT",
+			"EN": "COHABIT",
+			"KO": "동거"
+		},
+		{
+			"ABB": "LBR",
+			"EN": "LABOR",
+			"KO": "근로"
+		},
+		{
+			"ABB": "LDG",
+			"EN": "LEDGER",
+			"KO": "원장"
+		},
+		{
+			"ABB": "DPS",
+			"EN": "DEPOSIT",
+			"KO": "입금"
+		},
+		{
+			"ABB": "RACT",
+			"EN": "RETROACTIVITY",
+			"KO": "소급"
+		},
+		{
+			"ABB": "ECLU",
+			"EN": "EXCLUSIVE",
+			"KO": "전용"
+		},
+		{
+			"ABB": "NECLU",
+			"EN": "NON-EXCLUSIVE",
+			"KO": "비전용"
+		},
+		{
+			"ABB": "SLS",
+			"EN": "SALES",
+			"KO": "매출"
+		},
+		{
+			"ABB": "BCCRD",
+			"EN": "BC CARD",
+			"KO": "BC카드"
+		},
+		{
+			"ABB": "SHCRD",
+			"EN": "SHCARD",
+			"KO": "신한카드"
+		},
+		{
+			"ABB": "CNCLR",
+			"EN": "CANCELOR",
+			"KO": "취소자"
+		},
+		{
+			"ABB": "CBN",
+			"EN": "COMBINE",
+			"KO": "통합"
+		},
+		{
+			"ABB": "TAXI",
+			"EN": "TAXI",
+			"KO": "택시"
+		},
+		{
+			"ABB": "FLT",
+			"EN": "FLIGHT",
+			"KO": "비행"
+		},
+		{
+			"ABB": "WAY",
+			"EN": "WAY",
+			"KO": "수단"
+		},
+		{
+			"ABB": "ENCD",
+			"EN": "ENCODING",
+			"KO": "인코딩"
+		},
+		{
+			"ABB": "TMPT",
+			"EN": "TIMEPOINT",
+			"KO": "시점"
+		},
+		{
+			"ABB": "RES",
+			"EN": "RESPONSE",
+			"KO": "응답"
+		},
+		{
+			"ABB": "REQR",
+			"EN": "REQUESTER",
+			"KO": "요청자"
+		},
+		{
+			"ABB": "HALT",
+			"EN": "HALT",
+			"KO": "해지"
+		},
+		{
+			"ABB": "PATN",
+			"EN": "PARTITION",
+			"KO": "분할"
+		},
+		{
+			"ABB": "CRTCRDLN",
+			"EN": "CREDITCARDLINE",
+			"KO": "카드라인"
+		},
+		{
+			"ABB": "REISSU",
+			"EN": "REISSUE",
+			"KO": "재발급"
+		},
+		{
+			"ABB": "DJN",
+			"EN": "DIRECT JOIN",
+			"KO": "직가맹"
+		},
+		{
+			"ABB": "CLSE",
+			"EN": "CLOSE",
+			"KO": "마감"
+		},
+		{
+			"ABB": "CRRP",
+			"EN": "CORRESPOND",
+			"KO": "일치"
+		},
+		{
+			"ABB": "BLNCE",
+			"EN": "BALANCE",
+			"KO": "잔액"
+		},
+		{
+			"ABB": "ETC",
+			"EN": "ETC",
+			"KO": "기타"
+		},
+		{
+			"ABB": "TPRC",
+			"EN": "TOTAL PRICE",
+			"KO": "총액"
+		},
+		{
+			"ABB": "TAXE",
+			"EN": "TAX EXEMPTION",
+			"KO": "면세"
+		},
+		{
+			"ABB": "INVOC",
+			"EN": "INVOICE",
+			"KO": "인보이스"
+		},
+		{
+			"ABB": "TAXAMT",
+			"EN": "TAX AMOUNT",
+			"KO": "세액"
+		},
+		{
+			"ABB": "KT",
+			"EN": "KT",
+			"KO": "KT"
+		},
+		{
+			"ABB": "FND",
+			"EN": "FUND",
+			"KO": "기금"
+		},
+		{
+			"ABB": "RCRT",
+			"EN": "RECRUIT",
+			"KO": "모집"
+		},
+		{
+			"ABB": "CMP",
+			"EN": "COMPARE",
+			"KO": "대사"
+		},
+		{
+			"ABB": "LN",
+			"EN": "LINE",
+			"KO": "라인"
+		},
+		{
+			"ABB": "ACCTG",
+			"EN": "ACCOUNTING",
+			"KO": "회계"
+		},
+		{
+			"ABB": "OPPRC",
+			"EN": "OPERATIING PRICE",
+			"KO": "운영비"
+		},
+		{
+			"ABB": "USEP",
+			"EN": "USEDPLACE",
+			"KO": "사용처"
+		},
+		{
+			"ABB": "DCRD",
+			"EN": "DISCORD",
+			"KO": "불일치"
+		},
+		{
+			"ABB": "DBT",
+			"EN": "DEBT",
+			"KO": "차변"
+		},
+		{
+			"ABB": "CRED",
+			"EN": "CREDIT",
+			"KO": "대변"
+		},
+		{
+			"ABB": "DEFN",
+			"EN": "DEFINE",
+			"KO": "정의"
+		},
+		{
+			"ABB": "ACCNT",
+			"EN": "ACCOUNT",
+			"KO": "계정"
+		},
+		{
+			"ABB": "TAXP",
+			"EN": "TAX OPERATION",
+			"KO": "세무"
+		},
+		{
+			"ABB": "ABST",
+			"EN": "ABSTRACT",
+			"KO": "적요"
+		},
+		{
+			"ABB": "PBK",
+			"EN": "PAYBACK",
+			"KO": "반제"
+		},
+		{
+			"ABB": "PST",
+			"EN": "POST",
+			"KO": "게시"
+		},
+		{
+			"ABB": "SIGN",
+			"EN": "SIGN",
+			"KO": "서명"
+		},
+		{
+			"ABB": "DCDR",
+			"EN": "DECIDER",
+			"KO": "확정자"
+		},
+		{
+			"ABB": "DPAY",
+			"EN": "DOWNPAY",
+			"KO": "선수금"
+		},
+		{
+			"ABB": "GOLF",
+			"EN": "GOLF",
+			"KO": "골프"
+		},
+		{
+			"ABB": "CLSCP",
+			"EN": "COLONOSCOPY",
+			"KO": "대장내시경"
+		},
+		{
+			"ABB": "CHDN",
+			"EN": "CHILDREN",
+			"KO": "자녀"
+		},
+		{
+			"ABB": "WSHLT",
+			"EN": "WISHLIST",
+			"KO": "위시리스트"
+		},
+		{
+			"ABB": "CC",
+			"EN": "COSTCENTER",
+			"KO": "코스트센터"
+		}
+	]
+}

@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+#order {width:100%; overflow:hidden; clear:both;}
+#order .orderWrap {max-width:600px; margin:0 auto; width:100%; overflow:hidden; clear:both; padding-top:30px;}
+#order .orderWrap input {height:18px; line-height:17px; width:120px; display:inline-block;}
+#order .orderWrap input[type="radio"],
+#order .orderWrap input[type="checkbox"] {width:auto;}
+#order .orderWrap select {height:18px; line-height:17px; width:auto; display:inline-block;}
+
+ol.policy {padding:0 30px; }
+ol.policy li {list-style:decimal; padding:0 5px;}
+
+dl.member {display:block; padding:0 20px; width:100%; white-space:nowrap; line-height:20px;}
+dl.member dt {display:inline-block; width:100px;}
+dl.member dd {display:inline-block; width:300px; color:#ff5500; font-weight:bold;}
+dl.member dd span {color:#777; font-weight:normal;}
+
+dl.subPay {display:block; padding:0 20px; width:100%; white-space:nowrap; line-height:20px;}
+dl.subPay dt {display:inline-block; width:100px;}
+dl.subPay dd {display:inline-block; width:300px;}
+
+table.product {width:100%; line-height:17px;}
+table.product th {padding:2px 5px; text-align:center; border:1px solid #ccc; background:#eee;}
+table.product td {padding:2px 5px; border:1px solid #ccc;}
+
+table.country {width:100%; line-height:17px;}
+table.country th {padding:2px 5px; border:1px solid #ccc; background:#eee;}
+table.country td {padding:2px 5px; border:1px solid #ccc;}
+table.country td.total {font-weight:bold; color:#ff5500;}
+table.country td.total span {font-weight:normal; font-size:11px; color:#777;}
+
+p.total {font-weight:bold; padding:10px 0; text-align:center;}
+p.total strong {color:#ff5500;}
+
+/* 현재 페이지만 셀렉트 허용 */
+span,div,img,body {
+    -moz-user-select: text;
+    -ms-user-select: text;
+    -webkit-user-select: text;
+    user-select: text;
+}

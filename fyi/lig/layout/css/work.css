@@ -1,0 +1,81 @@
+/* 2008-04 Writer:Jaeho */
+
+@import "common.css";
+
+
+html	{height:100%; }
+body	{height:100%; }
+
+#Container								{width:1259px; padding-bottom:10px; overflow:hidden; background:url(../images/work/bg_body.jpg) repeat-x left top #ffe8af;}
+#Container	#Top						{overflow:auto; width:100%; clear:both;}
+#Container	#Top	.logo				{overflow:auto; background:url(../images/work/logo.gif) no-repeat; width:231px; height:61px; float:left;}
+#Container	#Top	.topTab				{overflow:auto; width:500px; padding-left:10px; height:61px; float:left;}
+#Container	#Top	.topTab			li	{display:inline;}
+#Container	#Top	.topGlobal			{width:400px; height:61px; float:right; text-align:right;}
+#Container	#Top	.topGlobal		ul	{margin:5px 5px 0 0;}
+#Container	#Top	.topGlobal		li	{display:inline;}
+#Container	#Top	.topBar				{clear:both; height:23px; padding:5px; overflow:hidden; margin-bottom:10px; background:url(../images/work/bg_topBar.gif) no-repeat left top;}		
+#Container	#Top	.topBar	.search			{width:235px; overflow:auto; float:left;}
+#Container	#Top	.topBar	.mdiBtn			{width:900px; overflow:auto; floae:left}
+
+
+#Container	#ContentWrap				{width:100%; clear:both;}
+#Container	#ContentWrap	#Left		{width:226px; padding:0 5px; float:left;}
+#Container	#ContentWrap	#Left	.leftTab	{height:19px; overflow:hidden;}
+#Container	#ContentWrap	#Left	.leftTab	ul	{margin-left:7px;}
+#Container	#ContentWrap	#Left	.leftTab	ul	li	{display:inline; margin-left:-2px;}
+
+
+#Container	#ContentWrap	#Left	.leftTop	{height:9px; font-size:0; background:url(../images/work/bg_leftTop.gif) no-repeat left top;}
+#Container	#ContentWrap	#Left	.leftCon	{background:url(../images/work/bg_left.gif) repeat-y left top;}
+#Container	#ContentWrap	#Left	.leftBottom	{height:9px; font-size:0; background:url(../images/work/bg_leftBottom.gif) no-repeat left top;}
+#Container	#ContentWrap	#Left	.leftTitle	{overflow:auto; padding:3px 0; font-size:13px; color:#996600; font-weight:bold; margin:0 10px; border-bottom:1px solid #ddd;}
+#Container	#ContentWrap	#Left	.leftLine	{height:19px; background:url(../images/work/bg_leftLine.gif) no-repeat left top;}
+#Container	#ContentWrap	#Left	.leftConCon	{padding:5px 10px 0 10px;}	
+
+#Container	#ContentWrap	#Left	.leftSubTitle	{margin:-17px 3px 0 0; text-align:right;}
+#Container	#ContentWrap	#Left	.leftSubTitle	li	{display:inline;}
+
+#Container	#ContentWrap	#Content	{width:1018px; float:left;}
+#Container	#ContentWrap	#Content	.contentTab		{height:19px; width:100%; overflow:hidden;}
+#Container	#ContentWrap	#Content	.contentTop		{height:9px; font-size:0; background:url(../images/work/bg_contentTop.gif) no-repeat left top;}
+#Container	#ContentWrap	#Content	.contentCon		{padding:0 9px; background:url(../images/work/bg_content.gif) repeat-y left top;}
+#Container	#ContentWrap	#Content	.contentBottom	{height:19px; padding:5px 10px; background:url(../images/work/bg_contentBottom.gif) no-repeat left top;}
+
+
+
+.menuEdit			{z-index:1; position:absolute; width:62px; text-align:center; border:1px solid #adadad; padding:22px 0 0 0; margin:-16px 0 0 144px;}
+
+.menuEdit	.on		{background-color:#ff8a00; border:2px solid #fff; width:58px; color:#fff; padding:2px 0; text-align:center; margin-top:-2px;}
+.menuEdit	.off	{background-color:#e3e3e3; border:2px solid #fff; width:58px; color:#7b7b7b; padding:2px 0; text-align:center; margin-top:-2px;}
+
+.menuEdit	.on		a:link,
+.menuEdit	.on		a:visited,
+.menuEdit	.on		a:active 		{color:#fff;}
+.menuEdit	.on		a:hover		 	{color:#fff;}
+
+.menuEdit	.off	a:link,
+.menuEdit	.off	a:visited,
+.menuEdit	.off	a:active 		{color:#7b7b7b;}
+.menuEdit	.off	a:hover		 	{color:#7b7b7b;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,19 @@
+/* 2008-04 Writer:Jaeho */
+
+@import "../common.css";
+
+h3	{margin:5px 0; font-weight:bold; color:#09398d; background:url(../../images/common/blet_arrow.gif) no-repeat 0 1px; padding:0 0 0 14px;}
+h4	{padding:0 0 5px 10px; background:url(../../images/common/blet_h4.gif) no-repeat 4px 5px; font-weight:bold; color:#4a4a4a;}
+
+ul		{list-style:none;}
+ol		{list-style:none; padding:0; margin:0;}
+body	{background-color:#fff;}
+
+.ContentWrap					{clear:both; width:979px; overflow: auto; margin:0;} 
+
+.unitInfo		{padding:10px 0 0 15px;}
+.colorInfoBox	{clear:both; padding:5px 0 0 10px;}
+.infoBox	{float:left; min-width:20px; padding:5px 10px 0 50px; word-break:none;}
+.colorBox	{color:#000; font-size:11px; position:absolute; margin:-5px 0 0 -45px; border:1px solid #eee; padding:3px; width:30px; text-align:center;}
+
+.bpmsContent	{overflow:auto; border:1px solid #eee; padding:10px 0 0 5px;} 

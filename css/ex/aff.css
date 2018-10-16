@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+#aff {width:100%; overflow:hidden; clear:both;}
+#order .orderWrap {width:100%; overflow:hidden; clear:both; padding-top:30px;}
+
+ol.policy {padding:0 30px; }
+ol.policy li {list-style:decimal; padding:0 5px;}
+
+
+table.aff {width:100%; line-height:17px;}
+table.aff th {padding:2px 5px; text-align:center; border:1px solid #ccc; background:#eee;}
+table.aff td {padding:2px 5px; border:1px solid #ccc;}
+table.aff td.red {color:#ff5500}

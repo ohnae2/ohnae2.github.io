@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="kor" data-ng-app="KaisaApp"
+	data-ng-controller="KaisaController">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta name="robots" content="index,follow">
+<title>Kaisa</title>
+<meta name="keywords" content="Kaisa,가이사,카이사,가평,홈페이지">
+<meta name="description" content="Kaisa,가이사,카이사,가평,홈페이지">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kaisa">
+<meta property="og:description" content="Kaisa,가이사,카이사,가평,홈페이지">
+<meta property="og:image"
+	content="http://kaisa.co.kr/img/common/logo.png">
+<meta property="og:url" content="http://kaisa.co.kr">
+<meta name="fragment" content="!">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<link rel="shortcut icon" href="/img/favicon.ico?ver=0.1"
+	type="image/x-icon">
+<link rel="stylesheet" href="/css/common.css" type="text/css">
+<script src="/js/lib/jquery/jquery-1.11.1.min.js"></script>
+<script src="/js/lib/handlebars/handlebars-v4.0.12.js"></script>
+</head>
+<body data-ng-controller="BodyController" class="ng-scope">
+<div id="nav" data-ng-click="window.nav()"></div>
+<div id="header">
+	<div class="wrap">
+		<h1><a href="/"><img data-ng-src="/img/common/logo.png" alt="" src="/img/common/logo.png"></a></h1>
+	</div>
+</div>
+<div id="menu">
+	<div class="menu_wrap">
+		<div class="wrap">
+			<ul>
+				<li><a href="/">kaisa</a></li>
+				<li><a href="/illustrator">illustrator</a></li>
+				<li><a href="/ex/date.html">example</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div id="container">
+	<div id="test">
+		<div class="wrap">
+		<h2>Handlebars Test</h2>
+		<script id="entry-template" type="text/x-handlebars-template">
+		<table class="testT">
+		    <thead> 
+		        <th>이름</th> 
+		        <th>아이디</th> 
+		        <th>메일주소</th>
+		        <th>요소정보</th>
+		    </thead> 
+		    <tbody> 
+		        {{!-- {{#each users}} 는 {{#users}} 로도 대체 가능하다 --}}
+		        {{#each users}}
+		        <tr>
+		            {{!-- {{name}} 은 {{this.name}} 과 같고 {{.}} 은 현재 name과 id를 포함하고 있는 오브젝트를 가리킨다 --}}
+		            <td>{{name}}</td> 
+		            <td>{{id}}</td> 
+		            
+		            {{!-- 사용자 정의 헬퍼인 email에 id를 인자로 넘긴다 --}}
+		            <td><a href="mailto:{{email id}}">{{email id}}</a></td> 
+		            
+		            {{!-- 요소의 순번은 @index 혹은 @key로 잡을 수 있는데,
+		            array와 object 모두 잡을 수 있는 key가 더 나아보인다 --}}
+		            
+		            {{#if @first}}
+		                <td>첫 아이템 ({{@key}} 번째 요소)</td>
+		            {{else if @last}}
+		                <td>마지막 아이템 ({{@key}} 번째 요소)</td>
+		            {{else}}
+		                <td>중간 아이템 ({{@key}} 번째 요소)</td>
+		            {{/if}}
+		        </tr> 
+		        {{/each}}
+		    </tbody> 
+		</table>
+		</script>
+		<script src="/js/controller/test/handlebars.js"></script>
+		</div>
+	</div>
+</div>
+<div id="footer">
+	<div class="wrap">
+		<h1><img data-ng-src="/img/common/logo.png" alt="" src="/img/common/logo.png"></h1>
+		<p>Copyright © 2006 Kaisa. All Rights Reserved <br>Email : 7083620@hanmail.net </p>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+ [
+	 {"no": 680, "min": [1,3,4], "hour": [2,3,4],  "company": "IPK", "name": "상품 제휴 카테고리 수신 배치"}
+	,{"no": 668, "min": [10,20,59], "hour": [5,8,12,19],  "company": "IPK", "name": "상품 QNA 전송 배치"}
+	,{"no": 667, "min": [], "hour": [5,8,12,16], "company": "IPK", "name": "상품 QNA 수신 배치"}
+	,{"no": 666, "min": [], "hour": [], "company": "IPK", "name": "상품 일반 카테고리 수신 배치"}
+	,{"no": 659, "min": [], "hour": [], "company": "IPK", "name": "TV 상품 품절 전송배치"}
+	,{"no": 658, "min": [], "hour": [], "company": "IPK", "name": "인터넷 상품 품절 전송배치"}
+	,{"no": 657, "min": [], "hour": [], "company": "IPK", "name": "백화점 상품 품절 전송배치"}
+	,{"no": 656, "min": [], "hour": [], "company": "IPK", "name": "TV 가격전송 배치"}
+	,{"no": 655, "min": [], "hour": [], "company": "IPK", "name": "인터넷 가격 전송 배치"}
+	,{"no": 654, "min": [], "hour": [], "company": "IPK", "name": "백화점 가격 전송 배치"}
+	,{"no": 653, "min": [], "hour": [], "company": "IPK", "name": "TV 상품 전송 배치"}
+	,{"no": 652, "min": [], "hour": [], "company": "IPK", "name": "인터넷 상품 전송 배치"}
+	,{"no": 651, "min": [], "hour": [], "company": "IPK", "name": "백화점 상품 전송 배치"}
+	,{"no": 650, "min": [], "hour": [], "company": "IPK", "name": "TV 상품 전송 대상 집계 배치"}
+	,{"no": 649, "min": [], "hour": [], "company": "IPK", "name": "인터넷 상품 전송 대상 집계 배치"}
+	,{"no": 648, "min": [], "hour": [], "company": "IPK", "name": "백화점 상품 전송 대상 집계 배치"}
+	,{"no": 648, "min": [], "hour": [], "company": "EBAY", "name": "옥션 ETV 라이브 상품 연동"}
+	,{"no": 648, "min": [], "hour": [], "company": "EBAY", "name": "옥션 백화점 상품 판매 상태변경"}
+	,{"no": 648, "min": [], "hour": [], "company": "EBAY", "name": "옥션 일반 상품 판매 상태변경"}
+	,{"no": 648, "min": [], "hour": [], "company": "EBAY", "name": "옥션 카테고리 동기화"}
+	,{"no": 648, "min": [], "hour": [], "company": "EBAY", "name": "옥션 QnA 답변 송신"}
+	,{"no": 648, "min": [], "hour": [], "company": "EBAY", "name": "옥션 QnA 수신"}
+	,{"no": 648, "min": [], "hour": [], "company": "EBAY", "name": "옥션 TV 상품 연동"}
+	,{"no": 648, "min": [], "hour": [], "company": "EBAY", "name": "옥션 백화점 상품 연동"}
+	,{"no": 648, "min": [], "hour": [], "company": "EBAY", "name": "옥션 일반 상품 연동"}
+	,{"no": 648, "min": [], "hour": [], "company": "EBAY", "name": "옥션 TV 상품 수집"}
+	,{"no": 648, "min": [], "hour": [], "company": "EBAY", "name": "옥션 백화점 상품 수집"}
+	,{"no": 648, "min": [], "hour": [], "company": "EBAY", "name": "옥션 일반 상품 수집"}
+	,{"no": 648, "min": [], "hour": [], "company": "EBAY", "name": "지마켓 ETV 라이브 상품 연동"}
+	,{"no": 648, "min": [], "hour": [], "company": "EBAY", "name": "지마켓 방송편성표 연동"}
+	,{"no": 648, "min": [], "hour": [], "company": "EBAY", "name": "지마켓 G9 연동"}
+	,{"no": 648, "min": [], "hour": [], "company": "EBAY", "name": "지마켓 일반 상품 판매 상태 변경"}
+	,{"no": 648, "min": [], "hour": [], "company": "EBAY", "name": "지마켓 백화점 상품 판매 상태 변경"}
+	,{"no": 648, "min": [], "hour": [], "company": "EBAY", "name": "지마켓 카테고리 동기화"}
+	,{"no": 648, "min": [], "hour": [], "company": "EBAY", "name": "지마켓 QnA 답변 송신"}
+	,{"no": 648, "min": [], "hour": [], "company": "EBAY", "name": "지마켓 QnA 수신"}
+	,{"no": 648, "min": [], "hour": [], "company": "EBAY", "name": "지마켓 TV 상품 연동"}
+	,{"no": 648, "min": [], "hour": [], "company": "EBAY", "name": "지마켓 백화점 상품 연동"}
+	,{"no": 648, "min": [], "hour": [], "company": "EBAY", "name": "지마켓 일반 상품 연동"}
+	,{"no": 648, "min": [], "hour": [], "company": "EBAY", "name": "지마켓 TV 상품 수집"}
+	,{"no": 648, "min": [], "hour": [], "company": "EBAY", "name": "지마켓 백화점 상품 수집"}
+	,{"no": 648, "min": [], "hour": [], "company": "EBAY", "name": "지마켓 일반 상품 수집"}
+	,{"no": 648, "min": [], "hour": [], "company": "11번가", "name": "상품등록/수정(TV)"}
+	,{"no": 648, "min": [], "hour": [], "company": "11번가", "name": "일시중단단 상품 재전송"}
+	,{"no": 648, "min": [], "hour": [], "company": "11번가", "name": "계약상태에 따른 협력사 연동 배치"}
+	,{"no": 648, "min": [], "hour": [], "company": "11번가", "name": "협력사 등록 배치 (인터넷)"}
+	,{"no": 648, "min": [], "hour": [], "company": "11번가", "name": "상품등록/수정(인터넷)"}
+	,{"no": 648, "min": [], "hour": [], "company": "11번가", "name": "카테고리 동기화"}
+	,{"no": 648, "min": [], "hour": [], "company": "11번가", "name": "쿠폰전송"}
+	,{"no": 648, "min": [], "hour": [], "company": "11번가", "name": "11번가 상품등록/수정(백화점)"}
+	,{"no": 648, "min": [], "hour": [], "company": "11번가", "name": "QnA 답변 송신"}
+	,{"no": 648, "min": [], "hour": [], "company": "11번가", "name": "QnA 수신"}
+	,{"no": 648, "min": [], "hour": [], "company": "11번가", "name": "출고지 회수지 배송비정책 배치"}
+	,{"no": 648, "min": [], "hour": [], "company": "쿠팡", "name": "TV 승인 상태 매핑 배치"}
+	,{"no": 648, "min": [], "hour": [], "company": "쿠팡", "name": "백화점 승인 상태 매핑 배치"}
+	,{"no": 648, "min": [], "hour": [], "company": "쿠팡", "name": "TV 재고 및 가격 연동 배치"}
+	,{"no": 648, "min": [], "hour": [], "company": "쿠팡", "name": "인터넷 재고 및 가격 연동 배치"}
+	,{"no": 648, "min": [], "hour": [], "company": "쿠팡", "name": "백화점 재고 및 가격 연동 배치"}
+	,{"no": 648, "min": [], "hour": [], "company": "쿠팡", "name": "카테고리 동기화"}
+	,{"no": 648, "min": [], "hour": [], "company": "쿠팡", "name": "QnA  답변송신"}
+	,{"no": 648, "min": [], "hour": [], "company": "쿠팡", "name": "QnA 수신"}
+	,{"no": 648, "min": [], "hour": [], "company": "쿠팡", "name": "TV 상품 수집"}
+	,{"no": 648, "min": [], "hour": [], "company": "쿠팡", "name": "백화점 상품 수집"}
+	,{"no": 648, "min": [], "hour": [], "company": "쿠팡", "name": "인터넷 상품 수집"}
+	,{"no": 648, "min": [], "hour": [], "company": "쿠팡", "name": "TV 반품지 배치"}
+	,{"no": 648, "min": [], "hour": [], "company": "쿠팡", "name": "인터넷 반품지 배치"}
+	,{"no": 648, "min": [], "hour": [], "company": "쿠팡", "name": "백화점 반품지 배치"}
+	,{"no": 648, "min": [], "hour": [], "company": "쿠팡", "name": "TV 상품 연동 배치"}
+	,{"no": 648, "min": [], "hour": [], "company": "쿠팡", "name": "인터넷 상품 연동 배치"}
+	,{"no": 648, "min": [], "hour": [], "company": "쿠팡", "name": "백화점 상품 연동 배치"}
+	,{"no": 648, "min": [], "hour": [], "company": "쿠팡", "name": "TV 출고지 배치"}
+	,{"no": 648, "min": [], "hour": [], "company": "쿠팡", "name": "인터넷 출고지 배치"}
+	,{"no": 648, "min": [], "hour": [], "company": "쿠팡", "name": "백화점 출고지 배치"}
+	,{"no": 648, "min": [], "hour": [], "company": "쿠팡", "name": "TV 상품 집계 배치"}
+	,{"no": 648, "min": [], "hour": [], "company": "쿠팡", "name": "인터넷 상품 집계 배치"}
+	,{"no": 648, "min": [], "hour": [], "company": "쿠팡", "name": "백화점 상품 집계 배치"}
+]
