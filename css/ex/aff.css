@@ -11,3 +11,6 @@ table.aff {width:100%; line-height:17px;}
 table.aff th {padding:2px 5px; text-align:center; border:1px solid #ccc; background:#eee;}
 table.aff td {padding:2px 5px; border:1px solid #ccc;}
 table.aff td.red {color:#ff5500}
+table.aff td b {color:#ff5500}
+table.aff td span {color:#aaa; font-size:11px;}
+table.aff td .ly {position:absolute; margin-left:50px; margin-top:-18px; font-size:9px; color:#888; border:1px solid #aaa; background:#fff; padding:3px; line-height:10px;}

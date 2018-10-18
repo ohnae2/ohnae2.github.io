@@ -44,9 +44,9 @@ gtag('config', 'UA-90934748-1');
 <div id="container">
 	<div id="work">
 		<div class="wrap">
-			
-			<h2>Image Loading List</h2>
-		
+
+			<h2>Work List</h2>
+
 			<dl data-ng-repeat="(idx,i) in workList" data-ng-class="{on : work.idx == idx && work.active}"><!-- , off : work.idx != -1 && work.active -->
 				<dt data-ng-repeat="j in i.img" data-ng-click="work.click(idx)">
 					<span class="img" data-ng-img-loader="{{image.host}}/img/work/min/{{j}}.png" alt="{{i.desc}}"></span>
@@ -66,7 +66,7 @@ gtag('config', 'UA-90934748-1');
 	<div class="next" data-ng-click="work.next()"><img data-ng-src="{{image.host}}/img/common/next.png" /></div>
 	<dl>
 		<dt></dt>
-		<dd><p><a data-ng-href="{{workList[work.idx].link}}" target="blank"><strong>{{workList[work.idx].title}}</strong></a> <span>{{workList[work.idx].date}}</span> <span>{{workList[work.idx].desc}}</span></p></dd>
+		<dd><p><strong>{{workList[work.idx].title}}</strong> <span>{{workList[work.idx].date}}</span> <span>{{workList[work.idx].desc}}</span> <a data-ng-href="{{workList[work.idx].link}}" target="blank">..</a></p></dd>
 	</dl>
 </div>
 </body>

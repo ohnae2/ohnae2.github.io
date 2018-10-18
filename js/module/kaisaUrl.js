@@ -8,12 +8,12 @@
 		var protocol = (constant.host != '') ? 'http://' + constant.host : '',
 			protocol_SSL = (constant.host != '') ? 'http://' + constant.host : '', //test https
 			ext = constant.extension.link;
-		
+
 		this.main = protocol + '/' + ext;
 		this.illustrator = protocol + '/illustrator' + ext;
-		
+
 		//this.reservation = protocol_SSL + '/reservation' + ext;
-		
+
 		//example
 		this.exLayer = protocol + '/ex/layer.html';
 		this.exDate = protocol + '/ex/date.html';
@@ -25,6 +25,7 @@
 		this.exOrder = protocol + '/ex/order.html';
 		this.exEncode = protocol + '/ex/encode.html';
 		this.exHandlebars = protocol + '/ex/handlebars.html';
-		
+		this.exAff = protocol + '/ex/aff.html';
+
     }]);
 })(window, window.angular);

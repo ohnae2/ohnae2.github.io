@@ -32,40 +32,41 @@
 <script src="/js/controller/ex/aff.js"></script>
 </head>
 <body data-ng-controller="BodyController">
-<!-- <div data-kaisa-header="true"></div>
-<div data-kaisa-menu="true"></div> -->
+<div data-kaisa-header="true"></div>
+<div data-kaisa-menu="true"></div>
 <div id="container">
 	<div id="aff">
 		<div class="wrap">
-			<!-- <div data-study-menu="true"></div> -->
+			<div data-study-menu="true"></div>
 			<div class="affWrap">
 
-				<h2>상품 제휴</h2>
+				<h2>연동</h2>
 
 				<table class="aff">
 					<colgroup>
 						<col width="50" />
-						<col width="50" />
 						<col width="*" />
-						<col width="100" />
+						<col width="*" />
+						<col width="*" />
 						<col width="100" />
 						<col width="100" />
 					</colgroup>
 					<tr>
 						<th>번호</th>
-						<th>회사명</th>
 						<th>배치명</th>
 						<th>시간</th>
 						<th>분</th>
 						<th>실행수</th>
 					</tr>
 					<tr data-ng-repeat="(idx,i) in aff.data">
-						<td class="tc red">{{i.no}}</td>
-						<td>{{i.company}}</td>
-						<td>{{i.name}}</td>
-						<td>{{i.hour | checkHour}}</td>
-						<td data-ng-bind-html="(i.min | checkMin) + '' | trustHtml"></td>
-						<td data-ng-class="{red : i.cnt != 0}">{{i.cnt}}</td>
+						<td class="tc red">{{i.BATCH_SN}}</td>
+						<td>{{i.BATCH_NM}}</td>
+						<td data-ng-bind-html="i.hhHtml | trustHtml"></td>
+						<td>{{i.EXE_CYCL_MIN_VAL}}</td>
+						<td data-ng-class="{red : i.cnt != 0}">
+							{{i.cnt}}
+							<div class="ly">{{i.EXE_CMDW_NM}}</div>
+						</td>
 					</tr>
 				</table>
 
@@ -73,6 +74,6 @@
 		</div>
 	</div>
 </div>
-<!-- <div data-kaisa-footer="true"></div> -->
+<div data-kaisa-footer="true"></div>
 </body>
 </html>

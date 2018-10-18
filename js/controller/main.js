@@ -8,128 +8,142 @@
 		};
 		$scope.workList = [
 			{
-				title : 'eplatz - Lfmall',
+				title : 'lotteimall',
+				date : '2018.10 ~ now',
+				desc : '롯데홈쇼핑',
+				link : 'http://www.lotteimall.com',
+				img : ['lotteimall']
+			},
+			{
+				title : 'lottedfs',
 				date : '2018.05 ~ 08',
-				desc : '롯데면세점  결제 시스템(전자지갑) 추가 개발',
+				desc : '롯데면세점',
 				link : 'http://kor.lottedfs.com/kr',
 				img : ['lottedfs']
 			},
 			{
-				title : 'mobydic - 가평수상레저',
+				title : 'mobydic - 모비딕 수상레저',
 				date : '2018.02 ~ ',
-				desc : '홈페이지 제작',
+				desc : '우리형네 빠지',
 				link : 'http://mobydic.co.kr',
 				img : ['mobydic']
 			},
 			{
-				title : 'eplatz - Lfmall',
-				date : '2017.02 ~ ',
-				desc : '쇼핑몰 운영 (㈜LFmall)',
+				title : 'Lfmall',
+				date : '2017.02 ~ 2018.04.20',
+				desc : 'Lfmall',
 				link : 'http://www.lfmall.co.kr',
 				img : ['lfmall']
 			},
 			{
-				title : 'eplatz - ETBS',
+				title : 'ETBS',
 				date : '2016.11 ~ 2017.02',
-				desc : '이제너두 선택적 복지몰 시스템 재구축 (㈜이제너두)',
+				desc : '이제너두 선택적 복지몰 시스템 재구축',
 				link : 'http://www.etbs.co.kr',
 				img : ['etbs']
 			},
 			{
-				title : 'eplatz - Ftzkorea',
+				title : 'Ftzkorea',
 				date : '2016.03 ~ 2016.11',
-				desc : '중국 자유무역지구 韓流中心 (㈜한국경제)',
+				desc : '중국 자유무역지구 韓流中心 한국경제',
 				link : 'http://www.ftzkorea.com/',
 				img : ['ftzkorea']
 			},
 			{
-				title : 'eplatz - lotte',
+				title : 'lotte',
 				date : '2015.06 ~ 2015.11',
-				desc : '롯데닷컴 모바일 (㈜롯데닷컴)',
+				desc : '롯데닷컴 모바일',
 				link : 'http://www.lotte.com',
 				img : ['lotte']
 			},
 			{
-				title : 'eplatz - Imarket',
+				title : 'Imarket',
 				date : '2014.06 ~ 2014.11',
-				desc : '아이마켓코리아 쇼핑몰 구축 (㈜아이마켓코리아)',
+				desc : '아이마켓코리아 쇼핑몰 구축 ',
 				link : 'http://imarket.co.kr',
 				img : ['imarket']
 			},
 			{
-				title : 'Obigo - CES',
+				title : 'CES',
 				date : '2012.08 ~ 2013.12',
-				desc : 'CES Automotive webapp (㈜Obigo)',
+				desc : 'CES Automotive webapp ',
 				link : '/fyi/ces/',
 				img : ['ces']
 			},
 			{
-				title : 'Obigo - CJ E&M',
+				title : 'eplatz',
 				date : '2012.08 ~ 2013.12',
-				desc : 'CES Automotive webapp (㈜Obigo)',
+				desc : 'eplatz',
+				link : 'http://eplatz.co.kr/',
+				img : ['eplatz']
+			},
+			{
+				title : 'CJ E&M',
+				date : '2012.08 ~ 2013.12',
+				desc : 'CES Automotive webapp ',
 				link : '/fyi/em/',
 				img : ['em']
 			},
 			{
-				title : 'Obigo - CJ HV',
+				title : 'CJ HV',
 				date : '2012.08 ~ 2013.12',
-				desc : 'CJ 헬로비전 webapp (㈜Obigo)',
+				desc : 'CJ 헬로비전 webapp ',
 				link : '/fyi/cjhv/',
 				img : ['cjhv']
 			},
 			{
-				title : 'Obigo - LG',
+				title : 'LG',
 				date : '2012.08 ~ 2013.12',
-				desc : 'LG TV webapp (㈜Obigo)',
+				desc : 'LG TV webapp',
 				link : '/fyi/lg/',
 				img : ['lg']
 			},
 			{
-				title : 'Obigo - GER',
+				title : 'GER',
 				date : '2012.08 ~ 2013.12',
-				desc : '독일 webapp (㈜Obigo)',
+				desc : '독일  webapp',
 				link : '/fyi/ger/',
 				img : ['ger']
 			},
 			{
-				title : 'Obigo - IWA',
+				title : 'IWA',
 				date : '2012.08 ~ 2013.12',
-				desc : 'IWA 홈페이지 (㈜Obigo)',
+				desc : 'IWA',
 				link : '/fyi/iwa/',
 				img : ['iwa']
 			},
 			{
-				title : 'Obigo - Toyota',
+				title : 'Toyota',
 				date : '2012.08 ~ 2013.12',
-				desc : 'Toyota webapp (㈜Obigo)',
+				desc : 'Toyota webapp',
 				link : '/fyi/toyota/',
 				img : ['toyota']
 			},
 			{
-				title : 'Obigo - NScreen',
+				title : 'NScreen',
 				date : '2012.08 ~ 2013.12',
-				desc : 'NScreen webapp (㈜Obigo)',
+				desc : 'NScreen webapp',
 				link : '/fyi/nscreen/',
 				img : ['nscreen']
 			},
 			{
 				title : 'Interpark',
 				date : '2009.05 ~ 2012.08',
-				desc : '인터파크 웹사이트 운영 (㈜인터파크INT)',
+				desc : '인터파크',
 				link : 'http://interpark.co.kr',
 				img : ['interpark']
 			},
 			{
 				title : 'LIG',
 				date : '2007.02 ~ 2007.11',
-				desc : 'LIG손해보험 차세대 전산 시스템 구축 (㈜LIG손해보험)',
+				desc : 'LIG손해보험 차세대',
 				link : '/fyi/lig/styleGuide/list.html',
 				img : ['lig']
 			},
 			{
 				title : 'Webha, IBmax, Free',
 				date : '2005.10 ~ 2006.10',
-				desc : 'Webha 카페, 아이비맥스(웹에이젼시) 건설사 웹사이트 구축 (㈜아이비맥스)',
+				desc : 'Webha 카페, 웹에이젼시, 건설사 웹사이트 구축',
 				link : 'http://cafe.naver.com/gowebdi',
 				img : ['webha']
 			}
@@ -167,6 +181,6 @@
 				this.img(this.idx);
 			}
 		}
-		
+
 	}]);
 })(window,window.angular);

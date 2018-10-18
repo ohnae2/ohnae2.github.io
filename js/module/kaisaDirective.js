@@ -53,12 +53,13 @@
 					{title:'order', url:'exOrder'},
 					{title:'swipe', url:'exSwipe'},
 					//{title:'handlebars', url:'exHandlebars'},
+					{title:'aff', url:'exAff'},
 					{title:'encode', url:'exEncode'}
 				];
 				for(var i in $scope.studyMenu){
 					if(location.pathname.match('/'+$scope.studyMenu[i].title+'.html')){
 						$scope.studyMenu[i].active = true;
-					} 
+					}
 				}
 			}
 		}
@@ -155,7 +156,7 @@
 	        			return val;
 	        		}
 	        		if(val.match(' ')){
-	        			val = val.replace(/ /gi, ''); 
+	        			val = val.replace(/ /gi, '');
 	        			ctrl.$setViewValue(val);
 						ctrl.$render();
 	        			return val;
@@ -173,7 +174,7 @@
 	                }
 	                return newVal;
 	        		/*console.log(val);
-	        		
+
 	        		if(!val){
 	        			val = 0;
 	        			ctrl.$setViewValue(val);
@@ -181,7 +182,7 @@
 	        			return val;
 	        		}
 	        		if(val.search(' ')){
-	        			val = val.replace(/ /gi, ''); 
+	        			val = val.replace(/ /gi, '');
 	        			ctrl.$setViewValue(val);
 						ctrl.$render();
 	        			return val;
@@ -189,15 +190,15 @@
 	        		val = val.trim();
 	        		console.log(val);
 	        		var newVal = val.replace(/[^\d]/g, '');
-	        		
+
 	        		if(newVal > 0){
 	                	newVal = newVal.replace(/^[0]+/,'')
 	                }
-	        		
+
 					if (parseInt(newVal) > parseInt(attrs.maxNumber)) {
 						newVal = attrs.maxNumber;
 					}
-	        		
+
 					if (newVal != val) {
 						ctrl.$setViewValue(newVal);
 						ctrl.$render();
@@ -227,7 +228,7 @@
     		}
     	}
     }]);
-	// ngSrc	
+	// ngSrc
 	app.directive('ngSrc',[function () {
 		return {
 			scope : false,
@@ -248,7 +249,7 @@
 				});
 				el.load(function(){
 					//
-				});				
+				});
 			}
 		}
 	}]);
