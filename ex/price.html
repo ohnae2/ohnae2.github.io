@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="kor" data-ng-app="KaisaApp" data-ng-controller="KaisaController">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta name="robots" content="index,follow">
+<title>Kaisa</title>
+<meta name="keywords" content="Kaisa,가이사,카이사,가평,홈페이지">
+<meta name="description" content="Kaisa,가이사,카이사,가평,홈페이지">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kaisa">
+<meta property="og:description" content="Kaisa,가이사,카이사,가평,홈페이지">
+<meta property="og:image" content="http://kaisa.co.kr/img/common/logo.png">
+<meta property="og:url" content="http://kaisa.co.kr">
+<meta name="fragment" content="!">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<link rel="shortcut icon" href="/img/favicon.ico?ver=0.1" type="image/x-icon">
+<link rel="stylesheet" href="/css/common.css" type="text/css">
+<link rel="stylesheet" href="/css/ex/price.css" type="text/css">
+<!--[if lt IE 10]>
+<link rel="stylesheet" href="/css/old_browser.css" type="text/css" />
+<![endif]-->
+<!--[if IE 8]>
+<script src="/js/lib/es/es5-shim.min.js"></script>
+<![endif]-->
+<script src="/js/lib/jquery/jquery-1.11.1.min.js"></script>
+<script src="/js/lib/angular/angular.min.js"></script>
+<script src="/js/min/kaisa.js"></script>
+<script src="/js/controller/ex/price.js"></script>
+</head>
+<body data-ng-controller="BodyController">
+<!-- <div data-kaisa-header="true"></div>
+<div data-kaisa-menu="true"></div> -->
+<div id="container">
+	<div id="price">
+		<div class="wrap">
+			<div data-study-menu="true"></div>
+			<div class="priceWrap">
+
+				<h2>가격 선분 이력</h2>
+
+				<div class="priceDateWrap">
+					<textarea class="start" data-ng-model="price.histStart">
+					</textarea>
+					<textarea class="end" data-ng-model="price.histEnd">
+					</textarea>
+				</div>
+				<div class="priceDateWrap">
+					<div class="start" data-ng-model="price.arrStart">
+					</div>
+					<div class="end" data-ng-model="price.arrEnd">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div data-kaisa-footer="true"></div>
+</body>
+</html>

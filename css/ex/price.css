@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+#aff {width:100%; overflow:hidden; clear:both;}
+#aff .affWrap {width:100%; overflow:hidden; clear:both; padding-top:30px;}
+
+.priceDateWrap {width:100%; clear:both; overflow:hidden; padding-bottom:10px;}
+.priceDateWrap .start {float:left; width:50%; height:230px; border:1px solid #ddd;}
+.priceDateWrap .end {float:right; width:49%; height:230px; border:1px solid #ddd;}
+
+

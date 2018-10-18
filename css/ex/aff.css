@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 #aff {width:100%; overflow:hidden; clear:both;}
-#order .orderWrap {width:100%; overflow:hidden; clear:both; padding-top:30px;}
+#aff .affWrap {width:100%; overflow:hidden; clear:both; padding-top:30px;}
 
 ol.policy {padding:0 30px; }
 ol.policy li {list-style:decimal; padding:0 5px;}
