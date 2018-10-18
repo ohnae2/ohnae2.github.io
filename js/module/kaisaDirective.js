@@ -104,7 +104,7 @@
 				'<div id="footer">'+
 					'<div class="wrap">'+
 						'<h1><img data-ng-src="{{image.host}}/img/common/logo.png" alt=""></h1>'+
-						'<p>Copyright © 2006 Kaisa. All Rights Reserved<b data-ng-click="admin.layer.open()">..</b><br>Email : 7083620@hanmail.net</p>'+
+						'<p>Copyright © 2005 Kaisa. All Rights Reserved<b data-ng-click="admin.layer.open()">..</b><br>Email : 7083620@hanmail.net</p>'+
 						'<p data-ng-if="admin.user" class="admin"><span data-ng-click="admin.logout()">관리자 로그아웃</span></p>'+
 					'</div>'+
 				'</div>'+
