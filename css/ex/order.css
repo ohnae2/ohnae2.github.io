@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 #order {width:100%; overflow:hidden; clear:both;}
-#order .orderWrap {max-width:600px; margin:0 auto; width:100%; overflow:hidden; clear:both; padding-top:30px;}
+#order .orderWrap {margin:0 auto; width:100%; overflow:hidden; clear:both; padding-top:30px;}
 #order .orderWrap input {height:18px; line-height:17px; width:120px; display:inline-block;}
 #order .orderWrap input[type="radio"],
 #order .orderWrap input[type="checkbox"] {width:auto;}
