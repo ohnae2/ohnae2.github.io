@@ -59,10 +59,11 @@
 						<th>실행수</th>
 					</tr>
 					<tr data-ng-repeat="(idx,i) in aff.data">
-						<td class="tc red">{{i.BATCH_SN}}</td>
+						<td class="tc no">{{i.BATCH_SN}}</td>
 						<td>{{i.BATCH_NM}}</td>
 						<td data-ng-bind-html="i.hhHtml | trustHtml"></td>
-						<td>{{i.EXE_CYCL_MIN_VAL}}</td>
+						<td data-ng-if="!i.minHtml">{{i.EXE_CYCL_MIN_VAL}}</td>
+						<td data-ng-if="i.minHtml" data-ng-bind-html="i.minHtml | trustHtml"></td><!-- <td>{{i.EXE_CYCL_MIN_VAL}}</td> -->
 						<td data-ng-class="{red : i.cnt != 0}">
 							{{i.cnt}}
 							<div class="ly">{{i.EXE_CMDW_NM}}</div>

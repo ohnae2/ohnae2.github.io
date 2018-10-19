@@ -23,21 +23,35 @@
 				o.hhArr = o.EXE_CYCL_HH_VAL.split(',');
 				o.minArr = o.EXE_CYCL_MIN_VAL.split(',');
 				o.hhHtml = '';
+				o.minHtml = '';
 				if(o.hhArr.length > 0){
 					for(var j in o.hhArr){
 						if(o.hhArr[0] == '*'){
-							for(var ii = 0; ii < nowHour; ii ++){
+							for(var ii = 1; ii <= nowHour; ii ++){
 								for(var k in o.minArr){
-									o.cnt++;
+									if(ii == nowHour){
+										if(parseInt(o.minArr[k]) <= nowMin){
+											(k == 0) ? o.minHtml += '<u>' + o.minArr[k] + '</u>' : o.minHtml += ',<u>' + o.minArr[k] + '</u>';
+											o.cnt++;
+										}else{
+											o.minHtml += ',<span>'+ o.minArr[k]+'</span>';
+										}
+									}else{
+										o.cnt++;
+									}
 								}
 							}
 							o.hhHtml += '<b>*</b>';
 						}else{
+							console.log('----------');
 							if(parseInt(o.hhArr[j]) <= nowHour){
 								for(var k in o.minArr){
 									if(parseInt(o.hhArr[j]) == nowHour){
 										if(parseInt(o.minArr[k]) <= nowMin){
+											(k == 0) ? o.minHtml += '<u>' + o.minArr[k] + '</u>' : o.minHtml += ',<u>' + o.minArr[k] + '</u>';
 											o.cnt++;
+										}else{
+											o.minHtml += ',<span>'+ o.minArr[k]+'</span>';
 										}
 									}else{
 										o.cnt++;
