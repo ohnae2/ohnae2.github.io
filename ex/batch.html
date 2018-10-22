@@ -19,7 +19,7 @@
 <meta name="viewport" content="width=device-width, user-scalable=no">
 <link rel="shortcut icon" href="/img/favicon.ico?ver=0.1" type="image/x-icon">
 <link rel="stylesheet" href="/css/common.css" type="text/css">
-<link rel="stylesheet" href="/css/ex/aff.css" type="text/css">
+<link rel="stylesheet" href="/css/ex/batch.css" type="text/css">
 <!--[if lt IE 10]>
 <link rel="stylesheet" href="/css/old_browser.css" type="text/css" />
 <![endif]-->
@@ -29,20 +29,34 @@
 <script src="/js/lib/jquery/jquery-1.11.1.min.js"></script>
 <script src="/js/lib/angular/angular.min.js"></script>
 <script src="/js/min/kaisa.js"></script>
-<script src="/js/controller/ex/aff.js"></script>
+<script src="/js/controller/ex/batch.js"></script>
 </head>
 <body data-ng-controller="BodyController">
 <div data-kaisa-header="true"></div>
 <div data-kaisa-menu="true"></div>
 <div id="container">
-	<div id="aff">
+	<div id="batch">
 		<div class="wrap">
 			<div data-study-menu="true"></div>
-			<div class="affWrap">
+			<div class="batchWrap">
 
-				<h2>연동</h2>
+				<h2>Batch</h2>
+				<!-- search form -->
+				<form class="search" name="dicForm" data-ng-submit="batch.search()">
+					<fieldset>
+						<legend>section</legend>
+						<table>
+							<tbody>
+								<tr>
+									<th>키워드</th> <!-- class="required" -->
+									<td><label><input name="text" data-ng-model="batch.searchParam.text" type="text" autocomplete="off" autofocus></label></td>  <!-- data-ng-required="true" -->
+								</tr>
+							</tbody>
+						</table>
+					</fieldset>
+				</form>
 
-				<table class="aff">
+				<table class="batch">
 					<colgroup>
 						<col width="50" />
 						<col width="*" />
@@ -58,7 +72,7 @@
 						<th>분</th>
 						<th>실행수</th>
 					</tr>
-					<tr data-ng-repeat="(idx,i) in aff.data">
+					<tr data-ng-repeat="(idx,i) in batch.data | filter: batch.searchParam.text | orderBy : batch.orderBy">
 						<td class="tc no">{{i.BATCH_SN}}</td>
 						<td>{{i.BATCH_NM}}</td>
 						<td data-ng-bind-html="i.hhHtml | trustHtml"></td>

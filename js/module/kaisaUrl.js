@@ -25,7 +25,7 @@
 		this.exOrder = protocol + '/ex/order.html';
 		this.exEncode = protocol + '/ex/encode.html';
 		this.exHandlebars = protocol + '/ex/handlebars.html';
-		this.exAff = protocol + '/ex/aff.html';
+		this.exBatch = protocol + '/ex/batch.html';
 
     }]);
 })(window, window.angular);
