@@ -26,6 +26,7 @@
 		this.exEncode = protocol + '/ex/encode.html';
 		this.exHandlebars = protocol + '/ex/handlebars.html';
 		this.exBatch = protocol + '/ex/batch.html';
+		this.exBatchCheck = protocol + '/ex/batchCheck.html';
 
     }]);
 })(window, window.angular);

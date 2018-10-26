@@ -54,6 +54,7 @@
 					{title:'swipe', url:'exSwipe'},
 					//{title:'handlebars', url:'exHandlebars'},
 					{title:'batch', url:'exBatch'},
+					//{title:'batchCheck', url:'exBatchCheck'},
 					{title:'encode', url:'exEncode'}
 				];
 				for(var i in $scope.studyMenu){
