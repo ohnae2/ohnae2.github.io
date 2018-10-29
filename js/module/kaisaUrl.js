@@ -27,6 +27,7 @@
 		this.exHandlebars = protocol + '/ex/handlebars.html';
 		this.exBatch = protocol + '/ex/batch.html';
 		this.exBatchCheck = protocol + '/ex/batchCheck.html';
+		this.exSiteCheck = protocol + '/ex/siteCheck.html';
 
     }]);
 })(window, window.angular);

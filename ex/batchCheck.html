@@ -48,31 +48,26 @@
 						<h3>{{site.base[site.idx - 1].site_nm}}</h3>
 						<ol>
 							<li>
-								11st_Goods_batch : 482 (인터넷 상품)
-							</li>
-							<li>
-								mergeYn : 'Y', rowNum : null, batchId : 482 , rowNum : ?
-							</li>
-							<li>
+								<b>ElevenStGoodsInfo_Batch2</b><br />
+								11st_Goods_batch : 482 (인터넷 상품)<br />
+								mergeYn : 'Y', rowNum : null, batchId : 482 , rowNum : ?<br />
 								11st_Goods_batch -> Batch Shell -> Batch Java -> batchLogSctCd(ES-G0008) -> Hang Up 방지 코드( 서버시간 (yyyyMMddHH24MISS) , killTime(70))
 								<br />
-								배치 실행중 여부 & error 체크(9999 에러, 0000 성공) -> 배치 시작
-							</li>
-							<li>
+								배치 실행중 여부 & error 체크(9999 에러, 0000 성공) -> 배치 시작<br />
 								elevenStGoodsInfoBatchMgr.startElevenStGoodsBatch(mergeYn, rowNum, batchId, batchLogSctCd)
 							</li>
 							<li>
+								<b>startElevenStGoodsBatch</b><br />
 								batchLogSctCd : ES-G0008,<br />
 								(403)mrgnRtParam 백화점 기준 마진율 : 3%, srcgMdmCdParam : 31, siteNoParam : 4<br />
 								(482)mrgnRtParam 인터넷 기준 마진율 : 6%, srcgMdmCdParam : 21, siteNoParam : 5<br />
 								(598)mrgnRtParam TV 기준 마진율 : 10%, srcgMdmCdParam : 11, siteNoParam : 6<br />
+								TARGET_WAS , system.was.target = 'real'<br />
+								getGoodsAddMgmtSn : 연동불가 시작 끝 조회 (상품추가관리 히스토리 일련번호 대입) <br />
+								getBatchStartDtime<br />
 							</li>
 							<li>
-								TARGET_WAS , system.was.target = 'real'
 
-
-								getGoodsAddMgmtSn : 연동불가 시작 끝 조회 : <br />
-								getBatchStartDtime
 							</li>
 						</ol>
 					</div>
