@@ -44,41 +44,85 @@
 					<ul class="tab">
 						<li ng-repeat="i in site.base" data-ng-class="{on : site.idx == i.site_no}" data-ng-click="site.idx = i.site_no">{{i.site_nm}}</li>
 					</ul>
-					<div class="con" data-ng-show="site.idx == 1">
+					<div class="con">
 						<h3>{{site.base[site.idx - 1].site_nm}}</h3>
-						<ol>
-							<li>
-								<b>ElevenStGoodsInfo_Batch2</b><br />
-								11st_Goods_batch : 482 (인터넷 상품)<br />
-								mergeYn : 'Y', rowNum : null, batchId : 482 , rowNum : ?<br />
-								11st_Goods_batch -> Batch Shell -> Batch Java -> batchLogSctCd(ES-G0008) -> Hang Up 방지 코드( 서버시간 (yyyyMMddHH24MISS) , killTime(70))
-								<br />
-								배치 실행중 여부 & error 체크(9999 에러, 0000 성공) -> 배치 시작<br />
-								elevenStGoodsInfoBatchMgr.startElevenStGoodsBatch(mergeYn, rowNum, batchId, batchLogSctCd)
-							</li>
-							<li>
-								<b>startElevenStGoodsBatch</b><br />
-								batchLogSctCd : ES-G0008,<br />
-								(403)mrgnRtParam 백화점 기준 마진율 : 3%, srcgMdmCdParam : 31, siteNoParam : 4<br />
-								(482)mrgnRtParam 인터넷 기준 마진율 : 6%, srcgMdmCdParam : 21, siteNoParam : 5<br />
-								(598)mrgnRtParam TV 기준 마진율 : 10%, srcgMdmCdParam : 11, siteNoParam : 6<br />
-								TARGET_WAS , system.was.target = 'real'<br />
-								getGoodsAddMgmtSn : 연동불가 시작 끝 조회 (상품추가관리 히스토리 일련번호 대입) <br />
-								getBatchStartDtime<br />
-							</li>
-							<li>
+						<textarea data-ng-show="site.idx == 1">
+[ElevenStGoodsInfo_Batch2]
+11st_Goods_batch : 482 (인터넷 상품)
+mergeYn : 'Y', rowNum : null, batchId : 482 , rowNum : ?
+11st_Goods_batch -> Batch Shell -> Batch Java -> batchLogSctCd(ES-G0008) -> Hang Up 방지 코드( 서버시간 (yyyyMMddHH24MISS) , killTime(70))
+배치 실행중 여부 & error 체크(9999 에러, 0000 성공) -> 배치 시작
+elevenStGoodsInfoBatchMgr.startElevenStGoodsBatch(mergeYn, rowNum, batchId, batchLogSctCd)
 
-							</li>
-						</ol>
-					</div>
-					<div class="con" data-ng-show="site.idx == 2">
-						<h3>{{site.base[site.idx - 1].site_nm}}</h3>
-					</div>
-					<div class="con" data-ng-show="site.idx == 3">
-						<h3>{{site.base[site.idx - 1].site_nm}}</h3>
-					</div>
-					<div class="con" data-ng-show="site.idx == 4">
-						<h3>{{site.base[site.idx - 1].site_nm}}</h3>
+[ElevenStGoodsInfoBatchMgr -> startElevenStGoodsBatch]
+batchLogSctCd : ES-G0008,
+(403)mrgnRtParam 백화점 기준 마진율 : 3%, srcgMdmCdParam : 31, siteNoParam : 4
+(482)mrgnRtParam 인터넷 기준 마진율 : 6%, srcgMdmCdParam : 21, siteNoParam : 5
+(598)mrgnRtParam TV 기준 마진율 : 10%, srcgMdmCdParam : 11, siteNoParam : 6
+TARGET_WAS , system.was.target = 'real'
+getGoodsAddMgmtSn : ?? 연동불가 시작 끝 조회 (상품추가관리 히스토리 일련번호 대입)
+작업대상 START 시간 찾기
+순번 관리시에만 인터넷 사이트번호 5, 일반 상품연동은 모두 4
+단일커밋세팅
+ST_BATCH_LOG 배치로그 입력
+
+0. mergeYn ? Y
+
+
+1. INFO_START_SN < INFO_END_SN ? 연동불가대상
+INFO_YN = Y
+1-1. LINK_TP_CD : NOS 연동불가대상
+연동 불가대상 조회 해서 SITE_GOODS_NO 있으면 수정 없으면 삭제(상품번호삭제 ,  가격,옵션 전송대상 수정)
+1-2. 전송대상수정 INFO_YN : D : 연동제한해제조회 (기존 LINK_TP_CD == 'NEW'? 새로 등록)
+
+마진체크제외
+연동불가 마지막 번호 저장
+
+2. HIST_START_SN < HIST_END_SN ? 연동불가대상
+INFO_YN = N
+2-1. LINK_TP_CD : NEW ? 전송대상등록 : 수정
+
+
+INFO_YN = M
+연동불가해제대상 조회
+
+2-2. LINK_TP_CD : NEW ? 전송대상등록 : 수정
+2-2. LINK_TP_CD : NOM ? 전송대상등록 : 수정 //마진체크
+
+LINK_TP_CD = NOM 마진체크
+
+fncThread(elevenStGoodsInfoDao.selectSendGoodsXList(cmParam));
+
+마진체크제외 해제(연동불가대상)전송
+연동불가 마지막 번호 저장
+
+
+3. MPPG_INFO_START_SN < MPPG_INFO_END_SN
+카테고리수정대상 조회
+가격,옵션 전송대상 수정
+카테고리변경대상
+
+
+4. 마진체크 비전시해제 대상 - 상품등록/수정 만들대상
+
+4-1. LINK_TP_CD : NEW ? 전송대상등록 : 수정
+4-2. LINK_TP_CD : NOM ? 전송대상등록 : 수정 //마진체크
+
+마진체크 비전시 대상(신규상품)
+마진체크 비전시 대상(쿠폰변경)
+
+가격전송대상
+단품전송대상
+						</textarea>
+						<textarea data-ng-show="site.idx == 2">
+
+						</textarea>
+						<textarea data-ng-show="site.idx == 3">
+
+						</textarea>
+						<textarea data-ng-show="site.idx == 4">
+
+						</textarea>
 					</div>
 				</div>
 				<div class="rightWrap">

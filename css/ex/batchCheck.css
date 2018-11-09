@@ -6,9 +6,7 @@
 .tab li {margin-right:3px;}
 
 .con {padding:20px;}
-.con b {color:#ff5500;}
-.con ol {}
-.con ol li {padding:10px;}
+.con textarea {padding:10px; line-height:20px; height:500px;}
 
 .leftWrap {width:68%; float:left;}
 .rightWrap {width:30%; float:right;}
