@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<result>
+    <description>상품 등록</description>
+    <item xsi:type="olsIpkGoodsLink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <abroadBsYn>N</abroadBsYn>
+        <addQtyUseYn>N</addQtyUseYn>
+        <asInfo><![CDATA[상세설명 참조]]></asInfo>
+        <brandNm><![CDATA[하기스]]></brandNm>
+        <delvAmtPayTpCom>02</delvAmtPayTpCom>
+        <delvCost>0</delvCost>
+        <delvCostApplyTp>02</delvCostApplyTp>
+        <delvMthd>01</delvMthd>
+        <delvPlcNo>355775</delvPlcNo>
+        <entrDcEndDt>20190212</entrDcEndDt>
+        <entrDcNum>8.0</entrDcNum>
+        <entrDcStrDt>20181128</entrDcStrDt>
+        <entrDcTp>1</entrDcTp>
+        <entrDcUseYn>N</entrDcUseYn>
+        <freedelvStdCnt>0</freedelvStdCnt>
+        <hdelvMafcEntrNm><![CDATA[유한킴벌리]]></hdelvMafcEntrNm>
+        <imgUpdateYn>Y</imgUpdateYn>
+        <ippSubmitYn>Y</ippSubmitYn>
+        <jejuetcDelvCostUseYn>N</jejuetcDelvCostUseYn>
+        <omDispNo>001750001001001</omDispNo>
+        <optPrirTp>02</optPrirTp>
+        <ordAgeRstrYn>N</ordAgeRstrYn>
+        <originPrdNo>1328733749</originPrdNo>
+        <perordRstrQty>999</perordRstrQty>
+        <prdBasisExplanEd><![CDATA[<center><img alt='' src='http://www.unitoa.com/img/huggies/Haggies1801102_Mbanner.jpg' /> <img alt='' src='http://www.unitoa.com/agiwana_detail/images/all_notice.jpg' /><img alt='' src='http://www.unitoa.com/img/yk/maxdryP_detail.jpg' /> <img alt='' src='http://www.unitoa.com/agiwana_detail/images/delivery_etc.jpg' /> </center><br /><h6 style='margin:0 0 7px 0;'><img src='http://www.lotteimall.com/images/detail/detail_26.gif' alt='본 상품의 인증정보' /></h6><table class='table_1' summary='안전인증정보 제공하는 표' style='empty-cells: show; border-collapse: collapse; table-layout: fixed;width:100%; margin:0 0 15px 0; border:2px solid #d7d9da;'><caption style='visibility: hidden; overflow: hidden; width: 0; height: 0; font-size: 0; line-height: 0; background-color: transparent;'>안전인증</caption><colgroup><col style='width:30%' /><col style='width:20%' /><col style=width:50%' /></colgroup><tr><th scope='row' rowspan='2' class='tit' style='padding:6px 5px 8px 5px; border-left:1px solid #d7d9da; border-bottom:1px solid #d7d9da; background-color:#f1f1f1; text-align:center; font-size:12px;text-align:center;'><img src='http://www.lotteimall.com/images/detail/mark_kc_gold.png' alt='안전인증' /></th><th scope='row' style='padding:6px 5px 8px 15px; border-left:1px solid #d7d9da; border-bottom:1px solid #d7d9da; background-color:#f1f1f1; text-align:left; font-size:12px;'>인증 번호</th><td style='padding:6px 5px 8px 15px; border-left:1px solid #d7d9da; border-bottom:1px solid #d7d9da; text-align:left;  font-size:12px;'>CB102F001-5002</td></tr><tr><th scope='row' style='padding:6px 5px 8px 15px; border-left:1px solid #d7d9da; border-bottom:1px solid #d7d9da; background-color:#f1f1f1; text-align:left; font-size:12px;'>모델명</th><td style='padding:6px 5px 8px 15px; border-left:1px solid #d7d9da; border-bottom:1px solid #d7d9da; text-align:left;  font-size:12px;'>맥스드라이 팬티</td></tr></table>]]></prdBasisExplanEd>
+        <prdCertOptTp>01</prdCertOptTp>
+        <prdCertStatus>S</prdCertStatus>
+        <prdNm><![CDATA[[하기스]하기스 2018년 맥스드라이 팬티형 기저귀 4~6단계X2팩 택1+물티슈40매X2팩증정]]></prdNm>
+        <prdNo>5768509649</prdNo>
+        <prdOption><![CDATA[{옵션선택:18_맥스팬티4(48X2)남수량<993>옵션코드<1>사용여부<Y>}{옵션선택:18_맥스팬티4(48X2)여수량<990>옵션코드<2>사용여부<Y>}{옵션선택:18_맥스팬티5(40X2)남수량<984>옵션코드<3>사용여부<Y>}{옵션선택:18_맥스팬티5(40X2)여수량<986>옵션코드<4>사용여부<Y>}{옵션선택:18_맥스팬티6(34X2)남수량<994>옵션코드<5>사용여부<Y>}{옵션선택:18_맥스팬티6(34X2)여수량<994>옵션코드<6>사용여부<Y>}]]></prdOption>
+        <prdOriginTp><![CDATA[한국]]></prdOriginTp>
+        <prdStat>01</prdStat>
+        <prdrtnCostUseYn>Y</prdrtnCostUseYn>
+        <proddelvCostUseYn>N</proddelvCostUseYn>
+        <rtndelvCost>5000</rtndelvCost>
+        <rtndelvNo>4661243</rtndelvNo>
+        <saleEndDts>99991231</saleEndDts>
+        <saleLmtQty>5941</saleLmtQty>
+        <saleStatTp>01</saleStatTp>
+        <saleStrDts>20181128</saleStrDts>
+        <saleUnitcost>38600</saleUnitcost>
+        <shopDispInfo><![CDATA[전시타입<2>상점번호<0000100000>전시번호<001960022005001007>]]></shopDispInfo>
+        <shopNo>0000100000</shopNo>
+        <spcaseEd><![CDATA[<img src=path/mall/product/partner/interpark/lotte_order_text_21.jpg border=0 />]]></spcaseEd>
+        <stdQty>0</stdQty>
+        <taxTp>02</taxTp>
+        <zoomImg><![CDATA[http://image2.lotteimall.com/goods/56/53/93/1259935356_FB.jpg]]></zoomImg>
+    </item>
+    <title>Interpark Product API</title>
+</result>
