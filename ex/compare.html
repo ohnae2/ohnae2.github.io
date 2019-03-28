@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="kor" data-ng-app="KaisaApp" data-ng-controller="KaisaController">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta name="robots" content="index,follow">
+<title>Kaisa</title>
+<meta name="keywords" content="Kaisa,가이사,카이사,가평,홈페이지">
+<meta name="description" content="Kaisa,가이사,카이사,가평,홈페이지">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kaisa">
+<meta property="og:description" content="Kaisa,가이사,카이사,가평,홈페이지">
+<meta property="og:image" content="http://kaisa.co.kr/img/common/logo.png">
+<meta property="og:url" content="http://kaisa.co.kr">
+<meta name="fragment" content="!">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<link rel="shortcut icon" href="/img/favicon.ico?ver=0.1" type="image/x-icon">
+<link rel="stylesheet" href="/css/common.css" type="text/css">
+<link rel="stylesheet" href="/css/ex/compare.css" type="text/css">
+<!--[if lt IE 10]>
+<link rel="stylesheet" href="/css/old_browser.css" type="text/css" />
+<![endif]-->
+<!--[if IE 8]>
+<script src="/js/lib/es/es5-shim.min.js"></script>
+<![endif]-->
+<script src="/js/lib/jquery/jquery-1.11.1.min.js"></script>
+<script src="/js/lib/angular/angular.min.js"></script>
+<script src="/js/min/kaisa.js"></script>
+<script src="/js/controller/ex/compare.js"></script>
+</head>
+<body data-ng-controller="BodyController">
+<div data-kaisa-header="true"></div>
+<div data-kaisa-menu="true"></div>
+<div id="container">
+	<div id="encode">
+		<div class="wrap">
+			<div data-study-menu="true"></div>
+
+			<h2>Compare</h2>
+			<div id="compare">
+				<div class="box"><h3>원본문자 <span data-ng-if="arr1[0] != ''">({{arr1.length}})</span></h3><textarea data-ng-model="text1"></textarea></div>
+				<div class="box"><h3>비교문자 <span data-ng-if="arr2[0] != ''">({{arr2.length}})</span></h3><textarea data-ng-model="text2"></textarea></div>
+				<div class="box"><h3>일치문자 <span data-ng-if="arr3[0] != '' && arr3.length > 0">({{arr3.length - 1}})</span></h3><textarea readonly="readonly" data-ng-model="text3"></textarea></div>
+				<div class="box"><h3>없는문자 <span data-ng-if="arr4[0] != '' && arr4.length > 0">({{arr4.length - 1}})</span></h3><textarea readonly="readonly" data-ng-model="text4"></textarea></div>
+			</div>
+			<div class="btnWrap">
+				<button type="button" class="on" data-ng-click="textCompare()">Compare</button>
+			</div>
+
+		</div>
+	</div>
+</div>
+<div data-kaisa-footer="true"></div>
+</body>
+</html>

@@ -52,6 +52,7 @@
 					{title:'dto', url:'exDto'},
 					{title:'order', url:'exOrder'},
 					{title:'swipe', url:'exSwipe'},
+					{title:'compare', url:'exCompare'},
 					//{title:'handlebars', url:'exHandlebars'},
 					//{title:'batch', url:'exBatch'},
 					//{title:'batchCheck', url:'exBatchCheck'},
