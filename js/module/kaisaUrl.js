@@ -29,6 +29,7 @@
 		this.exBatchCheck = protocol + '/ex/batchCheck.html';
 		this.exSiteCheck = protocol + '/ex/siteCheck.html';
 		this.exCompare = protocol + '/ex/compare.html';
+		this.exCrawler = protocol + '/ex/crawler.html';
 
     }]);
 })(window, window.angular);

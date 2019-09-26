@@ -53,6 +53,7 @@
 					{title:'order', url:'exOrder'},
 					{title:'swipe', url:'exSwipe'},
 					{title:'compare', url:'exCompare'},
+					{title:'crawler', url:'exCrawler'},
 					//{title:'handlebars', url:'exHandlebars'},
 					//{title:'batch', url:'exBatch'},
 					//{title:'batchCheck', url:'exBatchCheck'},

@@ -55,11 +55,11 @@
 		for(var i in commonParamArray){
 			if(kaisaParam.getParam(commonParamArray[i])){
 				self[commonParamArray[i]] = kaisaParam.getParam(commonParamArray[i]);
-			}  
+			}
 		}
 	}]);
 	/**
-	 * 공통 로딩 
+	 * 공통 로딩
 	 * 공통 API 파라메터 처리
 	 * 공통 에러처리 (TODO 600 세션 에러)
 	 */
@@ -103,11 +103,11 @@
 	}]);
 	app.controller('KaisaController',['$rootScope', 'commonParam' ,'$window','$scope','$location','$compile','$http','$timeout','kaisaUrl','kaisaParam','constant','kaisaApi','kaisaStorage','$httpParamSerializerJQLike',
 	                          function($rootScope ,  commonParam  , $window , $scope , $location , $compile , $http , $timeout , kaisaUrl , kaisaParam , constant , kaisaApi , kaisaStorage , $httpParamSerializerJQLike){
-		
+
 		if(location.protocol == 'https:'){
 			location.href = 'http://' + location.hostname + location.pathname + location.search; //ssl 사용페이지 없음
 		}
-		
+
 		/**
 		 * for 어드민
 		 */
@@ -141,7 +141,7 @@
 		$scope.browser = browser;
 		/**
 		 * device info TO-DO
-		 */		
+		 */
 		var device = {
 			mobile : false,
 			android : false,
@@ -151,7 +151,7 @@
 		};
 		$scope.device = device;
 		/**
-		 * commonParam , searchParam , http POST format 
+		 * commonParam , searchParam , http POST format
 		 */
 		$scope.commonParam = commonParam;
 		$scope.searchParam = {
@@ -335,7 +335,7 @@
 			if(loading.status != 200){
         		console.debug('error : ' + loading.status);
         		$scope.loading.active = false;
-        	}			
+        	}
 			if(loading.first){
 				$scope.historyChecker();
 			}
@@ -345,7 +345,7 @@
 					var value = loading.message.substring(loading.message.match("Duplicate entry '").index + 17,loading.message.match("' for key").index);
 					$scope.alert.open({message:'"' + column + '" 컬럼에  "' + value + '"값이 중복됩니다.'});
 				}
-				
+
 			} catch (e) {
 			}
         },true);
@@ -457,7 +457,7 @@
 			}
 			kaisaStorage.setSessionStorage('pageInfo',$scope.pageInfoSession,'json');
 		});
-		
+
 		/**
 		 * 공통 이벤트 관리
 		 */
