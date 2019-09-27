@@ -38,13 +38,173 @@
 	<div id="encode">
 		<div class="wrap">
 			<div data-study-menu="true"></div>
-			<h2>크롤링</h2>
+			<h2>제휴 출점몰별 연동 된 상품수</h2>
 			<div id="crawler">
 				<table class="resultT">
-					<tr data-ng-repeat="(idx,i) in crawler.data">
-						<td>{{idx}}</td>
-						<td>{{i}}</td>
-					</tr>
+					<colgroup>
+						<col width="150" />
+						<col width="80" />
+						<col width="150" />
+						<col width="100" />
+					</colgroup>
+					<thead>
+						<tr>
+							<th>출점몰</th>
+							<th>사이트 번호</th>
+							<th>상품수</th>
+							<th>합계</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>11번가 백화점</th>
+							<td>4</td>
+							<td>{{crawler.data['4']}}</td>
+							<td rowspan="3">
+								{{crawler.data['4'] + crawler.data['5'] + crawler.data['6']}}
+							</td>
+						</tr>
+						<tr>
+							<th>11번가 인터넷</th>
+							<td>5</td>
+							<td>{{crawler.data['5']}}</td>
+						</tr>
+						<tr>
+							<th>11번가 TV</th>
+							<td>6</td>
+							<td>{{crawler.data['6']}}</td>
+						</tr>
+					</tbody>
+
+					<tbody>
+						<tr>
+							<th>지마켓 백화점</th>
+							<td>7</td>
+							<td>{{crawler.data['7']}}</td>
+							<td rowspan="3">
+								{{crawler.data['7'] + crawler.data['8'] + crawler.data['9']}}
+							</td>
+						</tr>
+						<tr>
+							<th>지마켓 인터넷</th>
+							<td>8</td>
+							<td>{{crawler.data['8']}}</td>
+						</tr>
+						<tr>
+							<th>지마켓 TV</th>
+							<td>9</td>
+							<td>{{crawler.data['9']}}</td>
+						</tr>
+					</tbody>
+
+					<tbody>
+						<tr>
+							<th>G9 백화점</th>
+							<td>19</td>
+							<td>{{crawler.data['19']}}</td>
+							<td rowspan="3">
+								{{crawler.data['19'] + crawler.data['20'] + crawler.data['21']}}
+							</td>
+						</tr>
+						<tr>
+							<th>G9 인터넷</th>
+							<td>20</td>
+							<td>{{crawler.data['20']}}</td>
+						</tr>
+						<tr>
+							<th>G9 TV</th>
+							<td>21</td>
+							<td>{{crawler.data['21']}}</td>
+						</tr>
+					</tbody>
+
+					<tbody>
+						<tr>
+							<th>옥션 백화점</th>
+							<td>10</td>
+							<td>{{crawler.data['10']}}</td>
+							<td rowspan="3">
+								{{crawler.data['10'] + crawler.data['11'] + crawler.data['12']}}
+							</td>
+						</tr>
+						<tr>
+							<th>옥션 인터넷</th>
+							<td>11</td>
+							<td>{{crawler.data['11']}}</td>
+						</tr>
+						<tr>
+							<th>옥션 TV</th>
+							<td>12</td>
+							<td>{{crawler.data['12']}}</td>
+						</tr>
+					</tbody>
+
+					<tbody>
+						<tr>
+							<th>인터파크 백화점</th>
+							<td>13</td>
+							<td>{{crawler.data['13']}}</td>
+							<td rowspan="3">
+								{{crawler.data['13'] + crawler.data['14'] + crawler.data['15']}}
+							</td>
+						</tr>
+						<tr>
+							<th>인터파크 인터넷</th>
+							<td>14</td>
+							<td>{{crawler.data['14']}}</td>
+						</tr>
+						<tr>
+							<th>인터파크 TV</th>
+							<td>15</td>
+							<td>{{crawler.data['15']}}</td>
+						</tr>
+					</tbody>
+
+					<tbody>
+						<tr>
+							<th>쿠팡 인터넷</th>
+							<td>17</td>
+							<td>{{crawler.data['17']}}</td>
+							<td rowspan="2">
+								{{crawler.data['17'] + crawler.data['18'] + crawler.data['19']}}
+							</td>
+						</tr>
+						<tr>
+							<th>쿠팡 TV</th>
+							<td>18</td>
+							<td>{{crawler.data['18']}}</td>
+						</tr>
+					</tbody>
+
+					<tbody>
+						<tr>
+							<th>총합계</th>
+							<td colspan="3">
+								<strong>
+									{{
+										crawler.data['4'] +
+										crawler.data['5'] +
+										crawler.data['6'] +
+										crawler.data['7'] +
+										crawler.data['8'] +
+										crawler.data['9'] +
+										crawler.data['10'] +
+										crawler.data['11'] +
+										crawler.data['12'] +
+										crawler.data['13'] +
+										crawler.data['14'] +
+										crawler.data['15'] +
+										crawler.data['17'] +
+										crawler.data['18'] +
+										crawler.data['19'] +
+										crawler.data['20'] +
+										crawler.data['21']
+									}}
+								</strong>
+							</td>
+						</tr>
+					</tbody>
+
 				</table>
 			</div>
 			<div class="btnWrap">

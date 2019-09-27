@@ -1,4 +1,7 @@
 @charset "utf-8";
 
 #crawler {width:100%; overflow:hidden; clear:both; height:100%;}
-#crawler .resultT td {padding:5px; border:1px solid #eee;}
+
+#crawler .resultT thead th {background:#f4f4f4; text-align:center;}
+#crawler .resultT th {padding:5px; border:1px solid #ddd; text-align:left;}
+#crawler .resultT td {padding:5px; border:1px solid #ddd; text-align:right;}
