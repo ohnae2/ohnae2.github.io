@@ -1,7 +1,9 @@
 @charset "utf-8";
 
 #crawler {width:100%; overflow:hidden; clear:both; height:100%;}
-
+#crawler .resultT {width:500px; float:left;}
 #crawler .resultT thead th {background:#f4f4f4; text-align:center;}
 #crawler .resultT th {padding:5px; border:1px solid #ddd; text-align:left;}
 #crawler .resultT td {padding:5px; border:1px solid #ddd; text-align:right;}
+
+#crawler textarea {width:200px; float:left; height:571px; margin-left:10px; border:1px solid #ddd;}

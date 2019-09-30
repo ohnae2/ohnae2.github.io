@@ -1,21 +1,25 @@
 (function(window, angular, undefined) {
 	'use strict';
-	var app = angular.module('KaisaApp', [ 'common' ]);
+	var app = angular.module('KaisaApp', [ 'common', 'layerDatePicker' ]);
 
-	app.controller('BodyController', [ '$scope', '$window', '$timeout', '$interval', '$http', 'kaisaApi', function($scope, $window, $timeout, $interval, $http, kaisaApi) {
+	app.controller('BodyController', [ '$scope', '$window', '$timeout', '$interval', '$http', 'kaisaApi', '$filter', function($scope, $window, $timeout, $interval, $http, kaisaApi, $filter) {
 		$scope.page = {
 			idx : 2
 		};
 		$scope.crawler = {
-				data : null,
+			data : null,
+			date : {
+				startDate : new Date(),
+				active : false,
+				toggle : function() {
+					(this.active) ? this.active = false : this.active = true;
+				}
+			},
 			getGoodsCnt : function() {
 				$http.jsonp(kaisaApi.getGoodsCnt + $scope.jsonpParam(null)).success(function(data) {
 					if (data.success) {
-						/*
-						for ( var i in data.items) {
-							console.log(i, data.items[i]);
-						}
-						*/
+						// for ( var i in data.items) {
+						// console.log(i,data.items[i]); }
 						$scope.crawler.data = data.items;
 					} else {
 						$scope.alert.open({
