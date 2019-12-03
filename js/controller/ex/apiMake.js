@@ -27,6 +27,7 @@ oplcCd	O	string
 `,
 		$scope.api.dataArray = $scope.api.data.split('\n');
 		$scope.api.make = function(){
+			$scope.api.result = '';
 			for(var i in $scope.api.dataArray){
 				var str = $scope.api.dataArray[i].split('	');
 				if(str[0] && str[2]) {
