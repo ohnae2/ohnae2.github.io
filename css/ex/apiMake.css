@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+#apiMake {width:100%; overflow:hidden; clear:both; height:100%;}
+#apiMake .resultT {width:500px; float:left;}
+#apiMake .resultT thead th {background:#f4f4f4; text-align:center;}
+#apiMake .resultT th {padding:5px; border:1px solid #ddd; text-align:left;}
+#apiMake .resultT td {padding:5px; border:1px solid #ddd; text-align:right;}
+
+#apiMake textarea {width:200px; float:left; height:571px; margin-left:10px; border:1px solid #ddd;}

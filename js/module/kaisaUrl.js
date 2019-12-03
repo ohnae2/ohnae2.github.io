@@ -30,6 +30,7 @@
 		this.exSiteCheck = protocol + '/ex/siteCheck.html';
 		this.exCompare = protocol + '/ex/compare.html';
 		this.exCrawler = protocol + '/ex/crawler.html';
+		this.exApiMake = protocol + '/ex/apiMake.html';
 
     }]);
 })(window, window.angular);
