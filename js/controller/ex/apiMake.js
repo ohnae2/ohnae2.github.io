@@ -33,8 +33,10 @@
 			var cnt = 0;
 			for(var i in $scope.api.dataArray){
 				var str = $scope.api.dataArray[i].split('	');
+				if($scope.api.dataArray.length == parseInt(i) + 1){
+					tmpList.push(tmpArray);
+				}
 				if(str[0] && str[2] && str[1] == '1'){
-					// console.log(str[0] , str[2] , str[1], cnt++);
 					tmpArray.list.push({
 						name : str[0],
 						type : str[2]
