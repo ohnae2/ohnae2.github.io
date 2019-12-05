@@ -33,9 +33,6 @@
 			var cnt = 0;
 			for(var i in $scope.api.dataArray){
 				var str = $scope.api.dataArray[i].split('	');
-				if($scope.api.dataArray.length == parseInt(i) + 1){
-					tmpList.push(tmpArray);
-				}
 				if(str[0] && str[2] && str[1] == '1'){
 					tmpArray.list.push({
 						name : str[0],
@@ -68,6 +65,9 @@
 							$scope.api.result += '        <element name="'+str[0]+'" type="'+str[2]+'"></element>\n';
 							break;
 					}
+				}
+				if($scope.api.dataArray.length == parseInt(i) + 1){
+					tmpList.push(tmpArray);
 				}
 			}
 			$scope.api.result += '      </sequence>\n';
