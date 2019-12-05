@@ -41,8 +41,20 @@
 
 			<h2>Compare</h2>
 			<div id="compare">
-				<div class="box"><h3>원본문자 <span data-ng-if="arr1[0] != ''">({{arr1.length}})</span></h3><textarea data-ng-model="text1"></textarea></div>
-				<div class="box"><h3>비교문자 <span data-ng-if="arr2[0] != ''">({{arr2.length}})</span></h3><textarea data-ng-model="text2"></textarea></div>
+				<div class="box"><h3>원본문자 <span data-ng-if="arr1[0] != ''">({{arr1.length}})</span></h3><textarea data-ng-model="text1" id="text1">387266816
+334092828
+332694786
+331161459
+332695160
+333238257
+667386133</textarea></div>
+				<div class="box"><h3>비교문자 <span data-ng-if="arr2[0] != ''">({{arr2.length}})</span></h3><textarea data-ng-model="text2" id="text2">
+387266816
+334092828
+332694786
+331161459
+332695160
+667386133</textarea></div>
 				<div class="box"><h3>일치문자 <span data-ng-if="arr3[0] != '' && arr3.length > 0">({{arr3.length - 1}})</span></h3><textarea readonly="readonly" data-ng-model="text3"></textarea></div>
 				<div class="box"><h3>없는문자 <span data-ng-if="arr4[0] != '' && arr4.length > 0">({{arr4.length - 1}})</span></h3><textarea readonly="readonly" data-ng-model="text4"></textarea></div>
 			</div>

@@ -90,22 +90,12 @@
 					}
 				}
 				$scope.popup.close({target : 'popupColumn'});
-				
+
 				this.wordType = '10';
-				
+
 			},
 			model : {
-				dumpColumn : `AUTH_GRP_NO
-AUTH_GRP_NM
-SYS_CD
-USE_YN
-NOTE
-REG_DTIME
-REGR_ID
-REG_PGM_ID
-MOD_DTIME
-MODR_ID
-MOD_PGM_ID`
+				dumpColumn : 'AUTH_GRP_NO\nAUTH_GRP_NM\nSYS_CD\nUSE_YN\nNOTE\nREG_DTIME\nREGR_ID\nREG_PGM_ID\nMOD_DTIME\nMODR_ID\nMOD_PGM_ID'
 			},
 			popupColumn : function(){
 				$scope.popup.open({
