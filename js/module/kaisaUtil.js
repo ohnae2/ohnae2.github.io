@@ -13,11 +13,18 @@
 		this.eng = /[a-z]/gi; // 알파벳, 대소문자 무시, 전역
 		this.spe = /[~!@#$%^&*()_+{}":?><\]\[';/.,`|\\\-=]/g; // 모든 특수문자
 	}]);
+
+	function capitalizeFirstLetter(string) {
+	    return string.charAt(0).toUpperCase() + string.slice(1);
+	}
+	String.prototype.capitalizeFirstLetter = function() {
+	    return this.charAt(0).toUpperCase() + this.slice(1);
+	}
 	app.service('kaisaUtil', ['kaisaRegex', function(kaisaRegex) {
 		/**
 		 * password check
 		 */
-		this.validatePassword = function($scope, val) {
+		this.validatePassword = function(val) {
 			var num = val.search(kaisaRegex.num),
 				eng = val.search(kaisaRegex.eng),
 				spe = val.search(kaisaRegex.spe);
@@ -52,6 +59,9 @@
 			}
 			return result;
 		};
+		this.firstStringToUpper = function(val) {
+			return val.replace(/^./, val[0].toUpperCase());
+		}
 	}]);
 	//Parameter
 	app.service('kaisaParam', ['$window','$location',function($window,$location) {

@@ -6,4 +6,7 @@
 #apiMake .resultT th {padding:5px; border:1px solid #ddd; text-align:left;}
 #apiMake .resultT td {padding:5px; border:1px solid #ddd; text-align:right;}
 
-#apiMake textarea {width:200px; float:left; height:571px; margin-left:10px; border:1px solid #ddd;}
+#apiMake ol.guide {padding:5px 10px 8px 10px; margin:0 0 10px 0; font-size:11px; border:1px solid #eee; background:#f9f9f9;}
+#apiMake textarea {width:100%; border:1px solid #ddd;}
+#apiMake textarea.resultTextarea {background:#111; border:1px solid #000; color:#c5ffc9;}
+#apiMake textarea.resultTextarea.sub {background:#111; border:1px solid #000; color:#ffeacb; height:300px;}

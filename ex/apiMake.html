@@ -34,29 +34,47 @@
 <script src="/js/controller/ex/apiMake.js"></script>
 </head>
 <body data-ng-controller="BodyController">
-<div data-kaisa-header="true"></div>
-<div data-kaisa-menu="true"></div>
-<div id="container">
-	<div id="encode">
-		<div class="wrap">
-			<div data-study-menu="true"></div>
-			<h2>Target</h2>
-			<textarea data-ng-model="api.data"></textarea>
+	<div data-kaisa-header="true"></div>
+	<div data-kaisa-menu="true"></div>
+	<div id="container">
+		<div id="apiMake">
+			<div class="wrap">
+				<div data-study-menu="true"></div>
+				<form data-ng-submit="api.make()">
+					<h2>Api Name</h2>
+					<input type="text" data-ng-model="api.name" />
 
-			<h2>Result</h2>
-			<textarea data-ng-model="api.result"></textarea>
+					<h2>Excel Clone</h2>
+					<ol class="guide">
+						<li>엑셀에서 텍스트로 붙여넣을때 2번째 셀은 1번일경우 서브 element 이다.(array or object 의 하위노드만 수동으로 작성)</li>
+						<li>number는 long 으로 변화한다.</li>
+					</ol>
 
+					<textarea data-ng-model="api.data"></textarea>
 
-			<div class="btnWrap">
-				<button type="button" class="on" data-ng-click="api.make()">Make</button>
+					<h2>Result 1depth</h2>
+					<ol class="guide">
+						<li>1. element = apiName + (request or responce)</li>
+						<li>2. complexType > complexContent > extension(LtonCommonVO) > sequence > element</li>
+					</ol>
+					<textarea data-ng-model="api.result" class="resultTextarea"></textarea>
+
+					<h2>Result 2depth</h2>
+					<ol class="guide">
+						<li>1. 3depth 부터는 생성안됨</li>
+					</ol>
+					<textarea data-ng-model="api.resultSub" class="resultTextarea sub"></textarea>
+
+					<div class="btnWrap">
+						<button type="submit" class="on">Make</button>
+					</div>
+				</form>
 			</div>
-
 		</div>
 	</div>
-</div>
-<div class="layerDatePicker" data-layer-date-picker="true" data-ng-style="crawler.date.style" data-model="crawler.date" data-ng-show="crawler.date.active">
-	<div data-layer-date-picker-calendar="true"></div>
-</div>
-<div data-kaisa-footer="true"></div>
+	<div class="layerDatePicker" data-layer-date-picker="true" data-ng-style="crawler.date.style" data-model="crawler.date" data-ng-show="crawler.date.active">
+		<div data-layer-date-picker-calendar="true"></div>
+	</div>
+	<div data-kaisa-footer="true"></div>
 </body>
 </html>
