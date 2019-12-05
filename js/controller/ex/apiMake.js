@@ -8,7 +8,8 @@
 		};
 		$scope.api = {
 			data : null,
-			name : 'productRegistrationRequest',
+			name : 'productRegistration',
+			type : 'Request',
 			dataArray : [],
 			result : ''
 		};
@@ -262,7 +263,7 @@ epsrPrirRnkg	1	number
 		$scope.api.make = function(){
 			$scope.api.dataArray = $scope.api.data.split('\n');
 			$scope.api.resultSub  = '';
-			$scope.api.result  = '<element name="'+kaisaUtil.firstStringToUpper($scope.api.name)+'" type="tns:'+kaisaUtil.firstStringToUpper($scope.api.name)+'VO"></element>\n';
+			$scope.api.result  = '<element name="'+kaisaUtil.firstStringToUpper($scope.api.name)+kaisaUtil.firstStringToUpper($scope.api.type)+'" type="tns:'+kaisaUtil.firstStringToUpper($scope.api.name)+kaisaUtil.firstStringToUpper($scope.api.type)+'VO"></element>\n';
 			$scope.api.result += '<complexType name="tns:'+kaisaUtil.firstStringToUpper($scope.api.name)+'VO">\n';
 			$scope.api.result += '  <complexContent>\n';
 			$scope.api.result += '    <extension base="tns:LtonCommonVO">\n';
