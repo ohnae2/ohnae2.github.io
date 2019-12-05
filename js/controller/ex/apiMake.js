@@ -281,7 +281,7 @@ epsrPrirRnkg	1	number
 					// console.log(str[0] , str[2] , str[1], cnt++);
 					tmpArray.list.push({
 						name : str[0],
-						type : str[1]
+						type : str[2]
 					});
 				}else if(str[0] && str[2] && str[1] != '1') {
 					if(isPush){
