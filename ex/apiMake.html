@@ -46,8 +46,9 @@
 
 					<h2>Excel Clone</h2>
 					<ol class="guide">
-						<li>엑셀에서 텍스트로 붙여넣을때 2번째 셀은 1번일경우 서브 element 이다.(array or object 의 하위노드만 수동으로 작성)</li>
-						<li>number는 long 으로 변화한다.</li>
+						<li>엑셀에서 텍스트로 붙여넣을때 2번째 셀이 1번일경우 서브 element 이다.(array or object 의 하위노드만 수동으로 작성)</li>
+						<li>number는 long 으로 변환.</li>
+						<li>키값이 없는 value 는 List&lt;String&gt; ?</li>
 					</ol>
 
 					<textarea data-ng-model="api.data"></textarea>
