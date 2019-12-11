@@ -1,4 +1,4 @@
-(function(window, angular, undefined){
+k(function(window, angular, undefined){
 	'use strict';
 	var app = angular.module('directive',['common']);
 	app.directive('kaisaHeader',[function(){
@@ -15,6 +15,7 @@
 			link: function($scope, el, attrs){
 			}
 		}
+
 	}]);
 	app.directive('kaisaMenu',[function(){
 		return {
