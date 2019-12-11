@@ -11,3 +11,7 @@ git push -u --force origin master
 
 npm install --save-dev gulp gulp-babel
 npm install --save-dev gulp-sourcemaps
+
+gulp
+nodemon web
+localhost:7777
