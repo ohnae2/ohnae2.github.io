@@ -29,9 +29,7 @@ const KAISA = {
 const DEST = {
 	JS: 'js/min'
 };
-gulp.task('default', ['jsMin','watch'], () => {
-    gulpUtil.log('Gulp Watcher is running...');
-});
+
 gulp.task('watch', () => {
     let watcher = {
     	jsMin: gulp.watch(KAISA.JS.MIN, ['jsMin'])
@@ -43,6 +41,7 @@ gulp.task('watch', () => {
         watcher[key].on('change', notify);
     }
 });
+
 gulp.task('jsMin', () => {
 	if(dev){
 		gulp.src(KAISA.JS.MIN).pipe(gulpConcat('kaisa.js')).pipe(gulp.dest(DEST.JS));
@@ -50,3 +49,6 @@ gulp.task('jsMin', () => {
 		return gulp.src(KAISA.JS.MIN).pipe(gulpConcat('kaisa.js')).pipe(gulpUglify()).pipe(gulp.dest(DEST.JS));
 	}
 });
+
+gulp.task('default', gulp.series('jsMin')); //TODO watch
+

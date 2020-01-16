@@ -31,6 +31,7 @@
 		this.exCompare = protocol + '/ex/compare.html';
 		this.exCrawler = protocol + '/ex/crawler.html';
 		this.exApiMake = protocol + '/ex/apiMake.html';
+		this.exMapping = protocol + '/ex/mapping.html';
 
     }]);
 })(window, window.angular);

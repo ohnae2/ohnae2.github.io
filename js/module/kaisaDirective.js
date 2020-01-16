@@ -55,6 +55,7 @@
 					{title:'compare', url:'exCompare'},
 					{title:'crawler', url:'exCrawler'},
 					{title:'apiMake', url:'exApiMake'},
+					//{title:'mapping', url:'exMapping'},
 					//{title:'handlebars', url:'exHandlebars'},
 					//{title:'batch', url:'exBatch'},
 					//{title:'batchCheck', url:'exBatchCheck'},
