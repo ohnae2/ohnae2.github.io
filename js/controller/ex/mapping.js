@@ -6,14 +6,32 @@
 		$scope.page = {
 			idx : 2
 		};
-
+		$scope.getArray = function(num) {
+			if(num > 99) {
+			    return new Array(num);
+			}
+		    return new Array(num);
+		};
 		$scope.table = {
-			name : 'TEMP_H001167',
+			name : 'OLS_DISP_SHOP_BASE',
 			wordType : '10',
 			originDirctionary: [],
 			dirctionary : [],
+			length : 0,
+			generate : function() {
+				for(var i in $scope.table.column){
+					if(!$scope.table.column[i].default && $scope.table.column[i].text){
+						var length = $scope.table.column[i].text.split('\n').length;
+						if(length > $scope.table.length){
+							$scope.table.length = length;
+						}
+						$scope.table.column[i].array = $scope.table.column[i].text.split('\n');
+						console.log($scope.table.column[i].name + '는 %c' + length + '%c개의 데이터가 있습니다.','color:#ff0000; font-weight:bold;','color:#333;');
+					}
+				}
+			},
 			copySource : function(){
-				var copyHtml = angular.element('.makeT .textarea').text().replace(/^\s*[\r\n]/gm , '');
+				var copyHtml = angular.element('.source').text().replace(/^\s*[\r\n]/gm , '');
 				angular.element('#clipboard').val(copyHtml).select();
 				if(window.clipboardData){
 					window.clipboardData.setData('Text',copyHtml);
@@ -23,9 +41,21 @@
 				}
 			},
 			column : [
-				{name : 'MBR_NO'},
-				{name : 'MBR_NM'},
-				{name : 'MBR_INST_PSC'}
+				{name : 'LINK_SN', type: 'number' , default : 'OLS_DISP_SHOP_BASE_SQ01.NEXTVAL', text: ''},
+				{name : 'SITE_NO', type: 'number' , default : '19', text: ''},
+				{name : 'CAT_SCT_CD', type: 'string' , default : '30', text: ''},
+				{name : 'SITE_CAT_NO', type: 'string' , default : '', text: 'BN50000040\nBN50000050\nBN50000060\nBN50000070\nBN50000080\nBN50000080\nBN50000090'},
+				{name : 'SITE_CAT_NM', type: 'string' , default : '', text: '과즙망\n스낵컵\n식기세트\n유아식판\n이유식전용식기\n접시\n이유식냉동용기\n이유식보관용기\n이유식저장팩\n이유식저장팩\n죽통/푸드자\n수유브라\n'},
+				{name : 'UPR_CAT_NO', type: 'string' , default : '0', text: '0'},
+				{name : 'DPTH_NO', type: 'number' , default : '1', text: ''},
+				{name : 'USE_YN', type: 'string' , default : 'Y', text: ''},
+				{name : 'DISP_YN', type: 'string' , default : 'Y', text: ''},
+				{name : 'OUR_DISP_NO', type: 'number' , default : '0', text: ''},
+				{name : 'SITE_GBN_CD', type: 'string' , default : 'Y', text: ''},
+				{name : 'SYS_REG_DTIME', type: 'string' , default : 'SYSDATE', text: ''},
+				{name : 'SYS_REGR_ID', type: 'string' , default : 'H001167', text: ''},
+				{name : 'SYS_MOD_DTIME', type: 'string' , default : 'SYSDATE', text: ''},
+				{name : 'SYS_MODR_ID', type: 'string' , default : 'H001167', text: ''}
 			],
 			columnFull : [],
 			delColumn : function(){
@@ -45,7 +75,8 @@
 					if(arr[i]){
 						this.column.push({
 							name : arr[i],
-							type : (arr[i].match('TEXT')) ? 'String' : 'Number'
+							type : (arr[i].match('TEXT')) ? 'string' : 'number',
+							array : ''
 						});
 					}
 				}

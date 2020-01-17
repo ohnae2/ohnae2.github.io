@@ -35,42 +35,66 @@
 <div data-kaisa-header="true"></div>
 <div data-kaisa-menu="true"></div>
 <div id="container">
-	<div id="db">
+	<div id="mapping">
 		<div class="wrap">
 			<div data-study-menu="true"></div>
-			<h2>DB <button type="button" data-ng-click="table.popupColumn()">TEXT 등록</button></h2>
-			<table class="makeT">
-				<tr>
-					<th>
-						<h3>
-							Table
-						</h3>
+			<div class="btnWrap tr"><button type="button" data-ng-click="table.popupColumn()">컬럼 일괄 등록</button></div>
+			
+			<div class="makeBox">
+				<textarea id="clipboard"></textarea>
+				<h3>
+					Copy
+					<ul>
+						<li><button class="click" type="button" data-ng-click="table.generate()">Generate</button></li>
+						<li><button class="on" type="button" data-ng-click="table.copySource()">Source Copy</button></li>
+					</ul>
+				</h3>
+				<div class="source">
+<p data-ng-repeat="(jdx, j) in getArray(table.length) track by $index">INSERT INTO {{table.name}} (<span data-ng-repeat="i in table.column"><b data-ng-if="$index != 0">,</b>{{i.name}}</span>) VALUES (<span class="values" data-ng-repeat="(idx, i) in table.column"><b data-ng-if="$index != 0">,</b><b data-ng-if="i.type == 'string' && i.default != 'SYSDATE'">'</b><span class="value" data-ng-if="!i.default && i.array[jdx]">{{i.array[jdx]}}</span><span class="value" data-ng-if="i.default && !i.array[jdx]">{{i.default}}</span><b data-ng-if="i.type == 'string' && i.default != 'SYSDATE'">'</b></span>);
+</p>
+				</div>
+				<div class="inner">
+					<h3>
+						Table Name 
 						<ul>
 							<li><input type="text" data-ng-model="table.name" /></li>
 						</ul>
-						<h3>
-							Column
-							<ul>
-								<li class="del" data-ng-click="table.delColumn()"></li>
-								<li class="add" data-ng-click="table.addColumn()"></li>
-							</ul>
-						</h3>
+					</h3>
+					<h3>
+						Column 
 						<ul>
-							<li data-ng-repeat="i in table.column"><input type="text" data-ng-model="i.name" /> <input type="text" data-ng-model="i.type" /></li>
+							<li class="del" data-ng-click="table.delColumn()"></li>
+							<li class="add" data-ng-click="table.addColumn()"></li>
 						</ul>
-					</th>
-					<td>
-						<h3>
-							SQL
-							<ul>
-								<li><button class="on" type="button" data-ng-click="table.copySource()">소스복사</button></li>
-							</ul>
-						</h3>
-						<textarea id="clipboard"></textarea>
-						
-					</td>
-				</tr>
-			</table>
+					</h3>
+					
+					<table class="columnT">
+						<thead>
+							<tr>
+								<th>Name</th>
+								<th>Type</th>
+								<th>Default</th>
+							</tr>
+						</thead>
+						<tbody data-ng-repeat="i in table.column">
+							<tr>
+								<td><input type="text" data-ng-model="i.name" /></td>
+								<td>
+									<select data-ng-model="i.type">
+										<option value="string">string</option>
+										<option value="number">number</option>
+								    </select>
+							    </td>
+								<td><input type="text" data-ng-model="i.default" /></td>
+							</tr>
+							<tr data-ng-if="!i.default">
+								<td colspan="3"><textarea data-ng-model="i.text"></textarea></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			
 		</div>
 	</div>
 </div>

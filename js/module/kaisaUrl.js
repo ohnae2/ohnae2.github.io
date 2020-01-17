@@ -32,6 +32,7 @@
 		this.exCrawler = protocol + '/ex/crawler.html';
 		this.exApiMake = protocol + '/ex/apiMake.html';
 		this.exMapping = protocol + '/ex/mapping.html';
+		this.exColor = protocol + '/ex/color.html';
 
     }]);
 })(window, window.angular);

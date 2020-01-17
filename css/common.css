@@ -137,6 +137,7 @@ button[type='reset'] {background:#fff; color:#777;}
 button.on,
 button[type='submit'] {background:#ff5500; color:#fff; border:1px solid #ff5500;}
 button.excel {background:#2e7d32; border:1px solid #08743b; color:#fff;}
+button.click {background:#339933; color:#fff; border:1px solid #339933;}
 
 #alert {width:100%; height:100%; position:fixed; text-align:center; left:0; top:0; z-index:1000; background:rgba(0,0,0,0.3); display:none;}
 #alert.on {display:block;}
@@ -159,6 +160,7 @@ colResize : 2
 */
 
 .btnWrap {width:100%; clear:both; padding:10px 0; text-align:center;}
+.btnWrap.tr {text-align:right;}
 
 /* datePicker */
 div.datePicker li,
