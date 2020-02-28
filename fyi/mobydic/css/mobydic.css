@@ -1,0 +1,27 @@
+@charset "utf-8";
+body {font-size:20px; color:#fff; line-height:24px; font-family:NotoSansKR; margin:0; padding:0;}
+input {font-family:'OpenSans-Regular'; padding:0; margin:0; border:0; outline:0; color:#393939;}
+button {background:#363636; border:0; border-top:1px solid #858585; outline:0; font-family:'OpenSans-Regular'; font-size:24px; line-height:66px; color:#fff; margin:0; padding:0;}
+li {list-style:none;}
+ul,li,h1,h2,h3,h4,h5,h6,ol,dl,dt,dd,p,body,fieldset,html,sup {margin:0; padding:0;}
+h1,h2,h3,h4,h5,th {font-weight:normal; font-size:20px;}
+b,strong {font-weight:normal;}
+img {border:0; vertical-align:middle;}
+a{outline:0; text-decoration:none;}
+table {border-collapse:collapse;}
+
+@font-face {
+	font-family: NotoSansKR;
+	src:url(//test-static.lotteon.com/p/common/foCommon/assets/fonts/NotoSansKR-Regular.woff2) format("woff2"),
+		url(//test-static.lotteon.com/p/common/foCommon/assets/fonts/NotoSansKR-Regular.woff) format("woff"),
+		url(//test-static.lotteon.com/p/common/foCommon/assets/fonts/NotoSansKR-Regular.eot) format("embedded-opentype");
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: NotoSansKR;
+	src:url(//test-static.lotteon.com/p/common/foCommon/assets/fonts/NotoSansKR-Bold.woff2) format("woff2"),
+		url(//test-static.lotteon.com/p/common/foCommon/assets/fonts/NotoSansKR-Bold.woff) format("woff"),
+		url(//test-static.lotteon.com/p/common/foCommon/assets/fonts/NotoSansKR-Bold.eot) format("embedded-opentype");
+	font-weight: 700;
+}
