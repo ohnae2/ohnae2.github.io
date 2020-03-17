@@ -1,21 +1,238 @@
-
 <!DOCTYPE HTML>
 <html>
+
 <head>
-<meta charset="utf-8">
-<title></title>
-<link rel="stylesheet" href="css/common.css">
-<script src="js/jquery-1.7.2.min.js"></script>
+  <meta charset="utf-8">
+  <title>LTON 상품연동</title>
+  <style>
+  body   {font-size:11px; line-height:17px; font-family:'dotum'; padding:0; margin:0; border:0; outline:0; color:#777; width:100%;}
+  input  {font-size:11px; line-height:17px; font-family:'dotum'; padding:0; margin:0; border:0; outline:0; color:#777;}
+  button {font-size:11px; line-height:17px; font-family:'dotum'; padding:0; margin:0; border:0; outline:0; color:#777;}
+  ul,li,h1,h2,h3,h4,h5,h6,ol,dl,dt,dd,p,body,fieldset,html,sup {margin:0; padding:0;}
+  ul li {list-style:none;}
+  li:hover {color:#ff5500; background:#fdfdfd;}
+  h1,h2,h3,h4,h5 {font-size:12px; color:#666; padding:10px 0 0 0;}
+  b,strong {font-weight:normal;}
+  img {border:0; vertical-align:middle;}
+  a {outline:0; text-decoration:none;}
+  table {border-collapse:collapse;}
+  th {font-weight:normal;}
+  h1 span {color:#ff5500;}
+  ol {padding:10px 0 0 15px;}
+  ul {padding:10px 0 0 0;}
+  fieldset {margin-top:10px; border:1px solid #ddd; padding:0 10px 10px 10px; position:relative;}
+  fieldset legend {color:#000; font-size:14px; cursor:pointer; font-weight:bold; padding-left:0;}
+  fieldset legend:after { display:block; position:absolute; right:0; top:0; text-align: center; width:35px; line-height:20px; top:10px; font-size:11px; color:#999; font-weight:normal;}
+  fieldset legend:after {content:'닫기';}
+  fieldset.off legend:after {content:'열기';}
+  fieldset.off {overflow:hidden; height:18px;}
+  #container {padding:20px;}
+  #list {border:1px solid #ccc; background:#fdfdfd;}
+  table th {padding:2px 5px; border:1px solid #eee; background:#fcfcfc;}
+  table td {padding:2px 5px; border:1px solid #eee;}
+  tr:hover {color:#ff5500; background:#fdfdfd;}
+  </style>
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script>
+    $(function () {
+      $("legend").click(function (e) {
+        $(this).parent().toggleClass('off');
+      });
+      $("h3").each(function () {
+        var id = $(this).attr('id');
+        var text = $(this).text();
+        var html = '<li><a href="#' + id + '">' + text + '</a></li>';
+        $('#list ol').append(html);
+      });
+      $("#list a").click(function (e) {
+        var hash = $(this).attr("href");
+        var posY = $(hash).offset().top;
+        $("html").stop().animate({ 'scrollTop': posY }, 600, function () {
+          location.hash = hash;
+        });
+        e.preventDefault();
+      });
+    });
+  </script>
 </head>
+
 <body>
-<div>
-
-<h1>롯데온 상품연동</h1>
-
-<ol>
-  <li></li>
-</ol>
-
-</div>
+  <div id="container">
+    <h1><span>LTON</span> 상품연동</h1>
+    <fieldset id="list">
+      <legend>목차</legend>
+      <ol></ol>
+    </fieldset>
+    <fieldset>
+      <legend>API 정보</legend>
+      <h3 id="p1-1">API 기타 정보</h3>
+      <ul>
+        <li>API 센터 : <a target="blank" href="https://ecapi.lotteon.com/apiService/">https://ecapi.lotteon.com/apiService/</a></li>
+        <li>이음 : <a target="blank" href="https://eium.lotte.com/pages/viewpage.action?pageId=97243604">https://eium.lotte.com/pages/viewpage.action?pageId=97243604</a></li>
+        <li>테스트 SO : <a target="blank" href="https://test-so.lotteon.com/cm/main/login_SO.wsp">https://test-so.lotteon.com/cm/main/login_SO.wsp</a> (아이디 : LI000000_02 비번 : 1234)</li>
+        <li>테스트 FO : <a target="blank" href="https://test.lotteon.com/p/member/gate/forwarding/main?rtnUrl=https://test.lotteon.com/p/product/LI1062329219">https://test.lotteon.com/p/member/gate/forwarding/main?rtnUrl=https://test.lotteon.com/p/product/LI1062329219</a></li>
+      </ul>
+      <h3 id="p1-2">API Key</h3>
+      <ul>
+        <li>개발 : authorizationKey=5d5b2cb498f3d20001665f4eed3dedf5ba004561acbbd3a370bd50b4</li>
+        <li>테스트 : authorizationKey=5d5b2cb498f3d20001665f4e8b2881c4ecb3401c9b154ee1eb25af40</li>
+        <li>운영 : authorizationKey=5d5b2cb498f3d20001665f4ea93e3ef4a3e24a5f8bc1cb00b436c684</li>
+      </ul>
+      <h3 id="p1-3">API URL</h3>
+      <ul>
+        <li>롯데온 출고지/반품지 등록 : registDeliveryPlace=/v1/openapi/contract/v1/dvp/registDvp</li>
+        <li>롯데온 출고지/반품지 수정 : updateDeliveryPlace=/v1/openapi/contract/v1/dvp/updateDvp</li>
+        <li>롯데온 출고지/반품지 삭제 : deleteDeliveryPlace=/v1/openapi/contract/v1/dvp/deleteDvp</li>
+        <li>롯데온 계열사 배송비정책 연동 : sendDeliveryCostPolicy=/v1/openapi/delivery/v1/DeliveryCostPolicyInterface</li>
+        <li>롯데온 상품 판매상태 변경 : changeProductStatus=/v1/openapi/product/v1/product/status/change</li>
+        <li>롯데온 상품 판매상태 변경 : changeItemStatus=/v1/openapi/product/v1/item/status/change</li>
+        <li>롯데온 상품등록 : productRegistration=/v1/openapi/product/v1/product/registration/request</li>
+        <li>롯데온 상품수정 : productModification=/v1/openapi/product/v1/product/modification/request</li>
+        <li>롯데온 가격 : sendLtonGoodsPrice=/v1/openapi/product/v1/item/price/change</li>
+        <li>롯데온 재고 : sendLtonGoodsStock=/v1/openapi/product/v1/item/stock/change</li>
+        <li>휴일 전송 : holidayManage=/v1/openapi/bocommon/v1/holiday/holidayManage</li>
+        <li>Qna 수신 : getProductQnaList=/v1/openapi/product/v1/product/qna/list</li>
+        <li>Qna 송신 : sendProductQnaReply=/v1/openapi/product/v1/product/qna/reply</li>
+        <li>예약상품 조회 : productReservationList=/v1/openapi/product/v1/product/reservationsale/list</li>
+        <li>예약상품 등록 : productReservationRegistration=/v1/openapi/product/v1/product/reservationsale/registration/request</li>
+        <li>예약상품 수정 : productReservationModification=/v1/openapi/product/v1/product/reservationsale/modification/request</li>
+        <li>상품 조회 : productDetail=/v1/openapi/product/v1/product/detail</li>
+      </ul>
+    </fieldset>
+    <fieldset>
+      <legend>TABLE 정보</legend>
+      <h3 id="p2-1">원본 TABLE</h3>
+      <ul>
+        <li>PR_GOODS_BASE 상품기본</li>
+        <li>PR_GOODS_PRC_HIST 상품가격이력</li>
+        <li>PR_GOODS_INST_CPN_HIST 상품즉석쿠폰이력</li>
+        <li>PR_GOODS_SFT_CERT_HIST 상품안전인증이력</li>
+        <li>PR_GOODS_ADTN_INFO 상품부가정보</li>
+        <li>PR_GOODS_ALGN_ADTN_INFO 상품제휴 부가정보</li>
+        <li>PR_GOODS_CONTS_INFO 상품컨텐츠정보</li>
+        <li>PR_GOODS_ORD_ACCP_PATH_INFO </li>
+        <li>PR_ITEM_BASE 단품기본</li>
+        <li>PR_BRND_BASE 브랜드기본</li>
+        <li>PR_DISP_GOODS_INFO 전시상품정보</li>
+        <li>PR_MD_GSGR_BASE MD상품군기본</li>
+        <li>PR_GRBY_GOODS_INFO 공동구매상품정보</li>
+        <li>PR_GRBY_GOODS_INFO_HIST 공동구매상품정보이력</li>
+        <li>PR_GRBY_BASE 공동구매기본</li>
+        <li>ET_ENTR_CONTR_BASE 협력사계약기본</li>
+        <li>ET_LWST_ENTR_BASE 하위벤더기본</li>
+        <li>ET_DLV_POLC_INFO 배송정책정보</li>
+        <li>ET_LWST_ENTR_DLVP_INFO 하위벤더배송지정보</li>
+        <li>CC_PROM_BASE 프로모션기본</li>
+        <li>CC_PROM_APLY_INFO 프로모션적용정보</li>
+        <li>CC_PROM_GFT_INFO 프로모션사은품정보</li>
+      </ul>
+      <h3 id="p2-2">제휴 TABLE</h3>
+      <ul>
+        <li>OLS_LTON_GOODS_LINK 롯데온상품연동정보</li>
+        <li>OLS_LTON_ITEM_LINK 롯데온단품연동정보</li>
+        <li>OLS_LTON_TMP_GOODS_LINK 롯데온상품연동정보</li>
+        <li>OLS_ATTR_INFO 쿠팡임시상품연동대상정보</li>
+        <li>OLS_ATTR_INFO 쿠팡임시상품연동대상정보</li>
+        <li>OLS_ATTR_VAL_INFO 쿠팡임시상품연동대상정보</li>
+        <li>OLS_STD_CD_MPPG_INFO 기준코드매핑정보</li>
+        <li>OLS_GOODS_ADD_MGMT_INFO 상품추가관리정보</li>
+        <li>OLS_GOODS_ADD_MGMT_INFO_HIST 상품추가관리정보이력</li>
+        <li>OLS_BRND_BASE 제휴 브랜드 테이블</li>
+        <li>OLS_BRND_MPPG_INFO 브랜드 매핑 테이블</li>
+        <li>OLS_DISP_SHOP_BASE 출점몰전시기본</li>
+        <li>OLS_CAT_MPPG_INFO 카테고리 매핑 테이블</li>
+        <li>OLS_CAT_MPPG_INFO_HIST 카테고리 매핑 이력 테이블</li>
+      </ul>
+      <h3 id="p2-3">로그 TABLE</h3>
+      <ul>
+        <li>OLS_LTON_LINK_CONT_LOG 롯데온 상품 I/F 로그</li>
+      </ul>
+    </fieldset>
+    <fieldset id="p3-1">
+      <legend>배치 정보</legend>
+      <h3 id="p3-1">상품 배치</h3>
+      <table>
+        <tbody>
+          <tr>
+            <th>828</th>
+            <td>[LTON]재고/가격연동(인터넷)</td>
+            <td>LtonGoodsPriceSendINTBatch.sh</td>
+          </tr>
+          <tr>
+            <th>827</th>
+            <td>[LTON]재고/가격연동(TV)</td>
+            <td>LtonGoodsPriceSendTVBatch.sh</td>
+          </tr>
+          <tr>
+            <th>832</th>
+            <td>[LTON]상품연동(인터넷)</td>
+            <td>LtonGoodsSendINTBatch.sh</td>
+          </tr>
+          <tr>
+            <th>831</th>
+            <td>[LTON]상품연동(TV)</td>
+            <td>LtonGoodsSendTVBatch.sh</td>
+          </tr>
+          <tr>
+            <th>839</th>
+            <td>[LTON]상품품절수집(인터넷)</td>
+            <td>LtonGoodsSoldOutInfoINTBatch.sh</td>
+          </tr>
+          <tr>
+            <th>838</th>
+            <td>[LTON]상품품절수집(TV)</td>
+            <td>LtonGoodsSoldOutInfoTVBatch.sh</td>
+          </tr>
+          <tr>
+            <th>834</th>
+            <td>[LTON]상품품절연동(인터넷)</td>
+            <td>LtonGoodsSoldOutINTBatch.sh</td>
+          </tr>
+          <tr>
+            <th>833</th>
+            <td>[LTON]상품품절연동(TV)</td>
+            <td>LtonGoodsSoldOutTVBatch.sh</td>
+          </tr>
+        </tbody>
+      </table>
+    </fieldset>
+    <fieldset>
+      <legend>매핑 정보</legend>
+      <h3 id="p4-1">LTON 정보 매핑</h3>
+      <ul>
+        <li>SELECT * FROM OLS_DISP_SHOP_BASE WHERE SITE_NO = 19 AND CAT_SCT_CD = '10'; -- 표준 카테고리</li>
+        <li>SELECT * FROM OLS_DISP_SHOP_BASE WHERE SITE_NO = 19 AND CAT_SCT_CD = '20'; -- 전시 카테고리</li>
+        <li>SELECT * FROM OLS_BRND_BASE WHERE SITE_NO = 19; -- 브랜드</li>
+        <li>SELECT * FROM OLS_ATTR_INFO WHERE SITE_NO = 19; -- 속성 </li>
+        <li>SELECT * FROM OLS_ATTR_VAL_INFO WHERE SITE_NO = 19; -- 속성값</li>
+        <li>SELECT * FROM OLS_STD_CD_MPPG_INFO WHERE SITE_NO IN (20, 21) AND SITE_GRP_CD = 'A001'; -- 회수지 매핑 </li>
+        <li>SELECT * FROM OLS_STD_CD_MPPG_INFO WHERE SITE_NO IN (20, 21) AND SITE_GRP_CD = 'A002'; -- 출고지 매핑 </li>
+        <li>SELECT * FROM OLS_STD_CD_MPPG_INFO WHERE SITE_NO = 19 AND SITE_GRP_CD = 'A003'; -- 상품품목고시 매핑 </li>
+        <li>SELECT * FROM OLS_STD_CD_MPPG_INFO WHERE SITE_NO IN (20, 21) AND SITE_GRP_CD = 'A004'; -- 배송정책 매핑</li>
+        <li>SELECT * FROM OLS_STD_CD_MPPG_INFO WHERE SITE_NO = 19 AND SITE_GRP_CD = 'J303'; -- 택배사 매핑 </li>
+        <li>SELECT * FROM OLS_STD_CD_MPPG_INFO WHERE SITE_NO = 19 AND SITE_GRP_CD = 'A015'; -- 원산지 매핑 </li>
+        <li>SELECT * FROM OLS_STD_CD_MPPG_INFO WHERE SITE_NO = 19 AND SITE_GRP_CD = 'A016'; -- 전시/표준 카테고리 매핑 </li>
+        <li>SELECT * FROM OLS_STD_CD_MPPG_INFO WHERE SITE_NO = 19 AND SITE_GRP_CD = 'A017'; -- 표준카테고리 속성 매핑 </li>
+        <li>SELECT * FROM OLS_STD_CD_MPPG_INFO WHERE SITE_NO = 19 AND SITE_GRP_CD = 'A018'; -- 표준카테고리 상품품목고시 매핑 </li>
+        <li>SELECT * FROM OLS_STD_CD_MPPG_INFO WHERE SITE_NO = 19 AND SITE_GRP_CD = 'A019'; -- 전시카테고리 브랜드 매핑 </li>
+        <li>SELECT * FROM OLS_STD_CD_MPPG_INFO WHERE SITE_NO = 19 AND SITE_GRP_CD = 'A020'; -- 전시카테고리 거래처 매핑</li>
+      </ul>
+      <h3 id="p4-2">연동상품관련 매핑</h3>
+      <ul>
+        <li>SELECT * FROM OLS_GOODS_ADD_MGMT_INFO WHERE SITE_NO = 19 AND MGMT_TGT_SCT_CD = '0000' AND MGMT_SCT_CD = '0001'; --연동체결협력 (ENTR_NO , ENTR_CONTR_NO)</li>
+        <li>SELECT * FROM OLS_GOODS_ADD_MGMT_INFO WHERE SITE_NO = 19 AND MGMT_TGT_SCT_CD = '0001' AND MGMT_SCT_CD = '0002'; --전시불가하위벤더 (ENTR_NO , ENTR_CONTR_NO)</li>
+        <li>SELECT * FROM OLS_GOODS_ADD_MGMT_INFO WHERE SITE_NO = 19 AND MGMT_TGT_SCT_CD = '0005' AND MGMT_SCT_CD = '0002'; --전시불가협력사 (ENTR_NO , ENTR_CONTR_NO)</li>
+        <li>SELECT * FROM OLS_GOODS_ADD_MGMT_INFO WHERE SITE_NO = 19 AND MGMT_TGT_SCT_CD = '0006' AND MGMT_SCT_CD = '0002'; --전시불가브랜드 (BRND_NO , SRCG_MDM_CD)</li>
+        <li>SELECT * FROM OLS_GOODS_ADD_MGMT_INFO WHERE SITE_NO = 19 AND MGMT_TGT_SCT_CD = '0002' AND MGMT_SCT_CD = '0002'; --전시불가상품 (GOODS_NO)</li>
+        <li>SELECT * FROM OLS_GOODS_ADD_MGMT_INFO WHERE SITE_NO = 19 AND MGMT_TGT_SCT_CD = '0008' AND MGMT_SCT_CD = '0002'; --전시가능상품 (GOODS_NO)</li>
+        <li>SELECT * FROM OLS_GOODS_ADD_MGMT_INFO WHERE SITE_NO = 19 AND MGMT_TGT_SCT_CD = '0004' AND MGMT_SCT_CD = '0002'; --쿠폰연동제외상품 (GOODS_NO)</li>
+        <li>SELECT * FROM OLS_GOODS_ADD_MGMT_INFO WHERE SITE_NO = 19 AND MGMT_TGT_SCT_CD = '0003' AND MGMT_SCT_CD = '0002'; --쿠폰연동제외하위벤더 (ENTR_NO , ENTR_CONTR_NO)</li>
+        <li>SELECT * FROM OLS_GOODS_ADD_MGMT_INFO WHERE SITE_NO = 19 AND MGMT_TGT_SCT_CD = '0009' AND MGMT_SCT_CD = '0002'; --쿠폰연동제외브랜드 (BRND_NO , SRCG_MDM_CD)</li>
+        <li>SELECT * FROM OLS_GOODS_ADD_MGMT_INFO WHERE SITE_NO = 19 AND MGMT_TGT_SCT_CD = '0010' AND MGMT_SCT_CD = '0002'; --마진예외브랜드 (BRND_NO , SRCG_MDM_CD)</li>
+        <li>SELECT * FROM OLS_GOODS_ADD_MGMT_INFO WHERE SITE_NO = 19 AND MGMT_TGT_SCT_CD = '0011' AND MGMT_SCT_CD = '0002'; --마진예외연동상품 (GOODS_NO)</li>
+      </ul>
+    </fieldset>
+  </div>
 </body>
+
 </html>
