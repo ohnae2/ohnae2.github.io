@@ -2,11 +2,9 @@
  * ECBASE Project
  * grid ver 0.0.1
 */
-
 (function(window, angular, undefined){
 	'use strict';
 	var app = angular.module('grid',['common']);
-
 	app.service('kaisaGrid',['$http','$httpParamSerializerJQLike','$timeout','$filter','constant',function($http,$httpParamSerializerJQLike,$timeout,$filter,constant){
 		this.init = function($scope, grid){
 			var originData = new Array(),
@@ -38,8 +36,8 @@
 				numberArray : new Array(),
 				searchUrl : null,
 				searchParam : {
-					startDate : $filter('date')(new Date().setMonth(new Date().getMonth() - 1), 'yyyy-MM-dd') + ' 00:00',
-					endDate : $filter('date')(new Date(), 'yyyy-MM-dd') + ' 23:59',
+					startDate : $filter('date')(new Date().setMonth(new Date().getMonth() - 1), 'yyyy-MM-dd') + ' 00:00:00',
+					endDate : $filter('date')(new Date(), 'yyyy-MM-dd') + ' 23:59:59',
 					limitPage : '10',
 					currentPage : '1'
 				},
@@ -64,7 +62,6 @@
 								for(var h in defaultOptions.numberArray){
 									if(j == defaultOptions.numberArray[h].key){
 										grid.data[i][j] = parseInt(grid.data[i][j]);
-										console.log(grid.data[i][j]);
 									}
 								}
 							}
@@ -230,13 +227,17 @@
 				selectedCol : null,
 				selectedRow : null,
 				selectedValue : null,
-
 				beforeKey : null,
 				beforeCol : null,
 				beforeRow : null,
 				beforeValue : null,
 				gridClick : function(e){
 					//TO-DO
+					//console.log('gridClick');
+				},
+				gridMousedown : function(e){
+					//TO-DO
+					//console.log('gridMousedown');
 				},
 				/**
 				 * @col
@@ -249,9 +250,7 @@
 				},
 				colClick : function(key, col, row){
 					var cell = $('.gridT.'+this.name+' td[data-grid-col="'+col+'"][data-grid-row="'+row+'"]');
-
 					var scrollLeft = $('.gridWrap.'+this.name).scrollLeft();
-
 					if(cell.length > 0){
 						this.layerSelected.left = cell.position().left - 2 + scrollLeft;
 						this.layerSelected.top = cell.position().top -2;
@@ -307,6 +306,9 @@
 					this.colResizeStartX = $event.pageX;
 					this.colResizeIndex = chead.index;
 					this.colResizeStartWidth = chead.width;
+				},
+				colResizeDblclick : function($event,chead){
+					console.log($event,chead);
 				},
 				/**
 				 * @colMove event

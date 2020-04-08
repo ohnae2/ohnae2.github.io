@@ -1,6 +1,5 @@
 @charset "utf-8";
-/*
-drag 되는 부분을 제어함
+/* drag 되는 부분을 제어함 */
 span,div,img,body {
     -moz-user-select: none;
     -ms-user-select: none;
@@ -9,7 +8,7 @@ span,div,img,body {
     user-select: none;
     user-drag: none;
 }
-*/
+
 [ng-drag] {-moz-user-select: -moz-none; -khtml-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;}
 [ng-drag].dragging {opacity:0.8 !important;}
 [ng-drag].drag-over {inline:1px solid #aaa;}

@@ -1,6 +1,6 @@
 <div>
 	<iframe class="excelFrame" id="{{model.name + 'ExcelFrame'}}"></iframe>
-	<div class="gridWrap {{model.name}}" data-ng-style="{height : model.height}" data-ng-click="model.gridClick($event)" data-ng-mousemove="model.mouseMove($event)" data-ng-mouseup="model.mouseUp($event)" data-ng-mouseleave="model.mouseLeave($event)">
+	<div class="gridWrap {{model.name}}" data-ng-style="{height : model.height}" data-ng-click="model.gridClick($event)"  data-ng-mousedown="model.gridMousedown($event)" data-ng-mousemove="model.mouseMove($event)" data-ng-mouseup="model.mouseUp($event)" data-ng-mouseleave="model.mouseLeave($event)">
 		<div class="layerSelected" data-ng-style="model.layerSelected" data-ng-dblclick="model.colDoubleClick()"></div>
 		<table class="gridT {{model.name}}">
 			<thead>
@@ -10,7 +10,7 @@
 						<span data-ng-if="chead.key != 'SELECTED'" data-ng-bind-html="chead.name | trustHtml"></span>
 						<span data-ng-if="model.total != 0 && chead.sort" class="sorting" data-ng-click=" model.sorting(chead.key)"></span>
 						<div class="colWidth" data-ng-style="{width: chead.width}"></div>
-						<em class="colResize" data-ng-mousedown="model.colResizeMousedown($event,chead)"></em>
+						<em class="colResize" data-ng-dblclick="model.colResizeDblclick($event,chead)" data-ng-mousedown="model.colResizeMousedown($event,chead)"></em>
 					</th>
 				</tr>
 			</thead>
@@ -63,8 +63,6 @@
 								</span>
 							</div>
 						</div>
-						
-						<em class="colResize" data-ng-mousedown="model.colResizeMousedown($event,chead)"></em>
 					</td>
 				</tr>
 			</tbody>
