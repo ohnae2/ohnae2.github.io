@@ -331,6 +331,28 @@
 					grid.colResizing = false;
 					grid.colMoving = false;
 				},
+				keyup: function($event) {
+					// console.log($event.keyCode);
+					// console.log($event.ctrlKey);
+					if ($event.keyCode == 67 && $event.ctrlKey) {
+						console.log('copy to clipboard');
+						this.copyToClipboard('Hello World!');
+					}
+				},
+				copyToClipboard: function(string) {
+					const element = document.createElement('textarea');
+					element.value = string;
+					element.setAttribute('readonly', '');
+					element.style.position = 'absolute';
+					element.style.left = '-9999px';
+					document.body.appendChild(element);
+					element.select();
+					var returnValue = document.execCommand('copy');
+					document.body.removeChild(element);
+					if (!returnValue) {
+					  throw new Error('copied nothing');
+					}
+				},
 				/**
 				 * @datepicker 연결 (시작 검색 날짜 설정)
 				 * */

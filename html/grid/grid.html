@@ -1,6 +1,7 @@
 <div>
 	<iframe class="excelFrame" id="{{model.name + 'ExcelFrame'}}"></iframe>
-	<div class="gridWrap {{model.name}}" data-ng-style="{height : model.height}" data-ng-click="model.gridClick($event)"  data-ng-mousedown="model.gridMousedown($event)" data-ng-mousemove="model.mouseMove($event)" data-ng-mouseup="model.mouseUp($event)" data-ng-mouseleave="model.mouseLeave($event)">
+	<div class="gridWrap {{model.name}}" data-ng-style="{height : model.height}" data-ng-click="model.gridClick($event)"  data-ng-mousedown="model.gridMousedown($event)" data-ng-mousemove="model.mouseMove($event)" data-ng-mouseup="model.mouseUp($event)" data-ng-mouseleave="model.mouseLeave($event)"
+			data-ng-keyup="model.keyup($event)" tabindex="0"> <!-- input이 아닌 태그에 keydown 쓰려면 tabindex 필요 -->
 		<div class="layerSelected" data-ng-style="model.layerSelected" data-ng-dblclick="model.colDoubleClick()"></div>
 		<table class="gridT {{model.name}}">
 			<thead>
