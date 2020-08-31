@@ -8,6 +8,20 @@
 		};
 		$scope.workList = [
 			{
+				title : 'goodchoice',
+				date : '2020.08 ~ now',
+				desc : '여기어때',
+				link : 'http://www.goodchoice.kr/',
+				img : ['goodchoice']
+			},
+			{
+				title : 'lotteon',
+				date : '2020.05 ~ 08',
+				desc : '롯데온',
+				link : 'http://www.lotteon.com/',
+				img : ['lotteon']
+			},
+			{
 				title : 'lotteimall',
 				date : '2018.10 ~ now',
 				desc : '롯데홈쇼핑',
