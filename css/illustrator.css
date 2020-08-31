@@ -4,7 +4,7 @@
 
 ul.masonry {column-count:5; font-size:0; width:100%; clear:both;} 
 ul.masonry li {display:inline-block; padding:5px;  width:100%; position:relative;}
-ul.masonry li img {width:100%;}
+ul.masonry li img {width:100%; box-shadow:1px 1px 4px rgba(0,0,0,0.1); border:1px solid #eee;}
 
 #illust_clone {width:640px; height:100%; margin-left:-320px; left:50%; top:0%; position:fixed; display:none; z-index:300;}
 #illust_clone.on{display:block;}
