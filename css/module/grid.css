@@ -70,15 +70,16 @@ select 되는 부분을 제어함
 .gridT tbody tr.select {outline:1px solid #4285f4;}
 .gridT tbody tr.new {background:#fff;}/*C background:#fcffee;*/
 .gridT tbody tr.on {background:#fff;}/*U background:#fcffee;*/
-.gridT tbody tr.off {background:#ffeeee; text-decoration:line-through; color:#ff0000;}/*D*/
-.gridT tbody tr.off td select {text-decoration:line-through; color:#ff0000;}
-.gridT tbody tr td {padding:0; position:relative; height:22px; z-index:1; border:1px solid #cecece; line-height:22px;}
+.gridT tbody tr.delete {background:#ffeeee; text-decoration:line-through; color:#ff0000;}/*D*/
+.gridT tbody tr.delete label {text-decoration:line-through; color:#ff0000;}
+.gridT tbody tr.delete [data-ng-switch-when="CRUD"] label {text-decoration:normal;}
+.gridT tbody tr td {padding:0; position:relative; height:23px; z-index:1; border:1px solid #cecece; line-height:22px;}
 .gridT tbody tr td .switch {width:100%; position:absolute; left:0; top:0; height:22px; overflow:hidden;}
 .gridT tbody tr td .switch .when {height:100%;}
 .gridT tbody tr td.selected {z-index:2;}
 .gridT tbody tr td.selected .switch {outline:1px solid #4285f4;}
 .gridT tbody tr td label {width:100%; position:relative; font-size:12px; height:22px; padding:0 4px 0 5px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; display:block;}
-.gridT tbody tr td label .buttonDate {position:absolute; right:0; top:0; display:block; width:20px; height:21px; cursor:pointer; background:url(/img/common/grid.png) no-repeat -190px -61px;}
+.gridT tbody tr td label .buttonDate {position:absolute; right:0; top:1px; display:block; width:20px; height:21px; cursor:pointer; background:url(/img/common/grid.png) no-repeat -190px -61px;}
 .gridT tbody tr td label .buttonDate:hover {background-position:-190px -93px;}
 .gridT tbody tr.on td label,
 .gridT tbody tr.new td label {padding:0;}

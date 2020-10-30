@@ -12,12 +12,13 @@
 				 {key:'ROW', 				name:'INDEX',		type:'Number',    width:50,  length:8,  visible:true,	disabled:true,	align:'center'}
 			    ,{key:'CRUD', 				name:'CRUD',		type:'String',    width:50,  length:8,  visible:true,	disabled:true,	align:'center'}
 				,{key:'SELECTED', 			name:'선택',		 	type:'Checkbox',  width:50,   length:5,  visible:true,	disabled:false,	align:'center'}
+				,{key:'TEST',				name:'TEST',		type:'Number',    width:100,  length:90, visible:false,	disabled:true,	align:'right', sort:true}
 				,{key:'DICTIONARY_NUMBER',	name:'사전번호',		type:'Number',    width:100,  length:90, visible:true,	disabled:true,	align:'right', sort:true}
 				,{key:'ABB',				name:'약어',			type:'String',    width:150,  length:20, visible:true,	disabled:false,	align:'left', required:true, sort:true}
 				,{key:'EN',					name:'영문',			type:'String',    width:150,  length:20, visible:true,	disabled:false,	align:'left', required:true, sort:true}
 				,{key:'KO',					name:'국문',			type:'String',	  width:150,  length:20, visible:true,	disabled:false,	align:'left', required:true, sort:true}
 				,{key:'DESCRIPTION',		name:'설명',	 		type:'String',    width:150,  length:90, visible:true,	disabled:false,	align:'left', required:true}
-				,{key:'CREATE_DATE',		name:'등록일시',  		type:'Date',	  width:170,  length:30, visible:true,	disabled:false,	align:'left', dateFormat: 'yyyy-MM-dd HH:mm', sort:true}
+				,{key:'CREATE_DATE',		name:'등록일시',  	type:'Date',	  width:170,  length:30, visible:true,	disabled:false,	align:'left', dateFormat: 'yyyy-MM-dd HH:mm', sort:true}
 				,{key:'UPDATE_DATE',		name:'수정일시',	  	type:'Date',	  width:200,  length:30, visible:true,	disabled:false,	align:'left', dateFormat: 'yyyy-MM-dd HH:mm:ss', sort:true}
 			],
 			headerSorting : true,

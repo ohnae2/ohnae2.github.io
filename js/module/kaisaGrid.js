@@ -1,5 +1,4 @@
 /**
- * ECBASE Project
  * grid ver 0.0.1
 */
 (function(window, angular, undefined){
@@ -10,6 +9,8 @@
 			var originData = new Array(),
 			defaultOptions = {
 				name : null,
+				isAdmin : $scope.admin.user,
+				originIndex : -1, // data row 마다 1++ 증가
 				header : new Array(),
 				headerSorting : true,
 				headerOptions : {
@@ -24,7 +25,6 @@
 					align : 'left',
 					required : false
 				},
-				wapper : null,
 				message : null,
 				data : new Array(),
 				orderBy : null,
@@ -46,11 +46,12 @@
 					$http.jsonp(this.searchUrl + $scope.jsonpParam(this.searchParam)).success(function(data){
 						if(data.success) {
 							grid.data = data.items;
-							//grid.total = data.total;
 							grid.total = data.items.length;
 							grid.message = data.message;
 						}
 						for(var i in grid.data){
+							grid.originIndex++;
+							grid.data[i].originIndex = grid.originIndex;
 							for(var j in grid.data[i]){
 								//Datetime format
 								for(var k in defaultOptions.dateArray){
@@ -132,6 +133,10 @@
 				saveUrl : null,
 				gridData : new Array(),
 				save : function(){
+					if(!this.isAdmin) {
+						$scope.alert.open({message:'권한이 없습니다.'});
+						return false;
+					}
 					var failBool = false,
 						selectedCount = 0;
 					grid.gridData = [];
@@ -156,7 +161,8 @@
 						return;
 					}else{
 						var params = $httpParamSerializerJQLike({params : JSON.stringify(angular.copy(grid.gridData))});
-						$http.jsonp(this.saveUrl + $scope.jsonpParam() + params).success(function(data){ //$http.post(this.saveUrl, value, $scope.postConfig).then(function(resp){
+						//$http.post(this.saveUrl, value, $scope.postConfig).then(function(resp){
+						$http.jsonp(this.saveUrl + $scope.jsonpParam() + params).success(function(data){
 							if(data.success) {
 								$timeout(function(){
 									grid.message = data.message;
@@ -183,15 +189,15 @@
 					}else{
 						for(var i in grid.data){
 							grid.data[i].SELECTED = false;
-						}
-					};
-				},
-				colCheck : function(){
-					for(var i in grid.data){
-						if(grid.data[i].SELECTED && grid.data[i].CRUD != '' && grid.data[i].CRUD != 'C'){
 							grid.data[i].CRUD = '';
 						}
 					};
+				},
+				colCheck : function(originIndex, isCheck){
+					var row = this.getIndex(originIndex);
+					if(!isCheck){
+						grid.data[row].CRUD = '';
+					}
 				},
 				sorting : function(key){
 					if(this.orderBy == key){
@@ -220,16 +226,16 @@
 				 * @grid ststus
 				 * */
 				key : null,
-				col : null,
-				row : null,
+				col : 0,
+				row : 0,
 				value : null,
 				selectedKey : null,
-				selectedCol : null,
-				selectedRow : null,
+				selectedCol : 0,
+				selectedRow : 0,
 				selectedValue : null,
 				beforeKey : null,
-				beforeCol : null,
-				beforeRow : null,
+				beforeCol : 0,
+				beforeRow : 0,
 				beforeValue : null,
 				gridClick : function(e){
 					//TO-DO
@@ -248,7 +254,8 @@
 					width: '100px',
 					height: '20px'
 				},
-				colClick : function(key, col, row){
+				colClick : function(key, col, originIndex){
+					var row = this.getIndex(originIndex);
 					var cell = $('.gridT.'+this.name+' td[data-grid-col="'+col+'"][data-grid-row="'+row+'"]');
 					var scrollLeft = $('.gridWrap.'+this.name).scrollLeft();
 					if(cell.length > 0){
@@ -272,7 +279,8 @@
 					 * TODO : Customer event
 					 */
 				},
-				colMouseOver : function(key, col, row){
+				colMouseOver : function(key, col, originIndex){
+					var row = this.getIndex(originIndex);
 					this.key = key;
 					this.col = col;
 					this.row = row;
@@ -304,10 +312,10 @@
 				colResizeMousedown : function($event,chead){
 					this.colResizing = true;
 					this.colResizeStartX = $event.pageX;
-					this.colResizeIndex = chead.index;
+					this.colResizeIndex = chead.originIndex;
 					this.colResizeStartWidth = chead.width;
 				},
-				colResizeDblclick : function($event,chead){
+				colResizeDblclick : function($event,chead){ // head 경계선 더블클릭
 					console.log($event,chead);
 				},
 				/**
@@ -332,8 +340,6 @@
 					grid.colMoving = false;
 				},
 				keyup: function($event) {
-					// console.log($event.keyCode);
-					// console.log($event.ctrlKey);
 					if ($event.keyCode == 67 && $event.ctrlKey) {
 						console.log('copy to clipboard');
 						this.copyToClipboard('Hello World!');
@@ -353,13 +359,22 @@
 					  throw new Error('copied nothing');
 					}
 				},
+				getIndex : function(originIndex){
+					var row = 0;
+					for(var i in grid.data){
+						if(grid.data[i].originIndex == originIndex){
+							row = i;
+						}
+					}
+					return row;
+				},
 				/**
 				 * @datepicker 연결 (시작 검색 날짜 설정)
 				 * */
-				gridDatepicker : function(key,rowIdx,colIdx,e){
+				gridDatepicker : function(key,originIndex,colIdx,e){
+					var row = this.getIndex(originIndex);
 					$scope.gridDatepicker.open({
-						scope : this.name,
-						startDate : this.name + '.data['+rowIdx+'].' + key,
+						startDate : this.name + '.data['+row+'].' + key,
 						dateFormat : this.header[colIdx].dateFormat,
 						target : angular.element(e.target).parent()
 					});
@@ -404,7 +419,7 @@
 				}
 			};
 			grid.header.forEach(function(chead,idx){
-				chead.index = idx;
+				chead.originIndex = idx;
 				if(chead.required){
 					defaultOptions.requiredArray.push({
 						name : chead.name,

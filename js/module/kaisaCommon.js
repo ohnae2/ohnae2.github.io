@@ -21,14 +21,10 @@
 		}
 		req.send();
 	}
-	/**
-	 * Container/IoC
-	 * Dependency Injection module (플러그인 사용금지, 모듈단위로 분리하기 쉽게 코딩한다.)
-	 */
 	var moduleArr = ['directive','filter','util','url','api','baseConstant','storage','grid','gridDatepicker','popup'];
 	var admin = false;
 	if(admin){
-		//moduleArr.push('grid');
+		moduleArr.push('grid');
 	}
 	var app = angular.module('common',moduleArr).config(['$httpProvider','$locationProvider','$compileProvider', function($httpProvider,$locationProvider,$compileProvider){
 		$httpProvider.defaults.useXDomain = true;
@@ -107,19 +103,9 @@
 		if(location.protocol == 'https:'){
 			location.href = 'http://' + location.hostname + location.pathname + location.search; //ssl 사용페이지 없음
 		}
-
-		/**
-		 * for 어드민
-		 */
-		$scope.grid = new Array();
-		/**
-		 * 상수, 환경변수
-		 */
-		$scope.constant = constant;
-		/**
-		 * 이미지
-		 */
-		$scope.image = constant.image;
+		$scope.grid = new Array(); //for 어드민
+		$scope.constant = constant; // 상수, 환경변수
+		$scope.image = constant.image; // 이미지
 		/**
 		 * browser info
 		 */
@@ -366,6 +352,7 @@
 				this.active = true;
 				$http.jsonp(kaisaApi.getLogin + $scope.jsonpParam({si : $scope.admin.si , sp : $scope.admin.sp , cnt : $scope.admin.count })).success(function(data){
 					if(data.success){
+						kaisaStorage.setCookie('user', 'admin');
 						kaisaStorage.setCookie('session', data.id, 10, '');
 						$scope.reload();
 					}else{
@@ -384,6 +371,8 @@
 			    });
 			},
 			check : function(){
+				return;
+				// 사용안함
 				$http.jsonp(kaisaApi.getLoginCheck + $scope.jsonpParam({session : kaisaStorage.getCookie('session') })).success(function(data){
 					if(data.success){
 						$scope.admin.user = true;
@@ -394,8 +383,14 @@
 			    	kaisaStorage.removeCookie('session');
 			    	console.log('login check error!');
 			    });
+				return $scope.admin.user;
 			},
 			logout : function(){
+				kaisaStorage.removeCookie('session');
+				kaisaStorage.removeCookie('user');
+				$scope.reload();
+				return;
+				// 사용안함
 				$http.jsonp(kaisaApi.getLogout + $scope.jsonpParam({session : kaisaStorage.getCookie('session') })).success(function(data){
 					kaisaStorage.removeCookie('session');
 					$scope.reload();
@@ -411,9 +406,11 @@
 				active : false
 			}
 		};
-		if(kaisaStorage.getCookie('session')){
-			$scope.admin.check();
-		};
+		if(kaisaStorage.getCookie('user') == 'admin'){
+			$scope.admin.user = true;
+			// server에 체크가 필요할 경우
+			// $scope.admin.check();
+		}
 		/*
 		 * Temp
 		 * */
@@ -485,7 +482,7 @@
 			});
 		});
 		window.getScope = function(){
-			return angular.element(document.body).scope().$$childHead;
+			return angular.element(document.body).scope();
 		};
 	}]);
 })(window,window.angular);

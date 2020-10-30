@@ -36,28 +36,27 @@
 	    	            	this.idx = i;
 	    	            }
 	        		},
-		        	prev : function(o){
-		        		o.date.setMonth(o.date.getMonth() - 1);
-		        		this.makeDayArray(o);
+		        	prev : function(obj){
+						obj.date.setMonth(obj.date.getMonth() - 1);
+		        		this.makeDayArray(obj);
 		        	},
-		        	next : function(o){
-		        		o.date.setMonth(o.date.getMonth() + 1);
-		        		this.makeDayArray(o);
+		        	next : function(obj){
+						obj.date.setMonth(o.date.getMonth() + 1);
+		        		this.makeDayArray(obj);
 		        	},
 		        	close : function(){
 		        		this.active = false;
 		        	},
-	        		open : function(o){
+	        		open : function(obj){
 	        			if(this.active){
 	        				this.active = false;
 	        				return;
 	        			}
-	        			this.dateFormat = (o.dateFormat) ? o.dateFormat : constant.dateFormat;
+	        			this.dateFormat = (obj.dateFormat) ? obj.dateFormat : constant.dateFormat;
 	        			this.active = true;
-	        			this.scope = o.scope;
-        				this.start.name = o.startDate;
-        				if(eval('$scope.' + o.startDate)){
-        					this.start.date = new Date(eval('$scope.' + o.startDate));
+        				this.start.name = obj.startDate;
+        				if(eval('$scope.' + obj.startDate)){
+        					this.start.date = new Date(eval('$scope.' + obj.startDate));
         				}else{
         					this.start.date = new Date();
         				}
@@ -65,12 +64,12 @@
         				this.start.min = this.addZero(this.start.date.getMinutes());
         				this.start.sec = this.addZero(this.start.date.getSeconds());
         				this.makeDayArray(this.start);
-	        			this.target = o.target;
+	        			this.target = obj.target;
 	        			this.style = {
-        					left : o.target.offset().left,
-        					top : o.target.offset().top,
-        					marginLeft : o.target.width() - angular.element('#gridDatepicker').width(),
-        					marginTop : o.target.height()
+        					left : obj.target.offset().left,
+        					top : obj.target.offset().top,
+        					marginLeft : obj.target.width() - angular.element('#gridDatepicker').width(),
+        					marginTop : obj.target.height()
 	        			}
         		    },
         		    confirm : function(){

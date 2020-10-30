@@ -21,6 +21,20 @@ git push -u --force origin master
 - localhost:7777
 
 ##version
-- 6.13.4
+- node : 8++?
 
 
+## nvm
+- $ sudo curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+- vi ~/.bash_profile
+- export NVM_DIR="$HOME/.nvm"
+- [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
+- source ~/.bash_profile    
+- 적용 되었는지 확인 nvm ls
+
+## Node 특정 버전 설치
+- nvm install 6.14.3
+- nvm install 8.17.0
+
+- nvm use 6.14.3
+- nvm use 8.17.0
