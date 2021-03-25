@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="kor" data-ng-app="KaisaApp" data-ng-controller="KaisaController">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta name="robots" content="index,follow">
+<title>Kaisa</title>
+<meta name="keywords" content="Kaisa,가이사,카이사,가평,홈페이지">
+<meta name="description" content="Kaisa,가이사,카이사,가평,홈페이지">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kaisa">
+<meta property="og:description" content="Kaisa,가이사,카이사,가평,홈페이지">
+<meta property="og:image" content="http://kaisa.co.kr/img/common/logo.png">
+<meta property="og:url" content="http://kaisa.co.kr">
+<meta name="fragment" content="!">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<link rel="shortcut icon" href="/img/favicon.ico?ver=0.1" type="image/x-icon">
+<link rel="stylesheet" href="/css/common.css" type="text/css">
+<link rel="stylesheet" href="/css/ex/ex.css" type="text/css">
+<!--[if lt IE 10]>
+<link rel="stylesheet" href="/css/old_browser.css" type="text/css" />
+<![endif]-->
+<!--[if IE 8]>
+<script src="/js/lib/es/es5-shim.min.js"></script>
+<![endif]-->
+<script src="/js/lib/jquery/jquery-1.11.1.min.js"></script>
+<script src="/js/lib/angular/angular.min.js"></script>
+<script src="/js/lib/moment.min.js"></script>
+<script src="/js/min/kaisa.js"></script>
+<script src="/js/controller/ex/moment.js"></script>
+</head>
+<body data-ng-controller="BodyController">
+<div data-kaisa-header="true"></div>
+<div data-kaisa-menu="true"></div>
+<div id="container">
+	<div id="ex">
+		<div class="wrap">
+			<div data-study-menu="true"></div>
+			<textarea style="height:500px;">moment().format('MMMM Do YYYY, h:mm:ss a'); // 3월 25일 2021, 2:50:27 오후
+moment().format('dddd');                    // 목요일
+moment().format("MMM Do YY");               // 3월 25일 21
+moment().format('YYYY [escaped] YYYY');     // 2021 escaped 2021
+moment().format();                          // 2021-03-25T14:50:27+09:00
+Relative Time
+moment("20111031", "YYYYMMDD").fromNow(); // 9년 전
+moment("20120620", "YYYYMMDD").fromNow(); // 9년 전
+moment().startOf('day').fromNow();        // 15시간 전
+moment().endOf('day').fromNow();          // 9시간 후
+moment().startOf('hour').fromNow();       // 한 시간 전
+Calendar Time
+moment().subtract(10, 'days').calendar(); // 2021.03.15.
+moment().subtract(6, 'days').calendar();  // 지난주 금요일 오후 2:50
+moment().subtract(3, 'days').calendar();  // 지난주 월요일 오후 2:50
+moment().subtract(1, 'days').calendar();  // 어제 오후 2:50
+moment().calendar();                      // 오늘 오후 2:50
+moment().add(1, 'days').calendar();       // 내일 오후 2:50
+moment().add(3, 'days').calendar();       // 일요일 오후 2:50
+moment().add(10, 'days').calendar();      // 2021.04.04.
+Multiple Locale Support
+moment.locale();         // ko
+moment().format('LT');   // 오후 2:50
+moment().format('LTS');  // 오후 2:50:27
+moment().format('L');    // 2021.03.25.
+moment().format('l');    // 2021.03.25.
+moment().format('LL');   // 2021년 3월 25일
+moment().format('ll');   // 2021년 3월 25일
+moment().format('LLL');  // 2021년 3월 25일 오후 2:50
+moment().format('lll');  // 2021년 3월 25일 오후 2:50
+moment().format('LLLL'); // 2021년 3월 25일 목요일 오후 2:50
+moment().format('llll');</textarea>
+		</div>
+	</div>
+</div>
+<div data-kaisa-footer="true"></div>
+</body>
+</html>

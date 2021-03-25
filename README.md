@@ -21,7 +21,7 @@ git push -u --force origin master
 - localhost:7777
 
 ##version
-- node : 8++?
+- node : 8.17.0
 
 
 ## nvm
@@ -31,6 +31,7 @@ git push -u --force origin master
 - [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
 - source ~/.bash_profile    
 - 적용 되었는지 확인 nvm ls
+- nvm alias default 6.14.3
 
 ## Node 특정 버전 설치
 - nvm install 6.14.3

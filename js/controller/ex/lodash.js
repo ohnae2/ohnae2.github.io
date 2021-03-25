@@ -6,6 +6,9 @@
 		$scope.page = {
 			idx : 2
 		};
-
+		$scope.model = {
+			method : ''
+		};
+		console.log(_.chunk(['a', 'b', 'c', 'd'], 2));
 	}]);
 })(window,window.angular);

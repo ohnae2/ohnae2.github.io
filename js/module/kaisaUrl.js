@@ -33,6 +33,8 @@
 		this.exApiMake = protocol + '/ex/apiMake.html';
 		this.exMapping = protocol + '/ex/mapping.html';
 		this.exColor = protocol + '/ex/color.html';
+		this.exLodash = protocol + '/ex/lodash.html';
+		this.exMoment = protocol + '/ex/moment.html';
 
     }]);
 })(window, window.angular);

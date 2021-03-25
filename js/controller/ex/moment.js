@@ -6,6 +6,8 @@
 		$scope.page = {
 			idx : 2
 		};
+		moment.locale('ko');
+		console.log(moment().format('dddd'));
 
 	}]);
 })(window,window.angular);

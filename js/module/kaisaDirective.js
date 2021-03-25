@@ -57,6 +57,8 @@
 					{title:'apiMake', url:'exApiMake'},
 					{title:'mapping', url:'exMapping'},
 					{title:'color', url:'exColor'},
+					{title:'lodash', url:'exLodash'},
+					{title:'moment', url:'exMoment'},
 					//{title:'handlebars', url:'exHandlebars'},
 					//{title:'batch', url:'exBatch'},
 					//{title:'batchCheck', url:'exBatchCheck'},
