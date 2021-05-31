@@ -326,8 +326,17 @@
 					this.mouseMoveEvent =$event;
 					if(grid.colResizing) {
 						var colSize = grid.colResizeStartWidth + ($event.pageX - grid.colResizeStartX);
-						if(colSize > 80){
+						if(colSize > 50){
 							grid.header[grid.colResizeIndex].width = colSize;
+
+							var leftPosition = 0; // chead position left
+							grid.header.forEach(function(chead,idx) {
+								chead.originIndex = idx;
+								chead.left = leftPosition;
+								if (chead.visible) {
+									leftPosition += (chead.width && chead.width > 50) ? chead.width : 50; // position left
+								}
+							});
 						};
  			        };
 				},
@@ -340,9 +349,9 @@
 					grid.colMoving = false;
 				},
 				keyup: function($event) {
-					if ($event.keyCode == 67 && $event.ctrlKey) {
-						console.log('copy to clipboard');
-						this.copyToClipboard('Hello World!');
+					console.log($event);
+					if ($event.keyCode == 67 && ($event.ctrlKey || $event.metaKey)) { // TODO metaKey
+						// this.copyToClipboard('Hello World4');
 					}
 				},
 				copyToClipboard: function(string) {
@@ -418,8 +427,13 @@
 					};
 				}
 			};
+			var leftPosition = 0; // chead position left
 			grid.header.forEach(function(chead,idx){
 				chead.originIndex = idx;
+				chead.left = leftPosition;
+				if(chead.visible){
+					leftPosition += (chead.width && chead.width > 50) ? chead.width : 50; // position left
+				}
 				if(chead.required){
 					defaultOptions.requiredArray.push({
 						name : chead.name,
@@ -460,6 +474,18 @@
     		}
     	}
     }]);
+	app.directive('kaisaGridWrap',[function(){
+		return {
+			replace : true,
+			link : function($scope, el, attrs){
+				console.log(1);
+				angular.element(el).scroll(function(e){
+					console.log(11);
+					el.find('.thead').css({top: el.scrollTop()});
+				});
+			}
+		}
+	}]);
 	app.directive('kaisaGridPaging',[function(){
     	return {
     		templateUrl : '/html/grid/gridPaging.html',

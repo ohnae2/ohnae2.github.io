@@ -18,9 +18,11 @@
 				,{key:'EN',					name:'영문',			type:'String',    width:150,  length:20, visible:true,	disabled:false,	align:'left', required:true, sort:true}
 				,{key:'KO',					name:'국문',			type:'String',	  width:150,  length:20, visible:true,	disabled:false,	align:'left', required:true, sort:true}
 				,{key:'DESCRIPTION',		name:'설명',	 		type:'String',    width:150,  length:90, visible:true,	disabled:false,	align:'left', required:true}
-				,{key:'CREATE_DATE',		name:'등록일시',  	type:'Date',	  width:170,  length:30, visible:true,	disabled:false,	align:'left', dateFormat: 'yyyy-MM-dd HH:mm', sort:true}
+				,{key:'COMMBO',				name:'콤보',	 		type:'Combo',     width:150,  length:90, visible:true,	disabled:false,	align:'left', required:true, options: [{ name :'사용', value: 'Y'},{ name :'사용안함', value: 'Y'}], default: 'Y'}
+				,{key:'CREATE_DATE',		name:'등록일시',  	type:'Date',	  width:170,  length:30, visible:true,	disabled:true,	align:'left', dateFormat: 'yyyy-MM-dd HH:mm', sort:true}
 				,{key:'UPDATE_DATE',		name:'수정일시',	  	type:'Date',	  width:200,  length:30, visible:true,	disabled:false,	align:'left', dateFormat: 'yyyy-MM-dd HH:mm:ss', sort:true}
 			],
+			height: 300,
 			headerSorting : true,
 			searchUrl : kaisaApi.getDictionaryList,
 			saveUrl   : kaisaApi.saveDictionaryList,
