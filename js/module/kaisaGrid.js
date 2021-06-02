@@ -349,7 +349,6 @@
 					grid.colMoving = false;
 				},
 				keyup: function($event) {
-					console.log($event);
 					if ($event.keyCode == 67 && ($event.ctrlKey || $event.metaKey)) { // TODO metaKey
 						// this.copyToClipboard('Hello World4');
 					}
@@ -478,9 +477,7 @@
 		return {
 			replace : true,
 			link : function($scope, el, attrs){
-				console.log(1);
 				angular.element(el).scroll(function(e){
-					console.log(11);
 					el.find('.thead').css({top: el.scrollTop()});
 				});
 			}
