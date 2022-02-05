@@ -8,8 +8,15 @@
 		};
 		$scope.workList = [
 			{
+				title : 'allthat',
+				date : '2021.11 ~ 2022.04',
+				desc : '신한올댓',
+				link : 'https://allthat.shinhancard.com/',
+				img : ['allthat']
+			},
+			{
 				title : 'goodchoice',
-				date : '2020.08 ~ now',
+				date : '2020.08 ~ 2021.11',
 				desc : '여기어때',
 				link : 'http://www.goodchoice.kr/',
 				img : ['goodchoice']

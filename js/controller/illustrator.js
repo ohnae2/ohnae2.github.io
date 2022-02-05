@@ -18,9 +18,9 @@
 			{url : '/img/illust/8.jpg'},
 			{url : '/img/illust/9.jpg'},
 			{url : '/img/illust/10.jpg'},
-			{url : '/img/illust/11.jpg'},
-			{url : '/img/illust/12.jpg'},
+			{url : '/img/illust/11.jpg'}
 		];
+		// {url : '/img/illust/12.jpg'},
 		$scope.illust = {
 			idx : -1,
 			total : $scope.illustList.length,
