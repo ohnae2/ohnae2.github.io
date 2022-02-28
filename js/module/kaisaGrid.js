@@ -316,7 +316,7 @@
 					this.colResizeStartWidth = chead.width;
 				},
 				colResizeDblclick : function($event,chead){ // head 경계선 더블클릭
-					console.log($event,chead);
+					// console.log($event,chead);
 				},
 				/**
 				 * @colMove event
@@ -445,6 +445,12 @@
 							name : chead.name,
 							key : chead.key,
 							dateFormat : chead['dateFormat']
+						});
+						break;
+					case 'Number':
+						defaultOptions.numberArray.push({
+							name : chead.name,
+							key : chead.key
 						});
 						break;
 					case 'Number':

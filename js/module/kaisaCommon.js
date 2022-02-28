@@ -342,7 +342,7 @@
 			si : null,
 			sp : null,
 			active : false,
-			user : false,
+			user : true, // 임시 false
 			count : 0,
 			submit : function(){
 				if(this.active){

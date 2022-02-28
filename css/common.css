@@ -33,7 +33,7 @@ select { height:30px; padding:0 2px; border:1px solid #ccc; color:#555; backgrou
 select[disabled='disabled'],
 input[readonly='readonly'] {background:#eee;}
 
-div,a,li,ol,ul,dl,dt,dd,span,strong,p,h1,h2,h3,h4,h5,img,input,button,iframe,textarea,label,fieldset {box-sizing:border-box; transition:0.3s all linear; transition:0s background linear;} /* transition:all 0.3s linear 0.9s; */
+div,a,li,ol,ul,dl,dt,dd,span,strong,p,h1,h2,h3,h4,h5,img,input,button,iframe,textarea,label,fieldset {box-sizing:border-box;} /* transition:0.3s all linear; transition:0s background linear; */
 
 .wrap {width:1600px; margin:0 auto; padding:0 10px;}
 
