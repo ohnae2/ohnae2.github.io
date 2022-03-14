@@ -233,66 +233,54 @@
 				selectedCol : 0,
 				selectedRow : 0,
 				selectedValue : null,
-				beforeKey : null,
-				beforeCol : 0,
-				beforeRow : 0,
-				beforeValue : null,
+				/**
+				 * wapper event
+				 */
+				drag : {
+					left : null,
+					top : null,
+					width: null,
+					height: null,
+					active: false,
+					timeStamp : null
+				},
 				gridClick : function(e){
-					//TO-DO
-					//console.log('gridClick');
+					this.colResizing = false;
+					this.drag.active = false;
 				},
 				gridMousedown : function(e){
-					//TO-DO
-					//console.log('gridMousedown');
+					$(window).off('mouseup:grid').on('mouseup:grid', function(){
+						grid.gridMouseUp();
+					});
+					/*
+					this.drag.active = true;
+					this.drag.width = 0;
+					this.drag.height = 0;
+					this.drag.left = e.pageX - 5;
+					this.drag.top = e.pageY - 5;
+					this.drag.timeStamp = e.timeStamp;
+					*/
+				},
+				gridMouseUp : function($event){
+					this.colResizing = false;
+					this.drag.active = false;
+				},
+				gridKeyUp: function($event) {
+					if ($event.keyCode == 67 && ($event.ctrlKey || $event.metaKey)) { // TODO metaKey
+						// this.copyToClipboard('Hello World4');
+					}
 				},
 				/**
 				 * @col
 				 * */
-				layerSelected : {
-					left: '-100px',
-					top: '-100px',
-					width: '100px',
-					height: '20px'
-				},
 				colClick : function(key, col, originIndex){
-					var row = this.getIndex(originIndex);
-					var cell = $('.gridT.'+this.name+' td[data-grid-col="'+col+'"][data-grid-row="'+row+'"]');
-					var scrollLeft = $('.gridWrap.'+this.name).scrollLeft();
-					if(cell.length > 0){
-						this.layerSelected.left = cell.position().left - 2 + scrollLeft;
-						this.layerSelected.top = cell.position().top -2;
-						this.layerSelected.width = cell.find('.switch').width() + 6;
-						this.layerSelected.height = cell.find('.switch').height() + 6;
-					}
-					/*
-					this.beforeKey = this.selectedKey;
-					this.beforeCol = this.selectedCol;
-					this.beforeRow = this.selectedRow;
-					this.beforeRow = this.selectedRow;
-					this.beforeValue = this.selectedValue;
-				    */
-					this.selectedKey = key;
-					this.selectedCol = col;
-					this.selectedRow = row;
-					this.selectedValue = this.value;
-					/**
-					 * TODO : Customer event
-					 */
-				},
-				colMouseOver : function(key, col, originIndex){
 					var row = this.getIndex(originIndex);
 					this.key = key;
 					this.col = col;
 					this.row = row;
 					this.value = this.data[this.row][this.key];
-				},
-				colMouseOut : function(){
-				},
-
-				headMouseOver : function(col){
-					this.col = col;
-				},
-				headMouseOut : function(){
+					var cell = $('.gridT.'+this.name+' td[data-grid-col="'+col+'"][data-grid-row="'+row+'"]');
+					var scrollLeft = $('.gridWrap.'+this.name).scrollLeft();
 				},
 				colDoubleClick : function(){
 					var cdata = this.data[this.row];
@@ -322,13 +310,15 @@
 				 * @colMove event
 				 * */
 				mouseMoveEvent : null,
-				mouseMove : function($event){
-					this.mouseMoveEvent =$event;
+				gridMouseMove : function($event){
+					if(this.drag.active){
+						this.drag.height = ($event.pageY - this.drag.top) - 5;
+						this.drag.width = ($event.pageX - this.drag.left) - 5;
+					}
 					if(grid.colResizing) {
 						var colSize = grid.colResizeStartWidth + ($event.pageX - grid.colResizeStartX);
 						if(colSize > 50){
 							grid.header[grid.colResizeIndex].width = colSize;
-
 							var leftPosition = 0; // chead position left
 							grid.header.forEach(function(chead,idx) {
 								chead.originIndex = idx;
@@ -339,19 +329,6 @@
 							});
 						};
  			        };
-				},
-				mouseUp : function($event){
-					grid.colResizing = false;
-					grid.colMoving = false;
-				},
-				mouseLeave : function($event){
-					grid.colResizing = false;
-					grid.colMoving = false;
-				},
-				keyup: function($event) {
-					if ($event.keyCode == 67 && ($event.ctrlKey || $event.metaKey)) { // TODO metaKey
-						// this.copyToClipboard('Hello World4');
-					}
 				},
 				copyToClipboard: function(string) {
 					const element = document.createElement('textarea');
@@ -445,12 +422,6 @@
 							name : chead.name,
 							key : chead.key,
 							dateFormat : chead['dateFormat']
-						});
-						break;
-					case 'Number':
-						defaultOptions.numberArray.push({
-							name : chead.name,
-							key : chead.key
 						});
 						break;
 					case 'Number':

@@ -68,6 +68,8 @@ select 되는 부분을 제어함
 .gridT .tbody .tr.on .td label,
 .gridT .tbody .tr.new .td label {padding:1px 0 0 0;}
 
+.dragBox {position:absolute; border:1px solid red; z-index:10000;}
+
 /* grid */
 .gridT {width:100%;}
 .gridT .thead {width:100%; clear:both; position:absolute; z-index:10; top:0;}
@@ -92,6 +94,8 @@ select 되는 부분을 제어함
 .gridT .tbody .tr.delete label {text-decoration:line-through; color:#ff0000;}
 .gridT .tbody .tr.delete [data-ng-switch-when="CRUD"] label {text-decoration:none;}
 .gridT .tbody .td {padding:0; position:absolute; width:100px; top:0; height:100%; z-index:1;}
+
+.gridT .tbody .td .switch-none {width:100%; position:absolute; left:0; top:0;  overflow:hidden;}
 .gridT .tbody .td .switch {width:100%; position:absolute; left:0; top:0;  overflow:hidden;}
 .gridT .tbody .td .switch .when {height:100%;}
 .gridT .tbody .td.selected {z-index:2;}

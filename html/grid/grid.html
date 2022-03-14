@@ -1,17 +1,20 @@
 <div>
 	<iframe class="excelFrame" id="{{model.name + 'ExcelFrame'}}"></iframe>
 	<!-- input이 아닌 태그에 keydown 쓰려면 tabindex 필요 -->
+
+	{{model.drag.startX}},
+	{{model.drag.startY}}
+	<div class="dragBox" data-ng-style="model.drag" data-ng-show="model.drag.active"></div>
 	<div class="gridWrap {{model.name}}"
 		 data-ng-style="{height : model.height}"
 		 data-ng-click="model.gridClick($event)"
 		 data-ng-mousedown="model.gridMousedown($event)"
-		 data-ng-mousemove="model.mouseMove($event)"
-		 data-ng-mouseup="model.mouseUp($event)"
-		 data-ng-mouseleave="model.mouseLeave($event)"
-		 data-ng-keyup="model.keyup($event)"
+		 data-ng-mousemove="model.gridMouseMove($event)"
+		 data-ng-mouseup="model.gridMouseUp($event)"
+		 data-ng-mouseleave="model.gridMouseLeave($event)"
+		 data-ng-keyup="model.gridKeyup($event)"
 		 data-kaisa-grid-wrap
 		 tabindex="0">
-		<div class="layerSelected" data-ng-style="model.layerSelected" data-ng-dblclick="model.colDoubleClick()"></div>
 		<div class="gridT {{model.name}}">
 			<!-- chead -->
 			<div class="thead">
