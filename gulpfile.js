@@ -1,11 +1,12 @@
 'use strict';
+
 var gulp = require('gulp');
-var gulpUtil = require('gulp-util');
-var gulpUglify = require('gulp-uglify');
-var gulpConcat = require('gulp-concat');
-var gulpCleanCss = require('gulp-clean-css');
-var gulpHtmlmin = require('gulp-htmlmin');
-var gulpImagemin = require('gulp-imagemin');
+var gutil = require('gulp-util');
+var uglify = require('gulp-uglify');
+var concat = require('gulp-concat');
+var cleanCSS = require('gulp-clean-css');
+var htmlmin = require('gulp-htmlmin');
+var imagemin = require('gulp-imagemin');
 var del = require('del');
 
 const dev = false;
@@ -29,26 +30,20 @@ const KAISA = {
 const DEST = {
 	JS: 'js/min'
 };
-
+gulp.task('default', ['jsMin','watch'], () => {
+    gutil.log('Gulp Watcher is running...');
+});
 gulp.task('watch', () => {
     let watcher = {
     	jsMin: gulp.watch(KAISA.JS.MIN, ['jsMin'])
     };
     let notify = (event) => {
-        gulpUtil.log('File', gulpUtil.colors.yellow(event.path), 'was', gulpUtil.colors.magenta(event.type));
+        gutil.log('File', gutil.colors.yellow(event.path), 'was', gutil.colors.magenta(event.type));
     };
     for(let key in watcher) {
         watcher[key].on('change', notify);
     }
 });
-
 gulp.task('jsMin', () => {
-	if(dev){
-		gulp.src(KAISA.JS.MIN).pipe(gulpConcat('kaisa.js')).pipe(gulp.dest(DEST.JS));
-	}else{
-		return gulp.src(KAISA.JS.MIN).pipe(gulpConcat('kaisa.js')).pipe(gulpUglify()).pipe(gulp.dest(DEST.JS));
-	}
+    return gulp.src(KAISA.JS.MIN).pipe(concat('kaisa.js')).pipe(uglify()).pipe(gulp.dest(DEST.JS));
 });
-
-gulp.task('default', gulp.series('jsMin')); //TODO watch
-

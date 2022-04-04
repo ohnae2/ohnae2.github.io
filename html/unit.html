@@ -39,10 +39,10 @@
 	<div id="dimmed" data-ng-class="{on : dimmed.active}" data-ng-click="dimmed.close()"></div>
 	<!-- @datepicker -->
 	<div grid-datepicker></div>
-	<div id="login" data-ng-if="admin.layer.active">
+	<form id="login" data-ng-submit="admin.submit()" data-ng-if="admin.layer.active">
 		<h3>로그인</h3>
-		<input autocapitalize="off" autocomplete="off" type="text" maxlength="10" required="required" data-ng-model="admin.si" />
-		<input autocapitalize="off" autocomplete="off" type="password" maxlength="10" required="required" data-ng-model="admin.sp" />
-		<button type="button" data-ng-click="admin.submit()">로그인</button>
-	</div>
+		<input autocapitalize="off" autocomplete="off" type="text" maxlength="20" required="required" data-ng-model="admin.id" />
+		<input autocapitalize="off" autocomplete="off" type="password" maxlength="20" required="required" data-ng-model="admin.password" />
+		<button type="submit">로그인</button>
+	</form>
 </div>

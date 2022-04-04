@@ -28,9 +28,10 @@
 	}
 	var app = angular.module('common',moduleArr).config(['$httpProvider','$locationProvider','$compileProvider', function($httpProvider,$locationProvider,$compileProvider){
 		$httpProvider.defaults.useXDomain = true;
-        $httpProvider.defaults.withCredentials = true;
-        $httpProvider.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
-        $httpProvider.defaults.headers.common['Access-Control-Allow-Origin'] = '*';
+		//$compileProvider.debugInfoEnabled(false);
+        $httpProvider.defaults.withCredentials = false; // 크로스도메인 와일드 카드 못씀(멀티 origin 안됨)
+        // $httpProvider.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+        // $httpProvider.defaults.headers.common['Access-Control-Allow-Origin'] = '*';
         $httpProvider.interceptors.push('httpInterceptor');
         $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|file|javascript):/); //for href : unsafe
 		$locationProvider.html5Mode({
@@ -140,8 +141,8 @@
 		 * commonParam , searchParam , http POST format
 		 */
 		$scope.commonParam = commonParam;
-		$scope.searchParam = {
-			params : {}
+		$scope.getParams = function(params) {
+			return $httpParamSerializerJQLike(params);
 		};
 		$scope.postConfig = {
 			headers: {
@@ -339,8 +340,8 @@
 		 * 관리자 로그인
 		 */
 		$scope.admin = {
-			si : null,
-			sp : null,
+			id : null,
+			password : null,
 			active : false,
 			user : true, // 임시 false
 			count : 0,
@@ -350,10 +351,13 @@
 					return;
 				};
 				this.active = true;
-				$http.jsonp(kaisaApi.getLogin + $scope.jsonpParam({si : $scope.admin.si , sp : $scope.admin.sp , cnt : $scope.admin.count })).success(function(data){
-					if(data.success){
-						kaisaStorage.setCookie('user', 'admin');
-						kaisaStorage.setCookie('session', data.id, 10, '');
+
+				$http.post(kaisaApi.getLogin, $scope.getParams({
+					'id' : $scope.admin.id,
+					'password' : $scope.admin.password
+				}), $scope.postConfig).then(function(resq){
+					if(resq.data && resq.data.success){
+						kaisaStorage.setSessionStorage('auth', resq.auth);
 						$scope.reload();
 					}else{
 						$scope.admin.count++;
@@ -363,12 +367,10 @@
 						$scope.alert.open({message : $scope.admin.count + '회 실패, 회원정보가 다릅니다.'});
 						$scope.admin.active = false;
 					}
-			    }).error(function(data){
-			    	$scope.alert.open({message : '로그인 실패'});
-					kaisaStorage.removeCookie('session');
-			    	$scope.loading.active = false;
-			    	$scope.admin.active = false;
-			    });
+				}, function(e){
+					console.log(e);
+				});
+				
 			},
 			check : function(){
 				return;
