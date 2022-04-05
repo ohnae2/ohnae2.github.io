@@ -86,6 +86,9 @@
 				return $q.reject(error);
 			},
 			response : function(response){
+				if(response.data && response.data.errorCode && response.data.errorCode == '9999') {
+					sessionStorage.removeItem('auth');
+				}
 				responseCount++;
 				if(requestCount == responseCount){
 					$rootScope.loading.first = true;
