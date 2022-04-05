@@ -68,6 +68,7 @@ div,a,li,ol,ul,dl,dt,dd,span,strong,p,h1,h2,h3,h4,h5,img,input,button,iframe,tex
 #footer {width:100%; padding:20px 0; background:#fff; text-align:center; clear:both;}
 #footer h1 {display:none; padding:20px 0;}
 #footer p {font-size:11px; color:#000;}
+#footer p.admin {font-size:9px; color:#ff5500;}
 
 #login {position:fixed;text-align:center; padding:30px 50px; z-index:500; width:300px; height:230px; border:1px solid #ccc; left:50%; top:50%; margin:-115px 0 0 -150px; background:#eee;}
 #login h3 {font-size:20px; line-height:30px; padding:10px 0;}

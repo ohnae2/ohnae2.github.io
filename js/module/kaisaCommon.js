@@ -32,6 +32,7 @@
         $httpProvider.defaults.withCredentials = false; // 크로스도메인 와일드 카드 못씀(멀티 origin 안됨)
         // $httpProvider.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
         // $httpProvider.defaults.headers.common['Access-Control-Allow-Origin'] = '*';
+		// $httpProvider.defaults.headers.common['auth'] = sessionStorage.getItem('auth'); // Origin error 가 발생(?)
         $httpProvider.interceptors.push('httpInterceptor');
         $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|file|javascript):/); //for href : unsafe
 		$locationProvider.html5Mode({
@@ -49,6 +50,7 @@
 	app.service('commonParam', ['kaisaParam',function(kaisaParam) {
 		var self = this;
 		var commonParamArray = ['ver','lang','ch'];
+		
 		for(var i in commonParamArray){
 			if(kaisaParam.getParam(commonParamArray[i])){
 				self[commonParamArray[i]] = kaisaParam.getParam(commonParamArray[i]);
@@ -74,8 +76,8 @@
 			request : function(request){
 				requestCount++;
 				$rootScope.loading.active = true;
-				if(request.url && request.url.search('api') != -1){
-					request.url = request.url + ((request.url.search(/\?/) != -1) ? '&' : '?') +  $httpParamSerializerJQLike(commonParam);
+				if(request.url && (request.url.search('api') > 0 || request.url.search('.php') > 0)){
+					request.url = request.url + ((request.url.search(/\?/) != -1) ? '&' : '?') +  $httpParamSerializerJQLike(commonParam) + '&auth=' + sessionStorage.getItem('auth');
 				}
 				return request;
 			},
@@ -343,7 +345,7 @@
 			id : null,
 			password : null,
 			active : false,
-			user : true, // 임시 false
+			user : false,
 			count : 0,
 			submit : function(){
 				if(this.active){
@@ -351,13 +353,13 @@
 					return;
 				};
 				this.active = true;
-
 				$http.post(kaisaApi.getLogin, $scope.getParams({
 					'id' : $scope.admin.id,
 					'password' : $scope.admin.password
 				}), $scope.postConfig).then(function(resq){
+					
 					if(resq.data && resq.data.success){
-						kaisaStorage.setSessionStorage('auth', resq.auth);
+						kaisaStorage.setSessionStorage('auth', resq.data.auth);
 						$scope.reload();
 					}else{
 						$scope.admin.count++;
@@ -365,53 +367,24 @@
 							$scope.reload();
 						}
 						$scope.alert.open({message : $scope.admin.count + '회 실패, 회원정보가 다릅니다.'});
-						$scope.admin.active = false;
 					}
 				}, function(e){
 					console.log(e);
 				});
-				
-			},
-			check : function(){
-				return;
-				// 사용안함
-				$http.jsonp(kaisaApi.getLoginCheck + $scope.jsonpParam({session : kaisaStorage.getCookie('session') })).success(function(data){
-					if(data.success){
-						$scope.admin.user = true;
-					}else{
-						kaisaStorage.removeCookie('session');
-					}
-			    }).error(function(data){
-			    	kaisaStorage.removeCookie('session');
-			    	console.log('login check error!');
-			    });
-				return $scope.admin.user;
 			},
 			logout : function(){
-				kaisaStorage.removeCookie('session');
-				kaisaStorage.removeCookie('user');
+				kaisaStorage.removeSessionStorage('auth')
 				$scope.reload();
-				return;
-				// 사용안함
-				$http.jsonp(kaisaApi.getLogout + $scope.jsonpParam({session : kaisaStorage.getCookie('session') })).success(function(data){
-					kaisaStorage.removeCookie('session');
-					$scope.reload();
-			    }).error(function(data){
-			    	console.log('logout error!');
-			    });
 			},
 			layer : {
 				open : function(){
 					this.active = true;
 					$scope.dimmed.open({mask : true, callback : function(){ $scope.admin.layer.active = false; }});
-				},
-				active : false
+				}
 			}
 		};
-		if(kaisaStorage.getCookie('user') == 'admin'){
+		if(kaisaStorage.getSessionStorage('auth')){
 			$scope.admin.user = true;
-			// server에 체크가 필요할 경우
-			// $scope.admin.check();
 		}
 		/*
 		 * Temp
