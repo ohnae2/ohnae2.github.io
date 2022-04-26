@@ -212,7 +212,7 @@
 						o[grid.header[i].key] = (grid.header[i].optionDefault) ? grid.header[i].optionDefault : '';
 					}
 					o.CRUD = 'C';
-					o.SELECTED = 'C';
+					o.SELECTED = true;
 					grid.data.unshift(o);
 				},
 				remove : function(){
