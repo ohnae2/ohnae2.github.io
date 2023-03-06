@@ -39,3 +39,4 @@ git push -u --force origin master
 
 - nvm use 6.14.3
 - nvm use 8.17.0
+
