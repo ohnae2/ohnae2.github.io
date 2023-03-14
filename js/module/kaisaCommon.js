@@ -107,7 +107,7 @@
 	                          function($rootScope ,  commonParam  , $window , $scope , $location , $compile , $http , $timeout , kaisaUrl , kaisaParam , constant , kaisaApi , kaisaStorage , $httpParamSerializerJQLike){
 
 		if(location.protocol == 'https:'){
-			location.href = 'http://' + location.hostname + location.pathname + location.search; //ssl 사용페이지 없음
+			// location.href = 'http://' + location.hostname + location.pathname + location.search; //ssl 사용페이지 없음
 		}
 		$scope.grid = new Array(); //for 어드민
 		$scope.constant = constant; // 상수, 환경변수
