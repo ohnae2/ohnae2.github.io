@@ -1,0 +1,34 @@
+/* 2008-04 Writer:Jaeho */
+
+@import "../common.css";
+
+h3	{margin:5px 0; font-weight:bold; color:#09398d; background:url(../../images/common/blet_arrow.gif) no-repeat 0 1px; padding:0 0 0 14px;}
+h4	{padding:0 0 5px 10px; background:url(../../images/popup/blet_popup_p.gif) no-repeat 4px 5px; font-weight:bold; color:#4a4a4a;}
+
+
+ul		{list-style:none;}
+ol		{list-style:none; padding:0; margin:0;}
+body	{background-color:#fff;}
+
+/*********/
+
+p	{line-height:145%;}
+
+#passQnaWrap	{overflow:auto; margin:150px auto 0 auto; background:url(../../images/pass/bg_passQna.gif) no-repeat left top; width:497px; height:423px;}
+#passQnaWrap	.passQna	{margin:60px 60px 0 60px;}
+
+#passWrap	{overflow:auto; margin:150px auto 0 auto; background:url(../../images/pass/bg_pass.gif) no-repeat left top; width:497px; height:423px;}
+#passWrap	.pass	{margin:60px 60px 0 60px;}
+
+
+.passQnaT		{margin:15px 0 0 35px;}
+.passQnaT	th	{font-weight:bold; color:#45a5ff;}
+
+.passT		{margin:10px 0;}
+.passT	th	{background:url(../../images/main/icon_list.gif) no-repeat 1px 12px; font-weight:normal; color:#45a5ff; height:25px;padding:2px 0 2px 7px;}
+.passT	td	{padding:2px 0; height:25px; text-align:right;}
+
+.Fpass	{color:#45a5ff; font-weight:bold;}
+
+
+/*********/

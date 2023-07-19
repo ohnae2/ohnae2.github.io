@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="kor" data-ng-app="KaisaApp" data-ng-controller="KaisaController">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta name="robots" content="index,follow">
+<title>Kaisa</title>
+<meta name="keywords" content="Kaisa,가이사,카이사,가평,홈페이지">
+<meta name="description" content="Kaisa,가이사,카이사,가평,홈페이지">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kaisa">
+<meta property="og:description" content="Kaisa,가이사,카이사,가평,홈페이지">
+<meta property="og:image" content="http://kaisa.co.kr/img/common/logo.png">
+<meta property="og:url" content="http://kaisa.co.kr">
+<meta name="fragment" content="!">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<link rel="shortcut icon" href="/img/favicon.ico?ver=0.1" type="image/x-icon">
+<link rel="stylesheet" href="/css/common.css" type="text/css">
+<link rel="stylesheet" href="/css/ex/batch.css" type="text/css">
+<!--[if lt IE 10]>
+<link rel="stylesheet" href="/css/old_browser.css" type="text/css" />
+<![endif]-->
+<!--[if IE 8]>
+<script src="/js/lib/es/es5-shim.min.js"></script>
+<![endif]-->
+<script src="/js/lib/jquery/jquery-1.11.1.min.js"></script>
+<script src="/js/lib/angular/angular.min.js"></script>
+<script src="/js/min/kaisa.js"></script>
+<script src="/js/controller/ex/batch.js"></script>
+</head>
+<body data-ng-controller="BodyController">
+<div data-kaisa-header="true"></div>
+<div data-kaisa-menu="true"></div>
+<div id="container">
+	<div id="batch">
+		<div class="wrap">
+			<div data-study-menu="true"></div>
+			<div class="batchWrap">
+
+				<h2>Batch</h2>
+				<!-- search form -->
+				<form class="search" name="dicForm" data-ng-submit="batch.search()">
+					<fieldset>
+						<legend>section</legend>
+						<table>
+							<tbody>
+								<tr>
+									<th>키워드</th> <!-- class="required" -->
+									<td><label><input name="text" data-ng-model="batch.searchParam.text" type="text" autocomplete="off" autofocus></label></td>  <!-- data-ng-required="true" -->
+								</tr>
+							</tbody>
+						</table>
+					</fieldset>
+				</form>
+
+				<table class="batch">
+					<colgroup>
+						<col width="50" />
+						<col width="*" />
+						<col width="*" />
+						<col width="*" />
+						<col width="100" />
+						<col width="100" />
+					</colgroup>
+					<tr>
+						<th>번호</th>
+						<th>배치명</th>
+						<th>시간</th>
+						<th>분</th>
+						<th>실행수</th>
+					</tr>
+					<tr data-ng-repeat="(idx,i) in batch.data | filter: batch.searchParam.text | orderBy : batch.orderBy">
+						<td class="tc no">{{i.BATCH_SN}}</td>
+						<td>{{i.BATCH_NM}}</td>
+						<td data-ng-bind-html="i.hhHtml | trustHtml"></td>
+						<td data-ng-if="!i.minHtml">{{i.EXE_CYCL_MIN_VAL}}</td>
+						<td data-ng-if="i.minHtml" data-ng-bind-html="i.minHtml | trustHtml"></td><!-- <td>{{i.EXE_CYCL_MIN_VAL}}</td> -->
+						<td data-ng-class="{red : i.cnt != 0}">
+							{{i.cnt}}
+							<div class="ly">{{i.EXE_CMDW_NM}}</div>
+						</td>
+					</tr>
+				</table>
+
+			</div>
+		</div>
+	</div>
+</div>
+<div data-kaisa-footer="true"></div>
+</body>
+</html>

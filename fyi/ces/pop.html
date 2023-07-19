@@ -1,0 +1,177 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<link rel="stylesheet" href="css/common.css">
+<script src="js/jquery-1.7.2.min.js"></script>
+<script>
+$(function(){
+	$("#mask").show();
+	$("#pop_list").show();
+	$("#test_pop_link li").click(function(){
+		$("#pop_del,#pop_store,#pop_connected,#pop_loading,#pop_failed,#pop_search,#pop_select,#pop_list").hide();
+		$("#"+$(this).text()).show();		
+	});
+	$(".pop_type .close").click(function(){		
+		$(this).parent().hide();
+	});
+});
+</script>
+</head>
+<body>
+<div id="body">
+
+
+<div id="mask"></div>
+
+<div id="pop_select" class="pop_type">
+	<span class="close"></span>
+	<h2 class="tit">Select Device</h2>
+	<button class="btn">Local</button>
+	<button class="btn">192.168.0.52 <img src="img/home/check.png" alt=""></button>
+	<div class="line"></div>
+	<button class="btn red">Search Device</button>	
+</div>
+
+<div id="pop_list" class="pop_type">
+	<span class="close"></span>
+	<h2 class="tit">Device List</h2>
+	<div class="scroll">
+		<button class="btn">IP address1</button>
+		<button class="btn">IP address2</button>
+		<button class="btn">IP address3</button>
+		<button class="btn">IP address4</button>
+		<button class="btn">IP address5</button>
+		<button class="btn">IP address6</button>
+		<button class="btn">IP address7</button>
+		<button class="btn">IP address8</button>
+		<button class="btn">IP address9</button>
+	</div>
+</div>
+
+<div id="pop_del" class="pop_type">
+	<p>Do you want to delete<br><b>"Vilanoise"</b> ?</p>	
+	<button class="ok">OK</button>	
+	<button class="cancel">Cancel</button>
+</div>
+
+<div id="pop_connected" class="pop_type">
+	<p class="txt">Connected!</p>	
+	<button class="btn close">OK</button>
+</div>
+
+<div id="pop_loading" class="pop_type">
+	<p class="loading">Connecting <b>"Phone"</b>...</p>	
+	<p class="loader"><img src="img/main/loader.gif" alt=""></p>
+</div>
+
+<div id="pop_search" class="pop_type">
+	<p class="loading">Searching device...</p>	
+	<p class="loader"><img src="img/main/loader.gif" alt=""></p>
+</div>
+
+<div id="pop_failed" class="pop_type">
+	<span class="close"></span>
+	<p class="txt">failed!</p>	
+	<button class="btn close">Retry</button>	
+</div>
+
+
+
+
+<div id="pop_store" class="pop_type">
+	<div class="close"><img src="img/main/close.png" alt=""></div>
+	<dl>
+		<dt><img src="img/test/list_1.png" alt=""></dt>
+		<dd>
+			<h3>Vilanoise</h3>
+			<table>
+				<tr><th>Company</th><td>: OBIGO</td></tr>
+				<tr><th>Updated</th><td>: 20.NOV.2012</td></tr>
+				<tr><th>Version</th><td>: 1.2</td></tr>
+				<tr><th>Size</th><td>: 20MB</td></tr>
+				<tr><th>Price</th><td>: 3.99$</td></tr>
+				<tr><th>Rating</th><td>: 
+					<span class="star">
+						<img src="img/main/star_1.png" alt="">
+						<img src="img/main/star_1.png" alt="">
+						<img src="img/main/star_1.png" alt="">
+						<img src="img/main/star_1.png" alt="">
+						<img src="img/main/star_2.png" alt="">
+					</span>
+				</td></tr>				
+			</table>
+		</dd>
+	</dl>
+	
+	
+	<!--<div class="install">Install</div>-->
+	<!--<div class="installing">Installing...<strong><b style="width:30%;"></b></strong></div> -->
+	<div class="start">Open</div>
+	
+	<div class="list">
+		<span class="scrollbar"></span>
+		<ul>
+			<li><img src="img/app/screen_vi_1.jpg" alt=""></li>
+			<li><img src="img/app/screen_vi_1.jpg" alt=""></li>
+			<li><img src="img/app/screen_no.jpg" alt=""></li>
+		</ul>
+		<h4>Description</h4>
+		<p>Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description </p>
+	</div>
+</div>
+
+	
+<ul id="test_pop_link">
+	<li>pop_del</li>
+	<li>pop_store</li>
+	<li>pop_connected</li>
+	<li>pop_loading</li>
+	<li>pop_failed</li>
+	<li>pop_search</li>
+	<li>pop_select</li>
+	<li>pop_list</li>
+</ul>
+
+
+<div id="wrap">	
+	<div id="header">
+		<div class="time">
+			<span class="am on"><img src="img/time/am.png" alt=""></span>
+			<span class="pm"><img src="img/time/pm.png" alt=""></span>			
+			<ul>
+				<li><img src="img/time/none.png" alt=""></li>
+				<li><img src="img/time/7.png" alt=""></li>
+				<li><img src="img/time/dot.png" alt=""></li>
+				<li><img src="img/time/3.png" alt=""></li>
+				<li><img src="img/time/6.png" alt=""></li>
+			</ul>
+		</div>
+		<div class="weather">		
+			<h1>
+				<b>New York</b>
+				<strong>Sunny &amp; Cloudy</strong>
+				<span>See more</span>
+			</h1>
+			<p><img src="img/weather/01.png" alt=""> <b>15</b><sup>o</sup></p>
+		</div>
+	</div>
+
+	
+	
+	
+	<div id="footer">
+		<ul>
+			<li class="home"><span class="on"></span></li>
+			<li class="media"><span></span></li>
+			<li class="vehicle"><span></span></li>
+			<li class="apps"><span></span></li>
+			<li class="store"><span></span></li>
+		</ul>
+	</div>
+</div>
+
+</div>
+</body>
+</html>

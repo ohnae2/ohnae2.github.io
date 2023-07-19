@@ -1,0 +1,38 @@
+@charset "utf-8";
+@import "common.css";
+
+#detail {width:960px; padding:20px; clear:both; background:url(../img/store/patt.gif) repeat #aaa; margin:0 auto 12px auto; border:1px solid #cecece; position:relative; z-index:3;}
+#detail dl {position:absolute; width:195px; padding:20px; right:20px; top:20px; background:#eee; border-radius:5px;}
+#detail dl dt img {width:124px; height:124px;}
+#detail dl dd h4  {font-weight:bold; font-size:16px; line-height:21px; color:#444; margin:10px 0 10px 0;}
+#detail dl dd .com {font-size:11px; color:#999; padding-bottom:3px;}
+#detail button {background-color:#32bdff; padding:8px 14px 9px 14px;  font-weight:bold;}
+#detail button:hover {background-color:#26afef;}
+#detail h2 {padding:0; margin:0;}
+#detail h2 img {width:705px;}
+#detail img:hover {opacity:1;}
+.main_slide {width:960px; padding:20px; background:url(../img/store/patt.gif) repeat #aaa;}
+.main_slide .prev,
+.main_slide .next {position:absolute; cursor:pointer; top:90px; width:39px; height:88px; overflow:hidden; background:url(../img/store/btn_slide.png) no-repeat left top;}
+.main_slide .prev {left:-12px;}
+.main_slide .next {right:-12px; background-position:left -88px;}
+.main_slide .prev:hover {background-position:-39px top;}
+.main_slide .next:hover {background-position:-39px -88px;}
+.main_slide img {width:470px; font-size:0;}
+.main_slide li:hover img {opacity:1; -webkit-filter: brightness(-5%);}
+
+.main_slide .box {width:960px; overflow:hidden; height:230px; position:relative;}
+.main_slide .box ul {width:100%; cursor:pointer; overflow:hidden; height:230px; position:absolute; left:0; top:0;}
+.main_slide .box ul li {width:490px; height:230px; position:relative; display:block; float:left;}
+.main_slide .box ul li img {width:470px; height:230px;}
+.main_slide .box ul li span {display:none; position:absolute; bottom:0; left:0; width:450px; z-index:100; background:url(../img/store/black.png) repeat; padding:10px;}
+.main_slide .box ul li span strong {color:#fff; display:block;}
+.main_slide .box ul li span b {color:#ccc; font-weight:normal;}
+.main_slide .box ul li:hover span {display:block;}
+dl.capture {width:100%; overflow:hidden; width:680px;}
+dl.capture dt {width:383px; height:230px; float:left; margin:0 15px 8px 0;}
+dl.capture dt img {width:383px; height:230px;}
+dl.capture dd {width:70px; height:42px; float:left;  margin:0 8px 8px 0;}
+dl.capture dd img {width:70px; height:42px;}
+dl.capture dd img.on {width:66px; height:38px; border:2px solid #32bdff;}
+

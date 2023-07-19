@@ -1,0 +1,95 @@
+/* 2008-04 Writer:Jaeho */
+
+@import "../common.css";
+
+h3	{margin:5px 0 0 0; font-weight:bold; color:#09398d; background:url(../../images/common/blet_circle.gif) no-repeat 2px 0; padding:1px 0 6px 18px;}
+.blogTitle	{background:none; padding:0;}
+h4	{padding:0 0 5px 10px; background:url(../../images/popup/blet_popup_p.gif) no-repeat 4px 5px; font-weight:bold; color:#4a4a4a;}
+
+table.dataT				{border-left:1px solid #fff; border-right:1px solid #fff;}
+
+ul		{list-style:none;}
+ol		{list-style:none; padding:0; margin:0;}
+body	{background-color:#fff;}
+
+.ContentWrap					{clear:both; width:979px; overflow: auto; margin:0;} 
+.ContentWrap	.ContentMenu	{padding:70px 0 20px 4px; width:155px; overflow:auto; float:left; background:url(../../images/common/visual_blog.jpg) no-repeat left top;}
+.ContentWrap	.ContentMenu	.menu	li	{background:url(../../images/common/blet_depth01.gif) no-repeat 4px 7px; padding-left:13px; line-height:180%;}
+
+.ContentWrap	.ContentMenu	.blogInfo		{background:url(../../images/blog/bg_img.jpg) no-repeat left top; width:141px; padding:1px;}
+.ContentWrap	.ContentMenu	.blogInfo		.img		{}
+.ContentWrap	.ContentMenu	.blogInfo		.txt		{text-align:center; padding:7px 0 4px 0; color:#fff; font-size:13px; font-weight:bold;}
+.ContentWrap	.ContentMenu	.blogSelect			{padding:5px 0;}
+.ContentWrap	.ContentMenu	.blogBtn			{padding-bottom:10px;}
+
+.ContentWrap	.Content		{float:right; width:806px; oveflow:auto; padding-bottom:50px;}
+
+.ContentWrap	.ContentMenu	.menu	ol	{padding:0 0 10px 0;}
+.ContentWrap	.ContentMenu	.menu	ol	li	{background:url(../../images/common/blet_depth02.gif) no-repeat 1px 7px; padding-left:10px; line-height:140%;}
+
+.ContentWrap	.ContentMenu	.menu	a:link, 
+.ContentWrap	.ContentMenu	.menu	a:visited, 
+.ContentWrap	.ContentMenu	.menu	a:active 	{color:#4a4a4a; text-decoration:none;}
+.ContentWrap	.ContentMenu	.menu	a:hover 	{color:#0052e9; text-decoration:underline;}
+
+.ContentWrap	.ContentMenu	.greenMenu		{position:absolute; margin-top:270px; width:139px; background:url(../../images/common/left_bottomBg.gif) no-repeat right top; padding:7px 0;}
+.ContentWrap	.ContentMenu	.greenMenu	li 	{background:url(../../images/common/blet_green.gif) no-repeat 0 6px; margin-left:-10px;}
+
+
+.ContentWrap	.ContentMenu	.greenMenu	a:link, 
+.ContentWrap	.ContentMenu	.greenMenu	a:visited, 
+.ContentWrap	.ContentMenu	.greenMenu	a:active 		{color:#4b6e3a; text-decoration:none;}
+.ContentWrap	.ContentMenu	.greenMenu	a:hover 	{color:#98bf85; text-decoration:none;}
+
+/*********/
+.barTop		{background:url(../../images/officeWork/bar_top.gif) no-repeat left top; padding:10px; margin-bottom:10px;}
+.boardEdit			{margin-top:3px;}
+.tabMenu			{width:100%; border-bottom:1px solid #d2d9df; margin-bottom:10px;}
+.tabMenu	li		{display:inline; font-size:0;}
+.tabMenu	li	img	{margin-bottom:-1px;}
+
+.iconList		{position:absolute; margin:3px 0 0 10px; padding:5px 0;}
+.iconList	li	{display:inline; padding:2px 0 1px 2px; margin:0 2px; line-height:160%;}
+.iconList	li.on	{background:#eee; border:1px solid #ddd;}
+
+
+.imgListWrap				{clear:both; text-align:center; background-color:#f9f9f9; width:100%; overflow:auto; margin-top:10px; border-top:2px solid #eee; border-bottom:1px solid #eee; padding:15px 0;}
+.imgListWrap	.imgList	{overflow:auto;  width:171px; float:left; padding:10px 13px; margin-left:3px; text-align:center;}
+.imgListWrap	.imgList	{padding-top:5px;}
+
+.imgListWrap	.imgList	a:link				{border:5px solid #eee;}
+.imgListWrap	.imgList	a:visited			{border:5px solid #eee;}
+.imgListWrap	.imgList	a:active 			{border:5px solid #eee;}
+.imgListWrap	.imgList	a:hover 			{border:5px solid #ffb95e;}
+
+.imgListWrap	.imgList	p.title	{padding-top:5px;}
+.imgListWrap	.imgList	p.info	{font-size:10px;}
+
+.titleT	{margin:18px auto 0 auto; width:760px;}
+.titleT	td	{text-align:right;}
+
+.blogTitle	{font-size:13px; font-weight:bold; color:#ff6000; background:url(../../images/blog/title_icon.gif) no-repeat 2px 5px; padding-left:12px;;}
+
+.blogMain01	{clear:both; margin:5px 0; width:806px; height:242px; overflow:auto; background:url(../../images/blog/bg_main01.jpg) no-repeat left top;}
+.blogMain02	{clear:both; margin-top:10px;  width:806px; height:162px; overflow:auto; background:url(../../images/blog/bg_main02.jpg) no-repeat left top;}
+
+.mainDday	li	{line-height:190%; display:block; background:url(../../images/cop/blet_dotted.gif) no-repeat 3px 9px; padding-left:10px;}
+
+.mainPhoto				{float:left; text-align:center; width:480px; overflow:auto; padding:25px 0 0 100px;}
+.mainPhoto	.imgList	{overflow:auto;  width:110px; float:left; text-align:center; padding:5px 9px 5px 0;}
+.mainPhoto	.imgList	{}
+
+.mainPhoto	.imgList	a:link				{border:3px solid #eee;}
+.mainPhoto	.imgList	a:visited			{border:3px solid #eee;}
+.mainPhoto	.imgList	a:active 			{border:3px solid #eee;}
+.mainPhoto	.imgList	a:hover 			{border:3px solid #ffb95e;}
+
+.mainPhoto	.imgList	p.title	{padding-top:5px;}
+.mainPhoto	.imgList	p.info	{font-size:10px;}
+
+.visitCount01		{background:url(../../images/blog/bg_visitCount01.gif) no-repeat left top; width:143px; height:28px; margin-top:5px;}
+.visitCount02		{background:url(../../images/blog/bg_visitCount02.gif) repeat-y left top; width:143px; padding:8px 0 2px 0;}
+.visitCount03		{background:url(../../images/blog/bg_visitCount03.gif) no-repeat left top; width:143px; height:5px; font-size:0;}
+.visitCount02	ul	{padding-left:10px;}
+.visitCount02	ul	li	{background:url(../../images/blog/icon_visitCount.gif) no-repeat 1px 5px; padding-left:9px; line-height:140%;}
+

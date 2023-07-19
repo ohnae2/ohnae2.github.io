@@ -1,0 +1,220 @@
+/* 2008-04 Writer:Jaeho */
+
+@import "table.css";
+
+/*  @charset "utf-8"; */
+
+html,body 		{margin:0; padding:0px; font-size:11px; font-family:"WooriDotum","dotum";}
+html, body {
+	scrollbar-3dlight-color:#f6f6f6;
+	scrollbar-arrow-color:#cccccc;
+	scrollbar-base-color:#f6f6f6;
+	scrollbar-darkshadow-color:#f6f6f6;
+	scrollbar-face-color:#fff;
+	scrollbar-highlight-color:#cccccc;
+	scrollbar-shadow-color:#cccccc;
+	scrollbar-track-color:#f6f6f6;
+}
+
+form		{margin:0;}
+
+a:link				{color:#4a4a4a; text-decoration:none;}
+a:visited			{color:#4a4a4a; text-decoration:none;}
+a:active 			{color:#4a4a4a; text-decoration:none;}
+a:hover 			{color:#3f95e6; text-decoration:none;}
+
+a,area 				{blr:expression(this.onFocus=this.blur());}  /* for IE */
+/* :focus			{-moz-outline-style: none; }  for Firefox */
+
+div, th, td			{text-align:left; font-weight:normal; margin:0; padding:0; font-size:12px; font-family:"WooriDotum","dotum"; color:#4a4a4a; word-break:break-all;} /* word-break:break-all; */
+table				{border-collapse:collapse;}/*seperate collapse */
+hr 					{display:none;}	
+h1, h2, h3, h4, h5	{margin:0; font-size:100%; font-weight:normal; font-family:"WooriDotum","dotum";}
+ul, dl, dd, dt		{list-style:normal; margin:0; padding:0;}
+li					{margin:0; padding:0; list-style:none;}
+img 				{border:none;}
+p					{margin:0; padding:0;}
+b					{font-weight:bold}
+select				{font-family:"WooriDotum","dotum"; color:#000;}
+
+input				{font-size:11px; font-family:"WooriDotum","dotum"; color:#000;}
+textarea			{font-size:12px; font-family:"WooriDotum","dotum"; color:#000;}
+
+.input				{border:1px solid #bbb; color:#000; height:15px; padding:2px; font-size:12px; font-family:"WooriDotum","dotum";}
+.input02			{border:1px solid #d8d0a5; color:#000; height:14px; padding:2px; font-size:12px; font-family:"WooriDotum","dotum";}
+.inputSearch				{border:1px solid #e06900; color:#000; height:15px; padding:2px; font-size:12px; font-family:"WooriDotum","dotum";}
+
+.output_disable		{border:1px solid #eee; color:#4a4a4a; height:15px; padding:2px; font-size:12px; font-family:"WooriDotum","dotum";}
+.output_none		{border:1px solid #fff; color:#4a4a4a; height:15px; padding:2px; font-size:12px; font-family:"WooriDotum","dotum";}
+
+.textarea			{border:1px solid #bbb; color:#000; font-size:12px; font-family:"WooriDotum","dotum";}
+.radio				{border:0;}
+.normal_radio		{}
+.checkbox			{border:0;}
+
+.tc			{text-align:center;}
+.tl			{text-align:left;}
+.tr			{text-align:right;}
+.f0			{font-size:0;}
+.bor0		{border:0;}
+
+.vat		{vertical-align:top;}
+.vam		{vertical-align:middle;}
+.vab		{vertical-align:bottom;}
+.val		{vertical-align:baseline;}
+.fl			{float:left;}
+.fr			{float:right;}
+.cb			{clear:both;}
+
+.inline	li	{display:inline;}
+
+/* margin */
+
+
+.mt3		{margin-top:3px;}
+.mt5		{margin-top:5px;}
+.mt10		{margin-top:10px;}
+.mt20		{margin-top:20px;}
+.mt30		{margin-top:30px;}
+.mt40		{margin-top:40px;}
+.mt50		{margin-top:50px;}
+
+.mt_1		{margin-top:-1px;}
+.mt_10		{margin-top:-10px;}
+.mt_12		{margin-top:-12px;}
+.mt_13		{margin-top:-13px;}
+.mt_15		{margin-top:-15px;}
+.mt_18		{margin-top:-18px;}
+.mt_20		{margin-top:-20px;}
+.mt_22		{margin-top:-22px;}
+.mt_25		{margin-top:-25px;}
+.mt_30		{margin-top:-30px;}
+
+.mr5		{margin-right:5px;}
+.mr10		{margin-right:10px;}
+.mr20		{margin-right:20px;}
+.mr30		{margin-right:30px;}
+.mr40		{margin-right:40px;}
+.mr50		{margin-right:50px;}
+
+.mb4		{margin-bottom:4px;}
+.mb5		{margin-bottom:5px;}
+.mb10		{margin-bottom:10px;}
+.mb20		{margin-bottom:20px;}
+.mb25		{margin-bottom:25px;}
+.mb30		{margin-bottom:30px;}
+.mb40		{margin-bottom:40px;}
+.mb50		{margin-bottom:40px;}
+
+.ml1		{margin-left:1px;}
+.ml5		{margin-left:5px;}
+.ml10		{margin-left:10px;}
+.ml15		{margin-left:15px;}
+.ml20		{margin-left:20px;}
+.ml30		{margin-left:30px;}
+.ml40		{margin-left:40px;}
+.ml50		{margin-left:50px;}
+
+/* padding */
+
+.pt2		{padding-top:2px;}
+.pt3		{padding-top:3px;}
+.pt5		{padding-top:5px;}
+.pt10		{padding-top:10px;}
+.pt15		{padding-top:15px;}
+.pt18		{padding-top:18px;}
+.pt20		{padding-top:20px;}
+.pt30		{padding-top:30px;}
+.pt40		{padding-top:40px;}
+.pt50		{padding-top:50px;}
+
+.pr2		{padding-right:2px;}
+.pr3		{padding-right:3px;}
+.pr5		{padding-right:5px;}
+.pr10		{padding-right:10px;}
+.pr20		{padding-right:20px;}
+.pr30		{padding-right:20px;}
+.pr40		{padding-right:20px;}
+.pr50		{padding-right:20px;}
+
+.pb2		{padding-bottom:2px;}
+.pb3		{padding-bottom:3px;}
+.pb5		{padding-bottom:5px;}
+.pb10		{padding-bottom:10px;}
+.pb20		{padding-bottom:20px;}
+.pb25		{padding-bottom:25px;}
+.pb30		{padding-bottom:30px;}
+.pb40		{padding-bottom:40px;}
+.pb50		{padding-bottom:50px;}
+
+.pl1		{padding-left:1px;}
+.pl2		{padding-left:2px;}
+.pl3		{padding-left:3px;}
+.pl4		{padding-left:4px;}
+.pl5		{padding-left:5px;}
+.pl8		{padding-left:8px;}
+.pl10		{padding-left:10px;}
+.pl11		{padding-left:11px;}
+.pl15		{padding-left:15px;}
+.pl20		{padding-left:20px;}
+.pl22		{padding-left:22px;}
+.pl30		{padding-left:30px;}
+.pl40		{padding-left:40px;}
+.pl50		{padding-left:50px;}
+.pl60		{padding-left:60px;}
+.pl80		{padding-left:80px;}
+.pl100		{padding-left:100px;}
+
+/* Font */
+
+.decot			{text-decoration:line-through;}
+.decob			{text-decoration:blink;}
+.decou			{text-decoration:underline;}
+.decoi			{text-decoration:inherit;}
+.decoo			{text-decoration:overline;}
+
+.Fsky			{color:#74CFC9;}
+.Fred			{color:#ff0000;}
+.Fgold			{color:#FFD700;}
+.Fnavy			{color:#000080;}
+.Fgray			{color:#777777;}
+.Fpink			{color:#EC008C;}
+.Fblue			{color:#4e81cd;}
+.Fgray			{color:#888888;}
+.Fgreen			{color:#48B2AD;}
+.Fkhaki			{color:#00a99d;}
+.Fblack			{color:#000000;}
+.Fbrown			{color:#A52A2A;}
+.Fgreen			{color:#629925;}
+.Fwhite			{color:#FFFFFF;}
+.Forange		{color:#ff6c00;}
+.Fyellow		{color:#FFFF00;}
+.Fdarkgray		{color:#AAAAAA;}
+.Faquamarine	{color:#7FFFD4;}
+.Fblueviolet	{color:#8A2BE2;}
+.Fpoint			{color:#004FE7; text-decoration:underline;}
+.F_orange		{color:#ff6c00; letter-spacing:-1px;}
+.Farrow			{color:4a4a4a;}
+
+.b				{font-weight:bold}
+
+.F0				{font-size:0px;}
+.F7				{font-size:7px;}
+.F8				{font-size:8px;}
+.F9				{font-size:9px;}
+.F10			{font-size:11px;}
+.F11			{font-size:11px;}
+.F12			{font-size:12px;}
+.F13			{font-size:13px;}
+.F14			{font-size:14px;}
+.F15			{font-size:15px;}
+.F16			{font-size:16px;}
+.F17			{font-size:17px;}
+.F18			{font-size:18px;}
+.F19			{font-size:19px;}
+.F20			{font-size:20px;}
+.F21			{font-size:21px;}
+.F22			{font-size:22px;}
+.F23			{font-size:23px;}
+.F24			{font-size:24px;}
+.F25			{font-size:25px;}

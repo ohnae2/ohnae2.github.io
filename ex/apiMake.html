@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="kor" data-ng-app="KaisaApp" data-ng-controller="KaisaController">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta name="robots" content="index,follow">
+<title>Kaisa</title>
+<meta name="keywords" content="Kaisa,가이사,카이사,가평,홈페이지">
+<meta name="description" content="Kaisa,가이사,카이사,가평,홈페이지">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kaisa">
+<meta property="og:description" content="Kaisa,가이사,카이사,가평,홈페이지">
+<meta property="og:image" content="http://kaisa.co.kr/img/common/logo.png">
+<meta property="og:url" content="http://kaisa.co.kr">
+<meta name="fragment" content="!">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<link rel="shortcut icon" href="/img/favicon.ico?ver=0.1" type="image/x-icon">
+<link rel="stylesheet" href="/css/common.css" type="text/css">
+<link rel="stylesheet" href="/css/ex/apiMake.css" type="text/css">
+<link rel="stylesheet" href="/css/ex/layerDatepicker.css" type="text/css">
+<!--[if lt IE 10]>
+<link rel="stylesheet" href="/css/old_browser.css" type="text/css" />
+<![endif]-->
+<!--[if IE 8]>
+<script src="/js/lib/es/es5-shim.min.js"></script>
+<![endif]-->
+<script src="/js/lib/jquery/jquery-1.11.1.min.js"></script>
+<script src="/js/lib/angular/angular.min.js"></script>
+<script src="/js/min/kaisa.js"></script>
+<script src="/js/module/kaisaLayerDatepicker.js"></script>
+<script src="/js/controller/ex/apiMake.js"></script>
+</head>
+<body data-ng-controller="BodyController">
+	<div data-kaisa-header="true"></div>
+	<div data-kaisa-menu="true"></div>
+	<div id="container">
+		<div id="apiMake">
+			<div class="wrap">
+				<div data-study-menu="true"></div>
+				<form data-ng-submit="api.make()">
+					<h2>Api Name</h2>
+					<input type="text" data-ng-model="api.name" style="width:200px" />
+
+					<h2>Api Type</h2>
+					<input type="text" data-ng-model="api.type" style="width:200px" />
+
+					<h2>Excel Clone</h2>
+					<ol class="guide">
+						<li>엑셀에서 텍스트로 붙여넣을때 2번째 셀이 1번일경우 서브 element 이다.(array or object 의 하위노드만 수동으로 작성)</li>
+						<li>number는 long 으로 변환.</li>
+						<li>키값이 없는 value 는 List&lt;String&gt; ?</li>
+					</ol>
+
+					<textarea data-ng-model="api.data" id="dataText">apiCd	O	string
+trGrpCd	O	string
+trNo	O	string
+lrtrNo	O	string
+spdLst		array
+scatNo	O	string
+epdNo	O	string
+slTypCd	O	string
+pdTypCd	O	string
+spdNm	O	string
+brdNo		string
+mfcrNm		string
+oplcCd	O	string
+mdlNo		string
+barCd		string
+tdfDvsCd	O	string
+slStrtDttm	O	string
+slEndDttm	O	string
+pdItmsInfo		object
+pdItmsCd	1	string
+pdItmsArtlLst	O	array
+pdArtlCd	1	string
+pdArtlCnts	O	string
+sftyAthnLst		array
+sftyAthnTypCd	1	string
+sftyAthnNo	1	string
+scatAttrLst		array
+attrNm	1	string
+attrVal	1	string
+attrDtlsVal	1	string
+attrPrirRnkg	1	string
+ecpnInfo	△	object
+csrcPblsYn	1	string
+useYnCfmWayCd	1	string
+athnMgtTypCd	1	string
+seTypCd	1	string
+fbilPrc	1	string
+vldPrdStrtDttm	1	string
+vldPrdEndDttm	1	string
+rtngPsbDvsCd	1	string
+rfndPsbYn	1	string
+ecpnRfndTypCd	1	string
+autoRfndYn	1	string
+issWayCd	1	string
+sndWayCd	1	string
+sndMnsCd	1	string
+useLmtEpn	1	string
+atntMatrEpn	1	string
+usePlcEpn	1	string
+rntlPdTypCd	△	string
+rntlPdInfo	△	object
+dutyUsePrd	1	number
+instCst	1	number
+regCst	1	number
+cnsmrSlPrc	1	number
+mmRntlCst	1	number
+vatInclYn	1	string
+cnslPsbStrtTm	1	string
+cnslPsbEndTm	1	string
+cnslTelNo	1	string
+jntPurPdYn		string
+jntPurPdInfo		object
+dealTypCd	1	string
+dealDpNm	1	string
+dealStrtDttm	1	string
+dealEndDttm	1	string
+dealAplyStrtTm	1	string
+dealAplyEndTm	1	string
+dealInfo	1	array
+dealStkInfo		object
+dealStkQty	1	number
+dealStrStkInfo		array
+trGrpCd	1	string
+trNo	1	string
+lrtrNo	1	string
+dealStrStkQty	1	number
+stkSbtTypCd		string
+sndStrtDttm		string
+dvRsvDvsCd	O	string
+rsvOdInfo		object
+rsvOdStrtDttm	1	string
+rsvOdEndDttm	1	string
+rsvPdSndStrtDttm	1	string
+gnrlPdSwitYn	1	string
+itypOptYn		string
+itypOptTypCd		string
+itypOptLst		array
+itypOptDvsCd		string
+itypOptNm		string
+itypOptVal		string
+itypEstlIputYn		string
+purPsbQtyInfo		object
+itmByMinPurPsbQtyYn	1	string
+itmByMinPurQty	1	number
+itmByMaxPurPsbQtyYn	1	string
+maxPurQty	1	number
+maxPurNday	1	number
+hpPrcEstmAplyYn	O	string
+lamtPurDcPdYn	O	string
+lamtDcStdQty	△	number
+ageLmtCd	O	string
+thdyPdYn	O	string
+prstPsbYn	O	string
+prstPckPsbYn	O	string
+prstMsgPsbYn	O	string
+prcCmprEpsrYn	O	string
+bookCultCstDdctYn	O	string
+isbnCd		string
+impNm		string
+impDvsCd	△	string
+cshbltyPdYn	O	string
+etvPdYn		string
+gftvShpCd		string
+dnDvPdYn		string
+qrPdYn		string
+toysPdYn		string
+intgSlPdNo		string
+nmlPdYn		string
+prmmPdYn		string
+otltPdYn		string
+bfoInstPdYn		string
+prmmInstPdYn		string
+brkHmapPkcpPsbYn	O	string
+mvCmcoCd		string
+ctrtTypCd		string
+pdUtInfo		object
+pdUtStdQty	1	number
+pdUtCd	1	number
+pdCapa	1	number
+pdSzInfo		object
+pdWdthSz	1	number
+pdLnthSz	1	number
+pdHghtSz	1	number
+pdWeit	1	number
+pckWdthSz	1	number
+pckLnthSz	1	number
+pckHghtSz	1	number
+pckWeit	1	number
+pdStatCd	O	string
+dpYn	O	string
+ltonDpYn	O	string
+pblcStncInfo		object
+pblcStnc	1	string
+pblcStncHstStrtDttm	1	string
+pblcStncHstEndDttm	1	string
+scKwdLst		array
+pdImgLst		array
+imgTypCd	1	string
+imgDvsCd	1	string
+origImgFileNm		string
+rprtImgYn		string
+imgEpsrPrirRnkg		number
+vdoInfo		object
+vdoTypCd	1	string
+vdoRteNm	1	string
+vdoEpsrPrirRnkg	1	number
+epnLst		array
+pdEpnTypCd	1	string
+pdEpnShpCd	1	string
+orglDtlFileNm	1	string
+pyMnsExcpLst		List<String>
+cnclPsbYn		string
+immdCnclPsbYn		string
+dmstOvsDvDvsCd	O	string
+pstkYn	O	string
+dvProcTypCd	O	string
+dvPdTypCd	O	string
+sndBgtNday	O	number
+sndBgtDdInfo	O	object
+nldySndCloseTm	1	string
+satSndPsbYn	1	string
+satSndCloseTm	1	string
+dvRgnGrpCd	O	string
+dvMthdCdLst	O	array
+owhpNo	O	string
+hdcCd		string
+dvCstPolNo	O	string
+adtnDvCstLst	O	array
+adtnDvCstTypCd	1	string
+adtnDvCst	1	number
+cmbnDvPsbYn	O	string
+dvCstStdQty	O	number
+qckDvUseYn		string
+crdayDvPsbYn		string
+crdayDvInfo		object
+odCloseTm	1	string
+spicUseYn	O	string
+spicInfo		object
+spicTypCdLst	1	array
+strPicTypInfo		array
+trGrpCd	1	string
+trNo	1	string
+lrtrNo	1	string
+shopPkupYn	1	string
+lckPkupYn	1	string
+dskPkupYn	1	string
+spicEusePdYn		string
+spicEusePdTypCd		string
+hpDdDvPsbYn		string
+hpDdDvPsbPrd		number
+saveTypCd		string
+shopCnvMsgPsbYn	O	string
+rgnLmtPdYn		string
+fprdDvPsbYn	O	string
+spcfSqncPdYn		string
+rtngPsbYn	O	string
+xchgPsbYn	O	string
+echgPsbYn	O	string
+cmbnRtngPsbYn	O	string
+rtngHdcCd		string
+rtngRtrvPsbYn	O	string
+rtrpNo	O	string
+rtngDvCst	O	number
+xchgDvCst	O	number
+stkMgtYn	O	string
+itmPrcMgtYn	O	string
+itmLst	O	array
+eitmNo	1	string
+sortSeq	1	string
+dpYn	1	string
+ltonDpYn	1	string
+itmOptLst	O	array
+optCd	1	string
+optNm	1	string
+optValCd	1	string
+optVal	1	string
+itmImgLst	O	array
+imgSeq	1	string
+epsrTypCd	1	string
+epsrTypDtlCd	1	string
+rgbVal	1	string
+origImgFileNm	1	string
+rprtImgYn	1	string
+epsrPrirRnkg	1	number
+hstStrtDttm	O	String
+hstSndDttm	O	String
+slPrc	O	number
+itmDcTypCd		string
+trCtrtNo		string
+supPmct		number
+mrgnRt		number
+stkQty		number
+slrRcPdLst		array
+spdNo	1	string
+sitmNo	1	string
+epsrPrirRnkg	1	number</textarea>
+
+					<h2>Result 1depth</h2>
+					<ol class="guide">
+						<li>1. element = apiName + (request or responce)</li>
+						<li>2. complexType > complexContent > extension(LtonCommonVO) > sequence > element</li>
+					</ol>
+					<textarea data-ng-model="api.result" class="resultTextarea"></textarea>
+
+					<h2>Result 2depth</h2>
+					<ol class="guide">
+						<li>1. 3depth 부터는 생성안됨</li>
+					</ol>
+					<textarea data-ng-model="api.resultSub" class="resultTextarea sub"></textarea>
+
+					<div class="btnWrap">
+						<button type="submit" class="on">Make</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="layerDatePicker" data-layer-date-picker="true" data-ng-style="crawler.date.style" data-model="crawler.date" data-ng-show="crawler.date.active">
+		<div data-layer-date-picker-calendar="true"></div>
+	</div>
+	<div data-kaisa-footer="true"></div>
+</body>
+</html>

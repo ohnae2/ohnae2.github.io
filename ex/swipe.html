@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="kor" data-ng-app="KaisaApp" data-ng-controller="KaisaController">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta name="robots" content="index,follow">
+<title>Kaisa</title>
+<meta name="keywords" content="Kaisa,가이사,카이사,가평,홈페이지">
+<meta name="description" content="Kaisa,가이사,카이사,가평,홈페이지">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kaisa">
+<meta property="og:description" content="Kaisa,가이사,카이사,가평,홈페이지">
+<meta property="og:image" content="http://kaisa.co.kr/img/common/logo.png">
+<meta property="og:url" content="http://kaisa.co.kr">
+<meta name="fragment" content="!">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<link rel="shortcut icon" href="/img/favicon.ico?ver=0.1" type="image/x-icon">
+<link rel="stylesheet" href="/css/common.css" type="text/css">
+<link rel="stylesheet" href="/css/module/swipe.css" type="text/css">
+<!--[if lt IE 10]>
+<link rel="stylesheet" href="/css/old_browser.css" type="text/css" />
+<![endif]-->
+<!--[if IE 8]>
+<script src="/js/lib/es/es5-shim.min.js"></script>
+<![endif]-->
+<script src="/js/lib/jquery/jquery-1.11.1.min.js"></script>
+<script src="/js/lib/angular/angular.min.js"></script>
+<script src="/js/min/kaisa.js"></script>
+<script src="/js/controller/ex/swipe.js"></script>
+</head>
+<body data-ng-controller="BodyController">
+<div data-kaisa-header="true"></div>
+<div data-kaisa-menu="true"></div>
+<div id="container">	
+	<div id="study">
+		<div class="wrap">
+			<div data-study-menu="true"></div>
+			
+			<h2>Swipe</h2>
+			
+			<div class="kaisaSwipe">
+				<ul>
+					<li kaisa-swipe data-ng-repeat="i in swipeList">{{i.name}}</li>
+				</ul>
+				<ol></ol>
+				<div class="paging"><span class="page"></span>/<span class="total"></span></div>
+				<button class="prev">prev</button>
+				<button class="next">next</button>
+			</div>
+			
+			<h2>Swipe Loop</h2>
+			
+			<div class="kaisaSwipe">
+				<ul>
+					<li kaisa-swipe-loop data-ng-repeat="i in swipeList">{{i.name}}</li>
+				</ul>
+				<ol></ol>
+				<div class="paging"><span class="page"></span>/<span class="total"></span></div>
+				<button class="prev">prev</button>
+				<button class="next">next</button>
+			</div>
+			
+			
+			<h2>Swipe Menu</h2>
+			
+			<div class="kaisaSwipeMenu">
+				<ul>
+					<li kaisa-swipe-menu data-ng-repeat="i in swipeMenuList">{{i.name}}</li>
+				</ul>
+			</div>
+			
+			
+			
+			
+		</div>
+	</div>
+</div>
+<div data-kaisa-footer="true"></div>
+</body>
+</html>

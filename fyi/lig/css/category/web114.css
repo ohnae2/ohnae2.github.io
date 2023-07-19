@@ -1,0 +1,106 @@
+/* 2008-04 Writer:Jaeho */
+
+@import "../common.css";
+
+html		{height:100%;}
+body		{height:100%; background-color:#fff;}
+
+table.dataT				{border-left:1px solid #fff; border-right:1px solid #fff;}
+
+h1			{padding:0 0 5px 20px; background:url(../../images/common/blet_circle.gif) no-repeat 2px 2px; font-size:12px; font-weight: bold; color:#09398d; line-height:180%;}
+h2			{margin-top:10px; padding:0 0 5px 17px; color:#09398d; background:url(../../images/popup/blet_popup_p.gif) no-repeat 2px 1px; font-weight:bold;}
+.check		{padding:0 0 5px 17px; color:#09398d; background:url(../../images/common/blet_check.gif) no-repeat 5px 5px;}
+
+.popWrap					{overflow:hidden;}
+.popWrap	.topWrap		{padding-left:10px; clear:both; height:79px; overflow:hidden;  background:url(../../images/web114/tle_topLeft.jpg) no-repeat left top;}
+.popWrap	.topWrap	.title	{width:100px; overflow:auto; position:absolute; margin:13px 0 0 25px;}
+.popWrap	.topWrap	.btn	{width:300px; overflow:auto; position:absolute; margin:17px 0 0 420px;}
+.popWrap	.topWrap	.btn	ul	li	{display:inline; padding-left:10px;}
+.popWrap	.bottomWrap		{clear:both; height:20px; overflow:hidden;}
+.popWrap	.topWrap	h1	{float:left;}
+.popWrap	.topWrap	.topTle		{overflow:hidden; height:79px; width:90px; float:right; background:url(../../images/web114/tle_topRight.jpg) no-repeat right top;}
+.popWrap	.bottomWrap	.bottomTle	{overflow:hidden; ; height:40px; width:50px; float:right;}
+
+.popWrap	.Content		{clear:both; padding:0 8px 21px 8px; border-bottom:1px solid #f9f9f9;}  /* padding:1px; overflow:auto; forr FF */
+
+.searchBox		{width:280px; background-color:#195bce; padding:3px; margin:10px auto 5px auto; word-break:none;}
+
+.popWrap	.Content	.leftMenu	{float:left; width:194px;margin-top:10px; border:3px solid #d3e6f8; height:594px;}
+.popWrap	.Content	.leftMenu	ul	{padding-top:5px;}
+.popWrap	.Content	.leftMenu	ul	li	{padding:4px 10px 4px 15px; background:url(../../images/web114/bg_bottomDotted.gif) repeat-x left bottom;}
+.popWrap	.Content	.leftMenu	ul	li	img	{padding-right:5px;}
+.popWrap	.Content	.leftMenu	.leftTree	{width:180px; overflow:auto; margin:10px auto; height:425px; padding-left:5px;}
+
+.popWrap	.Content	.leftMenu	a:link, 
+.popWrap	.Content	.leftMenu	a:visited, 
+.popWrap	.Content	.leftMenu	a:active 	{color:#4a4a4a; text-decoration:none;}
+.popWrap	.Content	.leftMenu	a:hover 	{color:#0049ed; text-decoration:underline;}
+
+
+.popWrap	.Content	.rightContent	{float:right; width:570px; height:600px; margin-top:10px; overflow:auto;}
+
+
+.gianMenu		{padding:3px; height:21px; border:1px solid #dedede; margin-bottom:5px; background:url(../../images/popup/bg_gianMenu.gif) repeat-x 0 1px;}
+.gianMenu	li	{display:inline; margin-right:1px; font-size:0;}
+
+.gianWrap		{text-align:center; border:1px solid #dedede; padding:10px; overflow:auto;}
+
+.gianContent	{text-align:left;  width:780px; overflow:auto; padding:0 10px; margin:20px auto 0 auto;}
+.gianContent	h3	{width:100%; font-weight:bold; font-size:32px; text-align:center; color:#000; letter-spacing:32px;}
+.gianContent	th	{color:#000;}
+.gianContent	td	{color:#000;}
+.gianContent	input	{color:#000;}
+.gianContent	textarea	{color:#000;}
+.gianContent	div	{color:#000;}
+.gianContent	p	{color:#000;}
+
+.gianContent	a:link, 
+.gianContent	a:visited, 
+.gianContent	a:active 	{color:#000; text-decoration:none;}
+.gianContent	a:hover 	{color:#000; text-decoration:underline;}
+
+.tabpop				{position:relative;}
+.tabpop		li		{font-size:0; display:inline;}
+
+#workLine			{width:760px; overflow:auto;}
+#workLine	.fl		{width:345px;}
+#workLine	.fr 	{width:357px;}
+#workLine	.txtl	{width:355px; float:left; text-align:right; margin-top:-15px;}
+#workLine	.txtr	{width:355px; float:right; text-align:right; margin-top:-15px;}
+
+#workLine	.box1	{padding:5px 5px 0 5px; width:345px; height:160px; float:left; overflow:auto; background-color:#f4f7fe; border:1px solid #b5bedd;}
+#workLine	.box2	{width:357px; height:165px; float:right; overflow:auto;}
+#workLine	.box3	{width:357px; height:175px; float:left; overflow:auto;}
+#workLine	.box4	{width:357px; height:175px; float:right; overflow:auto;}
+
+#workLine	.line	{width:45px; height:125px; text-align:center; float:left; overflow:auto; padding-top:45px;}
+#workLine	.line	li	{list-style:none;}
+
+#workLine	.search			{padding:5px 0; clear:both; width:355px; text-align:right;}
+#workLine	.scrollLayer	{height:115px; overflow-y:scroll;}
+#workLine	.con			{height:155px; overflow-y:auto;}
+
+.workView	{padding:10px; overflow:auto; width:784px; height:300px; border:1px dotted #ccc;}
+.workView	.workBtn	{padding-top:5px; text-align:right; border-top:1px dotted #eee;}
+
+.popContent		{padding:13px; color:#000;}
+.popContent	div	{color:#000;}
+.popContent	td	{color:#000;}
+.popContent	th	{color:#000;}
+
+.opinion	{margin:10px; height:60px; overflow:auto; width:515px; background-color:#fff;}
+.opinionBig	{margin:10px 0 10px 10px; height:100px; overflow:auto; width:440px; background-color:#fff;}
+.opinionTextarea	{border:1px solid #ddd; margin:10px 0 10px 10px; height:94px; overflow:auto; width:430px; background-color:#fff;}
+
+.gatherWork01		{float:left; width:405px; height:610px; overflow:auto; border:1px solid #ccc;}
+.gatherWork02		{float:right; width:495px;} /* padding:1px; overflow:auto; forr FF */
+
+/**************/
+
+.borderImg			{border:1px solid #ccc; margin:11px 8px 8px 10px;}
+table	td	.imgInfo			{position:absolute; margin-top:40px;}
+
+.webInfoBox		{border:1px solid #9ab3cc; background-color:#fff; overflow:auto; padding:15px; width:514px;}
+.webInfoImg		{border:1px solid #ccc; width:90px; float:left;}
+.webInfoTable	{float:right;}
+

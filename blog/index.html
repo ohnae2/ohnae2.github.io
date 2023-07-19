@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="kor" data-ng-app="KaisaApp" data-ng-controller="KaisaController">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta name="robots" content="index,follow">
+<title>Kaisa</title>
+<meta name="keywords" content="Kaisa,가이사,카이사,가평,홈페이지">
+<meta name="description" content="Kaisa,가이사,카이사,가평,홈페이지">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kaisa">
+<meta property="og:description" content="Kaisa,가이사,카이사,가평,홈페이지">
+<meta property="og:image" content="http://kaisa.co.kr/img/common/logo.png">
+<meta property="og:url" content="http://kaisa.co.kr">
+<meta name="fragment" content="!">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<link rel="shortcut icon" href="/img/favicon.ico?ver=0.1" type="image/x-icon">
+<link rel="stylesheet" href="/css/common.css" type="text/css">
+<link rel="stylesheet" href="/css/blog.css" type="text/css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-90934748-1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-90934748-1');
+</script>
+<!--[if lt IE 10]>
+<link rel="stylesheet" href="/css/old_browser.css" type="text/css" />
+<![endif]-->
+<!--[if IE 8]>
+<script src="/js/lib/es/es5-shim.min.js"></script>
+<![endif]-->
+<script src="/js/lib/jquery/jquery-1.11.1.min.js"></script>
+<script src="/js/lib/angular/angular.min.js"></script>
+<script src="/js/min/kaisa.js"></script>
+<script src="/js/controller/blog.js"></script>
+</head>
+<body data-ng-controller="BodyController">
+<div data-kaisa-header="true"></div>
+<div data-kaisa-menu="true"></div>
+<div id="container">	
+	<div id="illust">
+		<div class="wrap">
+			
+			<h2>Masonry List</h2>
+		
+			<ul class="masonry">
+				<!-- <li  data-ng-repeat="(idx,i) in illustList">
+					<span class="img" data-ng-img-loader="{{image.host}}{{i.url}}" alt="{{i.desc}}"></span>
+					<div class="img_loader"><span class="bar"></div></div>
+				</li> data-ng-click="illust.click(idx)" -->
+				<li  data-ng-repeat="(idx,i) in illustList"> data-ng-class="{on : illust.idx == idx, off : illust.idx != -1}"><img data-ng-src="{{image.host}}{{i.url}}" alt="" /></li>
+			</ul>			
+		</div>
+	</div>
+</div>
+<div data-kaisa-footer="true"></div>
+<div id="illust_clone" data-ng-class="{on : clone.active}" data-ng-if="clone.active">
+	<div class="prev" data-ng-click="illust.prev()"><img data-ng-src="{{image.host}}/img/common/prev.png" /></div>
+	<div class="next" data-ng-click="illust.next()"><img data-ng-src="{{image.host}}/img/common/next.png" /></div>
+	<ul>
+		<li><img data-ng-src="{{image.host}}{{illustList[illust.idx].url}}" /></li>
+	</ul>
+</div>
+</body>
+</html>

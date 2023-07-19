@@ -1,0 +1,50 @@
+/* 2008-04 Writer:Jaeho */
+
+@import "../common.css";
+@import "../table.css";
+
+a:link, 
+a:visited, 
+a:active 			{color:#666; text-decoration:none;}
+a:hover 			{color:#999; text-decoration:none;}
+
+html, body			{margin:0; padding:10px;}
+
+p	{padding-bottom:5px; color:#999;}
+h1 	{text-align:center; padding:20px 0;}
+h2 	{font-weight:bold; font-size:12pt; padding:5px 0;}
+ol 	{padding-left:40px; margin-left:40px;}
+
+#Container				{overflow:hidden; width:100%; padding-bottom:70px; background:url(../../images/guide/bg.jpg) no-repeat right bottom #fff;}
+#Container	#Top		{overflow:auto; padding:10px 20px; background-color:#c9c9c9; border-top:1px solid #bbb;}
+#Container	#Top	ul	li		{display:inline; padding:2px 0 0 2px; margin-left:20px; font-size:14px; font-weight:bold; color:#fff;}
+#Container	#Top	ul	li.on	{background-color:#ff8800; color:#fff;}
+
+#Container	#Top	ul	li	a:link, 
+#Container	#Top	ul	li	a:visited, 
+#Container	#Top	ul	li	a:active 		{color:#fff; text-decoration:none;}
+#Container	#Top	ul	li	a:hover 		{color:#ffdec5; text-decoration:none;}
+
+#titleTle	{clear:both; margin:0 auto; overflow:hidden; width:95%;}
+
+.guideTab			{float:left; margin-top:13px; padding:5px 5px 5px 25px; list-style:none;}
+.guideTab	li		{float:left; background-color:#eee; padding:5px 10px; margin:5px 5px 0 0; vertical-align:middle;}
+.guideTab	li.on 	{
+	text-align:center;
+	background:url(../../images/guide/blet_on.gif) no-repeat 5px 8px #555;
+	color:white;
+	font-size:11px;
+	font-weight:bold;
+	padding:5px 10px 5px 15px;
+	margin:0 9px 0 0
+	vertical-align:middle;
+}
+.guideTab	li	a:link, 
+.guideTab	li	a:visited, 
+.guideTab	li	a:active 	{color:#999; text-decoration:none; font-weight:bold;}
+.guideTab	li	a:hover 	{color:#333; text-decoration:none; font-weight:bold;}
+
+.imgTle	{font-size:12px; margin:5px; padding:15px; line-height:160%;}
+.code	{background:#F9F9F9; border:1px solid #ccc; width:90%; font-size:12px; margin:5px; padding:15px; line-height:160%;}
+
+/* * */

@@ -1,0 +1,108 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>:: Html Guide ::</title>
+<link rel="stylesheet" href="../css/guide/guide.css" type="text/css" media="all">
+<link rel="stylesheet" href="../css/print.css" type="text/css" media="print">
+<script type="text/javascript" src="../js/common.js"></script>
+<script type="text/javascript" src="../js/flashX.js"></script>
+</head>
+<body>
+<div class="writer">차세대전산 TFT / kaisa</div>
+<div id="Container">
+	<div id="Top">
+		<ul>
+			<li><a href="list.html">목차</a></li>
+			<li class="on">문서구조</li>
+			<li><a href="design01.html">디자인 요소</a></li>
+		</ul>
+	</div>
+	<h1><img src="../images/guide/title.jpg" alt="LIG WEBSTYLE GUIDE"></h1>
+	<div id="titleTle">
+		<ul class="guideTab">
+			<li><a href="web01.html">웹표준</a></li>
+			<li class="on">HTML구조</li>
+			<li><a href="web03.html">파일구조</a></li>
+		</ul>
+	</div>
+	<ol>
+		<li>
+			<h2>Document Type </h2>
+			<p>- Document Type 별로 css의 기능이 틀립니다.</p>
+			<div class="code">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot; &quot;http://www.w3.org/TR/html4/strict.dtd&quot;&gt;<span class="Forange pl10">개발후에도 항상 상위에 위치시킵니다.</span></div>
+		</li>
+		<li>
+			<h2>HTML head </h2>
+			<p>- Common.css  공통css</p>
+			<p>- Print.css 프린트시 화면을 컨트롤하는 css입니다.</p>
+			<p>- Common.js  공통 자바스크립트 함수를 호출합니다.</p>
+			<p>- FlashX.js  플래시제어 스크립트를 호출합니다.(플래시 박스제거 및 외부링크 호출)</p>
+			<div class="code">&lt;head&gt;<br>
+				&lt;title&gt;:: LIG ::&lt;/title&gt;<br>
+				&lt;link rel=&quot;stylesheet&quot; href=&quot;CSS/Common.css&quot; type=&quot;text/css&quot; media=&quot;all&quot;&gt;<br>
+				&lt;link rel=&quot;stylesheet&quot; href=&quot;CSS/Print.css&quot; type=&quot;text/css&quot; media=&quot;print&quot;&gt;<br>
+				&lt;script type=&quot;text/javascript&quot; src=&quot;JS/Common.js&quot;&gt;&lt;/script&gt;<br>
+				&lt;script type=&quot;text/javascript&quot; src=&quot;JS/flashX.js&quot;&gt;&lt;/script&gt;<br>
+			&lt;/head&gt;</div>
+		</li>
+		<li>
+			<h2>HTML Coding</h2>
+			<p>- div 레어아웃 사용</p>
+			<p>- h1 로고 h2 좌측타이틀 h3 컨텐츠타이틀</p>
+			<p>- ul 목록 ol 순서목록 </p>
+			<div class="code">&lt;div id=&quot;Container&quot;&gt;<br>
+				<span class="pl20">&nbsp;</span>&lt;div id=&quot;top&quot;&gt;<br>
+				<span class="pl40">&nbsp;</span>&lt;h1&gt;logo&lt;/h1&gt;<br>
+				<span class="pl20">&nbsp;</span>&lt;/div&gt;<br>
+				<span class="pl20">&nbsp;</span>&lt;div id=&quot;Left&quot;&gt;<br>
+				<span class="pl40">&nbsp;</span>&lt;h2&gt;Menu Title&lt;/h2&gt;<br>
+				<span class="pl40">&nbsp;</span>&lt;ul&gt;<br>
+				<span class="pl60">&nbsp;</span>&lt;li&gt;list&lt;/li&gt;<br>
+				<span class="pl60">&nbsp;</span>&lt;li&gt;list&lt;/li&gt;<br>
+				<span class="pl60">&nbsp;</span>&lt;li&gt;list&lt;/li&gt;<br>
+				<span class="pl40">&nbsp;</span>&lt;/ul&gt;<br>
+				<span class="pl20">&nbsp;</span>&lt;/div&gt;<br>
+				<span class="pl20">&nbsp;</span>&lt;div id=&quot;Content&quot;&gt;<br>
+				<span class="pl40">&nbsp;</span>&lt;h3&gt;Content Title&lt;/h3&gt;<br>
+				<span class="pl40">&nbsp;</span>&lt;ol&gt;<br>
+				<span class="pl60">&nbsp;</span>&lt;li&gt;list&lt;/li&gt;<br>
+				<span class="pl60">&nbsp;</span>&lt;li&gt;list&lt;/li&gt;<br>
+				<span class="pl60">&nbsp;</span>&lt;li&gt;list&lt;/li&gt;<br>
+				<span class="pl40">&nbsp;</span>&lt;/ol&gt;<br>
+				<span class="pl20">&nbsp;</span>&lt;/div&gt;<br>
+				<span class="pl20">&nbsp;</span>&lt;div id=&quot;Bottom&quot;&gt;Copyright&lt;/div&gt;<br>
+				&lt;/div&gt;
+			</div>
+		</li>
+		<li>
+			<h2>CSS Structure</h2>
+			<p>- import CSS를 이용하여 가독성을 높이고 불필요한 css를 걸러냅니다. </p>
+			<p>- Develop.css를 이용하여 개발부분에서 차이가 생긴부분만 개발자가 기재합니다.</p>
+			<p>- @charset &quot;utf-8&quot;; 인코딩환경에 맞추어 작업</p>
+			<div class="code">			
+			
+				<p class="pb20">@charset &quot;utf-8&quot;; <span class="Forange">== 개발부분에서 한글 부분을 %-escape 하지않아도 되기때문에 utf-8 사용</span></p>
+				
+				<p>@import &quot;Public.css&quot;; <span class="Forange">== import를 사용</span><br>
+					@import &quot;Private.css&quot;;<br>
+					@import &quot;Table.css&quot;;<br>
+					@import &quot;Font.css&quot;;<br>
+					@import &quot;Develop.css&quot;;<br>
+				</p>
+				<p>a:link, <br>
+					a:visited, <br>
+					a:active 			{color:#666; text-decoration:none;}<br>
+					a:hover 			{color:#999; text-decoration:none;}<br>
+				</p>
+				<p>#Container				{overflow:auto; width:100%;}<br>
+					#Container	#Top		{overflow:auto; padding:10px 20px; background-color:#ccc; border:2px solid #ccc;}<br>
+					#Container	#Top	ul	{margin:10px;}<br>
+					#Container	#Top	ul	li		{display:inline; padding:2px 0 0 2px; margin-left:20px; font-size:14px; font-weight:bold; color:#fff;}<br>
+					#Container	#Top	ul	li.on	{background-color:#ff8800; color:#fff;}</p>
+			</div>
+		</li>
+	</ol>
+	
+</div>
+</body>
+</html>

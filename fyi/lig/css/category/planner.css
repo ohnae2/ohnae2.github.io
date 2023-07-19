@@ -1,0 +1,149 @@
+/* 2008-04 Writer:Jaeho */
+
+@import "../common.css";
+
+h3	{margin:5px 0 0 0; font-weight:bold; color:#09398d; background:url(../../images/common/blet_circle.gif) no-repeat 2px 0; padding:1px 0 6px 18px;}
+h4	{margin:5px 0; font-size:12px; color:#4a4a4a; background:url(../../images/common/blet_h4.gif) no-repeat 4px 5px; padding:0 0 0 14px;}
+
+table.dataT				{border-left:1px solid #fff; border-right:1px solid #fff;}
+
+ul		{list-style:none;}
+ol		{list-style:none; padding:0; margin:0;}
+body	{background-color:#fff;}
+
+.ContentWrap					{clear:both; width:979px; overflow: auto; margin:0;} 
+.ContentWrap	.ContentMenu	{min-height:500px; padding:70px 0 20px 4px; width:155px; overflow:auto; float:left; background:url(../../images/common/visual_planner.jpg) no-repeat left top;}
+.ContentWrap	.ContentMenu	ul	li	{background:url(../../images/common/blet_depth01.gif) no-repeat 4px 7px; padding-left:13px; line-height:180%;}
+.ContentWrap	.Content		{float:right; width:806px; oveflow:auto; padding-bottom:50px;}
+
+.ContentWrap	.ContentMenu	ol	{padding:0 0 10px 0;}
+.ContentWrap	.ContentMenu	ol	li	{background:url(../../images/common/blet_depth02.gif) no-repeat 1px 7px; padding-left:10px; line-height:140%;}
+
+.ContentWrap	.ContentMenu	.greenMenu		{position:absolute; margin-top:270px; width:139px; background:url(../../images/common/left_bottomBg.gif) no-repeat right top; padding:7px 0;}
+.ContentWrap	.ContentMenu	.greenMenu	li 	{background:url(../../images/common/blet_green.gif) no-repeat 0 6px; margin-left:-10px;}
+
+
+.ContentWrap	.ContentMenu	.greenMenu	a:link, 
+.ContentWrap	.ContentMenu	.greenMenu	a:visited, 
+.ContentWrap	.ContentMenu	.greenMenu	a:active 		{color:#4b6e3a; text-decoration:none;}
+.ContentWrap	.ContentMenu	.greenMenu	a:hover 	{color:#98bf85; text-decoration:none;}
+
+/*********/
+.mailTitle				{font-size:12px; color:#4a4a4a;}
+.mailTitle	b			{font-size:13px;}
+.mailpercent			{float:left; position:relative; margin:11px 0 0 15px; font-size:0; width:100px; overflow:auto; background:url(../../images/mail/mail_percentBg.gif) repeat-x left top;}
+
+.mailTitle	h3	{float:left; width:70px;}
+.mailTitle	.info	{float:left; padding:5px 0 0 30px;}
+
+.mail			{padding:35px 15px 100px 15px;}
+.boardEdit		{margin-top:3px;}
+
+.searchAdress		{padding:10px 10px 10px 3px;background-color:#fff;}
+.searchAdress	ul	li	{display:inline; padding-left:20px; background:url(../../images/mail/blet_adress_search.gif) no-repeat 6px 2px;}
+.searchAdress	ul	li	a:hover	{text-decoration:underline;}
+.searchAdress	ul	li.title	{background:url(../../images/mail/blet_adress_search_title.gif) no-repeat 4px 2px;}
+
+.calendarBox	{width:200px; height:159px; overflow:hidden; float:left; margin-left:1px; background:url(../../images/planner/bg_calendar.gif) no-repeat left top;}
+
+.calendarBox	table	{margin:20px 0 0 10px;}
+
+.calendarMT		{border-top:2px solid #d8e7f8;}
+.calendarMT	th	{background-color:#f9f9f9; border:1px solid #eee; height:20px; text-align:center; font-weight:normal; font-size:12px; padding:1px 0;}
+.calendarMT	td	{text-align:center; font-size:12px; padding:10px 0 0 10px; height:111px; border:1px solid #eee; vertical-align:top; text-align:left}
+
+.calendarMT	td.today	{background:url(../../images/mail/bg_today.gif) repeat left top;}
+.calendarMT	th.sun		{color:#ff0000;}
+.calendarMT	td.sun		{color:#ff0000;}
+.calendarMT	th.satur	{color:#0000ff;}
+.calendarMT	td.satur	{color:#0000ff;}
+
+.calendarMT		p	{padding-top:2px;}
+
+.calendarMT		A:link,
+.calendarMT		visited,
+.calendarMT		active { text-decoration:none; color:#4a4a4a;}
+.calendarMT		A:hover{text-decoration:none; color:#4a4a4a;}
+
+.calendarMT	th.sun	A:link,
+.calendarMT	th.sun	visited,
+.calendarMT	th.sun	active { text-decoration:none; color:#ff0000;}
+.calendarMT	th.sun	A:hover {text-decoration:none; color:#ff0000;}
+.calendarMT	td.sun	A:link,
+.calendarMT	td.sun	visited,
+.calendarMT	td.sun	active { text-decoration:none; color:#ff0000;}
+.calendarMT	td.sun	A:hover {text-decoration:none; color:#ff0000;}
+
+.calendarMT	th.satur	A:link,
+.calendarMT	th.satur	visited,
+.calendarMT	th.satur	active { text-decoration:none; color:#0000ff;}
+.calendarMT	th.satur	A:hover {text-decoration:none; color:#0000ff;}
+.calendarMT	td.satur	A:link,
+.calendarMT	td.satur	visited,
+.calendarMT	td.satur	active { text-decoration:none; color:#0000ff;}
+.calendarMT	td.satur	A:hover {text-decoration:none; color:#0000ff;}
+
+
+/* smallCalendar */
+
+.smallCalendarBox	{width:149px; position:absolute; top:155px; left:5px;}
+.smallCalendarBox	.calendarView	{text-align:center; padding-top:5px;}
+
+.smallCalendarWrap	{width:147px; overflow:auto; border:1px solid #b2cae3;}
+.smallCalendarWrap	.calendar		{background-color:#fff; border:2px solid #d2dfed; overflow:auto; padding:0; text-align:center;}
+
+.smallCalendarWrap	.calendar	.navi	{text-align:center; margin:4px 0;}
+.smallCalendarWrap	.calendar	.navi	li	{display:inline;}
+.smallCalendarWrap	.calendar	.navi	li.txt	{font-size:11px; font-weight:bold; display:inline;}
+
+.smallCalendarWrap	.yearNavi		{clear:both; padding:0 5px 5px 5px; text-align:right;}
+.smallCalendarWrap	.yearNavi	li	{display:inline;}
+.smallCalendarWrap	.yearNavi	li.txt	{font-weight:bold; display:inline; padding:0 10px; font-size:12px;}
+
+
+.smallCalendarWrap	.calendarT	th	{background-color:#e3eaf2; border:1px solid #fff; text-align:center; font-weight:normal; font-size:11px; padding:1px 0;}
+.smallCalendarWrap	.calendarT	td	{text-align:center; font-size:11px; padding:1px 0; vertical-align:bottom;}
+.smallCalendarWrap	.calendarT	th.sun		{color:#ff0000;}
+.smallCalendarWrap	.calendarT	td.sun		{color:#ff0000;}
+.smallCalendarWrap	.calendarT	th.satur	{color:#0000ff;}
+.smallCalendarWrap	.calendarT	td.satur	{color:#0000ff;}
+
+
+.smallCalendarWrap	.calendarT	td.today	{background-color:#e4f0df; font-size:12px; letter-spacing:-1; line-height:90%; font-weight:bold;}
+
+.smallCalendarWrap	.calendarT		A:link,
+.smallCalendarWrap	.calendarT		visited,
+.smallCalendarWrap	.calendarT		active { text-decoration:none; color:#4a4a4a;}
+.smallCalendarWrap	.calendarT		A:hover{text-decoration:none; color:#4a4a4a; font-size:12px; letter-spacing:-1; line-height:90%; font-weight:bold;}
+
+.smallCalendarWrap	.calendarT	th.sun	A:link,
+.smallCalendarWrap	.calendarT	th.sun	visited,
+.smallCalendarWrap	.calendarT	th.sun	active { text-decoration:none; color:#ff0000;}
+.smallCalendarWrap	.calendarT	th.sun	A:hover {text-decoration:none; color:#ff0000;}
+.smallCalendarWrap	.calendarT	td.sun	A:link,
+.smallCalendarWrap	.calendarT	td.sun	visited,
+.smallCalendarWrap	.calendarT	td.sun	active { text-decoration:none; color:#ff0000;}
+.smallCalendarWrap	.calendarT	td.sun	A:hover {text-decoration:none; color:#ff0000;}
+
+.smallCalendarWrap	.calendarT	th.satur	A:link,
+.smallCalendarWrap	.calendarT	th.satur	visited,
+.smallCalendarWrap	.calendarT	th.satur	active { text-decoration:none; color:#0000ff;}
+.smallCalendarWrap	.calendarT	th.satur	A:hover {text-decoration:none; color:#0000ff;}
+.smallCalendarWrap	.calendarT	td.satur	A:link,
+.smallCalendarWrap	.calendarT	td.satur	visited,
+.smallCalendarWrap	.calendarT	td.satur	active { text-decoration:none; color:#0000ff;}
+.smallCalendarWrap	.calendarT	td.satur	A:hover {text-decoration:none; color:#0000ff;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

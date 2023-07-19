@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="kor" data-ng-app="KaisaApp" data-ng-controller="KaisaController">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta name="robots" content="index,follow">
+<title>Kaisa</title>
+<meta name="keywords" content="Kaisa,가이사,카이사,가평,홈페이지">
+<meta name="description" content="Kaisa,가이사,카이사,가평,홈페이지">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kaisa">
+<meta property="og:description" content="Kaisa,가이사,카이사,가평,홈페이지">
+<meta property="og:image" content="http://kaisa.co.kr/img/common/logo.png">
+<meta property="og:url" content="http://kaisa.co.kr">
+<meta name="fragment" content="!">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<link rel="shortcut icon" href="/img/favicon.ico?ver=0.1" type="image/x-icon">
+<link rel="stylesheet" href="/css/common.css" type="text/css">
+<link rel="stylesheet" href="/css/ex/mapping.css" type="text/css">
+<!--[if lt IE 10]>
+<link rel="stylesheet" href="/css/old_browser.css" type="text/css" />
+<![endif]-->
+<!--[if IE 8]>
+<script src="/js/lib/es/es5-shim.min.js"></script>
+<![endif]-->
+<script src="/js/lib/jquery/jquery-1.11.1.min.js"></script>
+<script src="/js/lib/angular/angular.min.js"></script>
+<script src="/js/min/kaisa.js"></script>
+<script src="/js/controller/ex/mapping.js"></script>
+</head>
+<body data-ng-controller="BodyController">
+<div data-kaisa-header="true"></div>
+<div data-kaisa-menu="true"></div>
+<div id="container">
+	<div id="mapping">
+		<div class="wrap">
+			<div data-study-menu="true"></div>
+			<div class="btnWrap tr"><button type="button" data-ng-click="table.popupColumn()">컬럼 일괄 등록</button></div>
+			
+			<div class="makeBox">
+				<textarea id="clipboard"></textarea>
+				<h3>
+					Copy
+					<ul>
+						<li><button class="click" type="button" data-ng-click="table.generate()">Generate</button></li>
+						<li><button class="on" type="button" data-ng-click="table.copySource()">Source Copy</button></li>
+					</ul>
+				</h3>
+				<div class="source">
+<p data-ng-repeat="(jdx, j) in getArray(table.length) track by $index">INSERT INTO {{table.name}} (<span data-ng-repeat="i in table.column"><b data-ng-if="$index != 0">,</b>{{i.name}}</span>) VALUES (<span class="values" data-ng-repeat="(idx, i) in table.column"><b data-ng-if="$index != 0">,</b><b data-ng-if="i.type == 'string' && i.default != 'SYSDATE'">'</b><span class="value" data-ng-if="!i.default && i.array[jdx]">{{i.array[jdx]}}</span><span class="value" data-ng-if="i.default && !i.array[jdx]">{{i.default}}</span><b data-ng-if="i.type == 'string' && i.default != 'SYSDATE'">'</b></span>);
+</p>
+				</div>
+				<div class="inner">
+					<h3>
+						Table Name 
+						<ul>
+							<li><input type="text" data-ng-model="table.name" /></li>
+						</ul>
+					</h3>
+					<h3>
+						Column 
+						<ul>
+							<li class="del" data-ng-click="table.delColumn()"></li>
+							<li class="add" data-ng-click="table.addColumn()"></li>
+						</ul>
+					</h3>
+					
+					<table class="columnT">
+						<thead>
+							<tr>
+								<th>Name</th>
+								<th>Type</th>
+								<th>Default</th>
+							</tr>
+						</thead>
+						<tbody data-ng-repeat="i in table.column">
+							<tr>
+								<td><input type="text" data-ng-model="i.name" /></td>
+								<td>
+									<select data-ng-model="i.type">
+										<option value="string">string</option>
+										<option value="number">number</option>
+								    </select>
+							    </td>
+								<td><input type="text" data-ng-model="i.default" /></td>
+							</tr>
+							<tr data-ng-if="!i.default">
+								<td colspan="3"><textarea data-ng-model="i.text"></textarea></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+<div data-kaisa-footer="true"></div>
+</body>
+</html>

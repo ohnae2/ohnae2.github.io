@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="kor" data-ng-app="KaisaApp" data-ng-controller="KaisaController">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta name="robots" content="index,follow">
+<title>Kaisa</title>
+<meta name="keywords" content="Kaisa,가이사,카이사,가평,홈페이지">
+<meta name="description" content="Kaisa,가이사,카이사,가평,홈페이지">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kaisa">
+<meta property="og:description" content="Kaisa,가이사,카이사,가평,홈페이지">
+<meta property="og:image" content="http://kaisa.co.kr/img/common/logo.png">
+<meta property="og:url" content="http://kaisa.co.kr">
+<meta name="fragment" content="!">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<link rel="shortcut icon" href="/img/favicon.ico?ver=0.1" type="image/x-icon">
+<link rel="stylesheet" href="/css/common.css" type="text/css">
+<link rel="stylesheet" href="/css/ex/dto.css" type="text/css">
+<!--[if lt IE 10]>
+<link rel="stylesheet" href="/css/old_browser.css" type="text/css" />
+<![endif]-->
+<!--[if IE 8]>
+<script src="/js/lib/es/es5-shim.min.js"></script>
+<![endif]-->
+<script src="/js/lib/jquery/jquery-1.11.1.min.js"></script>
+<script src="/js/lib/angular/angular.min.js"></script>
+<script src="/js/min/kaisa.js"></script>
+<script src="/js/controller/ex/dto.js"></script>
+</head>
+<body data-ng-controller="BodyController">
+<div data-kaisa-header="true"></div>
+<div data-kaisa-menu="true"></div>
+<div id="container">
+	<div id="db">
+		<div class="wrap">
+			<div data-study-menu="true"></div>
+			<h2>DB <button type="button" data-ng-click="table.popupColumn()">TEXT 등록</button></h2>
+			<table class="makeT">
+				<tr>
+					<th>
+						<h3>
+							Table
+						</h3>
+						<ul>
+							<li><input type="text" data-ng-model="table.name" /></li>
+						</ul>
+						<h3>
+							Column
+							<ul>
+								<li class="del" data-ng-click="table.delColumn()"></li>
+								<li class="add" data-ng-click="table.addColumn()"></li>
+							</ul>
+						</h3>
+						<ul>
+							<li data-ng-repeat="i in table.column"><input type="text" data-ng-model="i.name" /></li>
+						</ul>
+					</th>
+					<td>
+						<h3>
+							SQL
+							<ul>
+								<li>
+									<select data-ng-change="table.wordTypeChange()" class="sizeM" data-ng-model="table.wordType">
+										<option value="10">약어</option>
+										<option value="20">풀네임</option>
+									</select>
+								</li>
+								<li><button class="on" type="button" data-ng-click="table.copySource()">소스복사</button></li>
+							</ul>
+						</h3>
+						<textarea id="clipboard"></textarea>
+						<div class="textarea">
+<div class="java">
+	<span class="desc">/* {{table.name}} model */</span><br>
+	<span data-ng-repeat="i in table.column">
+	private String {{i.name | camelCase}};<br>
+	</span>
+</div>
+<br>
+<div class="sql select">
+	&lt;select id="TO-DO" parameterType="kr.co.TO-DO"&gt;<br>
+	<span class="desc">/* {{table.name}} select */</span><br>
+	SELECT<br>
+	<span data-ng-repeat="i in table.column">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span data-ng-if="!$first">,&nbsp;</span><span data-ng-if="$first">&nbsp;&nbsp;</span>{{i.name}}<br></span>
+	FROM<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{table.name}}<br>
+	WHERE  1 = 1<br>
+	&lt;/select&gt;
+</div>
+<br>
+<div class="sql insert">
+	&lt;insert id="TO-DO" parameterType="kr.co.TO-DO"&gt;<br>
+	<span class="desc">/* {{table.name}} insert */</span><br>
+	INSERT INTO {{table.name}} (<br>
+	<span data-ng-repeat="i in table.column">
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span data-ng-if="!$first">,&nbsp;</span><span data-ng-if="$first">&nbsp;&nbsp;</span>{{i.name}}<br>
+	</span>
+	)<br>
+	VALUES<br>
+	(<br>
+	<span data-ng-repeat="i in table.column">
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span data-ng-if="!$first">,&nbsp;</span><span data-ng-if="$first">&nbsp;&nbsp;</span><span>#{</span>{{i.name | camelCase}}<span>}</span><br>
+	</span>
+	);<br>
+	&lt;/insert&gt;
+</div>
+<br>
+<div class="sql update">
+	&lt;update id="TO-DO" parameterType="kr.co.TO-DO"&gt;<br>
+	<span class="desc">/* {{table.name}} update */</span><br>
+	UPDATE {{table.name}} SET<br>
+	<span data-ng-repeat="i in table.column">
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span data-ng-if="!$first">,&nbsp;</span><span data-ng-if="$first">&nbsp;&nbsp;</span><span>{{i.name}} = #{</span>{{i.name | camelCase}}<span>}
+	</span><br></span>
+	WHERE&nbsp;&nbsp;1 = 1<br>
+	AND&nbsp;&nbsp;&nbsp;&nbsp;{{table.column[0].name}} = #{<span>{{table.column[0].name | camelCase}}</span>}<br>
+	&lt;/update&gt;
+</div>
+<br>
+<div class="sql delete">
+	&lt;delete id="TO-DO" parameterType="kr.co.TO-DO"&gt;<br>
+	<span class="desc">/* {{table.name}} delete */</span><br>
+	<delete id="deleteCart" parameterType="kr.co.eplatz.ecbase.param.cart.CartParam">
+	DELETE<br>
+	FROM&nbsp;&nbsp;&nbsp;{{table.name}}<br>
+	WHERE&nbsp;&nbsp;1=1<br>
+	AND&nbsp;&nbsp;&nbsp;&nbsp;CART_NO = #{<span>{{table.column[0].name | camelCase}}</span>}<br>
+	&lt;/delete&gt;
+</div>
+<br>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>
+<div data-kaisa-footer="true"></div>
+</body>
+</html>

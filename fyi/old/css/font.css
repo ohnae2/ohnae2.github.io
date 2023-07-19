@@ -1,0 +1,18 @@
+@charset "utf-8";
+@font-face {	
+	font-family: 'symbol';
+    src: url('../font/symbol.eot');
+    src: url('../font/symbol.eot') format('embedded-opentype'),
+         url('../font/symbol.woff') format('woff'),
+         url('../font/symbol.ttf') format('truetype'),
+         url('../font/symbol.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.symbol {font-family:'symbol'; font-size:80px; line-height:80px; vertical-align:bottom; cursor:pointer;}
+body {font-family:Arial, Helvetica, sans-serif;}
+#work p {font-family:dotum; font-size:12px;}
+
+
+
+

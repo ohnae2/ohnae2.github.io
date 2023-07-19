@@ -1,0 +1,263 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<link rel="stylesheet" href="css/common.css">
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.transform-0.9.3.min.js"></script>
+<script>
+$(function(){
+	//hvac
+	$("#hvac .btn_ud ul li").hover(function(){		
+		$(this).addClass("active");
+	},function(){
+		$(this).removeClass("active");
+	});	
+	$("#hvac .btn ul li.front span").click(function(){
+		$(this).toggleClass("on");
+		$("#hvac .ly_pop").show();
+		$("#hvac .ly_pop span").hide();
+		$("#hvac .ly_pop span.front").show();
+		$("#hvac .ly_ico span.front").toggle();		
+	});
+	$("#hvac .btn ul li.rear span").click(function(){
+		$(this).toggleClass("on");		
+		$("#hvac .ly_pop").show();
+		$("#hvac .ly_pop span").hide();
+		$("#hvac .ly_pop span.rear").show();
+		$("#hvac .ly_ico span.rear").toggle();	
+	});
+	$("#hvac .btn ul li.auto span").click(function(){
+		$(this).toggleClass("on");
+		$("#hvac .ly_pop").show();
+		$("#hvac .ly_pop span").hide();
+		$("#hvac .ly_pop span.auto").show();
+		$("#hvac .ly_ico span.auto").toggle();
+	});
+	$("#hvac .btn ul li.aircon span").toggle(function(){		
+			$(this).addClass("on");
+			$("#hvac .btn ol li:eq(0)").addClass("on");		
+			$("#hvac .ly_ico span.aircon_ico").show();			
+			$("#hvac .ly_pop").show();
+			$("#hvac .ly_pop span").hide();
+			$("#hvac .ly_pop span.aircon").show();				
+		},function(){
+			$(this).removeClass("on");
+			$("#hvac .btn ol li").removeClass("on");
+			$("#hvac .ly_ico span.aircon_ico").hide();				
+		}
+	);	
+	$("#hvac .seat span").toggle(function(){		
+			$(this).attr("class","lv1");
+			$("#hvac .ly_pop").show();
+			$("#hvac .ly_pop span").hide();
+			$("#hvac .ly_pop span.seat1").show();			
+			$("#hvac .ly_ico span.seat1,#hvac .ly_ico span.seat2,#hvac .ly_ico span.seat3").hide();			
+			$("#hvac .ly_ico span.seat1").show();		
+			
+		},function(){
+			$(this).attr("class","lv2");
+			$("#hvac .ly_pop span").hide();
+			$("#hvac .ly_pop span.seat2").show();	
+			$("#hvac .ly_ico span.seat1,#hvac .ly_ico span.seat2,#hvac .ly_ico span.seat3").hide();			
+			$("#hvac .ly_ico span.seat2").show();
+		},function(){
+			$(this).attr("class","lv3");
+			$("#hvac .ly_pop span").hide();
+			$("#hvac .ly_pop span.seat3").show();	
+			$("#hvac .ly_ico span.seat1,#hvac .ly_ico span.seat2,#hvac .ly_ico span.seat3").hide();			
+			$("#hvac .ly_ico span.seat3").show();
+		},function(){
+			$(this).attr("class","lv0");
+			$("#hvac .ly_pop span").hide();
+			$("#hvac .ly_ico span.seat1,#hvac .ly_ico span.seat2,#hvac .ly_ico span.seat3").hide();	
+		}
+	);
+	$("#hvac .btn ol li").click(function(){
+		$("#hvac .btn ol li,#hvac .aircon span").addClass("on");
+		$("#hvac .btn ol li:gt("+$(this).index()+")").removeClass("on");		
+	});	
+	$("#hvac .ly_f .fan").click(function(){
+		$(this).parent().toggleClass("off");
+	});
+	$("#hvac .ly_f li").mouseover(function(){
+		var v = Math.abs($(this).index() - 8);
+		$(this).parent().parent().removeClass("off");
+		$(this).parent().parent().removeClass("lv0").removeClass("lv1").removeClass("lv2").removeClass("lv3").removeClass("lv4").removeClass("lv5").removeClass("lv6").removeClass("lv7").removeClass("lv8");		
+		$(this).parent().parent().addClass("lv"+v);
+	});	
+	function ani_seat(){		
+		$(".ly_ico span.seat3").fadeIn(500);
+		$(".ly_ico span.seat3").animate({marginTop:20},500).fadeOut(1000).animate({marginTop:0},500);
+	}
+	setInterval(ani_seat,1100);	
+	function ani_aircon(){			
+		$(".aircon_ico .ico1 img,.aircon_ico .ico5 img").stop().fadeIn(600).fadeOut(600);
+		$(".aircon_ico .ico2 img,.aircon_ico .ico6 img").stop().fadeIn(800).fadeOut(800);
+		$(".aircon_ico .ico3 img,.aircon_ico .ico7 img").stop().fadeIn(1000).fadeOut(1000);
+		$(".aircon_ico .ico4 img,.aircon_ico .ico8 img").stop().fadeIn(1200).fadeOut(1200);
+	}
+	setInterval(ani_aircon,3500);
+	function ani_front(){		
+		$(".ly_ico span.front").fadeIn(700);
+		$(".ly_ico span.front").animate({marginTop:-20},500).fadeOut(1000).animate({marginTop:0},500);
+	}
+	setInterval(ani_front,1600)
+	function ani_rear(){		
+		$(".ly_ico span.rear").fadeIn(700);
+		$(".ly_ico span.rear").animate({marginTop:0},500).fadeOut(1000).animate({marginTop:0},500);
+	}
+	setInterval(ani_rear,1200)
+	function ani_auto(){		
+		$(".ly_ico span.auto1").fadeIn(600);
+		$(".ly_ico span.auto1").animate({marginLeft:-10},500).fadeOut(1000).animate({marginLeft:0},500);
+		$(".ly_ico span.auto2").fadeIn(600);
+		$(".ly_ico span.auto2").animate({marginLeft:10},500).fadeOut(1000).animate({marginLeft:0},500);
+	}
+	setInterval(ani_auto,1300);
+});
+</script>
+</head>
+<body>
+<div id="body">
+
+
+<div id="hvac">
+	<div class="close"></div>	
+	<div class="time_b">	
+		<ul>
+			<li><img src="img/time/b_minus.png" alt=""></li>
+			<li><img src="img/time/b_2.png" alt=""></li>
+			<li><img src="img/time/b_6.png" alt=""></li>
+		</ul>
+	</div>	
+	<div class="time_s">	
+		<ul>
+			<li><img src="img/time/b_minus.png" alt=""></li>
+			<li><img src="img/time/b_3.png" alt=""></li>
+			<li><img src="img/time/b_7.png" alt=""></li>
+		</ul>
+	</div>
+	<div class="btn_ud">
+		<ul>
+			<li class="up"><span></span></li>
+			<li class="down"><span></span></li>
+		</ul>
+	</div>	
+	<div class="time_s">	
+		<ul>
+			<li><img src="img/time/b_minus.png" alt=""></li>
+			<li><img src="img/time/b_3.png" alt=""></li>
+			<li><img src="img/time/b_7.png" alt=""></li>
+		</ul>
+	</div>
+	<div class="btn">
+		<ul>
+			<li class="aircon"><span></span></li>
+			<li class="seat"><span class="lv0"></span></li>
+			<li class="front"><span></span></li>
+			<li class="rear"><span></span></li>
+			<li class="auto"><span></span></li>
+		</ul>
+	</div>
+
+	<div class="ly_snow1"></div>
+	<div class="ly_snow2"></div>
+	<div class="ly_snow3"></div>
+	<div class="ly_auto"></div>
+	<div class="ly_defroster"></div>
+	<div class="ly_defogger"></div>
+	
+	<div class="ly_pop">
+		<span class="aircon"></span>
+		<span class="seat1"></span>
+		<span class="seat2"></span>
+		<span class="seat3"></span>
+		<span class="front"></span>
+		<span class="rear"></span>
+		<span class="auto"></span>
+	</div>
+	<div class="ly_ico">
+		<span class="aircon1"></span>
+		<span class="aircon2"></span>
+		<span class="aircon3"></span>
+		<span class="seat1"></span>
+		<span class="seat2"></span>
+		<span class="seat3"></span>
+		<span class="front"></span>
+		<span class="rear"></span>				
+		<span class="auto1"></span>
+		<span class="auto2"></span>
+		<ul class="aircon_ico">
+			<li class="ico1"><img src="img/hvac/snow.png" alt=""></li>
+			<li class="ico2"><img src="img/hvac/snow.png" alt=""></li>
+			<li class="ico3"><img src="img/hvac/snow.png" alt=""></li>
+			<li class="ico4"><img src="img/hvac/snow.png" alt=""></li>
+			<li class="ico5"><img src="img/hvac/snow.png" alt=""></li>
+			<li class="ico6"><img src="img/hvac/snow.png" alt=""></li>
+			<li class="ico7"><img src="img/hvac/snow.png" alt=""></li>
+			<li class="ico8"><img src="img/hvac/snow.png" alt=""></li>
+		</ul>
+	</div>
+	
+	
+	<div class="ly_f an_1 off lv1">
+		<span class="fan"></span>
+		<ul>
+			<li><span></span></li>
+			<li><span></span></li>
+			<li><span></span></li>
+			<li><span></span></li>
+			<li><span></span></li>
+			<li><span></span></li>
+			<li><span></span></li>
+			<li><span></span></li>
+		</ul>
+	</div>
+	<div class="ly_f an_2 off lv2">
+		<span class="fan"></span>
+		<ul>
+			<li><span></span></li>
+			<li><span></span></li>
+			<li><span></span></li>
+			<li><span></span></li>
+			<li><span></span></li>
+			<li><span></span></li>
+			<li><span></span></li>
+			<li><span></span></li>
+		</ul>
+	</div>
+	<div class="ly_f an_3 off lv3">
+		<span class="fan"></span>
+		<ul>
+			<li><span></span></li>
+			<li><span></span></li>
+			<li><span></span></li>
+			<li><span></span></li>
+			<li><span></span></li>
+			<li><span></span></li>
+			<li><span></span></li>
+			<li><span></span></li>
+		</ul>
+	</div>
+	<div class="ly_f an_4 off lv4">
+		<span class="fan"></span>
+		<ul>
+			<li><span></span></li>
+			<li><span></span></li>
+			<li><span></span></li>
+			<li><span></span></li>
+			<li><span></span></li>
+			<li><span></span></li>
+			<li><span></span></li>
+			<li><span></span></li>
+		</ul>
+	</div>	
+</div>
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="kor" data-ng-app="KaisaApp" data-ng-controller="KaisaController">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta name="robots" content="index,follow">
+<title>Kaisa</title>
+<meta name="keywords" content="Kaisa,가이사,카이사,가평,홈페이지">
+<meta name="description" content="Kaisa,가이사,카이사,가평,홈페이지">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kaisa">
+<meta property="og:description" content="Kaisa,가이사,카이사,가평,홈페이지">
+<meta property="og:image" content="http://kaisa.co.kr/img/common/logo.png">
+<meta property="og:url" content="http://kaisa.co.kr">
+<meta name="fragment" content="!">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<link rel="shortcut icon" href="/img/favicon.ico?ver=0.1" type="image/x-icon">
+<link rel="stylesheet" href="/css/common.css" type="text/css">
+<link rel="stylesheet" href="/css/ex/order.css" type="text/css">
+<!--[if lt IE 10]>
+<link rel="stylesheet" href="/css/old_browser.css" type="text/css" />
+<![endif]-->
+<!--[if IE 8]>
+<script src="/js/lib/es/es5-shim.min.js"></script>
+<![endif]-->
+<script src="/js/lib/jquery/jquery-1.11.1.min.js"></script>
+<script src="/js/lib/angular/angular.min.js"></script>
+<script src="/js/min/kaisa.js"></script>
+<script src="/js/controller/ex/order.js"></script>
+</head>
+<body data-ng-controller="BodyController">
+<div data-kaisa-header="true"></div>
+<div data-kaisa-menu="true"></div>
+<div id="container">	
+	<div id="order">
+		<div class="wrap">
+			<div data-study-menu="true"></div>
+			<div class="orderWrap">
+				
+				<h2>Order</h2>
+				<h3>정책</h3>
+				<ol class="policy">
+					<li>주문 페이지 진입시 상품가격이력을 고정하는가 ? <select disabled="disabled"><option selected="selected">Y</option><option>N</option></select></li>
+					<li>0.1 + 0.2 = {{0.1 + 0.2}} 부동소수 오류에 대한 해결책은 ? <select disabled="disabled"><option selected="selected">Y</option><option>N</option></select></li>
+					<li>주결제 수단으로 100원미만은 결제 할 수 있는가 ? <select disabled="disabled"><option selected="selected">Y</option><option>N</option></select></li>
+				</ol>
+				
+				
+				
+				<h3>주문 상품</h3>
+				<table class="product">
+					<colgroup>
+						<col width="50" />
+						<col width="*" />
+						<col width="200" />
+						<col width="100" />
+					</colgroup>
+					<tr>
+						<th>선택</th>
+						<th>상품명</th>
+						<th>가격</th>
+						<th>수량</th>
+					</tr>
+					<tr data-ng-repeat="(idx,i) in product.list">
+						<td class="tc"><input type="checkbox" data-ng-model="i.checked" /></td>
+						<td>{{i.name + (idx+1)}}</td>
+						<td><input type="text" maxlength="30" data-max-number="100000000" ng-model="i.price" /></td>
+						<td><input type="text" maxlength="3" data-max-number="100" ng-model="i.quantity" style="width:50px;" /> 개</td>
+					</tr>
+				</table>
+				<div class="btnWrap">
+					<button type="button" class="on" data-ng-click="product.add()">추가</button>
+					<button type="button" data-ng-click="product.remove()">삭제</button>
+				</div>
+				
+				<h3>환율 <span>(2018-08-01 11:00)</span></h3>
+				<table class="country">
+					<colgroup>
+						<col width="100" />
+						<col width="100" />
+						<col width="*" />
+					</colgroup>
+					<tr>
+						<th>화폐</th>
+						<th>국가</th>
+						<th>환율</th>
+						<th>총 정상 금액 </th>
+					</tr>
+					<tr data-ng-repeat="(idx,i) in exchange">
+						<td>{{i.name}}</td>
+						<td>{{i.country}}</td>
+						<td><input type="text" data-ng-model="i.price" data-ng-readonly="i.name == 'WON'" /></td>
+						<td class="total"><span data-ng-if="!i.after">{{i.mark}}</span>{{payment.price.total * ((i.name == 'JPY100') ? 100 : 1) / i.price | toFixed : ((i.name == 'WON') ? '0' : '2')}}<span data-ng-if="i.after">{{i.mark}}</span></td>
+					</tr>
+				</table>
+				
+				<h3>회원 포인트 사용 가능 금액</h3>
+				
+				<dl class="member" data-ng-repeat="(idx,i) in member.subPayUseable">
+					<dt>{{i.name}} : </dt>
+					<dd><span>{{i.price | toCurrency}} -> </span>{{i.price - member.subPayUsed[idx].price}}</dd>
+				</dl>
+				
+				<h3>보조결제 사용 금액</h3>
+				
+				<dl class="subPay" data-ng-repeat="(idx,i) in code.subPay">
+					<dt>{{i.name}} : </dt>
+					<dd>{{idx}}
+						<input data-ng-blur="payment.check(idx)" data-max-number="100000000000000" data-ng-readonly="member.subPayUsed[idx].checked || (payment.price.main <= 0 && member.subPayUsed[idx].price == 0)" maxlength="30" data-ng-model="member.subPayUsed[idx].price" type="text" />
+						<input type="checkbox" data-ng-model="member.subPayUsed[idx].checked" />
+					</dd>
+				</dl>
+				
+				<p class="total">보조결제 사용 금액 : <strong>{{payment.price.sub}}</strong></p>
+				
+				<h3>주결제 금액</h3>
+			
+				<p class="total">총 주결제 가능 금액 : <strong>{{payment.price.main}}</strong></p>
+				
+				<div class="btnWrap">
+					<button type="button" class="on" data-ng-click="payment.order()">주문</button>
+				</div>
+				
+				<h3>환율 <span>(2018-08-01 11:00)</span></h3>
+				<table class="country">
+					<colgroup>
+						<col width="100" />
+						<col width="100" />
+						<col width="*" />
+					</colgroup>
+					<tr>
+						<th>화폐</th>
+						<th>국가</th>
+						<th>환율</th>
+						<th>총 정상 금액 </th>
+					</tr>
+					<tr data-ng-repeat="(idx,i) in exchange">
+						<td>{{i.name}}</td>
+						<td>{{i.country}}</td>
+						<td><input type="text" data-ng-model="i.price" data-ng-readonly="i.name == 'WON'" /></td>
+						<td class="total"><span data-ng-if="!i.after">{{i.mark}}</span>{{payment.price.main * ((i.name == 'JPY100') ? 100 : 1) / i.price | toFixed : ((i.name == 'WON') ? '0' : '2')}}<span data-ng-if="i.after">{{i.mark}}</span></td>
+					</tr>
+				</table>
+				
+				
+			</div>
+		</div>
+	</div>
+</div>
+<div data-kaisa-footer="true"></div>
+</body>
+</html>

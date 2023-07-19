@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+#batch {width:100%; overflow:hidden; clear:both;}
+#batch .batchWrap {width:100%; overflow:hidden; clear:both; padding-top:30px;}
+
+ol.policy {padding:0 30px; }
+ol.policy li {list-style:decimal; padding:0 5px;}
+
+table.batch {width:100%; line-height:17px; clear:both; margin-top:20px;}
+table.batch th {padding:2px 5px; text-align:center; border:1px solid #ccc; background:#eee;}
+table.batch td {padding:2px 5px; border:1px solid #ccc;}
+table.batch td.red {color:#ff5500}
+table.batch td.no {color:#000; text-decoration:underline;}
+table.batch td b {color:#ff5500}
+table.batch td u {color:#04B404}
+table.batch td span {color:#aaa; font-size:11px;}
+table.batch td .ly {position:absolute; margin-left:50px; margin-top:-18px; font-size:9px; color:#888; border:1px solid #aaa; background:#fff; padding:3px; line-height:10px;}

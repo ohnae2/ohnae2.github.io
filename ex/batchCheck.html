@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="kor" data-ng-app="KaisaApp" data-ng-controller="KaisaController">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta name="robots" content="index,follow">
+<title>Kaisa</title>
+<meta name="keywords" content="Kaisa,가이사,카이사,가평,홈페이지">
+<meta name="description" content="Kaisa,가이사,카이사,가평,홈페이지">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kaisa">
+<meta property="og:description" content="Kaisa,가이사,카이사,가평,홈페이지">
+<meta property="og:image" content="http://kaisa.co.kr/img/common/logo.png">
+<meta property="og:url" content="http://kaisa.co.kr">
+<meta name="fragment" content="!">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<link rel="shortcut icon" href="/img/favicon.ico?ver=0.1" type="image/x-icon">
+<link rel="stylesheet" href="/css/common.css" type="text/css">
+<link rel="stylesheet" href="/css/ex/batchCheck.css" type="text/css">
+<!--[if lt IE 10]>
+<link rel="stylesheet" href="/css/old_browser.css" type="text/css" />
+<![endif]-->
+<!--[if IE 8]>
+<script src="/js/lib/es/es5-shim.min.js"></script>
+<![endif]-->
+<script src="/js/lib/jquery/jquery-1.11.1.min.js"></script>
+<script src="/js/lib/angular/angular.min.js"></script>
+<script src="/js/min/kaisa.js"></script>
+<script src="/js/controller/ex/batchCheck.js"></script>
+</head>
+<body data-ng-controller="BodyController">
+<div data-kaisa-header="true"></div>
+<div data-kaisa-menu="true"></div>
+<div id="container">
+	<div id="batch">
+		<div class="wrap">
+			<div data-study-menu="true"></div>
+			<div class="batchWrap">
+				<div class="leftWrap">
+					<h2>Batch Check</h2>
+					<ul class="tab">
+						<li ng-repeat="i in site.base" data-ng-class="{on : site.idx == i.site_no}" data-ng-click="site.idx = i.site_no">{{i.site_nm}}</li>
+					</ul>
+					<div class="con">
+						<h3>{{site.base[site.idx - 1].site_nm}}</h3>
+						<textarea data-ng-show="site.idx == 1">
+[ElevenStGoodsInfo_Batch2]
+11st_Goods_batch : 482 (인터넷 상품)
+mergeYn : 'Y', rowNum : null, batchId : 482 , rowNum : ?
+11st_Goods_batch -> Batch Shell -> Batch Java -> batchLogSctCd(ES-G0008) -> Hang Up 방지 코드( 서버시간 (yyyyMMddHH24MISS) , killTime(70))
+배치 실행중 여부 & error 체크(9999 에러, 0000 성공) -> 배치 시작
+elevenStGoodsInfoBatchMgr.startElevenStGoodsBatch(mergeYn, rowNum, batchId, batchLogSctCd)
+
+[ElevenStGoodsInfoBatchMgr -> startElevenStGoodsBatch]
+batchLogSctCd : ES-G0008,
+(403)mrgnRtParam 백화점 기준 마진율 : 3%, srcgMdmCdParam : 31, siteNoParam : 4
+(482)mrgnRtParam 인터넷 기준 마진율 : 6%, srcgMdmCdParam : 21, siteNoParam : 5
+(598)mrgnRtParam TV 기준 마진율 : 10%, srcgMdmCdParam : 11, siteNoParam : 6
+TARGET_WAS , system.was.target = 'real'
+getGoodsAddMgmtSn : ?? 연동불가 시작 끝 조회 (상품추가관리 히스토리 일련번호 대입)
+작업대상 START 시간 찾기
+순번 관리시에만 인터넷 사이트번호 5, 일반 상품연동은 모두 4
+단일커밋세팅
+ST_BATCH_LOG 배치로그 입력
+
+0. mergeYn ? Y
+
+
+1. INFO_START_SN < INFO_END_SN ? 연동불가대상
+INFO_YN = Y
+1-1. LINK_TP_CD : NOS 연동불가대상
+연동 불가대상 조회 해서 SITE_GOODS_NO 있으면 수정 없으면 삭제(상품번호삭제 ,  가격,옵션 전송대상 수정)
+1-2. 전송대상수정 INFO_YN : D : 연동제한해제조회 (기존 LINK_TP_CD == 'NEW'? 새로 등록)
+
+마진체크제외
+연동불가 마지막 번호 저장
+
+2. HIST_START_SN < HIST_END_SN ? 연동불가대상
+INFO_YN = N
+2-1. LINK_TP_CD : NEW ? 전송대상등록 : 수정
+
+
+INFO_YN = M
+연동불가해제대상 조회
+
+2-2. LINK_TP_CD : NEW ? 전송대상등록 : 수정
+2-2. LINK_TP_CD : NOM ? 전송대상등록 : 수정 //마진체크
+
+LINK_TP_CD = NOM 마진체크
+
+fncThread(elevenStGoodsInfoDao.selectSendGoodsXList(cmParam));
+
+마진체크제외 해제(연동불가대상)전송
+연동불가 마지막 번호 저장
+
+
+3. MPPG_INFO_START_SN < MPPG_INFO_END_SN
+카테고리수정대상 조회
+가격,옵션 전송대상 수정
+카테고리변경대상
+
+
+4. 마진체크 비전시해제 대상 - 상품등록/수정 만들대상
+
+4-1. LINK_TP_CD : NEW ? 전송대상등록 : 수정
+4-2. LINK_TP_CD : NOM ? 전송대상등록 : 수정 //마진체크
+
+마진체크 비전시 대상(신규상품)
+마진체크 비전시 대상(쿠폰변경)
+
+가격전송대상
+단품전송대상
+						</textarea>
+						<textarea data-ng-show="site.idx == 2">
+
+						</textarea>
+						<textarea data-ng-show="site.idx == 3">
+
+						</textarea>
+						<textarea data-ng-show="site.idx == 4">
+
+						</textarea>
+					</div>
+				</div>
+				<div class="rightWrap">
+					<h2>Cc Site</h2>
+					<table class="batch">
+						<colgroup>
+							<col width="50" />
+							<col width="*" />
+							<col width="*" />
+							<col width="*" />
+						</colgroup>
+						<tr>
+							<th>번호</th>
+							<th>이름</th>
+							<th>협력사번호</th>
+							<th>협력사계약번호</th>
+						</tr>
+						<tr data-ng-repeat="(idx,i) in site.cc">
+							<td class="tc no">{{i.site_no}}</td>
+							<td>{{i.site_nm}}</td>
+							<td>{{i.entr_no}}</td>
+							<td>{{i.entr_contr_no}}</td>
+						</tr>
+					</table>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+<div data-kaisa-footer="true"></div>
+</body>
+</html>

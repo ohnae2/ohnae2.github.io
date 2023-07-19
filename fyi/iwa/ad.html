@@ -1,0 +1,163 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="cache-control" content="no-cache">
+<title></title>
+<link rel="stylesheet" href="css/ad.css">
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.pub.js"></script>
+<script src="js/jquery.plax.js"></script>
+<script>
+$(function(){
+	$('.main1').plaxify({"xRange":30,"yRange":30})
+	$('.main2').plaxify({"xRange":20,"yRange":20})
+	$('.main3').plaxify({"xRange":10,"yRange":10})
+	$.plax.enable()
+})
+</script>
+</head>
+<body>
+
+<div id="help"></div>
+<div id="top"></div>
+<div id="mask"></div>
+<div id="login" class="pop_type">
+	<span class="close"></span>
+	<h1>LOGIN</h1>		
+	<fieldset>
+		<legend>LOGIN</legend>			
+		<input type="text" title="사용자 ID">
+		<input type="password" title="비밀번호">			
+		<button class="submit">로그인</button>
+	</fieldset>	
+	<p class="error">잘못된 비밀번호입니다</p>
+	<p>아이디,비밀번호를 찾고 계신가요?</p>
+	<button>사용자ID 찾기</button>
+	<button>비밀번호 찾기</button>
+	<p>회원가입하시겠습니까?</p>
+	<button>사용자 등록하기</button>
+	<button>개발자 등록하기</button>
+</div>
+<div id="join" class="pop_type">
+	<span class="close"></span>
+	<h1>JOIN</h1>		
+	<fieldset>
+		<legend>JOIN</legend>			
+		<input class="ok" type="text" title="사용자 ID">
+		<p><span class="ok">사용할 수 있는 아이디입니다</span></p>
+		<input class="no" type="text" title="Email">
+		<p><span class="no">잘못된 메일형식입니다</span></p>
+		<input type="password" title="비밀번호 입력">
+		<p>비밀번호를 입력해주세요</p>
+		<input type="password" title="비밀번호 확인">
+		<p>비밀번호를 확인해주세요</p>		
+		<p class="tr"><input type="checkbox" class="checkbox"> 약관동의</p>
+		<p class="btn"><button type="submit" class="submit">등록하기</button></p>
+	</fieldset>	
+	
+	<p>개발자로 등록하시겠습니까?</p>
+	<button>개발자 등록하기</button>
+</div>
+<!--ad_bar-->	
+<div id="ad_bar"></div>
+<!--container-->
+
+<div id="main_ani">	
+	<div class="main1 ico_main"></div>
+	<div class="main2 ico_main"></div>
+	<div class="main3 ico_main"></div>
+</div>
+<div id="container">	
+
+	<!--header-->	
+	<div id="header">
+		<h1><b>IWA</b> Advertising</h1>		
+		<fieldset>
+			<legend>search,login</legend>
+			<input type="text" title="검색어를 입력하세요" value="">
+			<button type="submit">검색</button>	
+		</fieldset>	
+		<ul id="global"></ul>
+	</div>	
+	<!--wrap-->	
+	<div id="gnb">
+		<ul>
+			<li><strong><b>광고주</b> <span>For Client</span></strong></li>
+			<li><strong><b>개발자</b> <span>For Developer</span></strong></li>
+			<li><strong><b>가이드</b> <span>For Guide</span></strong></li>
+			<li><strong><b>고객지원</b> <span>Customer Service</span></strong></li>
+		</ul>
+	</div>
+	
+	<div class="main_space"></div>
+	
+	<div id="content">
+		<div id="main">
+			<div class="latest">
+				<div class="ad">
+					<h2>ad</h2>
+					<p>국내 최대규모의 매체 확보 플랫폼<br>모바일 마케팅을 도와드립니다.</p>
+					<button>광고등록하기</button>
+				</div>
+				<div class="app">
+					<h2>app</h2>
+					<p>국내 광고시장에 최적화된<br>새로운 모바일 비즈니스를 경험해보세요.</p>
+					<button>앱고등록하기</button>
+				</div>
+				<div class="news">
+					<h2>news <button class="btn_more">더보기</button></h2>					
+					<ul>
+						<li><a href="#">[알림] 11월 05일(월) 긴급 서버 점검 안내<span class="new"></span> </a> <span class="date">2012-11-05</span></li>
+						<li><a href="#">[알림] 11월 05일(월) 긴급 서버 점검 안내</a> <span class="date">2012-11-05</span></li>
+						<li><a href="#">[알림] 11월 05일(월) 긴급 서버 점검 안내</a> <span class="date">2012-11-05</span></li>
+						<li><a href="#">[알림] 11월 05일(월) 긴급 서버 점검 안내</a> <span class="date">2012-11-05</span></li>
+						<li><a href="#">[알림] 11월 05일(월) 긴급 서버 점검 안내</a> <span class="date">2012-11-05</span></li>
+					</ul>
+				</div>			
+				<div class="rep">
+					<h2>report <button class="btn_report">리포트 PDF</button></h2>
+					<p>"정직한 데이터를 분석한 모바일 리포트로<br>모바일 생태계의 중심이 되겠습니다."</p>
+					
+				</div>
+				<div class="lib">
+					<h2>library</h2>
+					<p>"제공하는 최신<br>Android, iOS SDK를 편리하게 다운받으세요"</p>				
+				</div>				
+				<button class="btn_update">android,iOS SDK UPDATE</button>				
+			</div>			
+		</div>		
+	</div>
+	
+	
+	<div id="banner">
+		<div class="before"><span></span></div>
+		<div class="next"><span></span></div>
+		<div class="scroll">
+			<ul>
+				<li><img src="img/test/eland.png" alt=""></li>
+				<li><img src="img/test/ergo.png" alt=""></li>
+				<li><img src="img/test/gsshop.png" alt=""></li>
+				<li><img src="img/test/kia.png" alt=""></li>
+				<li><img src="img/test/kt.png" alt=""></li>
+				<li><img src="img/test/eland.png" alt=""></li>
+				<li><img src="img/test/ergo.png" alt=""></li>
+				<li><img src="img/test/gsshop.png" alt=""></li>
+				<li><img src="img/test/kia.png" alt=""></li>
+				<li><img src="img/test/kt.png" alt=""></li>
+			</ul>
+		</div>
+	</div>
+	
+	<!--footer-->
+	<div id="footer">
+		<p>IWA Inc. Copyright ⓒ 2011 all rights reserved.</p>
+	</div>
+</div>
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,155 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>:: Html Guide ::</title>
+<link rel="stylesheet" href="../css/guide/design.css" type="text/css" media="all">
+<link rel="stylesheet" href="../css/print.css" type="text/css" media="print">
+<script type="text/javascript" src="../js/common.js"></script>
+<script type="text/javascript" src="../js/flashX.js"></script>
+</head>
+<body>
+<div class="writer">차세대전산 TFT / kaisa</div>
+<div id="Container">
+	<div id="Top">
+		<ul>
+			<li><a href="list.html">목차</a></li>
+			<li><a href="web01.html">문서구조</a></li>
+			<li class="on">디자인 요소</li>
+		</ul>
+	</div>
+	<h1><img src="../images/guide/title.jpg" alt="LIG WEBSTYLE GUIDE"></h1>
+	<div id="titleTle">
+		<ul class="guideTab">		
+			<li><a href="design01.html">아이콘</a></li>
+			<li><a href="design02.html">블릿</a></li>
+			<li><a href="design03.html">버튼</a></li>
+			<li><a href="design04.html">레어아웃</a></li>
+			<li class="on">플래시</li>
+			<li><a href="design06.html">폰트</a></li>
+			<li><a href="design07.html">테이블</a></li>
+			<li><a href="design08.html">Input</a></li>
+			<li><a href="design09.html">Select</a></li>
+			<li><a href="design10.html">Radio</a></li>
+			<li><a href="design11.html">CheckBox</a></li>
+			<li><a href="design12.html">TextArea</a></li>
+			<li><a href="design13.html">그리드</a></li>
+			<li><a href="design14.html">탭메뉴</a></li>
+		</ul>
+	</div>
+	<ol>
+		<li>
+			<h2>링크</h2>
+			<p>- JS/Common.js  링크제어</p>
+			<div class="code">
+				<p>//Flash URL<br>
+					function flashAction(param)<br>
+					{ <br>
+					<span class="pl30">&nbsp;</span>switch(param)<br>
+					<span class="pl20">&nbsp;</span>{<br>
+					<span class="pl40">&nbsp;</span>case &quot;링크1&quot;	:location.href = &quot;#&quot;;break;<br>
+					<span class="pl40">&nbsp;</span>case &quot;링크2&quot;	:location.href = &quot;#&quot;;break;<br>
+					<span class="pl40">&nbsp;</span>case &quot;링크3&quot;	:location.href = &quot;#&quot;;break;<br>
+					<span class="pl40">&nbsp;</span>case &quot;링크4&quot;	:location.href = &quot;#&quot;;break;</p>
+				<p> <span class="pl40">&nbsp;</span>default : alert(param);<br>
+					<span class="pl20">&nbsp;</span>}<br>
+					}</p>
+			</div>
+		</li>
+		<li>
+			<h2>플래시 제어</h2>
+			<p>- JS/flashX.js</p>
+			<div class="code">
+				<p><span class="Forange">&nbsp;//ex)&lt;script type=&quot;text/javascript&quot;&gt;flashX('slide.swf','462','495','slide');&lt;/script&gt;</span> == html 사용시<br>
+					function flashX(src,w,h,swfid){<br>
+					swf_html = '';<br>
+					swf_html += '&lt;object classid=&quot;clsid:d27cdb6e-ae6d-11cf-96b8-444553540000&quot; codebase=&quot;http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0&quot; width=&quot;'+w+'&quot; height=&quot;'+h+'&quot; id=&quot;'+swfid+'&quot;&gt;';<br>
+					swf_html += '&lt;param name=&quot;allowScriptAccess&quot; value=&quot;always&quot;&gt;';<br>
+					swf_html += '&lt;param name=&quot;movie&quot; value=&quot;'+src+'&quot;&gt;';<br>
+					swf_html += '&lt;param name=&quot;quality&quot; value=&quot;high&quot;&gt;';<br>
+					swf_html += '&lt;param name=&quot;bgcolor&quot; value=&quot;#FFFFFF&quot;&gt;';<br>
+					swf_html += '&lt;PARAM NAME=&quot;wmode&quot; VALUE=&quot;transparent&quot;&gt;';<br>
+					swf_html += '&lt;embed src=&quot;'+src+'&quot; quality=&quot;high&quot; bgcolor=&quot;#FFFFFF&quot; width=&quot;'+w+'&quot; height=&quot;'+h+'&quot; name=&quot;'+swfid+'&quot; allowScriptAccess=&quot;always&quot; wmode=&quot;transparent&quot; type=&quot;application/x-shockwave-flash&quot; pluginspage=&quot;http://www.macromedia.com/go/getflashplayer&quot;&gt;';<br>
+					swf_html += '&lt;/object&gt;';<br>
+					document.write(swf_html);<br>
+					}</p>
+			</div>
+		</li>
+		<li>
+			<h2>AS2.0</h2>
+			<p>- 1프레임에 AS 작성</p>
+			<p>- 심볼/무비클립 네이밍</p>
+			<p>- CPU 점유율 고려 <span class="Forange">ex) delete this.onEnterFrame;</span></p>
+			<div class="code">
+				System.useCodepage = true;<br>
+				Stage.scaleMode = &quot;noscale&quot;;<br>
+				Stage.showMenu = false;<br>
+				Stage.align = &quot;TL&quot;;<br>
+				setProperty(&quot;&quot;, _focusrect, false);<br>
+				MovieClip.prototype.smoothMove = function(tx, ty, ratio) {<br>
+				this._x = this._x+(tx-this._x)*ratio;<br>
+				this._y = this._y+(ty-this._y)*ratio;<br>
+				};<br>
+				var selMenu;<br>
+				if (selMenu != 1 &amp; selMenu != 2 &amp; selMenu != 3 &amp; selMenu != 4) {<br>
+				selMenu = 1;<br>
+				}<br>
+				var speed:Number = 0.5;<br>
+				var menuOfNum:Number = 5;<br>
+				function menuSet(num) {<br>
+				for (var i = 0; i&lt;menuOfNum; ++i) {<br>
+				this[&quot;g&quot;+i].onEnterFrame = function() {<br>
+				if (this._name.substring(1) == num) {<br>
+				this.nextFrame();<br>
+				gotoAndStop(this._name.substring(1)+2);<br>
+				if (this._currentframe == this._totalframes) {<br>
+				delete this.onEnterFrame;<br>
+				}<br>
+				.<br>
+				.<br>
+				.<br>
+				}<br>
+				}<br>
+				};<br>
+				}<br>
+				}<br>
+				Stage.addListener(stageListener);<br>
+				var initDepth = selMenu-1;<br>
+				menuSet(initDepth);<br>
+				var i = 0;<br>
+				while (i&lt;menuOfNum) {<br>
+				this[&quot;s&quot;+i].btn.onRollOver = function() {<br>
+				//menuSet(this._parent._name.substring(1));<br>
+				};<br>
+				this[&quot;s&quot;+i].btn.onRelease = function() {<br>
+				getURL(&quot;javascript:chgColumnList(&quot;+[this._parent._name.substring(1)]+&quot;)&quot;, &quot;&quot;);<br>
+				menuSet(this._parent._name.substring(1));<br>
+				};<br>
+				this[&quot;s&quot;+i].btn.onRollOut = function() {<br>
+				//menuSet(initDepth);<br>
+				};<br>
+				++i;<br>
+				}<br>
+				stop();<br>
+			</div>
+		</li>
+		<li>
+			<h2>XML연동</h2>
+			<p>- 각 오류를 출력합니다.(개발공통)</p>
+			<div class="code">
+				<p>&lt;?xml version="1.0" encoding="utf-kr"?&gt;</p>
+				<p>&lt;IfHttpVisionCSList&gt;</p>
+					<p class="pl20">&lt;strReturnCode&gt;0&lt;/strReturnCode&gt;</p>
+					<p class="pl20">&lt;!-- 결과코드 정상:0, 에러:-1--&gt; </p>
+					<p class="pl20">&lt;strErrorCode&gt;503&lt;/strErrorCode&gt;&lt;!-- 에러코드 서버반환 에러코드 --&gt; </p>
+					<p class="pl20">&lt;strErrorMsg&gt;![CDATA[에러 내용 입니다]]&gt;&lt;/strErrorMsg&gt; &lt;!-- 에러 메세지 서버반환 에러 메세지 --&gt; </p>
+					<p class="pl20">&lt;VisionCSList&gt;</p>
+						<p class="pl40">&lt;strTitle&gt;&lt;![CDATA[FY2008년 책임준비금 검증을 위한 외부계리법인 선정]]&gt;&lt;/strTitle&gt;&lt;!-- 제목--&gt; </p>
+						<p class="pl40">&lt;strRegDate&gt;20080528132200&lt;/strRegDate&gt;&lt;!-- 보낸 날짜--&gt;</p> 
+						<p class="pl40">&lt;strUrl&gt;&lt;![CDATA[javascript:openVisionCS('http://kms.lig.co.kr/')]]&gt;&lt;/strUrl&gt;&lt;!-- 링크 정보--&gt; </p>
+					<p class="pl20">&lt;/VisionCSList&gt;</p>
+				<p>&lt;/IfHttpVisionCSList&gt;</p>
+			</div>
+		</ol>
+	</div>
+</body>
+</html>

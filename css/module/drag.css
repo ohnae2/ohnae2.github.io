@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+/* drag */
+#kaisaDragClone {display:none; position:absolute; width:100px; height:50px; left:100px; top:100px; z-index:1000; background:url(/img/drag/mask_area.png) repeat;}
+.kaisaDragBtn {width:100px; height:50px; background:url(/img/drag/mask_area.png) repeat;}
+
+.kaisaCanvas {width:600px; margin-right:10px; float:left; border:1px solid #ddd; background:#eee; position:relative;}
+.kaisaCanvas img {width:100%;}
+.kaisaComponent {width:320px; float:left; height:200px; border:1px solid #ddd; background:#efefef;}
+
+.kaisaDragBtn {width:100px; height:50px; background:url(/img/drag/mask_area.png) repeat;}
+
+.kaisaArea.on {z-index:101;}
+.kaisaArea.on span {background-color:#000;}
+.kaisaArea {width:100px; height:50px; min-width:30px; min-height:30px; z-index:100; box-sizing:border-box; position:absolute; left:100px; top:100px;}
+.kaisaArea span {display:block; box-sizing:border-box; cursor:move; width:10px; height:10px; position:absolute; z-index:2; background:url(/img/drag/mask.png) repeat;}
+.kaisaArea span.area {width:100%; height:100%; left:0; top:0; background:url(/img/drag/mask_area.png) repeat; position:absolute; z-index:2;}
+.kaisaArea span.top_left {top:-10px; left:-10px; cursor:nw-resize;}
+.kaisaArea span.top {top:-10px; left:50%; cursor:s-resize; margin-left:-5px;}
+.kaisaArea span.top_right {top:-10px; right:-10px; cursor:ne-resize;}
+.kaisaArea span.close {top:-15px; right:-15px; cursor:pointer; width:15px; height:15px; background:url(/img/drag/close.png) no-repeat;}
+.kaisaArea span.left {left:-10px; top:50%; cursor:e-resize; margin-top:-5px;}
+.kaisaArea span.right {right:-10px; top:50%; cursor:e-resize; margin-top:-5px;}
+.kaisaArea span.bottom_left {bottom:-10px; left:-10px; cursor:sw-resize;}
+.kaisaArea span.bottom {bottom:-10px; left:50%; cursor:s-resize; margin-left:-5px;}
+.kaisaArea span.bottom_right {bottom:-10px; right:-10px; cursor:se-resize;}

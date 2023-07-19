@@ -1,0 +1,64 @@
+{
+	"resultMap": {
+		"items": [
+			{
+				"DIC_NO" : 1,
+				"ABB": "test1",
+				"EN": "test1",
+				"KR": "테스트1",
+				"NOTE": "test1",
+				"CREATED_ID": "2018-03-19",
+				"CREATED_AT": "2018-03-19",
+				"UPDATED_ID": "2018-03-19",
+				"UPDATED_AT": "2018-03-19"
+			},
+			{
+				"DIC_NO" : 2,
+				"ABB": "test2",
+				"EN": "test2",
+				"KR": "테스트2",
+				"NOTE": "test2",
+				"CREATED_ID": "2018-03-19",
+				"CREATED_AT": "2018-03-19",
+				"UPDATED_ID": "2018-03-19",
+				"UPDATED_AT": "2018-03-19"
+			},
+			{
+				"DIC_NO" : 3,
+				"ABB": "test3",
+				"EN": "test3",
+				"KR": "테스트3",
+				"NOTE": "test3",
+				"CREATED_ID": "2018-03-19",
+				"CREATED_AT": "2018-03-19",
+				"UPDATED_ID": "2018-03-19",
+				"UPDATED_AT": "2018-03-19"
+			},
+			{
+				"DIC_NO" : 4,
+				"ABB": "test4",
+				"EN": "test4",
+				"KR": "테스트4",
+				"NOTE": "test4",
+				"CREATED_ID": "2018-03-19",
+				"CREATED_AT": "2018-03-19",
+				"UPDATED_ID": "2018-03-19",
+				"UPDATED_AT": "2018-03-19"
+			},
+			{
+				"DIC_NO" : 5,
+				"ABB": "test5",
+				"EN": "test5",
+				"KR": "테스트5",
+				"NOTE": "test5",
+				"CREATED_ID": "2018-03-19",
+				"CREATED_AT": "2018-03-19",
+				"UPDATED_ID": "2018-03-19",
+				"UPDATED_AT": "2018-03-19"
+			}
+		],
+		"success" : true,
+		"total": 5,
+		"message": "test"
+	}
+}

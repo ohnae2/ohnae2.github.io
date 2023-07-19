@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="kor" data-ng-app="KaisaApp" data-ng-controller="KaisaController">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta name="robots" content="index,follow">
+<title>Kaisa</title>
+<meta name="keywords" content="Kaisa,가이사,카이사,가평,홈페이지">
+<meta name="description" content="Kaisa,가이사,카이사,가평,홈페이지">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kaisa">
+<meta property="og:description" content="Kaisa,가이사,카이사,가평,홈페이지">
+<meta property="og:image" content="http://kaisa.co.kr/img/common/logo.png">
+<meta property="og:url" content="http://kaisa.co.kr">
+<meta name="fragment" content="!">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<link rel="shortcut icon" href="/img/favicon.ico?ver=0.1" type="image/x-icon">
+<link rel="stylesheet" href="/css/common.css" type="text/css">
+<link rel="stylesheet" href="/css/ex/color.css" type="text/css">
+<!--[if lt IE 10]>
+<link rel="stylesheet" href="/css/old_browser.css" type="text/css" />
+<![endif]-->
+<!--[if IE 8]>
+<script src="/js/lib/es/es5-shim.min.js"></script>
+<![endif]-->
+<script src="/js/lib/jquery/jquery-1.11.1.min.js"></script>
+<script src="/js/lib/angular/angular.min.js"></script>
+<script src="/js/min/kaisa.js"></script>
+<script src="/js/controller/ex/color.js"></script>
+</head>
+<body data-ng-controller="BodyController">
+<div data-kaisa-header="true"></div>
+<div data-kaisa-menu="true"></div>
+<div id="container">
+	<div id="color">
+		<div class="wrap">
+			<div data-study-menu="true"></div>
+			<table class="colorT">
+				<tbody>
+					<tr>							
+						<td bgcolor="black">000000<br /> 000, 000, 000</td>
+						<td bgcolor="333333">333333<br /> 051, 051, 051</td>
+						<td bgcolor="666666">666666<br /> 102, 102, 102</td>
+						<td bgcolor="999999">999999<br /> 153, 153, 153</td>
+						<td bgcolor="CCCCCC">CCCCCC<br /> 204, 204, 204</td>
+						<td bgcolor="white">FFFFFF<br /> 255, 255, 255</td>
+					</tr>
+					<tr>							
+						<td bgcolor="000033">000033<br /> 000, 000, 051</td>
+						<td bgcolor="333300">333300<br /> 051, 051, 000</td>
+						<td bgcolor="666600">666600<br /> 102, 102, 000</td>
+						<td bgcolor="999900">999900<br /> 153, 153, 000</td>
+						<td bgcolor="CCCC00">CCCC00<br /> 204, 204, 000</td>
+						<td bgcolor="yellow">FFFF00<br /> 255, 255, 000</td>
+					</tr>
+					<tr>							
+						<td bgcolor="000066">000066<br /> 000, 000, 102</td>
+						<td bgcolor="333366">333366<br /> 051, 051, 102</td>
+						<td bgcolor="666633">666633<br /> 102, 102, 051</td>
+						<td bgcolor="999933">999933<br /> 153, 153, 051</td>
+						<td bgcolor="CCCC33">CCCC33<br /> 204, 204, 051</td>
+						<td bgcolor="FFFF33">FFFF33<br /> 255, 255, 051</td>
+					</tr>
+					<tr>							
+						<td bgcolor="000099">000099<br /> 000, 000, 153</td>
+						<td bgcolor="333399">333399<br /> 051, 051, 153</td>
+						<td bgcolor="666699">666699<br /> 102, 102, 153</td>
+						<td bgcolor="999966">999966<br /> 153, 153, 102</td>
+						<td bgcolor="CCCC66">CCCC66<br /> 204, 204, 102</td>
+						<td bgcolor="FFFF66">FFFF66<br /> 255, 255, 102</td>
+					</tr>
+					<tr>							
+						<td bgcolor="0000CC">0000CC<br /> 000, 000, 204</td>
+						<td bgcolor="3333CC">3333CC<br /> 051, 051, 204</td>
+						<td bgcolor="6666CC">6666CC<br /> 102, 102, 204</td>
+						<td bgcolor="9999CC">9999CC<br /> 153, 153, 204</td>
+						<td bgcolor="CCCC99">CCCC99<br /> 204, 204, 153</td>
+						<td bgcolor="FFFF99">FFFF99<br /> 255, 255, 153</td>
+					</tr>
+					<tr>							
+						<td bgcolor="blue">0000FF<br /> 000, 000, 255</td>
+						<td bgcolor="3333FF">3333FF<br /> 051, 051, 255</td>
+						<td bgcolor="6666FF">6666FF<br /> 102, 102, 255</td>
+						<td bgcolor="9999FF">9999FF<br /> 153, 153, 255</td>
+						<td bgcolor="CCCCFF">CCCCFF<br /> 204, 204, 255</td>
+						<td bgcolor="FFFFCC">FFFFCC<br /> 255, 255, 204</td>
+					</tr>
+					<tr>							
+						<td bgcolor="003300">003300<br /> 000, 051, 000</td>
+						<td bgcolor="336633">336633<br /> 051, 102, 051</td>
+						<td bgcolor="669966">669966<br /> 102, 153, 102</td>
+						<td bgcolor="99CC99">99CC99<br /> 153, 204, 153</td>
+						<td bgcolor="CCFFCC">CCFFCC<br /> 204, 255, 204</td>
+						<td bgcolor="fuchsia">FF00FF<br /> 255, 000, 255</td>
+					</tr>
+					<tr>							
+						<td bgcolor="006600">006600<br /> 000, 102, 000</td>
+						<td bgcolor="339933">339933<br /> 051, 153, 051</td>
+						<td bgcolor="66CC66">66CC66<br /> 102, 204, 102</td>
+						<td bgcolor="99FF99">99FF99<br /> 153, 255, 153</td>
+						<td bgcolor="CC00CC">CC00CC<br /> 204, 000, 204</td>
+						<td bgcolor="FF33FF">FF33FF<br /> 255, 051, 255</td>
+					</tr>
+					<tr>							
+						<td bgcolor="009900">009900<br /> 000, 153, 000</td>
+						<td bgcolor="33CC33">33CC33<br /> 051, 204, 051</td>
+						<td bgcolor="66FF66">66FF66<br /> 102, 255, 102</td>
+						<td bgcolor="990099">990099<br /> 153, 000, 153</td>
+						<td bgcolor="CC33CC">CC33CC<br /> 204, 051, 204</td>
+						<td bgcolor="FF66FF">FF66FF<br /> 255, 102, 255</td>
+					</tr>
+					<tr>							
+						<td bgcolor="00CC00">00CC00<br /> 000, 204, 000</td>
+						<td bgcolor="33FF33">33FF33<br /> 051, 255, 051</td>
+						<td bgcolor="660066">660066<br /> 102, 000, 102</td>
+						<td bgcolor="993399">993399<br /> 153, 051, 153</td>
+						<td bgcolor="CC66CC">CC66CC<br /> 204, 102, 204</td>
+						<td bgcolor="FF99FF">FF99FF<br /> 255, 153, 255</td>
+					</tr>
+					<tr>							
+						<td bgcolor="lime">00FF00<br /> 000, 255, 000</td>
+						<td bgcolor="330033">330033<br /> 051, 000, 051</td>
+						<td bgcolor="663366">663366<br /> 102, 051, 102</td>
+						<td bgcolor="996699">996699<br /> 153, 102, 153</td>
+						<td bgcolor="CC99CC">CC99CC<br /> 204, 153, 204</td>
+						<td bgcolor="FFCCFF">FFCCFF<br /> 255, 204, 255</td>
+					</tr> 
+					<tr>							
+						<td bgcolor="00FF33">00FF33<br /> 000, 255, 051</td>
+						<td bgcolor="330066">330066<br /> 051, 000, 102</td>
+						<td bgcolor="663399">663399<br /> 102, 051, 153</td>
+						<td bgcolor="9966CC">9966CC<br /> 153, 102, 204</td>
+						<td bgcolor="CC99FF">CC99FF<br /> 204, 153, 255</td>
+						<td bgcolor="FFCC00">FFCC00<br /> 255, 204, 000</td>
+					</tr>
+					<tr>							
+						<td bgcolor="00FF66">00FF66<br /> 000, 255, 102</td>
+						<td bgcolor="330099">330099<br /> 051, 000, 153</td>
+						<td bgcolor="6633CC">6633CC<br /> 102, 051, 204</td>
+						<td bgcolor="9966FF">9966FF<br /> 153, 102, 255</td>
+						<td bgcolor="CC9900">CC9900<br /> 204, 153, 000</td>
+						<td bgcolor="FFCC33">FFCC33<br /> 255, 204, 051</td>
+					</tr>
+					<tr>							
+						<td bgcolor="00FF99">00FF99<br /> 000, 255, 153</td>
+						<td bgcolor="3300CC">3300CC<br /> 051, 000, 204</td>
+						<td bgcolor="6633FF">6633FF<br /> 102, 051, 255</td>
+						<td bgcolor="996600">996600<br /> 153, 102, 000</td>
+						<td bgcolor="CC9933">CC9933<br /> 204, 153, 051</td>
+						<td bgcolor="FFCC66">FFCC66<br /> 255, 204, 102</td>
+					</tr>
+					<tr>							
+						<td bgcolor="00FFCC">00FFCC<br /> 000, 255, 204</td>
+						<td bgcolor="3300FF">3300FF<br /> 051, 000, 255</td>
+						<td bgcolor="663300">663300<br /> 102, 051, 000</td>
+						<td bgcolor="996633">996633<br /> 153, 102, 051</td>
+						<td bgcolor="CC9966">CC9966<br /> 204, 153, 102</td>
+						<td bgcolor="FFCC99">FFCC99<br /> 255, 204, 153</td>
+					</tr>
+					<tr>							
+						<td bgcolor="aqua">00FFFF<br /> 000, 255, 255</td>
+						<td bgcolor="330000">330000<br /> 051, 000, 000</td>
+						<td bgcolor="663333">663333<br /> 102, 051, 051</td>
+						<td bgcolor="996666">996666<br /> 153, 102, 102</td>
+						<td bgcolor="CC9999">CC9999<br /> 204, 153, 153</td>
+						<td bgcolor="FFCCCC">FFCCCC<br /> 255, 204, 204</td>
+					</tr>
+					<tr>							
+						<td bgcolor="00CCCC">00CCCC<br /> 000, 204, 204</td>
+						<td bgcolor="33FFFF">33FFFF<br /> 051, 255, 255</td>
+						<td bgcolor="660000">660000<br /> 102, 000, 000</td>
+						<td bgcolor="993333">993333<br /> 153, 051, 051</td>
+						<td bgcolor="CC6666">CC6666<br /> 204, 102, 102</td>
+						<td bgcolor="FF9999">FF9999<br /> 255, 153, 153</td>
+					</tr>
+					<tr>							
+						<td bgcolor="009999">009999<br /> 000, 153, 153</td>
+						<td bgcolor="33CCCC">33CCCC<br /> 051, 204, 204</td>
+						<td bgcolor="66FFFF">66FFFF<br /> 102, 255, 255</td>
+						<td bgcolor="990000">990000<br /> 153, 000, 000</td>
+						<td bgcolor="CC3333">CC3333<br /> 204, 051, 051</td>
+						<td bgcolor="FF6666">FF6666<br /> 255, 102, 102</td>
+					</tr>
+					<tr>							
+						<td bgcolor="006666">006666<br /> 000, 102, 102</td>
+						<td bgcolor="339999">339999<br /> 051, 153, 153</td>
+						<td bgcolor="66CCCC">66CCCC<br /> 102, 204, 204</td>
+						<td bgcolor="99FFFF">99FFFF<br /> 153, 255, 255</td>
+						<td bgcolor="CC0000">CC0000<br /> 204, 000, 000</td>
+						<td bgcolor="FF3333">FF3333<br /> 255, 051, 051</td>
+					</tr>
+					<tr>							
+						<td bgcolor="003333">003333<br /> 000, 051, 051</td>
+						<td bgcolor="336666">336666<br /> 051, 102, 102</td>
+						<td bgcolor="669999">669999<br /> 102, 153, 153</td>
+						<td bgcolor="99CCCC">99CCCC<br /> 153, 204, 204</td>
+						<td bgcolor="CCFFFF">CCFFFF<br /> 204, 255, 255</td>
+						<td bgcolor="red">FF0000<br /> 255, 000, 000</td>
+					</tr>
+					<tr>							
+						<td bgcolor="003366">003366<br /> 000, 051, 102</td>
+						<td bgcolor="336699">336699<br /> 051, 102, 153</td>
+						<td bgcolor="6699CC">6699CC<br /> 102, 153, 204</td>
+						<td bgcolor="99CCFF">99CCFF<br /> 153, 204, 255</td>
+						<td bgcolor="CCFF00">CCFF00<br /> 204, 255, 000</td>
+						<td bgcolor="FF0033">FF0033<br /> 255, 000, 051</td>
+					</tr>
+					<tr>							
+						<td bgcolor="003399">003399<br /> 000, 051, 153</td>
+						<td bgcolor="3366CC">3366CC<br /> 051, 102, 204</td>
+						<td bgcolor="6699FF">6699FF<br /> 102, 153, 255</td>
+						<td bgcolor="99CC00">99CC00<br /> 153, 204, 000</td>
+						<td bgcolor="CCFF33">CCFF33<br /> 204, 255, 051</td>
+						<td bgcolor="FF0066">FF0066<br /> 255, 000, 102</td>
+					</tr>
+					<tr>							
+						<td bgcolor="0033CC">0033CC<br /> 000, 051, 204</td>
+						<td bgcolor="3366FF">3366FF<br /> 051, 102, 255</td>
+						<td bgcolor="669900">669900<br /> 102, 153, 000</td>
+						<td bgcolor="99CC33">99CC33<br /> 153, 204, 051</td>
+						<td bgcolor="CCFF66">CCFF66<br /> 204, 255, 102</td>
+						<td bgcolor="FF0099">FF0099<br /> 255, 000, 153</td>
+					</tr>
+					<tr>							
+						<td bgcolor="0033FF">0033FF<br /> 000, 051, 255</td>
+						<td bgcolor="336600">336600<br /> 051, 102, 255</td>
+						<td bgcolor="669933">669933<br /> 102, 153, 051</td>
+						<td bgcolor="99CC66">99CC66<br /> 153, 204, 102</td>
+						<td bgcolor="CCFF99">CCFF99<br /> 204, 255, 153</td>
+						<td bgcolor="FF00CC">FF00CC<br /> 255, 000, 204</td>
+					</tr>
+					<tr>							
+						<td bgcolor="0066FF">0066FF<br /> 000, 102, 255</td>
+						<td bgcolor="339900">339900<br /> 051, 153, 000</td>
+						<td bgcolor="66CC33">66CC33<br /> 102, 204, 051</td>
+						<td bgcolor="99FF66">99FF66<br /> 153, 255, 102</td>
+						<td bgcolor="CC0099">CC0099<br /> 204, 000, 153</td>
+						<td bgcolor="FF33CC">FF33CC<br /> 255, 051, 204</td>
+					</tr>
+					<tr>							
+						<td bgcolor="0099FF">0099FF<br /> 000, 153, 255</td>
+						<td bgcolor="33CC00">33CC00<br /> 051, 204, 000</td>
+						<td bgcolor="66FF33">66FF33<br /> 102, 255, 051</td>
+						<td bgcolor="990066">990066<br /> 153, 000, 102</td>
+						<td bgcolor="CC3399">CC3399<br /> 204, 051, 153</td>
+						<td bgcolor="FF66CC">FF66CC<br /> 255, 102, 204</td>
+					</tr>
+					<tr>							
+						<td bgcolor="00CCFF">00CCFF<br /> 000, 204, 255</td>
+						<td bgcolor="33FF00">33FF00<br /> 051, 255, 000</td>
+						<td bgcolor="660033">660033<br /> 102, 000, 051</td>
+						<td bgcolor="993366">993366<br /> 153, 051, 102</td>
+						<td bgcolor="CC6699">CC6699<br /> 204, 102, 153</td>
+						<td bgcolor="FF99CC">FF99CC<br /> 255, 153, 204</td>
+					</tr>
+					<tr>							
+						<td bgcolor="00CC33">00CC33<br /> 000, 204, 051</td>
+						<td bgcolor="33FF66">33FF66<br /> 051, 255, 102</td>
+						<td bgcolor="660099">660099<br /> 102, 000, 153</td>
+						<td bgcolor="9933CC">9933CC<br /> 153, 051, 204</td>
+						<td bgcolor="CC66FF">CC66FF<br /> 204, 102, 255</td>
+						<td bgcolor="FF9900">FF9900<br /> 255, 153, 000</td>
+					</tr>
+					<tr>							
+						<td bgcolor="00CC66">00CC66<br /> 000, 204, 102</td>
+						<td bgcolor="33FF99">33FF99<br /> 051, 255, 153</td>
+						<td bgcolor="6600CC">6600CC<br /> 102, 000, 204</td>
+						<td bgcolor="9933FF">9933FF<br /> 153, 051, 255</td>
+						<td bgcolor="CC6600">CC6600<br /> 204, 102, 000</td>
+						<td bgcolor="FF9933">FF9933<br /> 255, 153, 051</td>
+					</tr>
+					<tr>							
+						<td bgcolor="00CC99">00CC99<br /> 255, 204, 153</td>
+						<td bgcolor="33FFCC">33FFCC<br /> 051, 255, 204</td>
+						<td bgcolor="6600FF">6600FF<br /> 102, 000, 255</td>
+						<td bgcolor="993300">993300<br /> 153, 051, 000</td>
+						<td bgcolor="CC6633">CC6633<br /> 204, 102, 051</td>
+						<td bgcolor="FF9966">FF9966<br /> 255, 153, 102</td>
+					</tr>
+					<tr>							
+						<td bgcolor="009933">009933<br /> 000, 153, 051</td>
+						<td bgcolor="33CC66">33CC66<br /> 051, 204, 102</td>
+						<td bgcolor="66FF99">66FF99<br /> 102, 255, 153</td>
+						<td bgcolor="9900CC">9900CC<br /> 153, 000, 204</td>
+						<td bgcolor="CC33FF">CC33FF<br /> 204, 051, 255</td>
+						<td bgcolor="FF6600">FF6600<br /> 255, 102, 000</td>
+					</tr>
+					<tr>							
+						<td bgcolor="006633">006633<br /> 000, 102, 051</td>
+						<td bgcolor="339966">339966<br /> 051, 153, 102</td>
+						<td bgcolor="66CC99">66CC99<br /> 102, 204, 153</td>
+						<td bgcolor="99FFCC">99FFCC<br /> 153, 255, 204</td>
+						<td bgcolor="CC00FF">CC00FF<br /> 204, 000, 255</td>
+						<td bgcolor="FF3300">FF3300<br /> 255, 051, 000</td>
+					</tr>
+					<tr>							
+						<td bgcolor="009966">009966<br /> 000, 153, 102</td>
+						<td bgcolor="33CC99">33CC99<br /> 051, 204, 153</td>
+						<td bgcolor="66FFCC">66FFCC<br /> 102, 255, 204</td>
+						<td bgcolor="9900FF">9900FF<br /> 153, 000, 255</td>
+						<td bgcolor="CC3300">CC3300<br /> 204, 051, 000</td>
+						<td bgcolor="FF6633">FF6633<br /> 255, 102, 051</td>
+					</tr>
+					<tr>							
+						<td bgcolor="0099CC">0099CC<br /> 000, 153, 204</td>
+						<td bgcolor="33CCFF">33CCFF<br /> 051, 204, 255</td>
+						<td bgcolor="66FF00">66FF00<br /> 102, 255, 000</td>
+						<td bgcolor="990033">990033<br /> 153, 000, 051</td>
+						<td bgcolor="CC3366">CC3366<br /> 204, 051, 102</td>
+						<td bgcolor="FF6699">FF6699<br /> 255, 102, 153</td>
+					</tr>
+					<tr>							
+						<td bgcolor="0066CC">0066CC<br /> 000, 102, 204</td>
+						<td bgcolor="3399FF">3399FF<br /> 051, 153, 255</td>
+						<td bgcolor="66CC00">66CC00<br /> 102, 204, 000</td>
+						<td bgcolor="99FF33">99FF33<br /> 153, 255, 051</td>
+						<td bgcolor="CC0066">CC0066<br /> 204, 000, 102</td>
+						<td bgcolor="FF3399">FF3399<br /> 255, 051, 153</td>
+					</tr>
+					<tr>							
+						<td bgcolor="006699">006699<br /> 000, 102, 153</td>
+						<td bgcolor="3399CC">3399CC<br /> 051, 153, 204</td>
+						<td bgcolor="66CCFF">66CCFF<br /> 102, 204, 255</td>
+						<td bgcolor="99FF00">99FF00<br /> 153, 255, 000</td>
+						<td bgcolor="CC0033">CC0033<br /> 204, 000, 051</td>
+						<td bgcolor="FF3366">FF3366<br /> 255, 051, 102</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+<div data-kaisa-footer="true"></div>
+</body>
+</html>

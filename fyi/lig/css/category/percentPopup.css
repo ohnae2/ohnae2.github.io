@@ -1,0 +1,67 @@
+/* 2008-04 Writer:Jaeho */
+
+@import "../common.css";
+html		{height:100%; background:url(../../images/common/popBg.gif) no-repeat right bottom;}
+body		{height:100%; background:url(../../images/common/popBg.gif) no-repeat 0 20px;}
+
+h1			{margin:8px 0 0 13px; padding:0 0 0 20px; background:url(../../images/popup/blet_popup.gif) no-repeat 0 4px; font-size:15px; font-weight: bold; color:#000;}
+h2			{padding:0 0 5px 10px; background:url(../../images/popup/blet_popup_p.gif) no-repeat 4px 5px; font-weight:bold;}
+
+#popWrap	{overflow:hidden; margin-top:5px; background:url(../../images/common/popBg.gif) no-repeat left top;}
+#popWrap	.topWrap		{clear:both; height:10px; overflow:hidden; font-size:0;}
+#popWrap	.bottomWrap		{clear:both; height:20px; overflow:hidden; font-size:0; background:url(../../images/common/popBg.gif) no-repeat left bottom;}
+#popWrap	.topWrap	.topTle		{overflow:hidden; font-size:0; height:10px; width:20px; float:right; background:url(../../images/common/popBg.gif) no-repeat right top;}
+#popWrap	.bottomWrap	.bottomTle	{overflow:hidden; font-size:0; height:20px; width:20px; float:right; background:url(../../images/common/popBg.gif) no-repeat right bottom;}
+	
+#popWrap	.Content		{clear:both; padding:0 20px; background:url(../../images/common/popLeftBg.gif) repeat-y right top;}  /* padding:1px; overflow:auto; forr FF */
+
+.gianMenu	{border-right:1px solid #dedede; border-left:1px solid #dedede; background:url(../../images/popup/bg_gianMenu.gif) repeat-x left top;}
+.gianMenu	ul	{padding:6px 0 3px 10px;}
+.gianMenu	li	{display:inline; margin-right:1px;}
+
+.gianWrap		{border:1px solid #dedede; padding:10px; margin-top:10px; overflow:auto; height:600px;}
+
+.gianContent	{width:780px; overflow:auto; padding:0 10px; margin:20px auto 0 auto;}
+.gianContent	h3	{width:100%; font-weight:bold; font-size:32px; text-align:center; color:#000; letter-spacing:32px;}
+.gianContent	th	{color:#000;}
+.gianContent	td	{color:#000;}
+.gianContent	input	{color:#000;}
+.gianContent	textarea	{color:#000;}
+.gianContent	div	{color:#000;}
+.gianContent	p	{color:#000;}
+
+.gianContent	a:link, 
+.gianContent	a:visited, 
+.gianContent	a:active 	{color:#000; text-decoration:none;}
+.gianContent	a:hover 	{color:#000; text-decoration:underline;}
+
+.tab		{position:relative;}
+.tab		li		{font-size:0; display:inline;}
+
+#workLine			{width:760px; overflow:auto;}
+#workLine	.box1	{padding:5px 5px 0 5px; width:345px; height:160px; float:left; overflow:auto; background-color:#f4f7fe; border:1px solid #b5bedd;}
+#workLine	.box2	{padding:5px 5px 0 5px; width:345px; height:160px; float:right; overflow:auto; background-color:#f4f7fe; border:1px solid #b5bedd;}
+#workLine	.box3	{padding:5px 5px 0 5px; width:345px; height:165px; float:left; overflow:auto; background-color:#f4f7fe; border:1px solid #b5bedd;}
+#workLine	.box4	{padding:5px 5px 0 5px; width:345px; height:165px; float:right; overflow:auto; background-color:#f4f7fe; border:1px solid #b5bedd;}
+
+#workLine	.line	{width:45px; height:125px; text-align:center; float:left; overflow:auto; padding-top:45px;}
+#workLine	.line	li	{list-style:none;}
+
+#workLine	.search			{padding:5px 0; clear:both; width:355px; text-align:right;}
+#workLine	.scrollLayer	{height:101px; overflow-y:scroll;}
+#workLine	.con			{height:155px; overflow-y:auto;}
+
+.workView	{padding:10px; overflow:auto; width:784px; height:300px; border:1px dotted #ccc;}
+.workView	.workBtn	{padding-top:5px; text-align:right; border-top:1px dotted #eee;}
+
+.popContent		{padding:13px; color:#000;}
+.popContent	div	{color:#000;}
+.popContent	td	{color:#000;}
+.popContent	th	{color:#000;}
+
+.opinion	{margin:10px; height:60px; overflow:auto; width:515px; background-color:#fff;}
+.opinionBig	{margin:10px 0 10px 10px; height:100px; overflow:auto; width:440px; background-color:#fff;}
+.opinionTextarea	{border:1px solid #ddd; margin:10px 0 10px 10px; height:94px; overflow:auto; width:430px; background-color:#fff;}
+
+.gatherWork01		{float:left; width:405px; height:604px; overflow:auto; border:1px solid #ccc;}
+.gatherWork02		{float:right; width:495px;} /* padding:1px; overflow:auto; forr FF */

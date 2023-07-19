@@ -1,0 +1,86 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>:: Html Guide ::</title>
+<link rel="stylesheet" href="../css/guide/design.css" type="text/css" media="all">
+<link rel="stylesheet" href="../css/print.css" type="text/css" media="print">
+<script type="text/javascript" src="../js/common.js"></script>
+<script type="text/javascript" src="../js/flashX.js"></script>
+<script type="text/javascript" src="../js/tab.js"></script>
+</head>
+<body>
+<div class="writer">차세대전산 TFT / kaisa</div>
+<div id="Container">
+	<div id="Top">
+		<ul>
+			<li><a href="list.html">목차</a></li>
+			<li><a href="web01.html">문서구조</a></li>
+			<li class="on">디자인 요소</li>
+		</ul>
+	</div>
+	<h1><img src="../images/guide/title.jpg" alt="LIG WEBSTYLE GUIDE"></h1>
+	<div id="titleTle">
+		<ul class="guideTab">		
+			<li><a href="design01.html">아이콘</a></li>
+			<li><a href="design02.html">블릿</a></li>
+			<li><a href="design03.html">버튼</a></li>
+			<li><a href="design04.html">레어아웃</a></li>
+			<li><a href="design05.html">플래시</a></li>
+			<li><a href="design06.html">폰트</a></li>
+			<li><a href="design07.html">테이블</a></li>
+			<li><a href="design08.html">Input</a></li>
+			<li><a href="design09.html">Select</a></li>
+			<li><a href="design10.html">Radio</a></li>
+			<li><a href="design11.html">CheckBox</a></li>
+			<li><a href="design12.html">TextArea</a></li>
+			<li><a href="design13.html">그리드</a></li>
+			<li class="on">탭메뉴</li>
+		</ul>
+	</div>
+	<ol>
+		<li>
+			<h2>JAVASCRIPT</h2>
+			<div class="code">var selected_num = 1;<br>
+				function ViewTab(num)<br>
+				{<br>
+				<span class="pl20">&nbsp;</span>var tab, con;<br>
+				<br>
+				<span class="pl20">&nbsp;</span>tab = document.getElementById(&quot;tab&quot; + selected_num);<br>
+				<span class="pl20">&nbsp;</span>tab.src = &quot;/Images/Btn/btn_Left_menu0&quot; + selected_num + &quot;off.gif&quot;;<br>
+				<span class="pl20">&nbsp;</span>tab.state = 0;<br>
+				<br>
+				<span class="pl20">&nbsp;</span>tab = document.getElementById(&quot;tab&quot; + num);<br>
+				<span class="pl20">&nbsp;</span>tab.src = &quot;/Images/Btn/btn_Left_menu0&quot; + num + &quot;on.gif&quot;;<br>
+				<span class="pl20">&nbsp;</span>tab.state = 1;<br>
+				<br>
+				<span class="pl20">&nbsp;</span>con = document.getElementById(&quot;con&quot; + selected_num);<br>
+				<span class="pl20">&nbsp;</span>con.style.display = &quot;none&quot;;<br>
+				<br>
+				<span class="pl20">&nbsp;</span>con = document.getElementById(&quot;con&quot; + num);<br>
+				<span class="pl20">&nbsp;</span>con.style.display = &quot;&quot;;<br>
+				<br>
+				<span class="pl20">&nbsp;</span>selected_num = num;<br>
+				}
+			</div>
+		</li>
+		<li>
+			<h2>tab</h2>
+			<div class="tle" style="width:90%;">
+				<!-- ## -->
+				<ul class="tabMenu">
+					<li><img src="../images/officeWork/tab01on.gif" id="tab1" name="tab1" state=1 style="cursor:hand" onclick="ViewTab(1)" alt="결재대기"></li>
+					<li><img src="../images/officeWork/tab02off.gif" id="tab2" name="tab2" state=0 style="cursor:hand" onclick="ViewTab(2)" alt="결재진행"></li>
+					<li><img src="../images/officeWork/tab03off.gif" id="tab3" name="tab3" state=0 style="cursor:hand" onclick="ViewTab(3)" alt="참조/검토/회람"></li>
+					<li><img src="../images/officeWork/tab04off.gif" id="tab4" name="tab4" state=0 style="cursor:hand" onclick="ViewTab(4)" alt="부서수진"></li>
+				</ul>
+				<div id="con1">Tab1</div>
+				<div id="con2" style="display:none;">Tab2</div>
+				<div id="con3" style="display:none;">Tab3</div>
+				<div id="con4" style="display:none;">Tab4</div>				
+				<!--// ## -->
+			</div>
+		</li>
+	</ol>
+</div>
+</body>
+</html>

@@ -1,0 +1,340 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="cache-control" content="no-cache">
+<title></title>
+<link rel="stylesheet" href="css/admin.css">
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.pub.js"></script>
+</head>
+<body>
+
+<div id="help"></div>
+<div id="top"></div>
+<div id="mask"></div>
+<div id="login" class="pop_type">
+	<span class="close"></span>
+	<h1>LOGIN</h1>		
+	<fieldset>
+		<legend>LOGIN</legend>			
+		<input type="text" title="사용자 ID">
+		<input type="password" title="비밀번호">			
+		<button class="submit">로그인</button>
+	</fieldset>	
+	<p class="error">잘못된 비밀번호입니다</p>
+	<p>아이디,비밀번호를 찾고 계신가요?</p>
+	<button>사용자ID 찾기</button>
+	<button>비밀번호 찾기</button>
+	<p>회원가입하시겠습니까?</p>
+	<button>사용자 등록하기</button>
+	<button>개발자 등록하기</button>
+</div>
+<div id="join" class="pop_type">
+	<span class="close"></span>
+	<h1>JOIN</h1>		
+	<fieldset>
+		<legend>JOIN</legend>			
+		<input class="ok" type="text" title="사용자 ID">
+		<p><span class="ok">사용할 수 있는 아이디입니다</span></p>
+		<input class="no" type="text" title="Email">
+		<p><span class="no">잘못된 메일형식입니다</span></p>
+		<input type="password" title="비밀번호 입력">
+		<p>비밀번호를 입력해주세요</p>
+		<input type="password" title="비밀번호 확인">
+		<p>비밀번호를 확인해주세요</p>		
+		<p class="tr"><input type="checkbox" class="checkbox"> 약관동의</p>
+		<p class="btn"><button type="submit" class="submit">등록하기</button></p>
+	</fieldset>	
+	
+	<p>개발자로 등록하시겠습니까?</p>
+	<button>개발자 등록하기</button>
+</div>
+
+<!--container-->	
+<div id="container">
+	<!--header-->	
+	<div id="header">
+		<h1><b>IWA</b> Administrator</h1>
+		<fieldset>
+			<legend>search,login</legend>
+			<input type="text" title="검색어를 입력하세요" value="">
+			<button type="submit">검색</button>	
+		</fieldset>	
+		<ul id="global"></ul>
+	</div>
+	<div id="content">
+		<!--nav-->
+		<div id="nav">
+			<span class="ico_b"></span>
+			<span class="ico_s"></span>
+			<dl>
+				<dt class="on">상품등록</dt>
+				<dd>
+					<ul>
+						<li class="on">게시판관리</li>
+						<li>매출관리</li>
+						<li>매출관리</li>
+					</ul>
+				</dd>
+				<dt>상품등록</dt>
+				<dd>
+					<ul>
+						<li>게시판관리</li>
+						<li>매출관리</li>
+						<li>매출관리</li>
+					</ul>
+				</dd>
+				<dt>상품등록</dt>
+				<dd>
+					<ul>
+						<li>게시판관리</li>
+						<li>매출관리</li>
+						<li>매출관리</li>
+					</ul>
+				</dd>
+			</dl>
+		</div>
+		<!--list-->
+		<div id="list">
+			<h3>상품등록 <span>대분류</span></h3>
+			<table class="typeT">
+				<colgroup>
+					<col width="150">
+					<col width="*">
+				</colgroup>
+				<tr>
+					<th>제목 1</th>
+					<td><input type="text" style="width:96%;"></td>
+				</tr>
+				<tr>
+					<th>제목 2</th>
+					<td><input type="text" style="width:500px;"> <button>찾아보기</button></td>
+				</tr>
+				<tr>
+					<th>제목 3</th>
+					<td><textarea style="width:96%; height:100px;"></textarea></td>
+				</tr>
+				<tr>
+					<th>제목 4</th>
+					<td><select style="width:96px;"><option>선택하세요</option></select> <input type="text" style="width:400px;"></td>
+				</tr>
+				<tr>
+					<th>제목 4</th>
+					<td>
+						<select multiple="multiple" style="width:522px;">
+						  <option value="volvo">Volvo</option>
+						  <option value="saab">Saab</option>
+						  <option value="opel">Opel</option>
+						  <option value="audi">Audi</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<th>제목 5</th>
+					<td><input type="radio" class="radio"> 선택 <input type="radio" class="radio"> 선택 안함</td>
+				</tr>
+				<tr>
+					<th>제목 6</th>
+					<td><input type="checkbox" class="checkbox"> 선택 <input type="checkbox" class="checkbox"> 선택 안함</td>
+				</tr>
+				<tr>
+					<th>제목 7</th>
+					<td><input type="file" class="file"></td>
+				</tr>
+			</table>
+			<div class="btn_list">
+				<button class="submit">등록</button>
+				<button>삭제</button>
+			</div>
+			
+			
+			<h3>테이블 타입</h3>			
+			<table class="typeT">
+				<colgroup>
+					<col width="10%">
+					<col width="10%">
+					<col width="10%">
+					<col width="10%">
+					<col width="10%">
+					<col width="10%">
+					<col width="10%">
+					<col width="10%">
+					<col width="10%">
+					<col width="*">
+				</colgroup>
+				<tr>
+					<th>제목 1</th>
+					<th>제목 2</th>
+					<th>제목 3</th>
+					<th>제목 4</th>
+					<th>제목 5</th>
+					<th>제목 6</th>
+					<th>제목 7</th>
+					<th>제목 8</th>
+					<th>제목 9</th>
+					<th>제목 10</th>
+				</tr>
+				<tr>
+					<td>내용 1</td>
+					<td>내용 2</td>
+					<td>내용 3</td>
+					<td>내용 4</td>
+					<td>내용 5</td>
+					<td>내용 6</td>
+					<td>내용 7</td>
+					<td>내용 8</td>
+					<td>내용 9</td>
+					<td>내용 10</td>
+				</tr>				
+			</table>
+			
+			<div class="btn_list">
+				<button>글쓰기</button>
+			</div>
+			
+			<h3>나의 문의 내역</h3>	
+			<dl class="board_view">
+				<dt>안녕하세요 문의드립니다...</dt>
+				<dd>안녕하세요 문의드립니다...안녕하세요 문의드립니다...안녕하세요 문의드립니다...안녕하세요 문의드립니다...안녕하세요 문의드립니다..
+				안녕하세요 문의드립니다...안녕하세요 문의드립니다...안녕하세요 문의드립니다...안녕하세요 문의드립니다...
+				안녕하세요 문의드립니다...안녕하세요 문의드립니다...안녕하세요 문의드립니다...안녕하세요 문의드립니다...안녕하세요 문의드립니다...</dd>
+			</dl>			
+			<div class="btn_list">
+				<button>답글</button>
+				<button>목록</button>
+				<button>수정</button>
+			</div>
+			<dl class="board_view">
+				<dt class="re">안녕하세요 문의드립니다...</dt>
+				<dd>안녕하세요 문의드립니다...안녕하세요 문의드립니다...안녕하세요 문의드립니다...안녕하세요 문의드립니다...안녕하세요 문의드립니다..
+				안녕하세요 문의드립니다...안녕하세요 문의드립니다...안녕하세요 문의드립니다...안녕하세요 문의드립니다...
+				안녕하세요 문의드립니다...안녕하세요 문의드립니다...안녕하세요 문의드립니다...안녕하세요 문의드립니다...안녕하세요 문의드립니다...</dd>
+			</dl>
+			<div class="btn_list">
+				<button>목록</button>
+			</div>
+			
+			
+			
+			<h3>문의하기</h3>	
+			<dl class="board_write">
+				<dt><input type="text"></dt>
+				<dd><textarea></textarea></dd>
+			</dl>
+			<div class="btn_list">
+				<button class="submit" type="submit">등록</button>
+				<button>목록</button>
+			</div>
+			
+			<h3>나의 앱리스트</h3>	
+			<div class="list_type">
+				<dl>
+					<dt><img src="img/test/app1.png" alt=""></dt>
+					<dd>
+						<h4>제목이 너무 길면 두줄방지를 위해 레이어로 띄웁니다</h4>			
+						<p class="vot"><b class="rating"><span style="width:50%;"></span></b> (2,243)</p>
+						<p class="com">JOYMOA CORP</p>
+						<button>설치</button>		
+					</dd>
+				</dl>
+				<dl>
+					<dt><img src="img/test/app2.png" alt=""></dt>
+					<dd>
+						<h4>위닝일레븐2012</h4>					
+						<p class="vot"><b class="rating"><span style="width:50%;"></span></b> (2,243)</p>
+						<p class="com">JOYMOA CORP</p>
+						<button>₩2,500</button>		
+					</dd>
+				</dl>
+				<dl>
+					<dt><img src="img/test/app3.png" alt=""></dt>
+					<dd>
+						<h4>위닝일레븐2012</h4>					
+						<p class="vot"><b class="rating"><span style="width:50%;"></span></b> (2,243)</p>
+						<p class="com">JOYMOA CORP</p>
+						<button>₩2,500</button>		
+					</dd>
+				</dl>
+				<dl>
+					<dt><img src="img/test/app4.png" alt=""></dt>
+					<dd>
+						<h4>위닝일레븐2012</h4>					
+						<p class="vot"><b class="rating"><span style="width:50%;"></span></b> (2,243)</p>
+						<p class="com">JOYMOA CORP</p>
+						<button>₩2,500</button>		
+					</dd>
+				</dl>
+				<dl>
+					<dt><img src="img/test/app5.png" alt=""></dt>
+					<dd>
+						<h4>위닝일레븐2012</h4>					
+						<p class="vot"><b class="rating"><span style="width:50%;"></span></b> (2,243)</p>
+						<p class="com">JOYMOA CORP</p>
+						<button>₩2,500</button>		
+					</dd>
+				</dl>
+				<dl>
+					<dt><img src="img/test/app5.png" alt=""></dt>
+					<dd>
+						<h4>위닝일레븐2012</h4>					
+						<p class="vot"><b class="rating"><span style="width:50%;"></span></b> (2,243)</p>
+						<p class="com">JOYMOA CORP</p>
+						<button>₩2,500</button>		
+					</dd>
+				</dl>
+				<dl>
+					<dt><img src="img/test/app5.png" alt=""></dt>
+					<dd>
+						<h4>위닝일레븐2012</h4>					
+						<p class="vot"><b class="rating"><span style="width:50%;"></span></b> (2,243)</p>
+						<p class="com">JOYMOA CORP</p>
+						<button>₩2,500</button>		
+					</dd>
+				</dl>
+				<dl>
+					<dt><img src="img/test/app5.png" alt=""></dt>
+					<dd>
+						<h4>위닝일레븐2012</h4>					
+						<p class="vot"><b class="rating"><span style="width:50%;"></span></b> (2,243)</p>
+						<p class="com">JOYMOA CORP</p>
+						<button>₩2,500</button>		
+					</dd>
+				</dl>
+			</div>
+			
+			<ol class="page_nav">
+				<li><span><b class="prevv"></b></span></li>
+				<li><span><b class="prev"></b></span></li>
+				<li class="on"><span>1</span></li>
+				<li><span>2</span></li>
+				<li><span>3</span></li>
+				<li><span>4</span></li>
+				<li><span>5</span></li>
+				<li><span>6</span></li>
+				<li><span>7</span></li>
+				<li><span>8</span></li>
+				<li><span>9</span></li>
+				<li><span>10</span></li>
+				<li><span><b class="next"></b></span></li>
+				<li><span><b class="nextt"></b></span></li>
+			</ol>
+			
+			
+			
+			
+		</div>
+	</div>
+	
+	<!--footer-->
+	<div id="footer">
+		<p>IWA Inc. Copyright ⓒ 2011 all rights reserved.</p>
+	</div>
+</div>
+
+</body>
+</html>
+
+
+

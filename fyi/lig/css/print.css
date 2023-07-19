@@ -1,0 +1,17 @@
+/* Print 2008-04 Writer:Jaeho */
+
+body		{background-color:#fff;}
+.noprint	{display:none;}
+
+/* 기안창 인쇄시 */
+
+#popWrap							{padding:0; margin:0; background:none;}
+#popWrap	.topWrap				{padding:0; margin:0; background:none;}
+#popWrap	.bottomWrap				{padding:0; margin:0; background:none;}
+#popWrap	.topWrap	.topTle		{padding:0; margin:0; background:none;}
+#popWrap	.bottomWrap	.bottomTle	{padding:0; margin:0; background:none;}	
+#popWrap	.Content		{padding:0; margin:0; background:none;}
+
+.gianMenu		{display:none;}
+.gianWrap		{height:100%; width:100%; overflow:auto; padding:0; margin:0; border:0;}
+.gianContent	{height:100%; width:100%; overflow:auto; padding:0; margin:20px auto 0 auto;}
